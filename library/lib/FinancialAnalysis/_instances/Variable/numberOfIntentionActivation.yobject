@@ -1,0 +1,5 @@
+Variable numberOfIntentionActivation
+--> documentation """Keep track of the number of intention activation/deactivation done when checking the activation rules."""
+--> domains Integer
+--> defaultValue 0
+;

@@ -1,0 +1,22 @@
+LibOntology:ModifierConcept DescribeThreePointsVariation:Lower
+    --> lexicalization -> MultilingualExpression
+        --> en {
+            -> LibOntology:Adjective DescribeThreePointsVariation:EN:Lower:lower
+                --> root "lower"
+            ;,
+            -> LibOntology:Adjective DescribeThreePointsVariation:EN:Lower:weaker
+                --> root "weaker"
+            ;
+        }
+        --> fr {
+            -> LibOntology:Adjective DescribeThreePointsVariation:FR:Lower:plus_modere
+                --> root "modéré"
+                --> modifier "plus"
+            ;,
+            -> LibOntology:Adjective DescribeThreePointsVariation:FR:Lower:moins_marque
+                --> root "marqué"
+                --> modifier "moins"
+            ;
+        }
+    ;
+;

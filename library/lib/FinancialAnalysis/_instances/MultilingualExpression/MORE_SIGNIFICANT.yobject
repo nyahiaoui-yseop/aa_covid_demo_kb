@@ -1,0 +1,54 @@
+MultilingualExpression DescribeThreePointsVariation:MORE_SIGNIFICANT
+--> en -> ConstList DescribeThreePointsVariation:EN:MORE_SIGNIFICANT {
+    -> LibOntology:Adjective
+        --> root "more significant"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "more important"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "more considerable"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "more substantial"
+        --> gerund true
+    ;
+    }
+    ;
+--> fr -> ConstList DescribeThreePointsVariation:FR:MORE_SIGNIFICANT {
+    -> LibOntology:Adjective
+        --> root "plus significatif"
+        --> masculineSingular "plus significatif"
+        --> masculinePlural "plus significatifs"
+        --> feminineSingular "plus significative"
+        --> femininePlural "plus significatives"
+        --> gerund false
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus important"
+        --> masculineSingular "plus important"
+        --> masculinePlural "plus importants"
+        --> feminineSingular "plus importante"
+        --> femininePlural "plus importantes"
+        --> gerund false
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus considérable"
+        --> singular "plus considérable"
+        --> plural "plus considérables"
+        --> gerund false
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus substantiel"
+        --> masculineSingular "plus substantiel"
+        --> masculinePlural "plus substantiels"
+        --> feminineSingular "plus substantielle"
+        --> femininePlural "plus substantielles"
+        --> gerund false
+    ;
+    }
+    ;
+;

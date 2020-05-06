@@ -1,0 +1,486 @@
+LibDocument:TextSection consoBalanceSheet
+    --> title \( Structure financière Consolidé \)
+    --> stylingConfigurations dateYYYY
+    --> components	{
+		// newLine,
+        // consoBalanceSheetTable,
+		// newLine,
+        // -> StructuredTextParagraph
+        //     // describe variation fonds propres
+        //     // FP
+        //     --> text	-> LibDocument:DescribeVariation dVariation_FP_Conso_N
+        //         --> kpi FP_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                     LibDocument:SemanticSlot::PredicateElaboration : sElaborationFPDIV,
+        //                     LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany
+        //             }
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+		// -> StructuredTextParagraph cAlerte_FP_Neg
+        //     // alerte fonds propres négatifs
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+		// 	--> text tAlerteFPNegatifs
+		// ;,
+		// -> StructuredTextParagraph cAlerte_FP_Decr_RN_Cr
+        //     // alerte fonds propres décroît alors que RN en hausse
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+		// 	--> text tAlerteFPRN
+		// ;,
+		// newLine,
+        // -> StructuredTextParagraph
+        //     // describe variation FPPASSIF si ratio < 15%
+        //     // FPPASSIF
+        //     --> text	-> LibDocument:DescribeValue dValue_FPPASSIF_Conso_N
+        //         --> kpi FPPASSIF_KPI
+        //         --> timeMembers yearN
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::Elaboration : sElaborationFPPASSIF
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_Low_FPPASSIF
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text \(
+        //         \beginStyle(alert) Est-ce que sa stratégie d'investissement est compatible avec le niveau des Fonds Propres ? Est-ce que les actionnaires ont prévu de les renforcer ? Est-ce que des investissements qui nécessiteraient un renforcement des fonds propres sont prévus à moyen ou long terme ? Est-il prévu une ouverture du capital à de nouveaux actionnaires ? \endStyle
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph
+        //     // alerte fonds propres capital social si FP < 1/2 du capital social
+        //     // FP & CS
+        //     --> text	-> LibDocument:DescribeVariation dVariation_CS_Conso_N
+        //         --> kpi CS_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+		// -> StructuredTextParagraph cLow_FP_Conso_N
+        //     // alerte fonds propres capital social si FP < 1/2 du capital social
+        //     // FP & CS
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+		// 	--> text \(
+        //         Les Fonds Propres représentent \value(round(100 * getDescribeVariationCurrentValue(dVariation_FP_Conso_N) / getDescribeVariationCurrentValue(dVariation_CS_Conso_N), 2)) % du Capital Social.
+        //         \beginStyle(alert)
+        //             Quelle est l'évolution des Fonds Propres ? Est-ce que cela induit un risque quant au développement du Groupe ? Quelle est la capacité des actionnaires à réaliser une augmentation des capitaux propres ? Ont-ils prévu de réaliser une augmentation du capital social ?
+        //         \endStyle
+		// 	\)
+		// ;,
+		// newLine,
+        // -> StructuredTextParagraph
+        //     // describe value dettes si total dette > 50% total passif R7
+        //     // TOTDET
+        //     --> text	-> LibDocument:DescribeValue dValue_TOTDET_Conso_N
+        //         --> kpi TOTDET_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe value ecarts d'acqu si total dette > 50% total passif R7
+        //     // EACQ
+        //     --> text	-> LibDocument:DescribeValue dValue_EACQ_Conso_N
+        //         --> kpi EACQ_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe value actifs incorporels si total dette > 50% total passif R7
+        //     // IMMOINCORPO
+        //     --> text	-> LibDocument:DescribeValue dValue_IMMOINCORPO_Conso_N
+        //         --> kpi IMMOINCORPO_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des autres dettes
+        //     // CCASSO
+        //     --> text	-> LibDocument:DescribeVariation dVariation_CCASSO_Conso_N
+        //         --> kpi CCASSO_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                     LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertySignificatif
+        //             }
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des autres dettes
+        //     // DETEXPLOIT
+        //     --> text	-> LibDocument:DescribeVariation dVariation_DETEXPLOIT_Conso_N
+        //         --> kpi DETEXPLOIT_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                     LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertySignificatif
+        //             }
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des autres dettes
+        //     // DETHEXPLOIT
+        //     --> text	-> LibDocument:DescribeVariation dVariation_DETHEXPLOIT_Conso_N
+        //         --> kpi DETHEXPLOIT_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des autres dettes
+        //     // CBCEENE
+        //     --> text	-> LibDocument:DescribeVariation dVariation_CBCEENE_Conso_N
+        //         --> kpi CBCEENE_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // DETMLT
+        //     --> text    -> LibDocument:DescribeVariation dVariation_DETMLT_Conso_N
+        //         --> kpi DETMLT_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des dettes moyen long term
+        //     // EMPRFI
+        //     --> text	-> LibDocument:DescribeVariation dVariation_EMPRFI_Conso_N
+        //         --> kpi EMPRFI_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des dettes moyen long term
+        //     // EMPSUP2
+        //     --> text	-> LibDocument:DescribeVariation dVariation_EMPSUP2_Conso_N
+        //         --> kpi EMPSUP2_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des dettes moyen long term
+        //     // EMPRMLT
+        //     --> text	-> LibDocument:DescribeVariation dVariation_EMPRMLT_Conso_N
+        //         --> kpi EMPRMLT_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_Croissance_EMPRMLT
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text \(
+        //         \beginStyle(alert)
+        //             Quel est l'objet du financement ? (surtout si non réalisé par BNPPARIBAS)
+        //         \endStyle
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation contributeurs significatifs de la dette
+        //     // Dire que cela fait parti des dettes moyen long term
+        //     // EMPROB
+        //     --> text	-> LibDocument:DescribeVariation dVariation_EMPROB_Conso_N
+        //         --> kpi EMPROB_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation immobilisation significatives
+        //     // IMMOINCORPO_KPI
+        //     --> text	-> LibDocument:DescribeVariation dVariation_IMMOINCORPO_Conso_N
+        //         --> kpi IMMOINCORPO_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertyIMMOINCORPO
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation immobilisation significatives
+        //     // IMMOCORPO
+        //     --> text	-> LibDocument:DescribeVariation dVariation_IMMOCORPO_Conso_N
+        //         --> kpi IMMOCORPO_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertyIMMOCORPO
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe variation immobilisation significatives
+        //     // IMMOFI
+        //     --> text	-> LibDocument:DescribeVariation dVariation_IMMOFI_Conso_N
+        //         --> kpi IMMOFI_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertyIMMOFI
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe value stock si stocks > 10% l'actif circulant
+        //     // elaboration sur la qualité du stock
+        //     // le stock est anormalement élévé
+        //     // STOCK
+        //     --> text	-> LibDocument:DescribeValue dValue_STOCK_Conso_N
+        //         --> kpi STOCK_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany,
+        //                 LibDocument:SemanticSlot::Elaboration : sElaborationSTOCK
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_STOCK_Conso
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text tAlerteSTOCK
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe alerte créances clients si créances clients > 20% total actif
+        //     // CREANCES
+        //     --> text	-> LibDocument:DescribeVariation dVariation_CREANCES_Conso_N
+        //         --> kpi CREANCES_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::PredicateElaboration : sElaborationCREANCES
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_CREANCES_Conso
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text \(
+        //         \beginStyle(alert)
+        //             S'agit-il de difficultés pour encaisser, d'un allongement du délais clients, d'un refus de paiements des clients ? Est-ce que le Groupe a mis en place une solution pour le suivi et la relance clients ? Est-ce qu'une solution d'une mobilisation du poste clients est envisageable de type contrat d'affacturage ? Analyser également les créances douteuses
+        //         \endStyle
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe value ratio endetement financier / EBE si ratio > 4
+        //     // LEVERAGE
+        //     --> text	-> LibDocument:DescribeValue dValue_LEVERAGE_Conso_N
+        //         --> kpi LEVERAGE_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //         --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                 LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_LEVERAGE_Conso
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text \(
+        //         \beginStyle(alert)
+        //             S'agit-il d'un ratio élevé pour le secteur d'activité ? Quelle est sa tendance ? Est-ce que le Groupe est dans la capacité de rembourser la charge de la dette et de poursuivre ses investissements ? Entre-t-il dans le suivi des opérations à effet de levier de la Guidance BCE ?
+        //         \endStyle
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph
+        //     // describe value ratio endetement financier / FP élargi si ratio > 1
+        //     // GEARING
+        //     --> text	-> LibDocument:DescribeValue dValue_GEARING_Conso_N
+        //         --> kpi GEARING_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_GEARING_Conso
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text \(
+        //          \beginStyle(alert)
+        //             S'agit-il d'un ratio élevé pour le secteur d'activité ? Quelle est sa tendance ? Les actionnaires auraient-ils la capacité d'augmenter le capital social ?
+        //         \endStyle
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph
+        //     // Intention dummy jamais activée => passer en jointure
+        //     // describe variation trésorerie        TN
+        //     --> text	-> LibDocument:DescribeVariation dVariation_TN_Conso_N
+        //         --> kpi TN_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cDescribeValue_TN_N
+        //     --> condition getDescribeVariationCurrentValue(dVariation_TN_Conso_N) != null
+        //     --> text \(
+        //         A la clôture du \value(yearN.date), la trésorerie du groupe est
+        //         \if(getDescribeVariationCurrentValue(dVariation_TN_Conso_N) > 0.1 * getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N))
+        //             conséquente
+        //         \endIf
+        //         \if(getDescribeVariationCurrentValue(dVariation_TN_Conso_N) < 0)
+        //             négative
+        //         \endIf
+        //         à \value(getDescribeVariationCurrentValue(dVariation_TN_Conso_N), currencyKEURO, separateThousands)
+        //         \if((getDescribeVariationCurrentValue(dVariation_TN_Conso_N) > 0 && getDescribeVariationPreviousValue(dVariation_TN_Conso_N) < 0)
+        //             || (getDescribeVariationCurrentValue(dVariation_TN_Conso_N) < 0 && getDescribeVariationPreviousValue(dVariation_TN_Conso_N) > 0))
+        //             soit une
+        //             \if(getDescribeVariationCalculatedRelativeChange(dVariation_TN_Conso_N) > 0)
+        //                 augmentation
+        //             \else
+        //                 diminution
+        //             \endIf
+        //              de \value(getDescribeVariationCalculatedAbsoluteDifference(dVariation_TN_Conso_N), currencyKEURO, separateThousands)
+        //         \endIf
+        //         .
+        //     \)
+        // ;,
+        // -> StructuredTextParagraph cAlerte_Croissance_TN
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text tAlerteTNConso
+        // ;
+    }
+;

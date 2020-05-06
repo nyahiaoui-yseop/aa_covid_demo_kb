@@ -1,0 +1,9 @@
+LibKPI:Ranges FPPASSIFRanges
+    --> thresholds {0.1, 0.15, 0.25, 0.33}
+    --> rangeValues LibKPI:TWO_THRESHOLDS_NEG_POS
+;
+// x < 0.1            LibKPI:SIGNIFICANT_NEGATIVE
+// 0.1 < x < 0.15     LibKPI:NEGATIVE
+// 0.15 < x < 0.25    LibKPI:INSIGNIFICANT
+// 0.23 < x < 0.33    LibKPI:POSITIVE
+// 0.33 < x           LibKPI:SIGNIFICANT_POSITIVE

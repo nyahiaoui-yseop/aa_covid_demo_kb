@@ -1,0 +1,33 @@
+LibDocument:DynamicCustomTexts sIndicatorPropertySignificatif
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "significatif"
+                --> masculinePlural "significatifs"
+                --> feminineSingular "significative"
+                --> femininePlural "significatives"
+            ;
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "important"
+                --> masculinePlural "importants"
+                --> feminineSingular "importante"
+                --> femininePlural "importantes"
+            ;
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "notable"
+                --> masculinePlural "notables"
+                --> feminineSingular "notable"
+                --> femininePlural "notables"
+            ;
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "remarquable"
+                --> masculinePlural "remarquables"
+                --> feminineSingular "remarquable"
+                --> femininePlural "remarquables"
+            ;
+            --> synonyms -> LibOntology:Adjective
+                --> root ""
+            ;
+        ;
+    }
+;

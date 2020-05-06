@@ -1,0 +1,60 @@
+LibDocument:MemberMetaData NET_DEPRECIATION_AND_AMORTISATION_METADATA
+--> members NET_DEPRECIATION_AND_AMORTISATION
+--> documentation """Metadata for the member `NET_DEPRECIATION_AND_AMORTISATION`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en_GB	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net depreciation & amortisation"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net depreciation & amortization"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "dotations nettes aux amortissements et provisions"
+											--> gender FEMININE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

@@ -1,0 +1,33 @@
+
+= Performing unit tests on your Knowledge Base
+
+== About the unit tests
+
+The Augmented Financial Analyst bootstrap uses the `libYmlUnit` library of the Reporting Framework to perform unit tests. The `libYmlUnit` library holds two types of tests, *unit tests* and *intention unit tests*.
+
+== Adding unit tests
+
+Unit tests in YML are functions with return types `Void`, with no argument, and with an attribute `unitTest` set to `true`. To use those unit tests, there must be a `testSuite − a` symbol in the `unittests/testsuites.dcl` file.
+
+To add a new unit test, use the `unittest` snippet or the following code, and fill out the test attributes.
+
+include::partial$snippets/unittest.adoc[]
+
+== Adding intention unit tests
+
+Intention unit tests are similar to the unit tests, except that `isIntentionTest` it set to `true` instead of `unitTest`. The objective of an intention unit test is to check the variants generated for an intention in a specific context. Those tests are similar to the tests used with Yseop CLI, but the results are easier to read.
+
+To add a new intention unit test, use the `intentionunittest` snippet or the following code, and fill out the test attributes.
+
+include::partial$snippets/intentionunittest.adoc[]
+
+== Launching your tests with Yseop CLI
+
+To launch your test suite you must have an XML input with the following attributes in the general data:
+
+* `<runUnitTests>true</runUnitTests>`
+* `<testSuiteId yid="YOUR_TEST_SUITE_ID"/>`
+
+To launch your tests use `yseop test -i path/to/unittests/input`.
+
+To learn more on unit testing with Yseop CLI, see xref:{yseop-cli}:running_tests.adoc[Running tests].

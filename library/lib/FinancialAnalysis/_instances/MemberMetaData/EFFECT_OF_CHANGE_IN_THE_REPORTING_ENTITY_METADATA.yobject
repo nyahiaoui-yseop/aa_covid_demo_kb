@@ -1,0 +1,49 @@
+LibDocument:MemberMetaData EFFECT_OF_CHANGE_IN_THE_REPORTING_ENTITY_METADATA
+--> members EFFECT_OF_CHANGE_IN_THE_REPORTING_ENTITY
+--> documentation """Metadata for the member `EFFECT_OF_CHANGE_IN_THE_REPORTING_ENTITY`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "effect of change in the reporting entity"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "impact of change in the reporting entity"
+											--> number SINGULAR
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "incidence des variations de périmètre"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

@@ -1,0 +1,49 @@
+LibDocument:MemberMetaData INTEREST_RECEIVED_METADATA
+--> members INTEREST_RECEIVED
+--> documentation """Metadata for the member `INTEREST_RECEIVED`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "interest income"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "interest received"
+											--> number SINGULAR
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "intérêts reçus"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

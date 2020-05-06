@@ -1,0 +1,33 @@
+interface FormulaKPI extends LibDocument:KeyPerformanceIndicator
+
+    field formulaIndicators
+    --> documentation """List of KPI that constitute the formula, identified by a variable name."""
+    --> domains HashMap
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    field formulaDescription
+    --> documentation """Formula description."""
+    --> domains String
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    field isRatio
+    --> documentation """Indicates if the formula is a ratio."""
+    --> domains Boolean
+    --> defaultValue false
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    classProperties
+	--> documentation """KPI which Indicator represents a formula. It has a default styling configuration set.
+
+@see `ratioPercent`
+"""
+;
+
+implementation FormulaKPI
+    override {
+        // stylingConfigurations
+        // --> defaultValue RATIO_PERCENT_STYLING_CONFIGURATION
+        measure
+        --> defaultValue MEASURE_VALUE
+    }
+;

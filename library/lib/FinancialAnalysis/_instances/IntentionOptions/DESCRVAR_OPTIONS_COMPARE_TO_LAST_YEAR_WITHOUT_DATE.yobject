@@ -1,0 +1,5 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR_WITHOUT_DATE extends DESCRVAR_BASE_OPTIONS
+    --> documentation """Le CA de 124,64 K$ a augmenté de 53,6 % par rapport à l'exercice précédent."""
+    --> showStartValue false
+    --> useValueInReferentialExpression true
+;

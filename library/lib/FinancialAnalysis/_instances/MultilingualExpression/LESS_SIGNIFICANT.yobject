@@ -1,0 +1,48 @@
+MultilingualExpression DescribeThreePointsVariation:LESS_SIGNIFICANT
+--> en -> ConstList DescribeThreePointsVariation:EN:LESS_SIGNIFICANT {
+    -> LibOntology:Adjective
+        --> root "less significant"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "less important"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "less considerable"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "less substantial"
+        --> gerund true
+    ;
+    }
+    ;
+--> fr -> ConstList DescribeThreePointsVariation:FR:LESS_SIGNIFICANT {
+    -> LibOntology:Adjective
+        --> root "moins significatif"
+        --> masculineSingular "moins significatif"
+        --> masculinePlural "moins significatifs"
+        --> feminineSingular "moins significative"
+        --> femininePlural "moins significatives"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "moins important"
+        --> masculineSingular "moins important"
+        --> masculinePlural "moins importants"
+        --> feminineSingular "moins importante"
+        --> femininePlural "moins importantes"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "moins substantiel"
+        --> masculineSingular "moins substantiel"
+        --> masculinePlural "moins substantiels"
+        --> feminineSingular "moins substantielle"
+        --> femininePlural "moins substantielles"
+        --> gerund true
+    ;
+    }
+    ;
+;

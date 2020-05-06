@@ -1,0 +1,49 @@
+LibDocument:MemberMetaData RECEIPTS_FROM_CUSTOMERS_METADATA
+--> members RECEIPTS_FROM_CUSTOMERS
+--> documentation """Metadata for the member `RECEIPTS_FROM_CUSTOMERS`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "cash receipts from customers"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "receipts from customers"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "entrées de trésorerie provenant des clients"
+											--> gender FEMININE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

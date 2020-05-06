@@ -1,0 +1,133 @@
+LibDocument:MemberMetaData CURRENT_FINANCIAL_ASSETS_METADATA
+--> members CURRENT_FINANCIAL_ASSETS
+--> documentation """Metadata for the member `CURRENT_FINANCIAL_ASSETS`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeValue
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:DISPOSER
+								--> synonyms VP:FR:RESSORTIR
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:DISPOSER
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:DÉTENIR
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeVariation
+		--> intentions LibDocument:DescribeVariationContributors
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UNE_RÉDUCTION_DE
+								--> synonyms VP:FR:SERÉDUIRE
+								--> synonyms LibOntology:FR:Diminuer:diminuer
+								--> synonyms LibOntology:FR:Diminuer:une_diminution_de
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "current financial assets"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "actifs financiers courants"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

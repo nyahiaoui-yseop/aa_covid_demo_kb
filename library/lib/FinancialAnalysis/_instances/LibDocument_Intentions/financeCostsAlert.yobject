@@ -1,0 +1,14 @@
+LibDocument:StaticTextIntention financeCostsAlert
+    --> text -> MultilingualText
+        --> i18nName_en \(
+            \beginStyle(alert)
+                What are the finance costs composed of? What are their due dates? Are they fixed or variable interest debts?
+            \endStyle
+        \)
+        --> i18nName_fr \(
+            \beginStyle(alert)
+                Quelle est la composition des charges financières ? Quelle est son échéance ? Est-ce de la dette à taux variable ou à taux fixe ?
+            \endStyle
+        \)
+    ;
+;

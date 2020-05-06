@@ -1,0 +1,18 @@
+interface DescribeVariationOnlyLeavesContributors extends LibDocument:DescribeVariationContributors
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariationContributors with `DESCRVARCONTR_OPTIONS_ONLY_LEAVES` as a default option.
+
+@see `DESCRVARCONTR_OPTIONS_ONLY_LEAVES`
+"""
+    --> apiLabel "Describe the variation with only leaves contributors"
+    --> apiDescription """Describe the variation of your indicator over a given period of time and analyze the causes or drivers of that variation by listing the lowest level sub-indicators that contributed to your indicator variation."""
+;
+
+implementation DescribeVariationOnlyLeavesContributors
+    override {
+        options
+        --> defaultValue DESCRVARCONTR_OPTIONS_ONLY_LEAVES
+
+    }
+;

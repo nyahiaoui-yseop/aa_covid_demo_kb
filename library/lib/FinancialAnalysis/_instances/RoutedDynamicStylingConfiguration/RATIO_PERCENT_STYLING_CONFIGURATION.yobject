@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration RATIO_PERCENT_STYLING_CONFIGURATION
+    --> dynamicStylingConfiguration ratioPercent
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

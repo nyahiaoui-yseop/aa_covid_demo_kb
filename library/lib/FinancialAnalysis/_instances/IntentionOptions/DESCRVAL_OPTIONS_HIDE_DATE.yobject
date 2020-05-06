@@ -1,0 +1,3 @@
+LibDocument:DescribeValueOptions DESCRVAL_OPTIONS_HIDE_DATE extends INTENTION_OPTIONS_BASE_OPTIONS
+    --> showDate false
+;

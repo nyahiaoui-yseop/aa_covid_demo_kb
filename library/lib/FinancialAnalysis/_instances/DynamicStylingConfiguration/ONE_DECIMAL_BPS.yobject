@@ -1,0 +1,15 @@
+LibDocument:DynamicStylingConfiguration ONE_DECIMAL_BPS
+    --> documentation """Styling configuration to display BPS values with one decimal and in absolute"""
+    --> configValues {
+        LibDocument:Numerical:style :  -> Style
+            --> decimalsCount 1
+            --> stripZero true
+            --> writeIntegerAsDecimal true
+        ;,
+        LibDocument:Numerical:unit : UNIT_BASIS_POINT,
+        LibDocument:Numerical:forceAbsoluteValue : true
+    }
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> calculationTypes BASIS_POINT_CALCULATION
+    ;
+;

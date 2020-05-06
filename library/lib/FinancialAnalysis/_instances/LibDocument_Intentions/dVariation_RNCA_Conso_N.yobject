@@ -1,0 +1,15 @@
+VariationIntention_simpleNoPercentOptions dVariation_RNCA_Conso_N
+    // Should be a describe ratio variation intention.
+    // --> kpi RNCA_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::MainPredicate : sMainPredicateRatioCA,
+    //         LibDocument:SemanticSlot::PredicateElaboration : sElaborationRNCA
+    //     }
+    // ;
+;

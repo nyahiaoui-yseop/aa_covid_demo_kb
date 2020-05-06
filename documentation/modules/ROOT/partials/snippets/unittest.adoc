@@ -1,0 +1,14 @@
+.Unit test code
+[source,YML]
+----
+function TestName()
+--> domains Void
+--> description "Description of the test."
+--> unitTest true
+--> testSuiteId TestSuite:TestSuiteSymbol
+--> action {
+    TEXT_PARAM_CONTEXT.kBLanguage = LANG_fr;
+    // Example of test.
+    assertThat(1 + 1).is(2);
+}; // TestName
+----

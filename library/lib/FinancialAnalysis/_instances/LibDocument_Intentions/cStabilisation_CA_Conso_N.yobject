@@ -1,0 +1,12 @@
+DescribeThreePointsVariation cStabilisation_CA_Conso_N
+    // --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+    // --> active false
+    --> timeMembers yearN_2
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    --> kpi SALES_KPI
+    --> options DESCRVAR_THREEPOINTS_OPTIONS
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+;

@@ -1,0 +1,659 @@
+
+// tag::short_description[]
+
+The *DescribeThreePointsVariation* intention describes the variation of an indicator over three time points: from a start time to an end time, also considering the middle time point.
+The intention analyses the global trend nature, and its variations in the meantime. It considers stabilizations, inversions of trend nature and stable changes occurring after a stable phase. The acceleration and deceleration are also described. The coefficient used to calculate the speed of a variation is configurable through options, along with the stability ratio.
+
+// end::short_description[]
+
+// tag::fields[]
+
+[cols=5*,options="header"]
+|===
+|Attribute
+|Description
+|Type
+|Multivalued
+|Mandatory
+
+
+|`options`
+|Specific options of the `DescribeThreePointsVariation` intention to be applied.
+|`LibDocument:DescribeThreePointsVariationOptions`
+|No
+|Yes
+
+|`stylingConfigurations`
+|Styling configuration to be applied at the intention level.
+|`LibDocument:DynamicStylingConfiguration`
+|Yes
+|No
+
+|`customConceptsConfiguration`
+|Custom concept configuration to be applied at the intention level.
+|`LibDocument:CustomConceptsConfiguration`
+|No
+|No
+
+|`conceptsSpecializationsConfiguration`
+|Concept specialization configuration to be applied at the intention level.
+|`LibDocument:ConceptsSpecializationConfiguration`
+|No
+|No
+
+|===
+
+// end::fields[]
+
+
+// tag::metadata[]
+[cols=5*,options="header"]
+|===
+|Tag
+|Name
+|Description
+|Dimension
+|Mandatory
+
+|start
+|Start Date
+|Start of the period of analysis
+|`DIMENSION_TIME`
+|Yes
+
+|end
+|End Date
+|End of the period of analysis
+|`DIMENSION_TIME`
+|Yes
+
+|kpi
+|KPI
+|The key performance indicator to analyse.
+|`DIMENSION_INDICATOR`
+|Yes
+
+|===
+
+// end::metadata[]
+
+// tag::examples[]
+
+.DescribeThreePointsVariation examples
+[cols="25,75",options="header"]
+|===
+|Output
+|YML code
+
+|During the two last years, the net revenues have continued to increase by 19.6% with further a tendency to accelerate.
+a|[source,YML]
+----
+DescribeThreePointsVariation DESCRIBE_CONSTANT_VARIATION
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members NET_REVENUES
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members yearN_2
+        --> members NET_REVENUES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 1201450
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members yearN_1
+        --> members NET_REVENUES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 1605770
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members yearN
+        --> members NET_REVENUES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 2114552
+        ;
+    ;
+;
+----
+
+|During the two last years, the provisions remained stable at $0.83K.
+a|[source,YML]
+----
+DescribeThreePointsVariation DESCRIBE_STABLE_VARIATION
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members PROVISIONS
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members PROVISIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 835
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members PROVISIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 825
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members PROVISIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 830
+            ;
+        ;
+    ;
+;
+----
+
+|In 2017, the cash generated from operations consolidated at $9.30K after a rise of 17.3% in 2016.
+a|[source,YML]
+----
+DescribeThreePointsVariation DESCRIBE_STABILIZATION
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members CASH_GENERATED_FROM_OPERATIONS
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members CASH_GENERATED_FROM_OPERATIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 7919
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members CASH_GENERATED_FROM_OPERATIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 9289
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members CASH_GENERATED_FROM_OPERATIONS
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 9302
+            ;
+        ;
+    ;
+;
+----
+
+|The dividends paid have grown by 6.7% in 2017 after a stagnation at $29.56K in 2016.
+a|[source,YML]
+----
+DescribeThreePointsVariation DESCRIBE_CHANGE_AFTER_STABLE
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members DIVIDENDS_PAID
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members DIVIDENDS_PAID
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 30002
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members DIVIDENDS_PAID
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 29558
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members DIVIDENDS_PAID
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 31538
+            ;
+        ;
+    ;
+;
+----
+
+|The capital has declined by 8.3% in 2017 after a rise of 20.0% in 2016.
+a|[source,YML]
+----
+DescribeThreePointsVariation DESCRIBE_CONTRARY_VARIATIONS
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members CAPITAL
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members CAPITAL
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 2589900
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members CAPITAL
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 3107880
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members CAPITAL
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 2849926
+            ;
+        ;
+    ;
+;
+----
+
+|===
+
+// end::examples[]
+
+// tag::specific_keys[]
+
+.DescribeThreePointsVariation specific options
+[cols="10,45,^10,^10,^10,^10,^10",options="header"]
+|===
+
+|Name
+|Description
+|Type
+|Default value
+3+e|Level of details
+
+|
+|
+|
+|
+s|Low
+s|Medium
+s|High
+
+|showFirstPeriod
+|Displays the first period's date.
+|Boolean
+|`true`
+|
+|
+|
+
+|showLastPeriod
+|Displays the second period's date.
+|Boolean
+|`true`
+|
+|
+|
+
+|showPercentChange
+|Includes the percentage of variation in the generated text. This option is incompatible with `showValueChange`.
+|Boolean
+|`true`
+|
+|
+|
+
+|showValueChange
+|Includes the variation's value in the generated text. This option is incompatible with `showPercentChange`.
+|Boolean
+|
+|`false`
+|`false`
+|`true`
+
+|thresholdStableVariation
+|Ratio under which a variation change is considered stable. Eg: if the ratio is 0.1 (10%), and the initial value is 1000, an end value at 1200 is an increase whereas 1050 is considered stable. Likewise, a final value at 700 is a decrease but 920 is stable.
+|Number
+|0.05
+|
+|
+|
+
+|thresholdFastVariation
+|When a variation change is bigger than this ratio, it is considered as very important, and the generated text will indicate that the variation is very significant. As we consider the absolution variation change for this calculation, the ratio is applicable for both increases and decreases.
+|Number
+|0.25
+|
+|
+|
+
+|thresholdFastAcceleration
+|When the two variations have the same trend nature (increase or decrease), this ratio indicates if the second variation is an acceleration, a deceleration or a continuity relative to the first one. For eg, if a value is 1000, then 1200, then 1420, the increase is regular. But if it goes from 1200 to 1400 to 2000, there is an acceleration. Likewise, 1200 to 1800 to 1900 is a deceleration.
+|Number
+|0.2
+|
+|
+|
+
+|===
+
+// end::specific_keys[]
+
+// tag::roles[]
+
+.DescribeThreePointsVariation roles
+[cols="2",options="header"]
+|===
+|Name
+|Description
+
+|LibDocument:IntentionRole::Root
+|Role assigned to the description of the main indicator's variation.
+
+|===
+
+// end::roles[]
+
+// tag::concepts[]
+
+// end::concepts[]
+
+// tag::filters_names[]
+
+.DescribeThreePointsVariation computed values names
+[cols="15,55,15,15",options="header"]
+|===
+|Name
+|Description
+|Calculation Type
+|Owner Entities
+//|Associated Role
+
+|endValue
+|Indicator's value at the end date, or final value.
+|RAW_VALUE_CALCULATION
+|End time member, indicator, and all additional members
+//|LibDocument:IntentionRole::Root
+
+|middleValue
+|Indicator's value at the middle date, or intermediary value.
+|RAW_VALUE_CALCULATION
+|Middle time member, indicator, and all additional members
+//|LibDocument:IntentionRole::Root
+
+|startValue
+|Indicator's value at the start date, or initial value.
+|RAW_VALUE_CALCULATION
+|Start time member, indicator, and all additional members
+//|LibDocument:IntentionRole::Root
+
+|endDate
+|Ending time of the variation's interval.
+|DATE_CALCULATION
+|End time member
+//|LibDocument:IntentionRole::Root
+
+|middleDate
+|Middle time of the variation's interval.
+|DATE_CALCULATION
+|Middle time member
+//|LibDocument:IntentionRole::Root
+
+|startDate
+|Starting time of the variation's interval.
+|DATE_CALCULATION
+|Start time member
+//|LibDocument:IntentionRole::Root
+
+|firstCalculatedChange
+|Difference between the start value and the middle value. For example, if 15.000 is the start value and 10.000 the middle value, then the calculated change is -5.000.
+|DIFFERENCE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|firstCalculatedRelativeChange
+|Ratio that represents the comparison between the indicator's start value and middle value, taking into account the "sizes". For example, if 15.000 is the start value and 10.000 the middle value, then the calculated change is -0.333.
+|PERCENTAGE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|firstCalculatedAbsoluteDifference
+|The absolute value of the difference between the start value and the middle value. For example, if 15.000 is the start value and 10.000 the middle value, then the calculated absolute change is 5.000.
+|ABS_DIFFERENCE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|firstCalculatedAbsoluteChange
+|The absolute value of the comparison between the indicator's start value and middle value, taking into account the "sizes". For example, if 15.000 is the start value and 10.000 the middle value, then the calculated change is 0.333.
+|ABS_PERCENTAGE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastCalculatedChange
+|Difference between the middle value and the end value. For example, if 15.000 is the middle value and 10.000 the end value, then the calculated change is -5.000.
+|DIFFERENCE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastCalculatedRelativeChange
+|Ratio that represents the comparison between the indicator's middle value and end value, taking into account the "sizes". For example, if 15.000 is the middle value and 10.000 the end value, then the calculated change is -0.333.
+|PERCENTAGE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastCalculatedAbsoluteDifference
+|The absolute value of the difference between the middle value and the end value. For example, if 15.000 is the middle value and 10.000 the end value, then the calculated absolute change is 5.000.
+|ABS_DIFFERENCE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastCalculatedAbsoluteChange
+|The absolute value of the comparison between the indicator's middle value and end value, taking into account the "sizes". For example, if 15.000 is the middle value and 10.000 the end value, then the calculated change is 0.333.
+|ABS_PERCENTAGE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+
+|firstTrendNature
+|Determines the "direction" of the indicator's value first-part variation (between start and middle value). Possible values: `TrendNature::none`, `TrendNature::neutral`, `TrendNature::increase`, `TrendNature::decrease`.
+|TREND_NATURE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastTrendNature
+|Determines the "direction" of the indicator's value last-part variation (between middle and end value). Possible values: `TrendNature::none`, `TrendNature::neutral`, `TrendNature::increase`, `TrendNature::decrease`.
+|TREND_NATURE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|isFirstVariationImportant
+|Determines if the first-part variation (between start and middle value) is significative (greater than the threshold).
+|BOOLEAN_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|isFirstVariationImportant
+|Determines if the last-part variation (between middle and end value) is significative (greater than the threshold).
+|BOOLEAN_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|lastTrendNature
+|When the global variation has a linear trend nature (no change of trend nature between first and last variations), determines if the curve experience an acceleration (`TrendNature::increase`), deceleration (`TrendNature::decrease`) or continuity (`TrendNature::neutral`).
+|TREND_NATURE_CALCULATION
+|Indicator and all additional members
+//|LibDocument:IntentionRole::Root
+
+|===
+
+// end::filters_names[]
+
+// tag::filters_names_example[]
+TODO
+// end::filters_names_example[]
+
+// tag::xml_example[]
+
+====
+[source,xml]
+----
+<values yclass="DescribeThreePointsVariation">
+    <data yclass="LibDocument:KPIIntentionData">
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>kpi</tags>
+            <members yid="TOTAL_EXPENSES" />
+        </metadata>
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>start</tags>
+            <members yid="TIME_YEAR_2016" />
+        </metadata>
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>end</tags>
+            <members yid="TIME_YEAR_2018" />
+        </metadata>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2016"/>
+            <members yid="TOTAL_EXPENSES"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>75785585836</value>
+            </factMeasures>
+        </selectedFacts>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2017"/>
+            <members yid="TOTAL_EXPENSES"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>4555685544</value>
+            </factMeasures>
+        </selectedFacts>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2018"/>
+            <members yid="TOTAL_EXPENSES"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>8774599656</value>
+            </factMeasures>
+        </selectedFacts>
+    </data>
+</values>
+----
+====
+
+// end::xml_example[]
+
+// tag::yml_example[]
+
+====
+[source,YML]
+----
+DescribeThreePointsVariation MY_INTENTION
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members TOTAL_EXPENSES
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members TIME_YEAR_2016
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members TIME_YEAR_2018
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2016
+        --> members TOTAL_EXPENSES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 75785585836
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2017
+        --> members TOTAL_EXPENSES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 4555685544
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2018
+        --> members TOTAL_EXPENSES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 8774599656
+        ;
+    ;
+;
+----
+====
+
+// end::yml_example[]
+
+// tag::semantic_slots[]
+TODO
+
+// end::semantic_slots[]
+
+// tag::semantic_slots_examples[]
+
+TODO
+
+// end::semantic_slots_examples[]

@@ -1,0 +1,157 @@
+= Augmented Financial Analyst library
+:toc:
+
+This repository contains the AFA library as well as the bootstrap Knowledge Base that will be delivered with the Augmented Financial Analyst backend package.
+
+== Getting started
+
+=== Prerequisites
+
+In order to work on this project, you will at least need to use `Yseop CLI` (documentation and other prerequisites are https://yseop-doc.yseop-hosting.com/com.yseop.suite/com.yseop.cli/index.html[here]).
+
+It is also required to have valid Nexus repository credentials defined on your computer. Check https://yseop-doc.yseop-hosting.com/[Yseop's documentation website] for more information.
+
+Using https://code.visualstudio.com/[Visual Studio Code] is highly recommended.
+
+=== Testing your environment
+
+Install the library dependencies with the following command:
+
+```bash
+yseop libs install --os=auto library/
+```
+
+NOTE: Valid credentials to Nexus repositories are required.
+
+Then compile the library, compile the test project, and launch the tests.
+
+```bash
+yseop compile library/
+yseop compile test_project/
+yseop test --parallel test_project/
+```
+
+These commands should run successfully. For more information on each command use `yseop help`.
+
+
+== Project structure
+
+This project has the following directory structure:
+
+`documentation/`:: Contains this project's documentation following Antora's structure as explained in the <<Documentation>> section.
+
+`library/`:: Contains a Knowledge Base that holds the source code of this library as well as everything required to produce precompiled versions of it and publish it.
+
+`test_project/`:: Contains a Knowledge Base whose purpose is to use the result of the compilation of `library/` and test it.
+
+`benchmark/`:: Contains files such as scripts and inputs to do benchmarking.
+
+`scripts/`:: Contains some bash scripts for both build and development purposes.4
+
+`.vscode/`:: Contains files used by VSCode such as code snippets definitions, specific settings or tasks.
+
+`.github/`:: Contains some files that are use directly by GitHub such as pull request templates.
+
+
+== Development workflow
+
+=== GitFlow and Github
+
+The repository follows the GitFlow convention. For an introduction see this https://datasift.github.io/gitflow/IntroducingGitFlow.html[tutorial]. There is a GitFlow cheat sheet https://danielkummer.github.io/git-flow-cheatsheet/[here] and detailed git commands https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow[here].
+
+Summary of the branches currently used by the repository:
+
+`master`:: The branch with official releases.
+
+`develop`:: The current development branch. This branch is automatically deployed on a manager for the Anna project and should always be in a stable state (see <<dev-tests>>).
+
+`feature/*`:: Feature branches based on develop, not necessarily in a stable state. Feature branches must be merged into develop through a pull request.
+
+`bugfix/*`:: Bug fix branches, similar to feature branches, but for anomaly corrections.
+
+Every pull request must be reviewed and approved by at least one team member in order to be merged and the merge rights are restricted. The reviewer should also run the tests locally.
+
+
+[[dev-tests]]
+=== Tests
+
+The repository contains non-regression tests in the folder `test_project/test/input/libDocument`.
+These tests can be run automatically using the Yseop{nbsp}CLI command `yseop test`.
+See `yseop help test` for more information on how to run the tests.
+Test results are summarized in a report saved in the `test_project/test/reports/` directory.
+
+
+=== Release notes
+
+For official releases, the file `RELEASE_NOTE.adoc` should be up to date with the list of new features.
+Any pull requests may include release note entries in the `RELEASE_NOTE.adoc` file under the section "Current version".
+
+
+== Documentation
+
+The project uses https://antora.org/[Antora] for its documentation.
+All the documentation is in the `documentation/` directory, which follows the https://docs.antora.org/antora/1.1/component-structure/[Antora component structure].
+Most of the content is under the `documentation/modules/ROOT/partials/` directory.
+This directory contains http://asciidoc.org/[AsciiDoc] files that can be included in pages.
+The content of the files is divided using https://asciidoctor.org/docs/user-manual/#include-partial[AsciiDoc tags] into small parts that can be reused in different locations of the documentation.
+The tag convention to use to document a YML class is the following:
+
+- `short_description` to give a short description of the class and its purpose.
+- `fields` to list the fields of the class and their associated documentation.
+- `json_example` to give an example of a JSON input for the class.
+- `xml_example` to give an example of an XML input for the class.
+
+Intentions use the same tag conventions than the other classes, plus some additional tags:
+
+- `examples` to give output examples for the intention.
+- `specific_keys` to list configuration keys specific to the intention.
+- `semantic_slots` to list the semantic slots used by the intention, along with examples.
+- `concepts` to list the concepts used by the intention that can be specialized through the configuration.
+
+
+== Docker image
+
+The `bootstrap/scripts/docker-build.sh` script builds a Docker image with, pre-installed:
+
+- *Yseop Manager*,
+- a *Knowledge Base* given as argument, and
+- the *Yseop Engine* version required to compile that Knowledge Base.
+
+The only missing bit is the Engine Key which must be either uploaded via Yseop Manager’s web GUI, or via the HTTP API, or mounted inside the container to the location `/key.txt`.
+
+Use the script’s `-h` option for more information.
+
+The run of the script should produce something like this:
+
+----
+Creating Docker image:
+- Yseop Manager tag:    latest
+- Docker image name:    afa_nlg
+- Knowledge Base path:  bootstrap
+- Knowledge Base name:  augmentedFinancialAnalyst
+- Engine dir.:          /home/yourname/yseop-engine/yseop-engine-7.4.0
+
+[…]
+Successfully tagged afa_nlg:latest
+----
+
+You can then provide that image name for the NLG service when using the scripts of https://github.com/yseop/augmented_analyst/.
+
+Alternatively, you can manually start the Docker image on port `8080` like this (note the bit of magic to mount the Engine key from your local environment):
+
+[source, bash]
+----
+KB_PATH=bootstrap
+ENGINE_VERSION=$(yseop config -f YE "${KB_PATH:?}")
+ENGINE_DIR=$(yseop list engines -d -K | grep "yseop-engine-${ENGINE_VERSION:?}\$")
+docker run \
+        -p 8080:8080 \
+        -v "${ENGINE_DIR:?}/key.txt:/key.txt" \
+        -e YSEOP_MANAGER_APPLICATIONS_DEFAULT_AUTHSERVICE=none \
+        -e SECURITY_USERS_DEFAULT_ENABLED=true \
+        afa_nlg
+----
+
+Open the following URL to see the deployed Knowledge Base: http://localhost:8080/yseop-manager/. You can directly execute the Knowledge Base. You can also log in as username `admin` and password `change-this-password-ATYZKcxpszyFxT9kF4CDmr34b6xdRVyvqDPk9k3`.
+
+WARNING: For the sake of simplicity, the image is run with the Knowledge Base path unprotected and a basic password in clear text. Do not do that in production.

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:title>New model report</yt:title> 
+					<yt:paragraph level="1"><intention yid="INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7">EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of personnel expenses and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of personnel expenses and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of personnel expenses and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of staff costs and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of staff costs and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of a $14,648K increase of staff costs and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses ($14,648K) and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses ($14,648K) and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses ($14,648K) and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses of $14,648K and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses of $14,648K and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of personnel expenses of $14,648K and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs ($14,648K) and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs ($14,648K) and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs ($14,648K) and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs of $14,648K and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs of $14,648K and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to a $54,879.70K increase of revenue in spite of an increase of staff costs of $14,648K and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of personnel expenses and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of personnel expenses and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of personnel expenses and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of staff costs and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of staff costs and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of a $14,648K increase of staff costs and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses ($14,648K) and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses ($14,648K) and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses ($14,648K) and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses of $14,648K and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses of $14,648K and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of personnel expenses of $14,648K and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs ($14,648K) and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs ($14,648K) and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs ($14,648K) and an increase of cost of sales of $8,140K.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs of $14,648K and an $8,140K increase of cost of sales.<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs of $14,648K and an increase of cost of sales ($8,140K).<yt:par/>EBITDA grew (87.4% since 2015), finishing at $44,633.2K in 2018 due to an increase of revenue ($54,879.70K) in spite of an increase of staff costs of $14,648K and an increase of cost of sales of $8,140K.<yt:par/></intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2020-04-07T18:35:28.636</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings log-level="debug" freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="info" nature="user-log" origin-nb-ms="36.40">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="2" level="debug" nature="user-log" origin-nb-ms="38.55">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsValueBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="3" level="debug" nature="user-log" origin-nb-ms="38.65">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsValueBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="4" level="warning" nature="user-log" origin-nb-ms="43.20">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="5" level="warning" nature="user-log" origin-nb-ms="43.55">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="6" level="warning" nature="user-log" origin-nb-ms="43.89">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="7" level="warning" nature="user-log" origin-nb-ms="44.20">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="8" level="warning" nature="user-log" origin-nb-ms="44.75">
+				<y:message>Attempting to create subIntentions to an intention with stage: LibDocument:IntentionStage::SubIntentionsCreated</y:message>
+			</y:log>
+			<y:log index="9" level="warning" nature="alert" origin-nb-ms="64.54">
+				<y:message>In the expression texts{0x11070}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="10" level="warning" nature="alert" origin-nb-ms="65.15">
+				<y:message>In the expression texts{0x110C7}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="11" level="warning" nature="alert" origin-nb-ms="65.78">
+				<y:message>In the expression texts{0x1112C}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="12" level="warning" nature="alert" origin-nb-ms="66.41">
+				<y:message>In the expression texts{0x1118E}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="13" level="debug" nature="user-log" origin-nb-ms="774.86">
+				<y:message>Start Size=128</y:message>
+			</y:log>
+			<y:log index="14" level="debug" nature="user-log" origin-nb-ms="775.02">
+				<y:message>End size=36</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="178948136" peak="0"/>
+			<y:process id="6947" start-runtime="2020-04-07T18:35:28.577" runtime="erunbc" engine-version="7.4.3" os="UNIX 0.0" computer-name="LFRLYOALA001"/>
+			<y:key-user name="R and D Yseop-internal-DEV-cchahbazian@yseop.com-2020/03/18" email="cchahbazian@yseop.com" creation-date="2020-03-18" expiration-date="2021-03-31"/>
+			<y:request-exec-time begin="2020-04-07T18:35:28.636" end="2020-04-07T18:35:29.443"/>
+			<y:stat errors="0" warnings="4" success-rule-fire="0" text-write="12020" cloning-operations="1161" cloning-items="2402" main-words="1251" main-chars="7325"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

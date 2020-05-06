@@ -1,0 +1,32 @@
+LibDocument:RequestTemplate REQUEST_TEMPLATE_DESCRIBE_THREE_POINTS_VARIATION
+    --> filters -> LibDocument:RequestTemplateRangeFilter
+        --> dimension DIMENSION_TIME
+        --> rangeTag "period"
+        --> firstMember -> LibDocument:RequestTemplateMember
+            --> tag "start"
+            --> displayName "Start Date"
+            --> description "Start point of the analysis."
+            --> mandatory true
+        ;
+        --> lastMember -> LibDocument:RequestTemplateMember
+            --> tag "end"
+            --> displayName "End Date"
+            --> description "End point of the analysis."
+            --> mandatory true
+        ;
+        --> minElementCount 3
+        // DIMENSION_TIME contains elements of type LibCube:TimeMember
+        // It has `date`,`period` and `quarter` as possible “keys”.
+        --> comparisonType LibDocument:RequestTemplateRangeFilterComparisonType::DATE
+        --> comparisonKey "date"
+    ;
+    --> filters -> LibDocument:RequestTemplateMemberFilter
+        --> dimension DIMENSION_INDICATOR
+        --> members -> LibDocument:RequestTemplateMember
+            --> tag "kpi"
+            --> displayName "KPI"
+            --> description "The key performance indicator to analyse."
+            --> mandatory true
+        ;
+    ;
+;

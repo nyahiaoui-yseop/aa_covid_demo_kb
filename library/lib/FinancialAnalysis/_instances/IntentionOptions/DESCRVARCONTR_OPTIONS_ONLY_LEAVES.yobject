@@ -1,0 +1,4 @@
+LibDocument:DescribeVariationContributorsOptions DESCRVARCONTR_OPTIONS_ONLY_LEAVES
+    --> leafContributorsOnly true
+    --> numberOfContributors 3
+;

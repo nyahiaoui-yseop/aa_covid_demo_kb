@@ -1,0 +1,675 @@
+[]
+|===
+|*Name* | *Variants by language* | *Synonyms by language* | *Frameworks*
+| TOTAL_ASSETS
+a|* en: "assets" or "total assets" +
+* fr: "actif" or "total actif"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| ASSETS_CLASSIFIED_AS_HELD_FOR_SALE
+a|* en: "assets classified as held for sale" +
+* fr: "titres mis en équivalence en cours de cession"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| CURRENT_ASSETS
+a|* en: "current assets" +
+* fr: "actif circulant" or "actif courant"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| CASH_AND_CASH_EQUIVALENTS
+a|* en: "CCE" or "cash & cash equivalents" or "cash and near cash" +
+* fr: "disponibilités et comptes assimilés" or "encaisses et comptes ordinaires" or "espèces et assimilables" or "VMP & disponibilités" or "valeurs mobilières de placement et disponibilités"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| CURRENT_FINANCIAL_ASSETS
+a|* en: "current financial assets" +
+* fr: "actifs financiers courants"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| CURRENT_TAX_ASSETS
+a|* en: "current tax assets" +
+* fr: "impôt différé courant"
+|
+|AccountingFramework::IFRS
+
+| INVENTORIES
+a|* en: "inventories" or "inventory" +
+* fr: "stocks"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| OTHER_CURRENT_RECEIVABLES
+a|* en: "other current receivables" +
+* fr: "autres créances courantes"
+a|* fr: "réduction" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::IFRS
+
+| OTHER_RECEIVABLES
+a|* en: "other accounts receivables" or "other receivables" +
+* fr: "autres créances"
+a|* fr: "réduction" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| TAX_ASSETS
+a|* en: "tax assets" +
+* fr: "impôt différé actif"
+|
+|AccountingFramework::FRENCH_GAAP
+
+| TRADE_AND_OTHER_RECEIVABLES
+a|* en: "trade & other receivables" +
+* fr: "créances clients et comptes rattachés"
+a|* fr: "réduction" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NON_CURRENT_ASSETS
+a|* en: "capital asset" or "fixed asset" or "non current assets" or "permanent asset" +
+* fr: "actif immobilisé" or "immobilisation"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| DEFERRED_TAX_ASSETS
+a|* en: "deferred tax assets" +
+* fr: "impôt différé non courant"
+|
+|AccountingFramework::IFRS
+
+| FINANCIAL_ASSETS
+a|* en: "financial asset" or "financial assets" +
+* fr: "immobilisations financières" or "titres immobilisés"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP
+
+| GOODWILL
+a|* en: "goodwill" +
+* fr: "survaleur" or "écarts d'acquisitions"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| INTANGIBLE_ASSETS
+a|* en: "intangible asset" or "intangible assets" +
+* fr: "immobilisations incorporelles"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| INVESTMENTS_IN_ASSOCIATES_AND_JV
+a|* en: "investments in associates and JV" +
+* fr: "titres des sociétés mises en équivalence"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NON_CURRENT_FINANCIAL_ASSETS
+a|* en: "non current financial assets" +
+* fr: "actifs financiers non courants"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| OTHER_NON_CURRENT_RECEIVABLES
+a|* en: "other non current receivables" +
+* fr: "autres créances non courantes"
+a|* fr: "réduction" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::IFRS
+
+| PROPERTY_PLANT_AND_EQUIPMENT
+a|* en: "PP&E" or "property & equipment" or "property, plant and equipment" +
+* fr: "immobilisations corporelles"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| TOTAL_EQUITY_AND_LIABILITIES
+a|* en: "equity and liabilities" or "liabilities and equity" or "total equity & liabilities" or "total liabilities and equity" +
+* fr: "passif" or "total passif"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| ACCRUED_EXPENSES_AND_OTHER
+a|* en: "accrued expenses & other" +
+* fr: "dettes d'exploitation"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| RECEIPT_IN_ADVANCE_FR
+a|* en: "receipt in advance" +
+* fr: "avances et acomptes clients" or "avances et acomptes reçus"
+|
+|AccountingFramework::FRENCH_GAAP
+
+| TAX_LIABILITIES
+a|* en: "tax liabilities" or "tax liability" +
+* fr: "dette fiscale" or "dettes fiscales & sociales"
+|
+|AccountingFramework::FRENCH_GAAP
+
+| TRADE_AND_OTHER_PAYABLES_FR
+a|* en: "trade & other payables" +
+* fr: "dettes fournisseurs & comptes rattachés"
+|
+|AccountingFramework::FRENCH_GAAP
+
+| ADJUSTING_ACCOUNT
+a|* en: "adjusting account" +
+* fr: "compte de régularisation" or "écart de conversion passif"
+|
+|AccountingFramework::FRENCH_GAAP
+
+| CURRENT_LIABILITIES
+a|* en: "current liabilities" +
+* fr: "passif circulant" or "passif courant"
+|
+|AccountingFramework::IFRS
+
+| CURRENT_FINANCIAL_LIABILITIES
+a|* en: "current financial liabilities" +
+* fr: "dettes financières de CT"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::IFRS
+
+| CURRENT_PROVISIONS
+a|* en: "current provisions" +
+* fr: "provisions CT"
+a|* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "se réduire" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::IFRS
+
+| CURRENT_TAX_LIABILITIES
+a|* en: "current tax liabilities" +
+* fr: "dette fiscale courante"
+|
+|AccountingFramework::IFRS
+
+| OTHER_CURRENT_LIABILITIES
+a|* en: "other current liabilities" +
+* fr: "autres dettes courantes"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::IFRS
+
+| RECEIPT_IN_ADVANCE_IFRS
+a|* en: "receipt in advance" +
+* fr: "avances et acomptes clients" or "avances et acomptes reçus"
+|
+|AccountingFramework::IFRS
+
+| TRADE_AND_OTHER_PAYABLES_IFRS
+a|* en: "trade & other payables" +
+* fr: "dettes fournisseurs & comptes rattachés"
+|
+|AccountingFramework::IFRS
+
+| FINANCIAL_LIABILITIES
+a|* en: "financial liabilities" or "funding liabilities" +
+* fr: "dettes financières" or "ressources empruntées et épargne mobilisée"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| LOANS_AND_BORROWINGS
+a|* en: "loans and borrowings" +
+* fr: "emprunts & dettes financières"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| OTHER_FINANCIAL_DEBTS
+a|* en: "other financial debts" +
+* fr: "emprunts & dettes financières autres"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| NON_CURRENT_LIABILITIES
+a|* en: "non current liabilities" +
+* fr: "passif non courant"
+|
+|AccountingFramework::IFRS
+
+| DEFERRED_TAX_LIABILITIES
+a|* en: "deferred tax liabilities" +
+* fr: "dette fiscale différée"
+|
+|AccountingFramework::IFRS
+
+| NON_CURRENT_FINANCIAL_LIABILITIES
+a|* en: "non current financial liabilities" +
+* fr: "dettes financières de LT"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::IFRS
+
+| NON_CURRENT_PROVISIONS
+a|* en: "non current provisions" +
+* fr: "provisions LT"
+a|* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "se réduire" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::IFRS
+
+| OTHER_NON_CURRENT_LIABILITIES
+a|* en: "other non current liabilities" +
+* fr: "autres dettes non courantes"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::IFRS
+
+| OTHER_DEBTS
+a|* en: "other debts" +
+* fr: "autres dettes"
+a|* en: "pay-off" or "pay off" or "reduce" or "reduction" or "repay" or "repayment" or "resolution" or "resolve" or "settle" or "settlement" [Decrease] +
+* fr: "désendettement" or "réduction" or "se désendetter" or "se réduire" or "réduire" [Decrease], "endettement" or "progresser" or "progression" or "s'endetter" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| PROVISIONS
+a|* en: "provisions" or "reserves for possible losses" +
+* fr: "provisions pour risques & charges"
+a|* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "se réduire" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::FRENCH_GAAP
+
+| TOTAL_EQUITY
+a|* en: "equity" or "total equity" +
+* fr: "capitaux propres" or "fonds propres"
+a|* fr: "réduction" or "réduire" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| EQUITY_GROUP_SHARE
+a|* fr: "capitaux propres - part du groupe" +
+* en: "equity (group share)"
+a|* fr: "réduction" or "réduire" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| EQUITY_NON_CONTROLLING_INTERESTS
+a|* en: "equity (non controlling interests)" +
+* fr: "intérêts minoritaires"
+a|* fr: "réduction" or "réduire" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NET_INCOME_AND_CONSOLIDATED_RESERVES
+a|* en: "net income and consolidated reserves" +
+* fr: "réserves et résultat consolidés"
+a|* fr: "réduction" or "réduire" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| SHARE_CAPITAL
+a|* en: "share capital" +
+* fr: "capital"
+a|* fr: "réduction" or "réduire" or "se réduire" [Decrease], "progresser" or "progression" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| CASH_AND_CASH_EQUIVALENT_END_FY
+a|* en: "cash & cash equivalents at end of year" +
+* fr: "trésorerie à la clôture" or "trésorerie et équivalents de trésorerie à la clôture"
+a|* fr: "contraction" or "dégradation" or "réduction" or "réduire" or "se contracter" or "se dégrader" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| CASH_AND_CASH_EQUIVALENT_BEGINNING_FY
+a|* en: "cash & cash equivalents at the beginning of the financial year" +
+* fr: "trésorerie à l'ouverture" or "trésorerie et équivalents de trésorerie à l'ouverture"
+a|* fr: "réduction" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| EXCHANGE_RATE_CHANGES
+a|* en: "effects of exchange rate changes" +
+* fr: "incidence des variations de change"
+|
+|AccountingFramework::IFRS
+
+| NET_INCREASE_DECREASE_IN_CASH_AND_CASH_EQUIVALENTS
+a|* fr: "variation nette de la trésorerie et des équivalents de trésorerie" +
+* en: "net increase (decrease) in cash and cash equivalents"
+|
+|AccountingFramework::IFRS
+
+| NET_CASH_FLOW_FROM_FINANCING_ACTIVITIES
+a|* en: "CFF" or "cash flow from financing activities" or "net cash flow from financing activities" or "net cash used in financing activities" +
+* fr: "flux total financement"
+a|* fr: "contraction" or "dégradation" or "réduction" or "réduire" or "se contracter" or "se dégrader" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| CAPITAL_INCREASE
+a|* en: "capital increase" +
+* fr: "augmentation de capital"
+|
+|AccountingFramework::IFRS
+
+| DIVIDENDS_PAID
+a|* en: "dividends paid" +
+* fr: "dividendes payés"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| INVESTMENT_SUBSIDIES
+a|* en: "investment subsidies" +
+* fr: "subventions d'investissements reçues"
+a|* fr: "progresser" or "progression" [Increase]
+|AccountingFramework::IFRS
+
+| PAYMENT_OF_OBLIGATIONS_UNDER_FINANCE_LEASES
+a|* en: "payment of obligations under finance leases" +
+* fr: "paiement des obligations en vertu de contrats de location-financement"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_FROM_LOANS_AND_BORROWINGS
+a|* en: "proceeds from loans and borrowings" +
+* fr: "produit tiré d'emprunts"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_FROM_SALE_OF_TREASURY_SHARES
+a|* en: "proceeds from sale of treasury shares" +
+* fr: "produit de la vente d'actions propres"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_ON_DISPOSAL_OF_PARTIAL_INTEREST_IN_SUBSIDIARY_WITHOUT_LOSS_OF_CONTROL
+a|* en: "proceeds on disposal of partial interest in subsidiary without loss of control" +
+* fr: "produit de la sortie d'une participation partielle dans une filiale sans perte de contrôle"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_ON_ISSUE_OF_CONVERTIBLE_LOAN_NOTES
+a|* en: "proceeds on issue of convertible loan notes" +
+* fr: "produit de l'émission d'obligations convertibles"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_ON_ISSUE_OF_SHARES
+a|* en: "proceeds on issue of shares" +
+* fr: "produit de l'émission d'actions"
+|
+|AccountingFramework::IFRS
+
+| REPAYMENTS_OF_BORROWINGS
+a|* en: "repayments of borrowings" or "return of funds" +
+* fr: "remboursement d'emprunts"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| REPURCHASE_OF_TREASURY_SHARES
+a|* en: "repurchase of treasury shares" +
+* fr: "rachat d'actions propres"
+a|* fr: "réduction" or "réduire" or "diminuer" or "diminution" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::IFRS
+
+| TRANSACTION_COSTS_RELATED_TO_THE_LOANS_AND_BORROWINGS
+a|* en: "transaction costs related to the loans and borrowings" +
+* fr: "coût de transaction liés aux emprunts"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::IFRS
+
+| NET_CASH_FLOW_FROM_INVESTING_ACTIVITIES
+a|* en: "net cash flow from investing activities" or "net cash used in investing activities" +
+* fr: "flux total investissement"
+a|* fr: "contraction" or "dégradation" or "réduction" or "réduire" or "se contracter" or "se dégrader" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| ACQUISITION_OF_INTANGIBLE_ASSETS
+a|* en: "acquisition of intangible assets" +
+* fr: "achats d'immobilisations incorporelles"
+a|* fr: "réduction" or "réduire" or "diminuer" or "diminution" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::IFRS
+
+| ACQUISITION_OF_INVESTMENT_IN_ASSOCIATE
+a|* en: "acquisition of investment in an associate" +
+* fr: "acquisition d'une participation dans une entreprise associée"
+|
+|AccountingFramework::IFRS
+
+| DIVIDENDS_RECEIVED_FROM_EQUITY_INSTRUMENTS_AT_FVTOCI
+a|* en: "dividends received from equity instruments at FVTOCI" +
+* fr: "dividendes provenant d'instruments de capitaux propres (JVAERG)"
+|
+|AccountingFramework::IFRS
+
+| DIVIDENDS_RECEIVED_FROM_JOINT_VENTURES_AND_ASSOCIATES
+a|* en: "dividends received from joint ventures and associates" +
+* fr: "dividendes reçus des entreprises associées et de co-entreprises"
+|
+|AccountingFramework::IFRS
+
+| EFFECT_OF_CHANGE_IN_THE_REPORTING_ENTITY
+a|* en: "effect of change in the reporting entity" or "impact of change in the reporting entity" +
+* fr: "incidence des variations de périmètre"
+|
+|AccountingFramework::IFRS
+
+| ACQUISITION_OF_SUBSIDIARY
+a|* en: "acquisition of subsidiary" +
+* fr: "acquisition d'une filiale"
+|
+|AccountingFramework::IFRS
+
+| DISPOSAL_OF_SUBSIDIARY
+a|* en: "disposal of subsidiary" +
+* fr: "sortie d'une filiale"
+|
+|AccountingFramework::IFRS
+
+| INTEREST_RECEIVED
+a|* en: "interest income" or "interest received" +
+* fr: "intérêts reçus"
+|
+|AccountingFramework::IFRS
+
+| NET_PROCEEDS_FROM_INTANGIBLE_ASSETS
+a|* en: "net proceeds from intangible assets" +
+* fr: "produit de cession d'immobilisations incorporelles"
+|
+|AccountingFramework::IFRS
+
+| NET_PROCEEDS_FROM_SALE_OF_PROPERTY_PLANT_AND_EQUIPMENT
+a|* en: "net proceeds from sale of property, plant and equipment" +
+* fr: "produit de cession d'immobilisations corporelles"
+|
+|AccountingFramework::IFRS
+
+| PROCEEDS_ON_DISPOSAL_OF_EQUITY_INSTRUMENTS_HELD_AT_FVTOCI
+a|* en: "proceeds on disposal of equity instruments held at FVTOCI" +
+* fr: "produit de la sortie d'instruments de capitaux propres (JVAERG)"
+|
+|AccountingFramework::IFRS
+
+| PURCHASES_OF_EQUITY_INSTRUMENTS_AT_FVTOCI
+a|* en: "purchases of equity instruments at FVTOCI" +
+* fr: "achats d'instruments de capitaux propres (JVAERG)"
+|
+|AccountingFramework::IFRS
+
+| PURCHASES_OF_PROPERTY_PLANT_AND_EQUIPMENT
+a|* en: "purchases of property, plant and equipment" +
+* fr: "achats d'immobilisations corporelles"
+a|* fr: "réduction" or "réduire" or "diminuer" or "diminution" [Decrease], "augmentation" or "augmenter" [Increase]
+|AccountingFramework::IFRS
+
+| NET_CASH_FLOW_FROM_OPERATING_ACTIVITIES
+a|* en: "CFO" or "cash flow from operating activities" or "cash flow provided by operations" or "net cash flow from operating activities" or "OCF" or "operating Cash Flow" +
+* fr: "flux de trésorerie nets liés aux opérations d'exploitation"
+a|* fr: "contraction" or "dégradation" or "réduction" or "réduire" or "se contracter" or "se dégrader" or "se réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| CASH_GENERATED_FROM_OPERATIONS
+a|* en: "cash generated from operations" +
+* fr: "trésorerie générée par les opérations"
+|
+|AccountingFramework::IFRS
+
+| PAYMENT_TO_EMPLOYEES
+a|* en: "payment to employees" +
+* fr: "paiements à des membres du personnel"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| PAYMENT_TO_SUPPLIERS
+a|* en: "payment to suppliers" +
+* fr: "paiements à des fournisseurs"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| RECEIPTS_FROM_CUSTOMERS
+a|* en: "cash receipts from customers" or "receipts from customers" +
+* fr: "entrées de trésorerie provenant des clients"
+|
+|AccountingFramework::IFRS
+
+| INCOME_TAX_PAID
+a|* en: "income tax paid" +
+* fr: "impôt sur le résultat payé"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| INTEREST_PAID
+a|* en: "interest charge" or "interest paid" +
+* fr: "intérêts payés"
+a|* fr: "réduction" or "réduire" [Decrease]
+|AccountingFramework::IFRS
+
+| NET_EARNINGS
+a|* en: "net earnings" or "net profit" or "net profitability" +
+* fr: "bénéfice net" or "profitabilité nette" or "rentabilité nette" or "résultat net"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| EBIT
+a|* en: "EBIT" or "earnings before income tax" +
+* fr: "résultat avant IS"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| FINANCIAL_RESULT
+a|* en: "financial result" +
+* fr: "résultat financier"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| FINANCIAL_COSTS
+a|* en: "financial costs" +
+* fr: "charges financières"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| FINANCIAL_INCOME
+a|* en: "financial income" +
+* fr: "produits financiers"
+a|* fr: "contraction" or "dégradation" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NON_RECURRING_RESULT
+a|* en: "non recurring result" +
+* fr: "résultat exceptionnel"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NON_RECURRING_EXPENSES
+a|* en: "non recurring expenses" +
+* fr: "charges exceptionnelles"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NON_RECURRING_INCOME
+a|* en: "non recurring income" +
+* fr: "produits exceptionnels"
+a|* fr: "contraction" or "dégradation" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| OPERATING_PROFIT
+a|* en: "operating profit" +
+* fr: "bénéfice d'exploitation" or "rentabilité d'exploitation" or "résultat d'exploitation"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| EBITDA
+a|* en: "EBITDA" +
+* fr: "EBE" or "marge brute" or "excédent brut d'exploitation"
+a|* fr: "contraction" or "dégradation" or "détérioration" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se détériorer" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| ADMINISTRATIVE_EXPENSES
+a|* en: "administrative expenses" +
+* fr: "charges externes"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| COST_OF_SALES
+a|* en: "cost of sales" +
+* fr: "coût des ventes"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| OTHER_OPERATING_INCOME_AND_EXPENSES
+a|* en: "other operating income and expenses" +
+* fr: "autres produits & charges d'exploitation"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| OTHER_OPERATING_EXPENSES
+a|* en: "other operating expenses" +
+* fr: "autres charges d'exploitation"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| OTHER_OPERATING_INCOME
+a|* en: "other operating income" +
+* fr: "autres produits d'exploitation"
+a|* fr: "contraction" or "dégradation" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| PERSONNEL_EXPENSES
+a|* en: "personnel expenses" or "staff costs" +
+* fr: "charges de personnel" or "frais de personnel"
+a|* en: "pay-off" or "pay off" [Decrease] +
+* fr: "diminuer" or "diminution" or "réduction" or "réduire" or "régresser" or "régression" or "se réduire" [Decrease], "alourdissement" or "progresser" or "progression" or "s'alourdir" [Increase], "alourdissement" or "s'alourdir" [Significant Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| SALES
+a|* en: "revenue" or "sales" +
+* fr: "activité" or "CA" or "chiffres" or "chiffre d'affaires"
+a|* fr: "contraction" or "dégradation" or "réduction" or "régresser" or "régression" or "se contracter" or "se dégrader" or "se réduire" [Decrease], "amélioration" or "progresser" or "progression" or "s'améliorer" [Increase]
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| TAXES_OTHER_THAN_INCOME_TAX
+a|* en: "taxes other than income tax" +
+* fr: "impôts et taxes"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NET_DEPRECIATION_AND_AMORTISATION
+a|* en_GB: "net depreciation & amortisation" +
+* en: "net depreciation & amortization" +
+* fr: "dotations nettes aux amortissements et provisions"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| NET_INCREASE_IN_PROVISION
+a|* en: "net increase in provision" +
+* fr: "dépréciation pertes de valeur"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| GOODWILL_IMPAIRMENT
+a|* en: "goodwill impairment" or "goodwill impairments" +
+* fr: "dotation aux amortissements des écarts d'acquisition"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| INCOME_TAX_EXPENSE
+a|* en: "income tax expense" or "income tax expenses" +
+* fr: "impôts sur les bénéfices"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+| SHARE_IN_NET_INCOME_OF_ASSOCIATES_AND_JV
+a|* en: "share in net income of associates and JV" +
+* fr: "quote-part de résultat des entreprises M.E.E"
+|
+|AccountingFramework::FRENCH_GAAP, AccountingFramework::IFRS
+
+|===

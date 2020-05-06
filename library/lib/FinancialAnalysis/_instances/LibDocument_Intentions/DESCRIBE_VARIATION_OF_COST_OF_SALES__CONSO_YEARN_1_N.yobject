@@ -1,0 +1,14 @@
+VariationIntention_withValueAndPercent DESCRIBE_VARIATION_OF_COST_OF_SALES__CONSO_YEARN_1_N
+    --> kpi COST_OF_SALES_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    // --> active false
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::MainPredicate : sMainPredicateContributors
+    //     }
+    // ;
+;

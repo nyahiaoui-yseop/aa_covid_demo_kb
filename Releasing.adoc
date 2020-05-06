@@ -1,0 +1,33 @@
+= Releasing a new version of afa-library
+
+This document explains how to do an official release for the `afa-library` YML{nbsp}library.
+
+
+. Prepare the release branch:
+
+.. Create a branch based on `develop` and named following the pattern `release/<version>`; e.g. if the version you’re releasing is `2.0.0` then create a branch `release/2.0.0`.
+
+.. In `library/.settings/com.yseop.designer.prefs` replace the value of `CompilerConfiguration.useLibrary` with `com.yseop:aa_reporting-framework:<version>` where you'll replace `<version>` with a released version of the `reporting-framework` to use. It should be the same as the version of `afa-library` you’re releasing.
+
+.. In `bootstrap/.settings/com.yseop.designer.prefs` replace the value of `CompilerConfiguration.useLibrary` with `com.yseop:aa_afa-library:<version>` where `<version>` is to replace with the version of `afa-library` you're releasing.
+
+.. Push the `release/<version>` branch to GitHub.
+
+. Create a pull request to merge `release/<version>` into `master`.
+
+. Merge the branch _using a merge commit_. &#9888;
+
+. Tag the `master` branch following the pattern `v<version>`; e.g. if the version you're releasing is `2.0.0` then create a tag `v2.0.0`. +
+Pushing this tag will trigger the build of the new released version and make it available on the Yseop Nexus to other users.
+
+. Merge `master` into `develop`:
+
+.. Create a branch from `master` named `chore/merge-master-back-to-develop`
+
+.. Open `library/.settings/com.yseop.designer.prefs` and replace the value of `CompilerConfiguration.useLibrary` with `com.yseop:aa_reporting-framework:branch-develop-SNAPSHOT`.
+
+.. Open `bootstrap/.settings/com.yseop.designer.prefs` and replace the value of `CompilerConfiguration.useLibrary` with `com.yseop:aa_afa-library:branch-develop-SNAPSHOT`.
+
+.. Push this branch, create a PR targetting the `develop` branch and have it merged to branch `develop` _using a merge commit_. &#9888;
+
+. Once the build is done, do a release of `aa_demo_kb`.

@@ -1,0 +1,10 @@
+ConstList DESCRIBE_THREE_POINTS_VARIATION_SEMANTIC_SLOTS {
+    LibDocument:SemanticSlot::IndicatorProperty,
+    LibDocument:SemanticSlot::RatioOwner,
+    LibDocument:SemanticSlot::Indicator,
+    LibDocument:SemanticSlot::IndicatorOwner,
+    LibDocument:SemanticSlot::ValueProperty,
+    LibDocument:SemanticSlot::EntityProperty,
+    LibDocument:SemanticSlot::Elaboration
+}
+;

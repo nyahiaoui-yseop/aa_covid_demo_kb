@@ -1,0 +1,15 @@
+VariationIntention_compareToLastYear DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N
+    // --> condition cStabilisation_CA_Conso_N.isStringEmpty() == true
+    --> kpi SALES_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany,
+    //         LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertyConsolidated
+    //     }
+    // ;
+;

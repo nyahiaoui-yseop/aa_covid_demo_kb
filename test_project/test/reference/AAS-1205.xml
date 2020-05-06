@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:title>BPCE-3D (1)</yt:title> 
+					<yt:paragraph level="1"><intention yid="INTENTION_ac8c55f6-3d7d-412a-8029-a47943c9ffe0">Revenus annuels remained stable at $0K in December 2019.</intention>
+					</yt:paragraph> 
+					<yt:paragraph level="1"><intention yid="INTENTION_f2ddeddc-3bb4-40ac-913f-b46b70d8bff0">During the last months, Production nouvelle increased by 56.6% to $211,789.2K.</intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2020-04-10T16:05:55.993</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings log-level="debug" freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="info" nature="user-log" origin-nb-ms="220.40">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="2" level="debug" nature="user-log" origin-nb-ms="227.03">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="3" level="debug" nature="user-log" origin-nb-ms="228.71">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="266656759" peak="0"/>
+			<y:process id="5753" start-runtime="2020-04-10T16:05:55.926" runtime="erunbc" engine-version="7.4.3" os="UNIX 0.0" computer-name="mfioravanti-linux"/>
+			<y:key-user name="For Yseop internal use - By AK" email="akaeser@yseop.com" creation-date="2020-01-02" expiration-date="2020-12-31"/>
+			<y:request-exec-time begin="2020-04-10T16:05:55.993" end="2020-04-10T16:05:57.607"/>
+			<y:stat errors="0" warnings="0" success-rule-fire="0" text-write="154" cloning-operations="1634" cloning-items="3471" main-words="0" main-chars="0"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

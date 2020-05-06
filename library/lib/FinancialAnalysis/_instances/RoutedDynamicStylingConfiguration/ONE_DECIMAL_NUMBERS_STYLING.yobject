@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration ONE_DECIMAL_NUMBERS_STYLING
+    --> dynamicStylingConfiguration ONE_DECIMAL_NUMBERS
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

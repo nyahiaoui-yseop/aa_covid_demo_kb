@@ -1,0 +1,32 @@
+LibDocument:DynamicCustomTexts sMainPredicateRatioCA
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_ÊTRE
+                --> tense PRESENT_INDICATIVE_FR
+                --> verbPhraseObject "en retrait"
+            ;
+            --> thresholdConditions LibKPI:NEGATIVE
+            --> thresholdConditions LibKPI:SIGNIFICANT_NEGATIVE
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_ÊTRE
+                --> tense PRESENT_INDICATIVE_FR
+                --> verbPhraseObject "en croissance"
+            ;
+            --> thresholdConditions LibKPI:POSITIVE
+            --> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+        ;
+    }
+    --> ranges defaultVariationRanges
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+    ;
+;
+
+// x < -0.1             LibKPI:SIGNIFICANT_NEGATIVE
+// -0.1 < x < -0.03     LibKPI:NEGATIVE
+// -0.03 < x < 0.03     LibKPI:INSIGNIFICANT
+// 0.03 < x < 0.1       LibKPI:POSITIVE
+// 0.1 < 0              LibKPI:SIGNIFICANT_POSITIVE

@@ -1,0 +1,40 @@
+{
+    "Unit Test": {
+        "scope": "yml",
+        "prefix": "unittest",
+        "body": [
+"function ${1:TestName}()",
+"--> domains Void",
+"--> description \"${2:Description of the test}.\"",
+"--> unitTest true",
+"--> testSuiteId TestSuite:${3:TestSuiteSymbol}",
+"--> action {",
+"\tTEXT_PARAM_CONTEXT.kBLanguage = ${4|LANG_fr,LANG_en|};",
+"\tassertThat(1 + 1).is(2);",
+"}; // ${1}",
+"$0"
+        ],
+        "description": "Insert a new Unit Test."
+    },
+    "Intention Unit Test": {
+        "scope": "yml",
+        "prefix": "intentionunittest",
+        "body": [
+"function ${1:TestName}()",
+"--> domains Void",
+"--> description \"${2:Description of the test}.\"",
+"--> isIntentionTest true",
+"--> testSuiteId TestSuite:${3:TestSuiteSymbol}",
+"--> action {",
+"\tTEXT_PARAM_CONTEXT.kBLanguage = ${4|LANG_fr,LANG_en|};",
+"\tLibDocument:Test:buildIntentionForExecution(",
+"\t\t${5:IntentionToTestId},",
+"\t\t_EXPECTED_OUTPUTS: {",
+"\t\t}",
+"\t);",
+"}; // ${1}",
+"$0"
+        ],
+        "description": "Insert a new Intention Unit Test."
+    }
+}

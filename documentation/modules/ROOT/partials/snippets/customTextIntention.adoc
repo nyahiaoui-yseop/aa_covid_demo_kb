@@ -1,0 +1,40 @@
+.Custom Intention code
+[source,YML]
+----
+interface IntentionClassName extends LibDocument:CustomIntention
+// Intention's new attributes, if needed.
+;
+
+implementation IntentionClassName
+    override {
+        onBeforeDataCollection function
+        computeValues function
+        writeCustomText function
+    }
+;
+
+function `IntentionClassName`::onBeforeDataCollection
+args {}
+--> domains Void
+--> action {
+    logTrace("IntentionClassName::onBeforeDataCollection");
+    // intialise the computedValues attribute.
+    // create another new class named IntentionClassNameComputedValues with the “cmpVal” snippet if Computed Values are required
+    // this.computedValues = new(IntentionClassNameComputedValues);
+};
+
+function IntentionClassName::computeValues
+args {
+
+}
+--> action {
+    // Compute the computed values here
+};
+
+textMethod IntentionClassName::writeCustomText()
+--> text \(
+    // Your text as TextGranule. You can also replace this TextGranule with anything that has the `Text` type.
+
+\)
+;
+----

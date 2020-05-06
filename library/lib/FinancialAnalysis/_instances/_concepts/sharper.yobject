@@ -1,0 +1,15 @@
+LibOntology:ModifierConcept DescribeThreePointsVariation:Sharper
+    --> lexicalization -> MultilingualExpression
+        --> en {
+            -> LibOntology:Adjective DescribeThreePointsVariation:EN:Sharper:sharper
+                --> root "sharper"
+            ;
+        }
+        --> fr {
+            -> LibOntology:Adjective DescribeThreePointsVariation:FR:Sharper:plus_marque
+                --> root "marqué"
+                --> modifier "plus"
+            ;
+        }
+    ;
+;

@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:input xmlns:y="http://www.yseop.com/engine/3">
+   <y:data>
+      <y:instance yid="theGeneralData">
+        <language yid="LANG_en"/>
+        <cube yclass="LibCube:Cube">
+            <dimensions yid="DIMENSION_INDICATOR" yclass="LibCube:Dimension">
+                <hierarchies yclass="LibCube:Hierarchy">
+                    <value yid="ALL_INDICATORS" yclass="LibCube:IndicatorMember">
+                        <label>All Indicators</label>
+                    </value>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="NET_EARNINGS" yclass="LibCube:IndicatorMember">
+                            <label>Net earnings</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="OPERATING_PROFIT" yclass="LibCube:IndicatorMember">
+                                <label>Operating profit</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="EBITDA" yclass="LibCube:IndicatorMember">
+                                <label>EBITDA</label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="SALES" yclass="LibCube:IndicatorMember">
+                                    <label>Total revenue</label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                    <value yid="CAEXPORT" yclass="LibCube:IndicatorMember">
+                                        <label>Export revenue</label>
+                                    </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                    <value yid="CAFR" yclass="LibCube:IndicatorMember">
+                                        <label>Revenue in France</label>
+                                    </value>
+                                </child>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="ADMINISTRATIVE_EXPENSES" yclass="LibCube:IndicatorMember">
+                                    <label>External expenses</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="DIVIDENDS_PAID" yclass="LibCube:IndicatorMember">
+                                    <label>Staff costs</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="EBIT" yclass="LibCube:IndicatorMember">
+                                    <label>EBITDA/Revenue ratio</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="FINANCIAL_COSTS" yclass="LibCube:IndicatorMember">
+                                    <label>Cost of goods sold</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="OTHER_OPERATING_INCOME_AND_EXPENSES" yclass="LibCube:IndicatorMember">
+                                    <label>Other operating costs and income</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="REPR" yclass="LibCube:IndicatorMember">
+                                    <label>Writeback of provisions and transfers of costs </label>
+                                </value>
+                                </child>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="NET_DEPRECIATION_AND_AMORTISATION" yclass="LibCube:IndicatorMember">
+                                <label>Depreciation and amortization</label>
+                                </value>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="FINANCIAL_RESULT" yclass="LibCube:IndicatorMember">
+                                <label>Financial result</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="CHGINT" yclass="LibCube:IndicatorMember">
+                                <label>Interest expenses</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="AUTREFI" yclass="LibCube:IndicatorMember">
+                                <label>Other financial costs</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="FINANCIAL_INCOME" yclass="LibCube:IndicatorMember">
+                                <label>Cash flow from financing activities</label>
+                                </value>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="RNCA" yclass="LibCube:IndicatorMember">
+                                <label>Net profit/Revenue ratio</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TAX_ASSETS" yclass="LibCube:IndicatorMember">
+                                <label>Taxes</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="OUTSTANDING_RESULT" yclass="LibCube:IndicatorMember">
+                                <label>Outstanding income</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="QPR" yclass="LibCube:IndicatorMember">
+                                <label>Profit of consolidated and affiliated companies</label>
+                            </value>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="TOTAL_ASSETS" yclass="LibCube:IndicatorMember">
+                            <label>Total assets</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="CURRENT_ASSETS" yclass="LibCube:IndicatorMember">
+                                <label>Current assets</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="OTHER_RECEIVABLES" yclass="LibCube:IndicatorMember">
+                                <label>Client receivables</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="CASH_AND_CASH_EQUIVALENTS" yclass="LibCube:IndicatorMember">
+                                <label>Cash balances</label>
+                                </value>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TOTACTIFIMMO" yclass="LibCube:IndicatorMember">
+                                <label>Fixed assets</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="EACQ" yclass="LibCube:IndicatorMember">
+                                <label>Goodwill</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="PURCHASES" yclass="LibCube:IndicatorMember">
+                                <label>Equipments</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="FINANCIAL_ASSETS" yclass="LibCube:IndicatorMember">
+                                <label>Financial assets</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="INTANGIBLE_ASSETS" yclass="LibCube:IndicatorMember">
+                                <label>Intangible assets</label>
+                                </value>
+                            </child>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="TOTAL_EQUITY_AND_LIABILITIES" yclass="LibCube:IndicatorMember">
+                            <label>Total liabilities</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="FP" yclass="LibCube:IndicatorMember">
+                                <label>Equity</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TOTDET" yclass="LibCube:IndicatorMember">
+                                <label>Total debts</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="OTHER_DEBTS" yclass="LibCube:IndicatorMember">
+                                <label>Other debts</label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="DETEXPLOIT" yclass="LibCube:IndicatorMember">
+                                    <label>Accrued expenses &amp; other</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="DETHEXPLOIT" yclass="LibCube:IndicatorMember"/>
+                                </child>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="LOANS_AND_BORROWINGS" yclass="LibCube:IndicatorMember">
+                                <label>MLT debts</label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="OTHER_FINANCIAL_DEBTS" yclass="LibCube:IndicatorMember">
+                                    <label>Other financial debts and loans</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="EMPRMLT" yclass="LibCube:IndicatorMember">
+                                    <label>MLT loans with credit institutions </label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                    <value yid="EMPSUP2" yclass="LibCube:IndicatorMember">
+                                        <label>Short term debt</label>
+                                    </value>
+                                </child>
+                                </child>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="PROVISIONS" yclass="LibCube:IndicatorMember">
+                                <label>Provision for contingencies</label>
+                            </value>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="TN" yclass="LibCube:IndicatorMember">
+                            <label>Net treasury</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="INTEREST_RECEIVED" yclass="LibCube:IndicatorMember">
+                                <label>Working capital requirement</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="FR" yclass="LibCube:IndicatorMember">
+                                <label>Working capital</label>
+                            </value>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="TOTFLUX" yclass="LibCube:IndicatorMember">
+                            <label>Net cash flow</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="DIV" yclass="LibCube:IndicatorMember">
+                                <label>Dividends paid</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TOTFLUXEXPLOIT" yclass="LibCube:IndicatorMember">
+                                <label>Net cash flow from operating activities</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="CAPITAL_INCREASE" yclass="LibCube:IndicatorMember">
+                                <label>Variation in the working capital requirement</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="CASH_GENERATED_FROM_OPERATIONS" yclass="LibCube:IndicatorMember">
+                                <label>gross cash flow</label>
+                                </value>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TOTFLUXFI" yclass="LibCube:IndicatorMember">
+                                <label>Net cash flow from financing activities</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="ENCAISEMPR" yclass="LibCube:IndicatorMember">
+                                <label>new loans</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="INTEREST_PAID" yclass="LibCube:IndicatorMember">
+                                <label>Loans repayment</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="VARCAP" yclass="LibCube:IndicatorMember">
+                                <label>Capital reduction/expenditure</label>
+                                </value>
+                            </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="TOTFLUXINV" yclass="LibCube:IndicatorMember">
+                                <label>Net cash flow from investing activities</label>
+                            </value>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="ACQUISITION_OF_INTANGIBLE_ASSETS" yclass="LibCube:IndicatorMember">
+                                <label>Acquisition of assets</label>
+                                </value>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="ACQCORPO" yclass="LibCube:IndicatorMember">
+                                    <label>Acquisition of equipments</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="ACQFI" yclass="LibCube:IndicatorMember">
+                                    <label>Acquisition of financial assets</label>
+                                </value>
+                                </child>
+                                <child yclass="LibCube:Hierarchy">
+                                <value yid="ACQINCORPO" yclass="LibCube:IndicatorMember">
+                                    <label>Acquisition of intangible assets</label>
+                                </value>
+                                </child>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="DISPOSAL_OF_SUBSIDIARY" yclass="LibCube:IndicatorMember">
+                                <label>Capital asset disposals</label>
+                                </value>
+                            </child>
+                            <child yclass="LibCube:Hierarchy">
+                                <value yid="INCVARPERI" yclass="LibCube:IndicatorMember">
+                                <label>Effect of change in the reporting entity</label>
+                                </value>
+                            </child>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="OTHER" yclass="LibCube:IndicatorMember">
+                            <label>Other</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="FPPASSIF" yclass="LibCube:IndicatorMember">
+                                <label>Equity/Total liabilities ratio</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="SHARE_CAPITAL" yclass="LibCube:IndicatorMember">
+                                <label>Capital stock</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="PAYMENT_TO_EMPLOYEES" yclass="LibCube:IndicatorMember">
+                                <label>Days Sales Outstanding </label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="PAYMENT_TO_SUPPLIERS" yclass="LibCube:IndicatorMember">
+                                <label>Delay of payment to vendors</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="EFFECTIF" yclass="LibCube:IndicatorMember">
+                                <label>Headcount</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="GOODWILL" yclass="LibCube:IndicatorMember">
+                                <label>Gearing ratio</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="LEVERAGE" yclass="LibCube:IndicatorMember">
+                                <label>Leverage</label>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="CBCEENE" yclass="LibCube:IndicatorMember"/>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="CCASSO" yclass="LibCube:IndicatorMember"/>
+                        </child>
+                    </child>
+                </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_TIME" yclass="LibCube:Dimension">
+                <hierarchies yclass="LibCube:Hierarchy">
+                    <value yid="ALL_YEARS" yclass="LibCube:TimeMember">
+                        <date>1970-12-31T00:00:00.000Z</date>
+                        <period>PERIOD_YEAR</period>
+                    </value>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="yearN" yclass="LibCube:TimeMember">
+                            <date>2018-12-31T00:00:00.000Z</date>
+                            <period>PERIOD_YEAR</period>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH1_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-01-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH2_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-02-28T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH3_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-03-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH4_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-04-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH5_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-05-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH6_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-06-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH7_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-07-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH8_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-08-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH9_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-09-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH10_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-10-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH11_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-11-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH12_yearN" yclass="LibCube:TimeMember">
+                                <date>2018-12-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="yearN_1" yclass="LibCube:TimeMember">
+                            <date>2017-12-31T00:00:00.000Z</date>
+                            <period>PERIOD_YEAR</period>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH1_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-01-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH2_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-02-28T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH3_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-03-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH4_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-04-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH5_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-05-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH6_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-06-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH7_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-07-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH8_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-08-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH9_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-09-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH10_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-10-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH11_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-11-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH12_yearN_1" yclass="LibCube:TimeMember">
+                                <date>2017-12-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="yearN_2" yclass="LibCube:TimeMember">
+                            <date>2016-12-31T00:00:00.000Z</date>
+                            <period>PERIOD_YEAR</period>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH1_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-01-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH2_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-03-01T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH3_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-03-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH4_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-04-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH5_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-05-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH6_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-06-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH7_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-07-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH8_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-08-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH9_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-09-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH10_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-10-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH11_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-11-30T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                            <value yid="MONTH12_yearN_2" yclass="LibCube:TimeMember">
+                                <date>2016-12-31T00:00:00.000Z</date>
+                                <period>PERIOD_MONTH</period>
+                            </value>
+                        </child>
+                    </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_ENTITY" yclass="LibCube:Dimension">
+                <hierarchies yclass="LibCube:Hierarchy">
+                    <isOptional>true</isOptional>
+                    <value yid="ALL_ENTITIES" yclass="LibCube:Member">
+                        <label>All entities</label>
+                    </value>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="CONSO" yclass="LibCube:Member">
+                            <label>The Group</label>
+                        </value>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="EJ_A" yclass="LibCube:Member">
+                            <label>Company A</label>
+                        </value>
+                    </child>
+                    <child yclass="LibCube:Hierarchy">
+                        <value yid="EJ_B" yclass="LibCube:Member">
+                            <label>Company B</label>
+                        </value>
+                    </child>
+                </hierarchies>
+            </dimensions>
+            <measures yid="MEASURE_VALUE" yclass="LibCube:Measure">
+               <label>Value</label>
+            </measures>
+        </cube>
+        <memberMetaData yid="TAX_ASSETS_METADATA"/>
+        <rootSection yclass="LibDocument:TextSection">
+            <components yclass="List">
+                <values yclass="DescribeThreePointsVariation">
+                    <data yclass="LibDocument:KPIIntentionData">
+                        <metadata yclass="LibDocument:KPIIntentionMetaData">
+                            <tags>kpi</tags>
+                            <members yid="TAX_ASSETS"/>
+                        </metadata>
+                        <metadata yclass="LibDocument:KPIIntentionMetaData">
+                            <tags>start</tags>
+                            <members yid="yearN_2"/>
+                        </metadata>
+                        <metadata yclass="LibDocument:KPIIntentionMetaData">
+                            <tags>end</tags>
+                            <members yid="yearN"/>
+                        </metadata>
+                        <selectedFacts yclass="LibCube:Fact">
+                            <members yid="TAX_ASSETS"/>
+                            <members yid="yearN_2"/>
+                            <members yid="CONSO"/>
+                            <factMeasures yclass="LibCube:FactMeasure">
+                                <measure yid="MEASURE_VALUE"/>
+                                <value>3088</value>
+                            </factMeasures>
+                        </selectedFacts>
+                        <selectedFacts yclass="LibCube:Fact">
+                            <members yid="TAX_ASSETS"/>
+                            <members yid="yearN_1"/>
+                            <members yid="CONSO"/>
+                            <factMeasures yclass="LibCube:FactMeasure">
+                                <measure yid="MEASURE_VALUE"/>
+                                <value>3731</value>
+                            </factMeasures>
+                        </selectedFacts>
+                        <selectedFacts yclass="LibCube:Fact">
+                            <members yid="TAX_ASSETS"/>
+                            <members yid="yearN"/>
+                            <members yid="CONSO"/>
+                            <factMeasures yclass="LibCube:FactMeasure">
+                                <measure yid="MEASURE_VALUE"/>
+                                <value>4364</value>
+                            </factMeasures>
+                        </selectedFacts>
+                    </data>
+                    <options yclass="DescribeThreePointsVariationOptions">
+                        <useValueInReferentialExpression>true</useValueInReferentialExpression>
+                        <debug_generateAllVariants>true</debug_generateAllVariants>
+                        <debug_renderConcepts>true</debug_renderConcepts>
+                    </options>
+                </values>
+            </components>
+        </rootSection>
+      </y:instance>
+   </y:data>
+</y:input>

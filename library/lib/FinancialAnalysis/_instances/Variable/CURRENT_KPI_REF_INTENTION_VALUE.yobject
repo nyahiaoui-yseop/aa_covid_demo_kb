@@ -1,0 +1,4 @@
+Variable CURRENT_KPI_REF_INTENTION_VALUE
+    --> documentation """The value of `currentValue` in the computed values of `CURRENT_KPI_REF_INTENTION`."""
+    --> domains Number
+;

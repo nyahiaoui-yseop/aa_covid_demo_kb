@@ -1,0 +1,174 @@
+LibDocument:MemberMetaData CURRENT_FINANCIAL_LIABILITIES_METADATA
+--> members CURRENT_FINANCIAL_LIABILITIES
+--> documentation """Metadata for the member `CURRENT_FINANCIAL_LIABILITIES`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeValue
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:BURDEN
+								--> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:PESER
+								--> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeVariation
+		--> intentions LibDocument:DescribeVariationContributors
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:EN:A_PAY_OFF_OF
+								--> synonyms VP:EN:PAYOFF
+								--> synonyms VP:EN:REDUCE
+								--> synonyms VN:EN:A_REDUCTION_OF
+								--> synonyms VP:EN:REPAY
+								--> synonyms VN:EN:A_REPAYMENT_OF
+								--> synonyms VN:EN:A_RESOLUTION_OF
+								--> synonyms VP:EN:RESOLVE
+								--> synonyms VP:EN:SETTLE
+								--> synonyms VN:EN:A_SETTLEMENT_OF
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UN_DÉSENDETTEMENT_DE
+								--> synonyms VN:FR:UNE_RÉDUCTION_DE
+								--> synonyms VP:FR:SEDÉSENDETTER
+								--> synonyms VP:FR:SERÉDUIRE
+								--> synonyms VP:FR:RÉDUIRE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UN_ENDETTEMENT_DE
+								--> synonyms VP:FR:PROGRESSER
+								--> synonyms VN:FR:UNE_PROGRESSION_DE
+								--> synonyms VP:FR:S_ENDETTER
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "current financial liabilities"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "dettes financières de CT"
+											--> gender FEMININE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

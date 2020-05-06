@@ -1,0 +1,6 @@
+name: augmented-financial-analyst-bootstrap
+title: Yseop Augmented Financial Analyst Bootstrap
+version: '1.0'
+nav:
+- modules/ROOT/nav.adoc
+

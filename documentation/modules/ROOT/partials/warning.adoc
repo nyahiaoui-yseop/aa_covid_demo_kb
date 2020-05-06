@@ -1,0 +1,1 @@
+WARNING: Every time the Augmented Financial Analyst bootstrap is upgraded, the `lib` and `src/FinancialAnalysis` directories are completely replaced, removing any changes you may have done. We recommend you to do all of your changes outside those two directories.

@@ -1,0 +1,19 @@
+interface VariationIntention_compareToLastYear extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR` as default options.
+
+@see `DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR`
+"""
+    --> apiLabel "Describe the variation − Medium verbosity − Compare to last year"
+    --> apiDescription ""
+    --> hideFromApi true
+
+; // VariationIntention_compareToLastYear
+
+implementation VariationIntention_compareToLastYear
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR
+    }
+;

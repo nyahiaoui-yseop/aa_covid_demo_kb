@@ -1,0 +1,16 @@
+LibDocument:DynamicCustomTexts sElaborationIMPB
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:SentenceAnchor
+                --> text \(
+                    la valeur est négative
+                \)
+                --> type LibOntology:SentenceType::SENTENCE_WITHOUT_SUBJECT_GERUND
+            ;
+        ;
+    }
+    --> ranges LibKPI:defaultPredicateRanges
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CURRENT_VALUE
+    ;
+;

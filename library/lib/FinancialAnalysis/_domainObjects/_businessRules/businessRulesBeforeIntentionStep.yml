@@ -1,0 +1,21 @@
+function FinancialAnalysis:rulesBeforeIntentionStep
+args{}
+ruleset {
+
+    Rule setTimeMembers_DescribeVariation_N_N_1
+    if (?intention in DescribeVariation_N_N_1
+        ?intention.timeMembers == null)
+    then
+      ?intention.timeMembers := yearN;
+      ?intention.timeMembers := yearN_1;
+    ;
+
+    Rule setTimeMembers_DescribeValue_N
+    if (?intention in DescribeValue_N
+        ?intention.timeMembers == null)
+    then
+      ?intention.timeMembers := yearN;
+    ;
+
+}
+;

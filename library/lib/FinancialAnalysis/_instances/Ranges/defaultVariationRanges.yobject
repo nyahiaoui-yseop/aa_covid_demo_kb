@@ -1,0 +1,9 @@
+LibKPI:Ranges defaultVariationRanges
+    --> thresholds {-0.1, -0.03, 0.03, 0.1}
+    --> rangeValues LibKPI:TWO_THRESHOLDS_NEG_POS
+;
+// x < -0.1             LibKPI:SIGNIFICANT_NEGATIVE
+// -0.1 < x < -0.03     LibKPI:NEGATIVE
+// -0.03 < x < 0.03     LibKPI:INSIGNIFICANT
+// 0.03 < x < 0.1       LibKPI:POSITIVE
+// 0.1 < 0              LibKPI:SIGNIFICANT_POSITIVE

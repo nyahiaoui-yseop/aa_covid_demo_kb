@@ -1,0 +1,233 @@
+AmountKPI NET_EARNINGS_KPI
+--> indicator NET_EARNINGS
+--> documentation """KPI for the indicator `NET_EARNINGS`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeValue
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> synonyms VP:EN:GENERATE
+								--> synonyms VP:EN:REALIZE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> synonyms VP:EN:GENERATE
+								--> synonyms VP:EN:REALIZE
+								--> synonyms VP:EN:ACHIEVE
+								--> synonyms VP:EN:PRODUCE
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:ENREGISTRER
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:GÉNÉRER
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:RÉALISER
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:ENREGISTRER
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:GÉNÉRER
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:RÉALISER
+								--> synonyms VP:FR:DÉGAGER
+								--> synonyms VP:FR:EXTÉRIORISER
+								--> synonyms VP:FR:PRODUIRE
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> en_GB	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN_GB:REALISE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN_GB:REALISE
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeVariation
+		--> intentions LibDocument:DescribeVariationContributors
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UNE_CONTRACTION_DE
+								--> synonyms VN:FR:UNE_DÉGRADATION_DE
+								--> synonyms VN:FR:UNE_DÉTÉRIORATION_DE
+								--> synonyms VN:FR:UNE_RÉDUCTION_DE
+								--> synonyms VP:FR:RÉGRESSER
+								--> synonyms VN:FR:UNE_RÉGRESSION_DE
+								--> synonyms VP:FR:SECONTRACTER
+								--> synonyms VP:FR:SEDÉGRADER
+								--> synonyms VP:FR:SEDÉTÉRIORER
+								--> synonyms VP:FR:SERÉDUIRE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UNE_AMÉLIORATION_DE
+								--> synonyms VP:FR:PROGRESSER
+								--> synonyms VN:FR:UNE_PROGRESSION_DE
+								--> synonyms VP:FR:S_AMÉLIORER
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net earnings"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net profit"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net profitability"
+											--> number SINGULAR
+											;
+							--> thresholdConditions LibKPI:INSIGNIFICANT
+							--> thresholdConditions LibKPI:POSITIVE
+							;,
+							-> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "losses"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net loss"
+											--> number SINGULAR
+											;
+						--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges ThreeLevelValue
+						--> filter ALL_CURRENT_VALUES__NAMES
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "bénéfice net"
+											--> gender MASCULINE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "profitabilité nette"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "rentabilité nette"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "résultat net"
+											--> gender MASCULINE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+							--> thresholdConditions LibKPI:INSIGNIFICANT
+							--> thresholdConditions LibKPI:POSITIVE
+							;,
+							-> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "pertes"
+											--> gender FEMININE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+						--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges ThreeLevelValue
+						--> filter ALL_CURRENT_VALUES__NAMES
+					;
+				}
+				;
+		;
+	;
+;

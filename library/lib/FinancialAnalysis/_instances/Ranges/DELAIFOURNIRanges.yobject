@@ -1,0 +1,6 @@
+LibKPI:Ranges DELAIFOURNIRanges
+    --> thresholds {60}
+    --> rangeValues {LibKPI:MEDIUM, LibKPI:HIGH}
+;
+// x < 60            LibKPI:MEDIUM
+// 60 <= x           LibKPI:HIGH

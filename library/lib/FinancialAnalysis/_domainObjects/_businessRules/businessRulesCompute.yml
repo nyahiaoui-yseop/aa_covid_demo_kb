@@ -1,0 +1,77 @@
+Function rulesCompute
+args {}
+ruleset {
+
+    Rule VariationLevelConsolidatedEBE_N_N_1
+    if (theGeneralData.consolidatedEBEVariationN_N_1 == null
+        && getJointureOneFactValue(jointureEBE_Conso_N) != null
+        && getJointureOneFactValue(jointureEBE_Conso_N_1) != null)
+    then
+        theGeneralData.consolidatedEBEVariationN_N_1 = getVariationLevel(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)));
+    ;
+
+    Rule VariationLevelConsolidatedCA_N_N_1
+    if (theGeneralData.consolidatedCAVariationN_N_1 == null
+        && getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) != null
+        && getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) != null)
+    then
+        theGeneralData.consolidatedCAVariationN_N_1 = getVariationLevel(getVariation(getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N)));
+    ;
+
+    Rule VariationLevelConsolidatedEBECA_N_2_N_1
+    if (getJointureOneFactValue(jointureEBECA_Conso_N_1) != null && getJointureOneFactValue(jointureEBECA_Conso_N_2) != null)
+    then
+        theGeneralData.consolidatedEBECAVariationN_1_N_2 = new(Variation);
+        theGeneralData.consolidatedEBECAVariationN_1_N_2.compute(getJointureOneFactValue(jointureEBECA_Conso_N_1), getJointureOneFactValue(jointureEBECA_Conso_N_2));
+    ;
+
+    Rule VariationLevelConsolidatedEBECA_N_N_1
+    if (getJointureOneFactValue(jointureEBECA_Conso_N) != null && getJointureOneFactValue(jointureEBECA_Conso_N_1) != null)
+    then
+        theGeneralData.consolidatedEBECAVariationN_N_1 = new(Variation);
+        theGeneralData.consolidatedEBECAVariationN_N_1.compute(getJointureOneFactValue(jointureEBECA_Conso_N), getJointureOneFactValue(jointureEBECA_Conso_N_1));
+    ;
+
+    Rule VariationLevelConsolidatedACQ_N_2_N_1
+    if (getJointureOneFactValue(jointureACQ_Conso_N_2) != null
+        && getJointureOneFactValue(jointureACQ_Conso_N_1) != null)
+    then
+        theGeneralData.consolidatedACQVariationN_1_N_2 = new(Variation);
+        theGeneralData.consolidatedACQVariationN_1_N_2.compute(getJointureOneFactValue(jointureACQ_Conso_N_1), getJointureOneFactValue(jointureACQ_Conso_N_2));
+    ;
+
+    Rule VariationLevelConsolidatedACQ_N_N_1
+    if (getJointureOneFactValue(jointureACQ_Conso_N_1) != null
+        && getJointureOneFactValue(jointureACQ_Conso_N) != null)
+    then
+        theGeneralData.consolidatedACQVariationN_N_1 = new(Variation);
+        theGeneralData.consolidatedACQVariationN_N_1.compute(getJointureOneFactValue(jointureACQ_Conso_N), getJointureOneFactValue(jointureACQ_Conso_N_1));
+    ;
+
+    Rule VarationConsolidatedCAGrowsFasterThanEBE
+    if (getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) != null
+        && getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) != null
+        && getJointureOneFactValue(jointureEBE_Conso_N) != null
+        && getJointureOneFactValue(jointureEBE_Conso_N_1) != null
+        && getVariation(getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N)) > getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)) )
+    then
+        theGeneralData.consolidatedCAGrowsFasterThanEBE = true;
+    ;
+
+    Rule ConsolidatedCHGINTinEBE
+    if (theGeneralData.consolidatedCHGINTinEBE == null)
+    then
+        theGeneralData.consolidatedCHGINTinEBE = getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_FINANCIAL_COSTS__CONSO_YEARN_1_N) / getJointureOneFactValue(jointureEBE_Conso_N);
+    ;
+
+    Rule ConsolidatedCapexDota
+    if (getJointureOneFactValue(jointureACQ) != null
+        && getJointureOneFactValue(jointureDOTA)!= null
+        && getJointureOneFactValue(jointureACQ) > (1.2 * getJointureOneFactValue(jointureDOTA) ))
+    then
+        theGeneralData.consolidatedCAPEXvsDOTA = true;
+    ;
+
+}
+--> dsl "rules to compute values"
+;

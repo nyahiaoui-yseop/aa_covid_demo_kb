@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration USD_K_AMOUNT_STYLING_CONFIGURATION
+    --> dynamicStylingConfiguration usdKAmount
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

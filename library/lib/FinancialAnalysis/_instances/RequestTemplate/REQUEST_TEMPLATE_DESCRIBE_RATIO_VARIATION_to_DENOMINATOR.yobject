@@ -1,0 +1,26 @@
+LibDocument:RequestTemplate REQUEST_TEMPLATE_DESCRIBE_RATIO_VARIATION_to_DENOMINATOR
+    --> filters -> LibDocument:RequestTemplateMemberFilter
+        --> dimension DIMENSION_TIME
+        --> members -> LibDocument:RequestTemplateMember
+            --> tag "start"
+            --> displayName "Start Date"
+            --> description "Start of the period of analysis."
+            --> mandatory true
+        ;
+        --> members -> LibDocument:RequestTemplateMember
+            --> tag "end"
+            --> displayName "End Date"
+            --> description "End of the period of analysis."
+            --> mandatory true
+        ;
+    ;
+    --> filters -> LibDocument:RequestTemplateMemberFilter
+        --> dimension DIMENSION_INDICATOR
+        --> members -> LibDocument:RequestTemplateMember
+            --> tag "kpi"
+            --> displayName "KPI"
+            --> description "The key performance indicator used as numerator to make a ratio."
+            --> mandatory true
+        ;
+    ;
+;

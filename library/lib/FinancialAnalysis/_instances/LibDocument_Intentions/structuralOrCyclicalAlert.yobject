@@ -1,0 +1,14 @@
+LibDocument:StaticTextIntention structuralOrCyclicalAlert
+    --> text  -> MultilingualText
+        --> i18nName_en \(
+            \beginStyle(alert)
+                Is it structural or cyclical? Explain the major event\+(s) that led to this result?
+            \endStyle
+        \)
+        --> i18nName_fr \(
+            \beginStyle(alert)
+                Est-ce structurel ou cyclique ? Expliquer le\+(s) événement\+(s) majeur\+(s) expliquant ce résultat ?
+            \endStyle
+        \)
+    ;
+;

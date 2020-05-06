@@ -1,0 +1,495 @@
+interface DescribeRatioVariation extends LibDocument:CustomKPIIntention
+
+    field denominatorKPI
+    --> documentation """Denominator KPI of the ratio."""
+    --> domains LibKPI:KeyPerformanceIndicator
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    method createFactsSelectionForKpi
+    args {
+        LibKPI:KeyPerformanceIndicator selectedKpi
+    }
+    --> domains Object
+    --> documentation """Create the fact selection for a give KPI and the selected period.
+
+- @param `selectedKPI`  A `LibKPI:KeyPerformanceIndicator` that represents the KPI
+- @param `period`       The period between two dates used in the report.
+
+@return the selection.
+        """
+    method createRatioNounPhrase
+    args {
+        Text numerator
+        Text denominator
+    }
+    --> domains LibOntology:NounPhrase
+    --> documentation """Create a `LibOntology:NounPhrase` corresponding to the ratio of given numerator and denominator.
+
+- @param `numerator` Numerator
+- @param `denonimator` Denominator
+
+@return a `LibOntology:NounPhrase` corresponding to the ratio.
+    """
+
+    method createRatioConcept
+    args {}
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Create the ratio concept with all the synonymic variants.
+
+@return a concept containing all the synonyms for this ratio.
+    """
+
+    method createSynonymVariants
+    args {}
+    --> domains Collection
+    --> documentation """Create the ratio standard variants for those nominator and denominator.
+
+@return a list of the synonyms.
+    """
+
+    method createRatioSpecificVariants
+    args {}
+    --> domains Collection
+    --> documentation """Create the ratio specific variants for those nominator and denominator.
+
+@return a list of the synonyms.
+    """
+
+    method getDenominatorKpiIndicator
+    args {}
+    --> domains LibCube:IndicatorMember
+    --> documentation """Get the indicator linked to the denominator kpi tag or field.
+
+@return `LibCube:IndicatorMember` The indicator.
+"""
+
+    classProperties
+    --> documentation """Intention to display a ratio variation over a given time."""
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "DescribeRatioVariation"
+        --> number SINGULAR
+    ;
+    --> hideFromApi true
+    --> apiLabel "Describe a ratio variation"
+    --> apiDescription "Intention to display a ratio variation over a given time."
+;
+
+implementation DescribeRatioVariation
+    override {
+        setSemanticSlots function
+        initFactsSelections function
+        computeValues function
+        setRoles function
+        getDocumentStructure function
+        optionsClass
+        --> defaultValue DescribeRatioVariationOptions
+        expectedNumberOfTimeMembers
+        --> defaultValue 2
+        intentionCategory
+        --> defaultValue DESCRIBE_VARIATION_CATEGORY
+        requestTemplate
+        --> defaultValue REQUEST_TEMPLATE_DESCRIBE_RATIO_VARIATION
+    }
+;
+
+function DescribeRatioVariation::setRoles
+args {}
+--> domains Void
+--> action {
+    if(this.roles == null ){
+        this.roles = new(HashSet)
+    }
+    this.roles.add(LibDocument:IntentionRole::Root);
+    this.roles.add(LibDocument:IntentionRole::Reference);
+}
+;
+
+function DescribeRatioVariation::setSemanticSlots
+args {}
+--> domains Void
+--> action {
+    this.semanticSlots = DESCRIBE_RATIO_VARIATION_SEMANTIC_SLOTS;
+};
+
+function DescribeRatioVariation::initFactsSelections
+args {}
+--> domains Void
+--> action {
+    this.selections = new(DescribeRatioVariationSelections);
+
+    selections.denominatorSelection = createFactsSelectionForKpi(this.denominatorKPI);
+    selections.numeratorSelection = createFactsSelectionForKpi(this.kpi);
+};
+
+function DescribeRatioVariation::createFactsSelectionForKpi
+args {
+    LibKPI:KeyPerformanceIndicator selectedKpi
+}
+local {
+    LibCube:JointureDimensionCondition conditionIndicator
+    LibCube:JointureDimensionCondition conditionTime
+    LibCube:JointureMeasureCondition measureValueCondition
+    List localDimensionConditions
+    List measureConditions
+}
+--> action {
+    localDimensionConditions = new(List);
+    measureConditions = new(List);
+    if(dimensionConditions != null && dimensionConditions.isEmpty() == false){
+        localDimensionConditions.addAll(dimensionConditions);
+    }
+
+    // constrain with the KPI indicator
+    conditionIndicator = new(LibCube:JointureDimensionCondition);
+    conditionIndicator.dimension = DIMENSION_INDICATOR;
+    conditionIndicator.members.add(selectedKpi.indicator);
+    localDimensionConditions.add(conditionIndicator);
+
+    // constrain with the start and end periods
+    conditionTime = new(LibCube:JointureDimensionCondition);
+    conditionTime.dimension = DIMENSION_TIME;
+    foreach(_timeMember, this>>timeMembers){
+        conditionTime.members.add(_timeMember);
+    }
+
+    foreach (timeMember, DIMENSION_TIME>>members) {
+        if (timeMember.date > getStartTime().date && timeMember.date < getEndTime().date) {
+            conditionTime.members.add(timeMember)
+        }
+    }
+
+    localDimensionConditions.add(conditionTime);
+    measureValueCondition = new(LibCube:JointureMeasureCondition)
+    measureValueCondition.measure = selectedKpi.measure
+    measureValueCondition.valueFilter = LibCube:MeasureCondition::EXISTS
+    measureConditions.add(measureValueCondition)
+
+    return buildFactSelection(localDimensionConditions, _MEASURE_CONDITIONS: measureConditions)
+};
+
+function DescribeRatioVariation::computeValues
+args {}
+local {
+    LibCube:TimeMember inflectionPoint
+
+    LibDocument:Entity indicatorEntity
+    LibDocument:Entity referenceEntity
+    LibDocument:ComputedValue currentValue
+    LibDocument:ComputedDateValue currentDate
+    LibDocument:ComputedValue previousValue
+    LibDocument:ComputedDateValue previousDate
+    LibDocument:ComputedValue period
+    LibDocument:ComputedValue comparison
+    LibDocument:ComputedValue comparisonBps
+    LibDocument:ComputedValue trend
+
+    Collection numeratorFacts
+    Collection denominatorFacts
+    LibCube:Fact denominatorPreviousValueFact
+    LibCube:Fact denominatorCurrentValueFact
+
+    LibCube:Fact numeratorPreviousValueFact
+    LibCube:Fact numeratorCurrentValueFact
+
+    Number previousDenominator
+    Number currentDenominator
+
+    Number previousRatio
+    Number currentRatio
+    Number difference
+    Number relativeDifference
+    LibAnalysis:TrendNature varTrendNature
+
+    DescribeRatioVariationOptions localOptions
+}
+--> domains Void
+--> action {
+
+    computedValues = new(DescribeRatioVariationComputedValues);
+    localOptions = DescribeRatioVariationOptions(this.options);
+
+    indicatorEntity = memberToEntity(getMainKpiIndicator(), {LibDocument:IntentionRole::Root});
+    referenceEntity = memberToEntity(getDenominatorKpiIndicator(),{LibDocument:IntentionRole::Reference});
+
+    numeratorFacts = this.getFactsByMember(getMainKpiIndicator());
+    numeratorFacts.sort(LibCube:paramSortFactsByDate);
+
+    denominatorFacts = this.getFactsByMember(getDenominatorKpiIndicator());
+    denominatorFacts.sort(LibCube:paramSortFactsByDate);
+
+    denominatorPreviousValueFact = denominatorFacts.get(2);
+    numeratorPreviousValueFact = numeratorFacts.get(2);
+
+    denominatorCurrentValueFact = denominatorFacts.get(1);
+    numeratorCurrentValueFact = numeratorFacts.get(1);
+
+    currentDate = new(LibDocument:ComputedDateValue);
+    currentDate.calculationType = DATE_CALCULATION;
+    currentDate.setDateFromTimeMember(numeratorCurrentValueFact.getTimeMember());
+    currentDate.setDateDefaultStyle();
+    computedValues.put(ComputedValueKey:CURRENT_DATE, currentDate);
+
+    previousDate = new(LibDocument:ComputedDateValue);
+    previousDate.calculationType = DATE_CALCULATION;
+    previousDate.setDateFromTimeMember(numeratorPreviousValueFact.getTimeMember());
+    previousDate.setDateDefaultStyle();
+    computedValues.put(ComputedValueKey:PREVIOUS_DATE, currentDate);
+
+    previousDenominator = abs(denominatorPreviousValueFact.getMeasureValue().value);
+    // Patch to avoid division by 0, but we will need to generate a specific text in this case
+    if(previousDenominator == 0) {
+        previousDenominator = 1;
+    }
+    previousRatio = abs(numeratorPreviousValueFact.getMeasureValue().value) / previousDenominator;
+
+    currentDenominator = abs(denominatorCurrentValueFact.getMeasureValue().value);
+    // Patch to avoid division by 0, but we will need to generate a specific text in this case
+    if(currentDenominator == 0) {
+        currentDenominator = 1;
+    }
+    currentRatio = abs(numeratorCurrentValueFact.getMeasureValue().value) / currentDenominator;
+
+    currentValue = new(LibDocument:ComputedValue);
+    currentValue.calculationType = ABS_PERCENTAGE_CALCULATION;
+    currentValue.setValue(currentRatio);
+    currentValue.owners.add(indicatorEntity);
+    currentValue.owners.add(referenceEntity);
+    computedValues.put(ComputedValueKey:CURRENT_VALUE, currentValue);
+
+    previousValue = new(LibDocument:ComputedValue);
+    previousValue.calculationType = ABS_PERCENTAGE_CALCULATION;
+    previousValue.setValue(previousRatio);
+    previousValue.owners.add(indicatorEntity);
+    previousValue.owners.add(referenceEntity);
+    computedValues.put(ComputedValueKey:PREVIOUS_VALUE, previousValue);
+
+    // Difference between the two ratios
+    difference = currentRatio - previousRatio;
+    if(previousRatio != 0) {
+        relativeDifference = difference / previousRatio;
+    }
+    else {
+        relativeDifference = 1;
+    }
+
+    // Difference in bps (value)
+    comparisonBps = new(LibDocument:ComputedValue);
+    comparisonBps.calculationType = BASIS_POINT_CALCULATION
+    comparisonBps.setValue(abs(difference) * 10000);
+    computedValues.put(ComputedValueKey:CALCULATED_CHANGE, comparisonBps);
+
+    // Difference in percent
+    comparison = new(LibDocument:ComputedValue);
+    comparison.calculationType = ABS_PERCENTAGE_CALCULATION
+    comparison.setValue(abs(relativeDifference));
+    computedValues.put(ComputedValueKey:CALCULATED_RELATIVE_CHANGE, comparison);
+
+    if(difference > 0 && abs(relativeDifference) > localOptions.thresholdStableVariation) {
+        varTrendNature = TrendNature::increase;
+    } else if(difference < 0 && abs(relativeDifference) > localOptions.thresholdStableVariation) {
+        varTrendNature = TrendNature::decrease;
+    } else {
+        varTrendNature = TrendNature::neutral;
+    }
+
+    trend = new(LibDocument:ComputedValue);
+    trend.calculationType = TREND_NATURE_CALCULATION;
+    trend.setValue(varTrendNature);
+    computedValues.put(ComputedValueKey:TREND_NATURE, trend);
+};
+
+function DescribeRatioVariation::getDocumentStructure
+args {
+    NamedArgumentsTable constraints
+    --> additionalVarArgs true
+}
+local {
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication by
+    NlgLambdaTerm || NlgApplication to
+    NlgLambdaTerm || NlgApplication period
+
+    NlgLambdaTerm || NlgApplication ratioIndicatorConcept
+
+    DescribeRatioVariationOptions localOptions
+
+    Text ratioAsText
+}
+--> action {
+    localOptions = DescribeRatioVariationOptions(this.options);
+
+    mainPredicate = LibDocument:getMainPredicateConcept(this, computedValues, null);
+
+    if(computedValues.getValue(ComputedValueKey:TREND_NATURE) == TrendNature::neutral) {
+
+        by = LibOntology:conceptIdentity;
+        to = LibDocument:getAtConcept(
+            this,
+            computedValues,
+            ifExpr(localOptions.showRelativeChange == false)
+                then true
+                else false
+        );
+    } else {
+        by = LibDocument:getByConcept(
+            this,
+            ifExpr(localOptions.showRelativeChange == true)
+                then computedValues.get(ComputedValueKey:CALCULATED_RELATIVE_CHANGE)
+                else computedValues.get(ComputedValueKey:CALCULATED_CHANGE),
+            false, // showStartValueParenthesis
+            LibOntology:conceptIdentity // since
+        );
+        to = LibOntology:conceptIdentity;
+    }
+
+    period = LibDocument:getDateConcept(this, computedValues.get(ComputedValueKey:CURRENT_DATE));
+
+    ratioIndicatorConcept = createRatioConcept();
+
+    return period.applyOn(
+            to.applyOn(
+                by.applyOn(
+                    mainPredicate.applyOn(ratioIndicatorConcept)
+    )));
+};
+
+function DescribeRatioVariation::createRatioConcept
+args {}
+local {
+    Collection ratioSynonyms
+    LibOntology:EntityConcept entityConcept
+}
+--> documentation """
+    Generate a concept gathering all the variants representing the ratio.
+    @return `NlgLambdaTerm, NlgApplication` Returns a concept corresponding to the ratio.
+    """
+
+--> action {
+
+    ratioSynonyms = createRatioSpecificVariants();
+    ratioSynonyms.addAll(createSynonymVariants());
+
+    entityConcept = new(LibOntology:EntityConcept);
+    entityConcept.lexicalization = new(List);
+
+    foreach(_synonym, ratioSynonyms) {
+        entityConcept.lexicalization.add(_synonym);
+    }
+
+    return entityConcept.buildConcept();
+};
+
+
+function DescribeRatioVariation::createRatioSpecificVariants
+args {}
+local {
+
+    LibCube:IndicatorMember numerator
+    LibCube:IndicatorMember denominator
+
+    Collection ratioSynonyms
+}
+--> action {
+
+    numerator = getMainKpiIndicator();
+    denominator = getDenominatorKpiIndicator();
+
+    ratioSynonyms = new(OrderedSet);
+
+    if(denominator == SALES) {
+        if(numerator == NET_EARNINGS) {
+            ratioSynonyms.add(DescribeRatioVariation:NET_EARNINGS_TO_SALES);
+        }
+        else if(numerator == EBITDA) {
+            ratioSynonyms.add(DescribeRatioVariation:EBITDA_TO_SALES);
+        }
+    }
+    else if(denominator == EBITDA && numerator == FINANCIAL_LIABILITIES) {
+        ratioSynonyms.add(DescribeRatioVariation:FINANCIAL_LIABILITIES_TO_EBITDA);
+    }
+    else if(denominator == TOTAL_EQUITY_AND_LIABILITIES && numerator == TOTAL_EQUITY) {
+        ratioSynonyms.add(DescribeRatioVariation:TOTAL_EQUITY_TO_TOTAL_EQUITY_AND_LIABILITIES);
+    }
+    else if(denominator == TOTAL_EQUITY && numerator == FINANCIAL_LIABILITIES) {
+        ratioSynonyms.add(DescribeRatioVariation:FINANCIAL_LIABILITIES_TO_TOTAL_EQUITY);
+    }
+
+    return ratioSynonyms;
+};
+
+function DescribeRatioVariation::createSynonymVariants
+args {}
+local {
+    LibDocument:Entity numeratorEntity
+    LibDocument:Entity denominatorEntity
+
+    LibOntology:EntityConcept numeratorConcept
+    LibOntology:EntityConcept denominatorConcept
+
+    Collection ratioSynonyms
+
+    Text ratioText
+}
+--> action {
+
+    numeratorEntity = memberToEntity(getMainKpiIndicator());
+    numeratorConcept = LibOntology:EntityConcept(getFinalCustomConcept(
+        LibDocument:SemanticSlot::Indicator,
+        LibOntology:EntityConcept,
+        _ENTITY: numeratorEntity
+    ));
+
+    if (numeratorConcept.lexicalization.isEmpty() == true) {
+        numeratorConcept.lexicalization.add(getMainKpiIndicator().label);
+    }
+
+    denominatorEntity = memberToEntity(getDenominatorKpiIndicator());
+    denominatorConcept = LibOntology:EntityConcept(getFinalCustomConcept(
+        LibDocument:SemanticSlot::Reference,
+        LibOntology:EntityConcept,
+        _ENTITY: denominatorEntity,
+        _FALL_BACK_SLOT: LibDocument:SemanticSlot::Indicator
+    ));
+
+    if(denominatorConcept.lexicalization.isEmpty() == true) {
+        denominatorConcept.lexicalization.add(getDenominatorKpiIndicator().label);
+    }
+    ratioSynonyms = new(OrderedSet);
+
+    foreach(_numSynonym, numeratorConcept.lexicalization) {
+        foreach(_denomSynonym, denominatorConcept.lexicalization) {
+            ratioSynonyms.add(createRatioNounPhrase(_numSynonym, _denomSynonym));
+        }
+    }
+
+    return ratioSynonyms;
+}; // DescribeRatioVariation::createSynonymVariants
+
+function DescribeRatioVariation::getDenominatorKpiIndicator
+args {}
+--> return ifExpr(denominatorKPI != null)
+            then denominatorKPI.indicator
+            else LibCube:IndicatorMember(data.getMembersByTag("denominatorKpi").get(_FIRST))
+;
+
+
+function DescribeRatioVariation::createRatioNounPhrase
+args {
+    Text numerator
+    Text denominator
+}
+local {
+    TextFunctionForRatio ratioText
+}
+--> action {
+    ratioText = new(TextFunctionForRatio, numerator', numerator, denominator', denominator);
+
+    return new(LibOntology:NounPhrase,
+        head, ratioText.newContextual(),
+        number, SINGULAR,
+        gender, MASCULINE
+    );
+};
+
+

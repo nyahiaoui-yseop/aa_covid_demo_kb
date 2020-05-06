@@ -1,0 +1,100 @@
+
+= Enriching your Knowledge Base
+
+== Using snippets in Visual Studio Code
+
+You may edit the bootstrap using https://code.visualstudio.com[Visual Studio Code] as recommended or using any other code editor. Using Visual Studio Code, you may take advantage of the very usefull snippets that are used throughout this tutorial. To learn more on Visual Studio Code snippets and on how to use them, see https://code.visualstudio.com/docs/editor/userdefinedsnippets[Snippets in Visual Studio Code].
+
+NOTE: If you are *not using Visual Studio Code*, you will find that everywhere a procedure uses a snippet, the corresponding code is documented as well.
+
+== Customizing the bootstrap default configuration
+
+The Augmented Financial Analyst bootstrap provides some default configuration values that can be overwritten or enhanced to fit your needs.
+
+To customize the default configuration:
+
+. Open the root configuration file: `src/_instances/RootConfig/AFA_ROOT_CONFIG.yobject`.
+. Edit the configuration values as needed.
+
+To learn more about the different configuration objects, see xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions].
+
+== Adding new indicators and KPIs
+
+The Augmented Financial Analyst bootstrap provides (in the `src/FinancialAnalysis` directory) its own financial analysis business knowledge by giving access to some xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#indicators[predefined indicators].
+
+You may as well add more indicators that are specific to your use case. To add a new indicator:
+
+. Add a new `LibCube:IndicatorMember` instance representing your indicator:
+.. Create a new file in `src/_instances/Indicator` named `MY_INDICATOR.yobject`.
+.. Use the `indicator` snippet or the following code, and fill out the indicator's name and attributes.
++
+include::partial$snippets/indicator.adoc[]
++
+. Add a new `LibDocument:KeyPerformanceIndicator` instance with the required vocabulary, thresholds, etc., that are specific to your indicator:
+.. Create a new file in `src/_instances/KeyPerformanceIndicators` named `kpiMY_INDICATOR.yobject`.
+.. Use the `kpi` snippet or the following code, and fill out the kpi's name and configuration values (to learn more about the different configuration objects, see xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions]).
++
+include::partial$snippets/kpi.adoc[]
+// TODO . [OPTIONAL] Add a new relation between your new KPI and the existing ones to the `financialAnalysisRelations` list.
+
+== Developing specialized intentions
+
+include::{page-version}@aa_reporting-framework::partial$intentions/exposing_intentions_important.adoc[]
+
+Specialized intentions are intentions that inherit Yseop generic intentions, but with some default values overwritten.
+
+The Augmented Financial Analyst bootstrap provides (in the `src/FinancialAnalysis` directory) its own set of xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#specialized_intentions[predefined specialized intentions].
+
+You may as well add more specialized intentions that are specific to your use case. To create a new specialized intention:
+
+. Create a new file in `src/_classes/SpecializedIntentions` named `MY_SPECIALIZED_INTENTION.yobject`.
+. Copy the predefined specialized intention that is most similar to the one you are developing, and modify the attributes as needed.
+
+NOTE: Only attributes that are not multivalued can have their default value overwritten.
+// Validate if still true.
+
+== Developing static text intentions
+
+include::{page-version}@aa_reporting-framework::partial$intentions/exposing_intentions_important.adoc[]
+
+`StaticTextIntention` are intentions with no argument and from which you can define your own text as a static `String`, a `TextGranule`, or a `TextFunction`. You may not use options with a `StaticTextIntention`, to use options or arguments use a `CustomIntention` instead.
+
+To create a new static text intention:
+
+. Create a new file in `src/_instances/StaticTextIntention` named `MY_STATIC_INTENTION.yobject`.
+. Copy and edit the following code to have your own static text:
++
+[source,YML]
+----
+LibDocument:StaticTextIntention staticTextIntention
+    --> text "Write your own text here"
+;
+----
+
+== Developing custom intentions
+
+include::{page-version}@aa_reporting-framework::partial$intentions/exposing_intentions_important.adoc[]
+
+With Custom intentions, you take advantage of the power of the intentions while having the possibility to use `TextGranule` and `TextFunction` objects. Of course, you can still use `Concept` objects in custom intentions.
+`CustomIntention` objects are similar to `StaticTextIntention`, with the use of options, arguments and computed values. The only thing you cannot do with a `CustomIntention`, is easily access the data from a cube.
+
+NOTE: To create a custom intention that can access a cube, you must create a `CustomKPIIntention`.
+
+The Augmented Financial Analyst bootstrap provides (in the `src/FinancialAnalysis` directory) its own set of xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#custom_intentions[predefined custom intentions].
+
+You may as well add more custom intentions that are specific to your use case. To create a new custom intention:
+
+. Create a new file in `src/_classes/` named `MY_CUSTOM_INTENTION.yclass`.
+. Use the `CustomTextIntention` snippet or the following code, and fill out the intention's name and configuration values (to learn more about the different configuration objects, see xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions]).
++
+include::partial$snippets/customTextIntention.adoc[]
+
+== Developing custom KPI intentions
+
+include::{page-version}@aa_reporting-framework::partial$intentions/exposing_intentions_important.adoc[]
+
+A `CustomKPIIntention` object is an enhanced and more complex `CustomIntention`. With a `CustomKPIIntention`, you may access the data from a cube, use options, arguments, computed values, and define your own text.
+
+NOTE: No snippet has been developed yet to facilitate the creation of a new custom KPI intention.
+
+WARNING: Creating a Custom KPI Intention is way more complex than creating a custom intention.

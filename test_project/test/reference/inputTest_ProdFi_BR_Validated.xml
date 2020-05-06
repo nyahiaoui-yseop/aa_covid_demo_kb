@@ -1,0 +1,2258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section>
+					<yt:title>Describe variation de production financière et résultat net</yt:title>
+					<yt:paragraph level="1">Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, initialement à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, enregistrent une hausse de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, ont augmenté de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>Les produits financiers, précédemment à 0,04<yt:no-break-space/>K$ en 2017, sont en croissance de 25<yt:no-break-space/>% à 0,05<yt:no-break-space/>K$ en 2018.<yt:par/>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:dialog-id>48C4-16CDD87B84</y:dialog-id>
+			<y:request-count>1</y:request-count>
+			<y:session-status>
+				<y:status>_ONGOING</y:status>
+			</y:session-status>
+			<y:start-timestamp>2019-08-29T15:19:15.008</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:data>
+			<y:instance yid="theGeneralData">
+				<language yid="LANG_fr"/>
+				<cube yid="0xADB5" yclass="LibCube:Cube">
+					<dimensions ypos="1" yid="DIMENSION_ENTITY">
+						<members ypos="1" yid="CONSO">
+							<dimension yid="DIMENSION_ENTITY"/>
+							<label>Consolidé</label>
+						</members>
+						<isOptional>false</isOptional>
+						<hierarchies ypos="1" yid="0xADB7" yclass="LibCube:Hierarchy">
+							<dimension yid="DIMENSION_ENTITY"/>
+							<value yid="CONSO"/>
+						</hierarchies>
+						<membersClass yid="LibCube:IndicatorMember"/>
+					</dimensions>
+					<dimensions ypos="2" yid="DIMENSION_TIME">
+						<members ypos="1" yid="yearN">
+							<date>2018-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<members ypos="2" yid="yearN_1">
+							<date>2017-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<members ypos="3" yid="yearN_2">
+							<date>2016-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<isOptional>false</isOptional>
+						<membersClass yid="LibCube:TimeMember"/>
+					</dimensions>
+					<dimensions ypos="3" yid="DIMENSION_INDICATOR">
+						<isOptional>true</isOptional>
+						<membersClass yid="LibCube:IndicatorMember"/>
+					</dimensions>
+					<facts ypos="1" yid="0xADC0" yclass="LibCube:Fact">
+						<members ypos="1" yid="PRODFI">
+							<dimension yid="DIMENSION_INDICATOR"/>
+						</members>
+						<members ypos="2" yid="yearN"/>
+						<factMeasures ypos="1" yid="0xADC1" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE">
+								<includeInJointureConditions>false</includeInJointureConditions>
+							</measure>
+							<value>50</value>
+						</factMeasures>
+						<timeMember yid="yearN"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="2" yid="0xADBE" yclass="LibCube:Fact">
+						<members ypos="1" yid="PRODFI"/>
+						<members ypos="2" yid="yearN_1"/>
+						<factMeasures ypos="1" yid="0xADBF" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>40</value>
+						</factMeasures>
+						<timeMember yid="yearN_1"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="3" yid="0xADBC" yclass="LibCube:Fact">
+						<members ypos="1" yid="RN">
+							<dimension yid="DIMENSION_INDICATOR"/>
+						</members>
+						<members ypos="2" yid="yearN"/>
+						<factMeasures ypos="1" yid="0xADBD" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>120</value>
+						</factMeasures>
+						<timeMember yid="yearN"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="4" yid="0xADBA" yclass="LibCube:Fact">
+						<members ypos="1" yid="RN"/>
+						<members ypos="2" yid="yearN_1"/>
+						<factMeasures ypos="1" yid="0xADBB" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>100</value>
+						</factMeasures>
+						<timeMember yid="yearN_1"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<factsSelections ypos="1" yid="0xB0B4" yclass="LibCube:JointureOneFactSelection">
+						<selectedFact yid="0xADBC" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='3']"/>
+						<jointure yid="0xB0B3" yclass="LibCube:Jointure">
+							<attribute yid="0xB0B6" yclass="PredicateAttribute"/>
+							<dimensionConditions yid="0xB0B0" yclass="List">
+								<values ypos="1" yid="0xB0B1" yclass="LibCube:JointureDimensionCondition">0xB0B1</values>
+								<values ypos="2" yid="0xB0B2" yclass="LibCube:JointureDimensionCondition">0xB0B2</values>
+							</dimensionConditions>
+						</jointure>
+						<selectedFacts ypos="1" yid="0xADBC" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='3']"/>
+						<processingRule yid="SATISFY_BY_INPUT_OR_QUERY"/>
+						<processingStatus yid="SATISFIED_BY_CURRENT_FACTS"/>
+					</factsSelections>
+					<factsSelections ypos="2" yid="0xAE09" yclass="LibCube:JointureFactsSelection">
+						<jointure yid="0xAE08" yclass="LibCube:Jointure">
+							<attribute yid="0xAE3F" yclass="PredicateAttribute"/>
+							<dimensionConditions yid="0xAE05" yclass="List">
+								<values ypos="1" yid="0xAE06" yclass="LibCube:JointureDimensionCondition">0xAE06</values>
+								<values ypos="2" yid="0xAE07" yclass="LibCube:JointureDimensionCondition">0xAE07</values>
+							</dimensionConditions>
+						</jointure>
+						<selectedFacts ypos="1" yid="0xADBE" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='2']"/>
+						<selectedFacts ypos="2" yid="0xADC0" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='1']"/>
+						<processingRule yid="SATISFY_BY_INPUT_OR_QUERY"/>
+						<processingStatus yid="SATISFIED_BY_CURRENT_FACTS"/>
+					</factsSelections>
+					<options yid="0xADB6" yclass="LibCube:CubeOptions">
+						<generateMdxQueries>false</generateMdxQueries>
+						<generateNonIndicatorMembersJointure>false</generateNonIndicatorMembersJointure>
+						<initializedCube>true</initializedCube>
+					</options>
+				</cube>
+				<rootSection yid="theGeneralData_rootSection"/>
+				<runUnitTests>false</runUnitTests>
+				<finalDialogStep yid="_TEXT_GENERATION"/>
+				<intentionIDCounter>0</intentionIDCounter>
+			</y:instance>
+		</y:data>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings
+		freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log
+				index="1"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="1.88">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log
+				index="2"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.09">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="3"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.17">
+				<y:message>_CUBE_INIT : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="4"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.28">
+				<y:message>the function defineExternalCube must be defined to call a external webservice.</y:message>
+			</y:log>
+			<y:log
+				index="5"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.39">
+				<y:message>initialize cube</y:message>
+			</y:log>
+			<y:log
+				index="6"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.50">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="7"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.58">
+				<y:message>Cube initizialized</y:message>
+			</y:log>
+			<y:log
+				index="8"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.67">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="9"
+				level="warning"
+				nature="alert"
+				origin-nb-ms="2.83">
+				<y:message>It is more efficient to exploit symbolic objects as a key (here 1)</y:message>
+				<y:alert-type
+					type="kb-alert"
+					sub-type-code="30"
+					sub-type-name="implicit-check"
+					code="W82"
+					owner="yseop"
+					source="yseop-engine"/>
+			</y:log>
+			<y:log
+				index="10"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.95">
+				<y:message>Set DIMENSION_TIME_CURRENT_MEMBER to default</y:message>
+			</y:log>
+			<y:log
+				index="11"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.15">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="12"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.26">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="13"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.42">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="14"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.55">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="15"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.64">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="16"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.78">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="17"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.94">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="18"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="4.05">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="19"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="4.31">
+				<y:message>Injected default configs</y:message>
+			</y:log>
+			<y:log
+				index="20"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="4.53">
+				<y:message>currentAttributeValue PRODFI_KPI</y:message>
+			</y:log>
+			<y:log
+				index="21"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.73">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xADC3&apos;</y:message>
+			</y:log>
+			<y:log
+				index="22"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.80">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="23"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.90">
+				<y:message>sent message beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="24"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.27">
+				<y:message>JUMPING to _CALCULATE_JOINTURE from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="25"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.36">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="26"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.50">
+				<y:message>missing dimension :DIMENSION_ENTITY for jointure :&apos;0xAE08&apos;</y:message>
+			</y:log>
+			<y:log
+				index="27"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.62">
+				<y:message>it could not be calculated the probability of success in: &apos;0xAE06&apos; its dimension members should be more than 0</y:message>
+			</y:log>
+			<y:log
+				index="28"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.72">
+				<y:message>_CALCULATE_JOINTURE : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="29"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.86">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADC0&apos;</y:message>
+			</y:log>
+			<y:log
+				index="30"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="6.00">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBE&apos;</y:message>
+			</y:log>
+			<y:log
+				index="31"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="6.14">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBC&apos;</y:message>
+			</y:log>
+			<y:log
+				index="32"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="6.27">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBA&apos;</y:message>
+			</y:log>
+			<y:log
+				index="33"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.39">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="34"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.49">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="35"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.57">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="36"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="6.68">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="37"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.77">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="38"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="6.85">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="39"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.95">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="40"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="7.03">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="41"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="7.11">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="42"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="7.25">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::BeforeDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="43"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="7.36">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::BeforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="44"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="7.72">
+				<y:message>_PREPARE_INTENTIONS : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="45"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="7.81">
+				<y:message>LibReportingFramework:calculateIntentions</y:message>
+			</y:log>
+			<y:log
+				index="46"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="8.36">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log
+				index="47"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="8.99">
+				<y:message>LibDocument:ComputedValue::setValue: trying to set a value of type: LibCube:TimePeriod into the computedValue.value of type: Text for the computedValue: &apos;0xAF1A&apos;</y:message>
+			</y:log>
+			<y:log
+				index="48"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="9.13">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log
+				index="49"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="9.50">
+				<y:message>Merging custom concept config LibDocument:ConfigurationContext::Kpi over LibDocument:ConfigurationContext::DefaultConfig</y:message>
+			</y:log>
+			<y:log
+				index="50"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.85">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB047{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="51"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.95">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB048{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="52"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.06">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB049{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="53"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.15">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB04A{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="54"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.23">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB04B{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="55"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.40">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB055{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="56"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.48">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB056{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="57"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.56">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB057{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="58"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.65">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB058{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="59"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.73">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB059{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="60"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.95">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB06B{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="61"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="12.03">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06C{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="62"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="12.11">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06D{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="63"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="12.20">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06E{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="64"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="12.30">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB06F{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="65"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.48">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="66"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="12.55">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="67"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="12.69">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::AfterDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="68"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="12.80">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::AfterDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="69"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.24">
+				<y:message>JUMPING to _DYNAMIC_DOCUMENT_PLANNING  from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="70"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.36">
+				<y:message>_DYNAMIC_DOCUMENT_PLANNING  : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="71"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.44">
+				<y:message>the function dynamicDocumentPlanningTransition is not defined.</y:message>
+			</y:log>
+			<y:log
+				index="72"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.54">
+				<y:message>JUMPING to _PREPARE_TABLES from _DYNAMIC_DOCUMENT_PLANNING </y:message>
+			</y:log>
+			<y:log
+				index="73"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.64">
+				<y:message>_PREPARE_TABLES : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="74"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.76">
+				<y:message>unhandled class type in LibDocument:TextSection::getAllTables() LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="75"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.85">
+				<y:message>JUMPING to _KB_BUSINESS_RULE_AFTER_INTENTIONS from _PREPARE_TABLES</y:message>
+			</y:log>
+			<y:log
+				index="76"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.93">
+				<y:message>_KB_BUSINESS_RULE_AFTER_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="77"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="14.03">
+				<y:message>onDialogTransitionTaskAfterIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="78"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.14">
+				<y:message>KPIIntention::beforeDataCollection &apos;0x2DC1&apos;</y:message>
+			</y:log>
+			<y:log
+				index="79"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.22">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="80"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.31">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log
+				index="81"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.43">
+				<y:message>sent message beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="82"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.59">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="83"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.75">
+				<y:message>missing dimension :DIMENSION_ENTITY for jointure :&apos;0xB0B3&apos;</y:message>
+			</y:log>
+			<y:log
+				index="84"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.88">
+				<y:message>it could not be calculated the probability of success in: &apos;0xB0B1&apos; its dimension members should be more than 0</y:message>
+			</y:log>
+			<y:log
+				index="85"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.99">
+				<y:message>_CALCULATE_JOINTURE : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="86"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="15.14">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADC0&apos;</y:message>
+			</y:log>
+			<y:log
+				index="87"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="15.29">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBE&apos;</y:message>
+			</y:log>
+			<y:log
+				index="88"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="15.42">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBC&apos;</y:message>
+			</y:log>
+			<y:log
+				index="89"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="15.55">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBA&apos;</y:message>
+			</y:log>
+			<y:log
+				index="90"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.67">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="91"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.77">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="92"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.84">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="93"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="15.94">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="94"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.03">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="95"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="16.10">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="96"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.20">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="97"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.27">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="98"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="16.35">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="99"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="16.49">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::AfterDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="100"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="16.59">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::AfterDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="101"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.93">
+				<y:message>JUMPING to _DYNAMIC_DOCUMENT_PLANNING  from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="102"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.03">
+				<y:message>_DYNAMIC_DOCUMENT_PLANNING  : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="103"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.11">
+				<y:message>the function dynamicDocumentPlanningTransition is not defined.</y:message>
+			</y:log>
+			<y:log
+				index="104"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.20">
+				<y:message>JUMPING to _PREPARE_TABLES from _DYNAMIC_DOCUMENT_PLANNING </y:message>
+			</y:log>
+			<y:log
+				index="105"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.27">
+				<y:message>_PREPARE_TABLES : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="106"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.37">
+				<y:message>unhandled class type in LibDocument:TextSection::getAllTables() LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="107"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.45">
+				<y:message>JUMPING to _KB_BUSINESS_RULE_AFTER_INTENTIONS from _PREPARE_TABLES</y:message>
+			</y:log>
+			<y:log
+				index="108"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.53">
+				<y:message>_KB_BUSINESS_RULE_AFTER_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="109"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="17.61">
+				<y:message>onDialogTransitionTaskAfterIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="110"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="17.77">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log
+				index="111"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="18.40">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="112"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="18.48">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="113"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="21.16">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB176{LibOntology:NP_m_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="114"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="21.30">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB177{LibOntology:NP_f_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="115"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="21.40">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB178{LibOntology:NP_m_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="116"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="21.50">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB179{LibOntology:NP_f_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="117"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="22.30">
+				<y:message>The object {byComputedValue{0xAF16}.toConcept(), since} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 686) has been cloned, new object created: 0xB17E{0xB181, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log
+				index="118"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="22.54">
+				<y:message>The object 0x6488{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3579) has been cloned, new object created: 0xB190{LibOntology:TAG:FR:BPUarbPnx0PU(0xB18D, 0xB18E, 0xB18F)}</y:message>
+			</y:log>
+			<y:log
+				index="119"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="23.19">
+				<y:message>The object 0x6488{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3579) has been cloned, new object created: 0xB1A4{LibOntology:TAG:FR:BPUarbPnx0PU(0xB1A1, 0xB1A2, 0xB1A3)}</y:message>
+			</y:log>
+			<y:log
+				index="120"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="24.36">
+				<y:message>The object {(localComputedValues{0xAEF4}.previousValue{0xAF09}).toConcept(), LibOntology:Ic} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 642) has been cloned, new object created: 0xB1B2{0xB1B5, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log
+				index="121"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="24.67">
+				<y:message>The object 0x6488{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3579) has been cloned, new object created: 0xB1C4{LibOntology:TAG:FR:BPUarbPnx0PU(0xB1C1, 0xB1C2, 0xB1C3)}</y:message>
+			</y:log>
+			<y:log
+				index="122"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="25.65">
+				<y:message>The object 0x6488{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3579) has been cloned, new object created: 0xB1D8{LibOntology:TAG:FR:BPUarbPnx0PU(0xB1D5, 0xB1D6, 0xB1D7)}</y:message>
+			</y:log>
+			<y:log
+				index="123"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="26.86">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB200{LibOntology:NP_m_sg, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="124"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="26.99">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB201{LibOntology:NP_m_sg, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="125"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.11">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB202{LibOntology:NP_m_sg, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="126"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.22">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB203{LibOntology:NP_m_sg, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="127"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.32">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB204{LibOntology:NP_m_sg, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="128"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.65">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB205{LibOntology:NP_m_sg, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="129"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.78">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB206{LibOntology:NP_m_sg, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="130"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.88">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB207{LibOntology:NP_m_sg, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="131"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="27.97">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB208{LibOntology:NP_m_sg, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="132"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.06">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB209{LibOntology:NP_f_sg, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="133"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.15">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB20A{LibOntology:NP_f_sg, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="134"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.26">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB20B{LibOntology:NP_f_sg, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="135"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.36">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB20C{LibOntology:NP_f_sg, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="136"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.46">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB20D{LibOntology:NP_f_sg, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="137"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.55">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB20E{LibOntology:NP_f_sg, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="138"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.64">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB20F{LibOntology:NP_f_sg, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="139"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.74">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB210{LibOntology:NP_f_sg, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="140"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.84">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB211{LibOntology:NP_f_sg, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="141"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="28.93">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB212{LibOntology:NP_m_pl, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="142"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.04">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB213{LibOntology:NP_m_pl, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="143"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.13">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB214{LibOntology:NP_m_pl, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="144"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.23">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB215{LibOntology:NP_m_pl, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="145"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.35">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB216{LibOntology:NP_m_pl, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="146"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.45">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB217{LibOntology:NP_m_pl, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="147"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.55">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB218{LibOntology:NP_m_pl, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="148"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.65">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB219{LibOntology:NP_m_pl, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="149"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.76">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB21A{LibOntology:NP_m_pl, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="150"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.86">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB21B{LibOntology:NP_f_pl, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="151"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="29.95">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB21C{LibOntology:NP_f_pl, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="152"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.06">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB21D{LibOntology:NP_f_pl, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="153"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.16">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB21E{LibOntology:NP_f_pl, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="154"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.26">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB21F{LibOntology:NP_f_pl, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="155"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.35">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB220{LibOntology:NP_f_pl, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="156"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.45">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB221{LibOntology:NP_f_pl, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="157"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.54">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB222{LibOntology:NP_f_pl, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="158"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="30.63">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB223{LibOntology:NP_f_pl, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="159"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="33.99">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB275{LibOntology:NP_m_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="160"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.09">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB276{LibOntology:NP_f_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="161"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.18">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB277{LibOntology:NP_m_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="162"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.28">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB278{LibOntology:NP_f_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="163"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.57">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB286{LibOntology:NP_m_sg, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="164"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.67">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB287{LibOntology:NP_m_sg, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="165"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.76">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB288{LibOntology:NP_m_sg, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="166"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.85">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB289{LibOntology:NP_m_sg, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="167"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="34.94">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB28A{LibOntology:NP_m_sg, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="168"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.03">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB28B{LibOntology:NP_f_sg, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="169"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.12">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB28C{LibOntology:NP_f_sg, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="170"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.21">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB28D{LibOntology:NP_f_sg, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="171"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.31">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB28E{LibOntology:NP_f_sg, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="172"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.40">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB28F{LibOntology:NP_f_sg, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="173"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.49">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB290{LibOntology:NP_m_pl, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="174"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.58">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB291{LibOntology:NP_m_pl, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="175"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.69">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB292{LibOntology:NP_m_pl, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="176"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.79">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB293{LibOntology:NP_m_pl, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="177"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.89">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB294{LibOntology:NP_m_pl, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="178"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="35.99">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB295{LibOntology:NP_f_pl, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="179"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="36.10">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB296{LibOntology:NP_f_pl, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="180"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="36.21">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB297{LibOntology:NP_f_pl, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="181"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="36.31">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB298{LibOntology:NP_f_pl, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="182"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="36.41">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB299{LibOntology:NP_f_pl, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="183"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="38.52">
+				<y:message>The object {(localComputedValues{0xAEF4}.previousDate{0xAF00}).toConcept(), LibOntology:Ic} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 664) has been cloned, new object created: 0xB2AE{0xB2B0, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log
+				index="184"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="38.67">
+				<y:message>The object {(localComputedValues{0xAEF4}.previousValue{0xAF09}).toConcept(), LibOntology:apply(this{test}.specializeConcept(LibOntology:createModifierConcept(LibOntology:Time)), cloning({(localComputedValues{0xAEF4}.previousDate{0xAF00}).toConcept(), LibOntology:Ic}))} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 666) has been cloned, new object created: 0xB1E6{0xB1E9, LibOntology:cApply2(0xB1EE, 0xB2B0, LibOntology:Ic)}</y:message>
+			</y:log>
+			<y:log
+				index="185"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="38.83">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB2C3{LibOntology:NP_m_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="186"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="38.92">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB2C4{LibOntology:NP_f_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="187"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.01">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB2C5{LibOntology:NP_m_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="188"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.10">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB2C6{LibOntology:NP_f_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="189"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.64">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB2E5{LibOntology:NP_m_sg, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="190"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.73">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB2E6{LibOntology:NP_m_sg, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="191"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.82">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB2E7{LibOntology:NP_m_sg, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="192"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="39.91">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB2E8{LibOntology:NP_m_sg, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="193"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.00">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB2E9{LibOntology:NP_m_sg, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="194"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.09">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB2EA{LibOntology:NP_m_sg, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="195"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.18">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB2EB{LibOntology:NP_m_sg, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="196"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.28">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB2EC{LibOntology:NP_m_sg, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="197"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.37">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB2ED{LibOntology:NP_m_sg, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="198"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.46">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB2EE{LibOntology:NP_f_sg, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="199"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.55">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB2EF{LibOntology:NP_f_sg, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="200"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.64">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB2F0{LibOntology:NP_f_sg, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="201"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.73">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB2F1{LibOntology:NP_f_sg, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="202"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.82">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB2F2{LibOntology:NP_f_sg, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="203"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="40.91">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB2F3{LibOntology:NP_f_sg, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="204"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.00">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB2F4{LibOntology:NP_f_sg, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="205"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.09">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB2F5{LibOntology:NP_f_sg, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="206"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.17">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB2F6{LibOntology:NP_f_sg, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="207"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.26">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB2F7{LibOntology:NP_m_pl, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="208"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.35">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB2F8{LibOntology:NP_m_pl, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="209"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.45">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB2F9{LibOntology:NP_m_pl, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="210"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.54">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB2FA{LibOntology:NP_m_pl, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="211"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.63">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB2FB{LibOntology:NP_m_pl, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="212"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.72">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB2FC{LibOntology:NP_m_pl, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="213"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.81">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB2FD{LibOntology:NP_m_pl, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="214"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="41.91">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB2FE{LibOntology:NP_m_pl, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="215"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.00">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB2FF{LibOntology:NP_m_pl, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="216"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.09">
+				<y:message>The object {_npType, LibOntology:Sa, LibOntology:Sa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3489) has been cloned, new object created: 0xB300{LibOntology:NP_f_pl, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log
+				index="217"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.18">
+				<y:message>The object {_npType, LibOntology:Se_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3490) has been cloned, new object created: 0xB301{LibOntology:NP_f_pl, LibOntology:Se_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="218"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.27">
+				<y:message>The object {_npType, LibOntology:Se_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3491) has been cloned, new object created: 0xB302{LibOntology:NP_f_pl, LibOntology:Se_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="219"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.37">
+				<y:message>The object {_npType, LibOntology:Se_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3492) has been cloned, new object created: 0xB303{LibOntology:NP_f_pl, LibOntology:Se_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="220"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.45">
+				<y:message>The object {_npType, LibOntology:Se_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3493) has been cloned, new object created: 0xB304{LibOntology:NP_f_pl, LibOntology:Se_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="221"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.54">
+				<y:message>The object {_npType, LibOntology:Sow_m_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3494) has been cloned, new object created: 0xB305{LibOntology:NP_f_pl, LibOntology:Sow_m_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="222"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.62">
+				<y:message>The object {_npType, LibOntology:Sow_m_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3495) has been cloned, new object created: 0xB306{LibOntology:NP_f_pl, LibOntology:Sow_m_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="223"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.71">
+				<y:message>The object {_npType, LibOntology:Sow_f_sg, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3496) has been cloned, new object created: 0xB307{LibOntology:NP_f_pl, LibOntology:Sow_f_sg, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="224"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="42.79">
+				<y:message>The object {_npType, LibOntology:Sow_f_pl, LibOntology:S} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3497) has been cloned, new object created: 0xB308{LibOntology:NP_f_pl, LibOntology:Sow_f_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log
+				index="225"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="45.99">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB35A{LibOntology:NP_m_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="226"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.07">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB35B{LibOntology:NP_f_sg, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="227"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.16">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB35C{LibOntology:NP_m_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="228"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.24">
+				<y:message>The object {_npType, LibOntology:VPa, LibOntology:VPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3521) has been cloned, new object created: 0xB35D{LibOntology:NP_f_pl, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log
+				index="229"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.59">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB36B{LibOntology:NP_m_sg, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="230"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.69">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB36C{LibOntology:NP_m_sg, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="231"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.78">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB36D{LibOntology:NP_m_sg, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="232"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.87">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB36E{LibOntology:NP_m_sg, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="233"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="46.97">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB36F{LibOntology:NP_m_sg, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="234"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.07">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB370{LibOntology:NP_f_sg, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="235"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.16">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB371{LibOntology:NP_f_sg, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="236"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.26">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB372{LibOntology:NP_f_sg, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="237"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.35">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB373{LibOntology:NP_f_sg, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="238"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.44">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB374{LibOntology:NP_f_sg, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="239"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.54">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB375{LibOntology:NP_m_pl, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="240"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.63">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB376{LibOntology:NP_m_pl, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="241"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.73">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB377{LibOntology:NP_m_pl, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="242"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.82">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB378{LibOntology:NP_m_pl, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="243"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="47.92">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB379{LibOntology:NP_m_pl, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="244"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="48.01">
+				<y:message>The object {_npType, LibOntology:NPa, LibOntology:NPa} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3535) has been cloned, new object created: 0xB37A{LibOntology:NP_f_pl, LibOntology:NPa, LibOntology:NPa}</y:message>
+			</y:log>
+			<y:log
+				index="245"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="48.10">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB37B{LibOntology:NP_f_pl, LibOntology:NPa_m_sg, LibOntology:NPa_m_sg}</y:message>
+			</y:log>
+			<y:log
+				index="246"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="48.20">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB37C{LibOntology:NP_f_pl, LibOntology:NPa_f_sg, LibOntology:NPa_f_sg}</y:message>
+			</y:log>
+			<y:log
+				index="247"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="48.30">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB37D{LibOntology:NP_f_pl, LibOntology:NPa_m_pl, LibOntology:NPa_m_pl}</y:message>
+			</y:log>
+			<y:log
+				index="248"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="48.39">
+				<y:message>The object {_npType, _npaType, _npaType} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 3537) has been cloned, new object created: 0xB37E{LibOntology:NP_f_pl, LibOntology:NPa_f_pl, LibOntology:NPa_f_pl}</y:message>
+			</y:log>
+			<y:log
+				index="249"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="50.40">
+				<y:message>The object {(localComputedValues{0xAEF4}.currentDate{0xAEFA}).toConcept(), LibOntology:Ic} of class ConstList ((null), -1) has been cloned, new object created: 0xB393{0xB395, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log
+				index="250"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="50.55">
+				<y:message>The object {(localComputedValues{0xAEF4}.currentValue{0xAF07}).toConcept(), LibOntology:apply(this{test}.specializeConcept(LibOntology:createModifierConcept(LibOntology:Time)), cloning({(localComputedValues{0xAEF4}.currentDate{0xAEFA}).toConcept(), LibOntology:Ic}))} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 819) has been cloned, new object created: 0xB2CB{0xB2CE, LibOntology:cApply2(0xB2D3, 0xB395, LibOntology:Ic)}</y:message>
+			</y:log>
+			<y:log
+				index="251"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="50.70">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorProperty for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="252"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="50.83">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::RatioOwner for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="253"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="51.08">
+				<y:message>The object 0x6039{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1782) has been cloned, new object created: 0xB3AF{LibOntology:TAG:FR:DNX(0xB3AD, 0xB3AE)}</y:message>
+			</y:log>
+			<y:log
+				index="254"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="51.30">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::ValueProperty for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="255"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="51.43">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::EntityProperty for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="256"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="51.56">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="257"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="51.69">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::Elaboration for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="258"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="51.81">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateProperty for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+			<y:log
+				index="259"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="51.95">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB3CA{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="260"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="52.03">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB3CB{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="261"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="52.11">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB3CC{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="262"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="52.20">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB3CD{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="263"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="52.28">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB3CE{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="264"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="53.09">
+				<y:message>The object 0x5CDE{derivedTree_m_sg_npa, derivedTree_m_sg_sa, derivedTree_f_sg_npa, derivedTree_f_sg_sa, derivedTree_m_pl_npa, derivedTree_m_pl_sa, derivedTree_f_pl_npa, derivedTreeGer_m_sg_npa, derivedTreeGer_m_sg_sa, derivedTreeGer_f_sg_npa, ...} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 369) has been cloned, new object created: 0xB417{LibOntology:TAG:FR:nx0V0V1npa(0xB3E0, 0xB3E1), LibOntology:TAG:FR:nx0V0V1sa(0xB3E7, 0xB3E8), LibOntology:TAG:FR:nx0V0V1npa(0xB3EE, 0xB3EF), LibOntology:TAG:FR:nx0V0V1sa(0xB3F5, 0xB3F6), LibOntology:TAG:FR:nx0V0V1npa(0xB3FC, 0xB3FD), LibOntology:TAG:FR:nx0V0V1sa(0xB403, 0xB404), LibOntology:TAG:FR:nx0V0V1npa(0xB40A, 0xB40B), LibOntology:TAG:FR:nx0V0V1PUger1npa(0xB3E3, 0xB3E4, 0xB3E5), LibOntology:TAG:FR:nx0V0V1PUger1sa(0xB3EA, 0xB3EB, 0xB3EC), LibOntology:TAG:FR:nx0V0V1PUger1npa(0xB3F1, 0xB3F2, 0xB3F3), ...}</y:message>
+			</y:log>
+			<y:log
+				index="265"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="59.50">
+				<y:message>The object 0x5CDE{derivedTree_m_sg_npa, derivedTree_m_sg_sa, derivedTree_f_sg_npa, derivedTree_f_sg_sa, derivedTree_m_pl_npa, derivedTree_m_pl_sa, derivedTree_f_pl_npa, derivedTreeGer_m_sg_npa, derivedTreeGer_m_sg_sa, derivedTreeGer_f_sg_npa, ...} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 369) has been cloned, new object created: 0xB4EE{LibOntology:TAG:FR:nx0Vn1npa(0xB4B7, 0xB4B8), LibOntology:TAG:FR:nx0Vn1sa(0xB4BE, 0xB4BF), LibOntology:TAG:FR:nx0Vn1npa(0xB4C5, 0xB4C6), LibOntology:TAG:FR:nx0Vn1sa(0xB4CC, 0xB4CD), LibOntology:TAG:FR:nx0Vn1npa(0xB4D3, 0xB4D4), LibOntology:TAG:FR:nx0Vn1sa(0xB4DA, 0xB4DB), LibOntology:TAG:FR:nx0Vn1npa(0xB4E1, 0xB4E2), LibOntology:TAG:FR:nx0Vn1PUger1npa(0xB4BA, 0xB4BB, 0xB4BC), LibOntology:TAG:FR:nx0Vn1PUger1sa(0xB4C1, 0xB4C2, 0xB4C3), LibOntology:TAG:FR:nx0Vn1PUger1npa(0xB4C8, 0xB4C9, 0xB4CA), ...}</y:message>
+			</y:log>
+			<y:log
+				index="266"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="65.62">
+				<y:message>The object 0x5CDE{derivedTree_m_sg_npa, derivedTree_m_sg_sa, derivedTree_f_sg_npa, derivedTree_f_sg_sa, derivedTree_m_pl_npa, derivedTree_m_pl_sa, derivedTree_f_pl_npa, derivedTreeGer_m_sg_npa, derivedTreeGer_m_sg_sa, derivedTreeGer_f_sg_npa, ...} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 369) has been cloned, new object created: 0xB5C5{LibOntology:TAG:FR:nx0Vn1npa(0xB58E, 0xB58F), LibOntology:TAG:FR:nx0Vn1sa(0xB595, 0xB596), LibOntology:TAG:FR:nx0Vn1npa(0xB59C, 0xB59D), LibOntology:TAG:FR:nx0Vn1sa(0xB5A3, 0xB5A4), LibOntology:TAG:FR:nx0Vn1npa(0xB5AA, 0xB5AB), LibOntology:TAG:FR:nx0Vn1sa(0xB5B1, 0xB5B2), LibOntology:TAG:FR:nx0Vn1npa(0xB5B8, 0xB5B9), LibOntology:TAG:FR:nx0Vn1PUger1npa(0xB591, 0xB592, 0xB593), LibOntology:TAG:FR:nx0Vn1PUger1sa(0xB598, 0xB599, 0xB59A), LibOntology:TAG:FR:nx0Vn1PUger1npa(0xB59F, 0xB5A0, 0xB5A1), ...}</y:message>
+			</y:log>
+			<y:log
+				index="267"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="71.01">
+				<y:message>The object 0x5FA9{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1517) has been cloned, new object created: 0xB667{LibOntology:TAG:FR:DnxPnx0(0xB664, 0xB665, 0xB666)}</y:message>
+			</y:log>
+			<y:log
+				index="268"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="71.10">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB66B{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="269"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="72.27">
+				<y:message>The object {{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1536) has been cloned, new object created: 0xB66A{{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, 0xB66B{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="270"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="72.44">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB673{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="271"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="72.71">
+				<y:message>The object {{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1546) has been cloned, new object created: 0xB672{{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, 0xB673{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="272"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="72.86">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB67B{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="273"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="73.11">
+				<y:message>The object {{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1556) has been cloned, new object created: 0xB67A{{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB67B{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="274"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="73.27">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB683{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="275"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="73.53">
+				<y:message>The object {{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1566) has been cloned, new object created: 0xB682{{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB683{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="276"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="75.18">
+				<y:message>The object 0x5FA9{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1517) has been cloned, new object created: 0xB6A2{LibOntology:TAG:FR:DnxPnx0(0xB69F, 0xB6A0, 0xB6A1)}</y:message>
+			</y:log>
+			<y:log
+				index="277"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="75.27">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6A6{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="278"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="75.54">
+				<y:message>The object {{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1536) has been cloned, new object created: 0xB6A5{{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, 0xB6A6{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="279"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="75.70">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6AE{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="280"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="75.95">
+				<y:message>The object {{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1546) has been cloned, new object created: 0xB6AD{{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, 0xB6AE{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="281"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="76.10">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6B6{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="282"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="76.36">
+				<y:message>The object {{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1556) has been cloned, new object created: 0xB6B5{{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB6B6{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="283"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="76.52">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6BE{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="284"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="76.76">
+				<y:message>The object {{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1566) has been cloned, new object created: 0xB6BD{{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB6BE{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="285"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="78.35">
+				<y:message>The object 0x5FA9{derivedTree} of class Array (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1517) has been cloned, new object created: 0xB6DD{LibOntology:TAG:FR:DnxPnx0(0xB6DA, 0xB6DB, 0xB6DC)}</y:message>
+			</y:log>
+			<y:log
+				index="286"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="78.44">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6E1{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="287"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="78.71">
+				<y:message>The object {{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1536) has been cloned, new object created: 0xB6E0{{LibOntology:NP_m_sg}, {LibOntology:NPa_m_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_sg}, 0xB6E1{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="288"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="78.87">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6E9{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="289"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="79.11">
+				<y:message>The object {{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1546) has been cloned, new object created: 0xB6E8{{LibOntology:NP_f_sg}, {LibOntology:NPa_f_sg}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_f_sg}, 0xB6E9{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="290"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="79.28">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6F1{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="291"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="79.58">
+				<y:message>The object {{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1556) has been cloned, new object created: 0xB6F0{{LibOntology:NP_m_pl}, {LibOntology:NPa_m_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB6F1{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="292"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="79.80">
+				<y:message>The object {type, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0xB6F9{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log
+				index="293"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="80.10">
+				<y:message>The object {{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, cloning({type, LibOntology:NP_forAssembly})} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libOntology/_domainObjectsBETA/derivationFunctionsFR.dcl, 1566) has been cloned, new object created: 0xB6F8{{LibOntology:NP_f_pl}, {LibOntology:NPa_f_pl}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa, LibOntology:NPa_m_pl}, 0xB6F9{LibOntology:NP_f_sg, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log
+				index="294"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="86.06">
+				<y:message>The object {entity, predicateQualitativeDescription, by, to, from, period, LibOntology:Ic} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libDocument/_classes/intentions/describeVariation/DescribeVariation.yclass, 253) has been cloned, new object created: 0xB711{LibOntology:ENTITY(0xB3A6, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0xB16A, 0xB181, LibOntology:Ic), LibOntology:cApply2(0xB2B7, 0xB2CE, LibOntology:cApply2(0xB2D3, 0xB395, LibOntology:Ic)), LibOntology:cApply2(0xB1BB, 0xB1E9, LibOntology:cApply2(0xB1EE, 0xB2B0, LibOntology:Ic)), LibOntology:Ic, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log
+				index="295"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="86.21">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateElaboration for intention LibDocument:DescribeVariation test</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language
+				id="fr"/>
+			<y:random
+				seed="261180793"
+				peak="0"/>
+			<y:process
+				id="48C4"
+				start-runtime="2019-08-29T15:19:14.975"
+				runtime="erunbc_"
+				engine-version="7.3.0.BETA04"
+				os="WINDOWS 6.2"
+				computer-name="LFRPARACA001"/>
+			<y:key-user
+				name="For Yseop internal use - By AK"
+				email="akaeser@yseop.com"
+				creation-date="2019-03-07"
+				expiration-date="2019-12-30"/>
+			<y:request-exec-time
+				begin="2019-08-29T15:19:15.008"
+				end="2019-08-29T15:19:15.179"/>
+			<y:stat
+				errors="0"
+				warnings="1"
+				success-rule-fire="2"
+				text-write="930"
+				cloning-operations="190"
+				cloning-items="619"
+				main-words="308"
+				main-chars="2934"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

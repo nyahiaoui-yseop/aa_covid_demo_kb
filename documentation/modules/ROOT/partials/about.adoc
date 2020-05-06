@@ -1,0 +1,120 @@
+
+= Quick start with the AFA bootstrap
+
+The *Augmented Financial Analyst bootstrap* is the best way to start working on your new Knowledge Base. It contains all the libraries and tools you may need to start using your own data. +
+In addition, if you use https://marketplace.visualstudio.com/items?itemName=Yseop.vscode-yseopml[Visual Studio Code with the YML extension] you get even more support with code snippets, extensions recommendations and so on.
+
+
+== How to use the AFA bootstrap
+
+We recommend you first use your *Augmented Financial Analyst bootstrap* to xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_getting_started.adoc[test your installation].
+
+Once you have tested your installation, you may start customizing the *Augmented Financial Analyst bootstrap* with your own data, kpis and intentions:
+
+* To learn about the Augmented Financial Analyst bootstrap folder structure go to xref:{page-version}@aa_reporting-framework::overview_of_project_in_vscode.adoc[Overview of your Knowledge Base folder structure].
+
+* To learn about the Yseop Markup Language (YML) used in the Augmented Financial Analyst bootstrap go to xref:{page-version}@aa_reporting-framework::working_with_YML.adoc[Working with the Yseop Markup Language].
+
+* To start customizing the Augmented Financial Analyst bootstrap, see xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_enriching.adoc[Enriching your Knowledge Base]. And to go deeper into your customization, see:
+
+** xref:{page-version}@aa_reporting-framework::inserting_or_importing_data.adoc[Inserting or importing data]
+
+** xref:{page-version}@aa_reporting-framework::using_intentions.adoc[Using intentions]
+
+** xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions]
+
+* To learn how to deploy your new Knowledge Base, see xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_deploying.adoc[Compiling and deploying your Knowledge Base].
+
+== Bootstrap overview
+
+The Augmented Financial Analyst bootstrap provides its own financial analysis business knowledge and several ressources to get you started:
+
+* A set of <<indicators, predefined indicators and KPIs>>
+* A set of <<specialized_intentions, predefined specialized intentions>>
+* The <<custom_intentions, DescribeThreePointsVariation custom intention>>
+* The <<describe_ratio_variation, DescribeRatioVariation custom intention>>
+
+To learn how to develop your own ressources, see xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_enriching.adoc[Enriching your Knowledge Base].
+
+The Augmented Financial Analyst bootstrap also holds the AFA ontology that was built around financial indicators, generic enough to be used by all users of AA studio, see xref:{page-version}@aa_reporting-framework::afa/afa_about_ontology.adoc[About the AFA ontology].
+
+[#indicators]
+== Predefined Indicators
+
+include::partial$indicators.adoc[]
+
+[#specialized_intentions]
+== Predefined specialized intentions
+
+include::partial$specialized_intentions.adoc[]
+
+[#custom_intentions]
+== The DescribeThreePointsVariation custom intention
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=short_description]
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=fields]
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=examples]
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=xml_example]
+
+=== Customizing the DescribeThreePointsVariation intention
+
+The `DescribeThreePointsVariation` intention may be customized using the same configuration objects than the ones used with Yseop generic options. For more details see xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions].
+
+Below are the options and filters that are specific to the `DescribeThreePointsVariation` intention.
+
+==== With specific options
+
+The `DescribeThreePointsVariation` intention may be customized using intention options. Here is a list of the `DescribeThreePointsVariation` intention specific options. For more details, see xref:{page-version}@aa_reporting-framework::customizing_common_options.adoc[Using intentions options].
+
+include::{page-version}@aa_reporting-framework::partial$options/options_level_of_details.adoc[]
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=specific_keys]
+
+==== With custom concepts
+
+The `DescribeThreePointsVariation` intention may be customized using styling configuration objects. The styling configuration objects are applied on the computed values which may be filtered using the `DescribeThreePointsVariation` intention specific roles and computed values names, which are listed below. For more details, see xref:{page-version}@aa_reporting-framework::customizing_styling_configuration.adoc[Using styling configuration objects].
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=roles]
+
+include::partial$intentions/DescribeThreePointsVariation.adoc[tag=filters_names]
+
+
+[#describe_ratio_variation]
+== The DescribeRatioVariation custom intention
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=short_description]
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=fields]
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=examples]
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=xml_example]
+
+=== Customizing the DescribeRatioVariation intention
+
+The `DescribeRatioVariation` intention may be customized using the same configuration objects than the ones used with Yseop generic options. For more details see xref:{page-version}@aa_reporting-framework::customizing_intentions.adoc[Customizing your intentions].
+
+Below are the options and filters that are specific to the `DescribeRatioVariation` intention.
+
+==== With specific options
+
+The `DescribeRatioVariation` intention may be customized using intention options. 
+
+//It may be customized using the same intentions than the xref:{page-version}@aa_reporting-framework::lib_describe_formula_variation_contributors.adoc#options[DescribeFormulaVariationContributors] intention, or its own options. 
+
+Here is a list of the `DescribeRatioVariation` intention specific options. For more details, see xref:{page-version}@aa_reporting-framework::customizing_common_options.adoc[Using intentions options].
+
+// include::{page-version}@aa_reporting-framework::partial$options/options_level_of_details.adoc[]
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=specific_keys]
+
+==== With custom concepts
+
+The `DescribeRatioVariation` intention may be customized using styling configuration objects. The styling configuration objects are applied on the computed values which may be filtered using the `DescribeRatioVariation` intention specific roles and computed values names, which are listed below. For more details, see xref:{page-version}@aa_reporting-framework::customizing_styling_configuration.adoc[Using styling configuration objects].
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=roles]
+
+include::partial$intentions/DescribeRatioVariation.adoc[tag=filters_names]

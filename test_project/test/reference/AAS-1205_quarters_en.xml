@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:title>Test_ALL INTENTIONS_Data 2.0_BalanceSheet</yt:title> 
+					<yt:paragraph level="1"><intention yid="INTENTION_0762241c-878f-4a21-9206-a8c7b3ea5e0c">The Direct Assets of Europe were $55,564,156.5K in Q4 2020.</intention>
+					</yt:paragraph> 
+					<yt:paragraph level="1"><intention yid="INTENTION_c509aaac-fade-4bde-ac35-af9f188331e0">In Europe, equity increased by 1.5% to $19,820,946.9K in Q4 2020 from $19,530,840.6K in Q2 2020.</intention>
+					</yt:paragraph> 
+					<yt:paragraph level="1"><intention yid="INTENTION_71072390-cd4f-46d3-a87a-fa6a7b366037">Increasing Direct Assets of 0% to $55,564,156.5K from $55,560,271.6K during the last two quarters in Europe are caused by an increase of Consumer Loans &amp; Leases Net of Unearned of $762,822.07K, an increase of Commercial Loans &amp; Leases Net of Unearned of $762,067.67K, an increase of Cash and Due from Banks of $504,304.48K and an increase of goodwill of $384,249.90K despite a decrease of Deposits with Banks of $2,458,637.67K.</intention>
+					</yt:paragraph> 
+					<yt:paragraph level="1"><intention yid="INTENTION_4444a69d-b926-4318-9cce-78d764f516d7">During the last two quarters, assets remained stable at $58,726,922.9K.</intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2020-04-30T11:05:54.299</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings log-level="debug" freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="info" nature="user-log" origin-nb-ms="865.22">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="2" level="debug" nature="user-log" origin-nb-ms="871.23">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="3" level="debug" nature="user-log" origin-nb-ms="871.42">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="4" level="debug" nature="user-log" origin-nb-ms="873.37">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariationContributors for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="5" level="debug" nature="user-log" origin-nb-ms="873.56">
+				<y:message>Adding corresponding config to LibDocument:DescribeVariationContributors for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="6" level="debug" nature="user-log" origin-nb-ms="875.97">
+				<y:message>Adding corresponding config to DescribeThreePointsVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="7" level="debug" nature="user-log" origin-nb-ms="876.23">
+				<y:message>Adding corresponding config to DescribeThreePointsVariation for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="8" level="debug" nature="user-log" origin-nb-ms="878.62">
+				<y:message>Adding corresponding config to LibDocument:DescribeValue for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="9" level="debug" nature="user-log" origin-nb-ms="878.93">
+				<y:message>Adding corresponding config to LibDocument:DescribeValue for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="10" level="debug" nature="user-log" origin-nb-ms="891.35">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x103F5&apos;</y:message>
+			</y:log>
+			<y:log index="11" level="debug" nature="user-log" origin-nb-ms="892.00">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x103EB&apos;</y:message>
+			</y:log>
+			<y:log index="12" level="debug" nature="user-log" origin-nb-ms="894.69">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x103BB&apos;</y:message>
+			</y:log>
+			<y:log index="13" level="debug" nature="user-log" origin-nb-ms="895.39">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x103B1&apos;</y:message>
+			</y:log>
+			<y:log index="14" level="debug" nature="user-log" origin-nb-ms="899.47">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x1037B&apos;</y:message>
+			</y:log>
+			<y:log index="15" level="debug" nature="user-log" origin-nb-ms="902.56">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10351&apos;</y:message>
+			</y:log>
+			<y:log index="16" level="debug" nature="user-log" origin-nb-ms="903.71">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10345&apos;</y:message>
+			</y:log>
+			<y:log index="17" level="debug" nature="user-log" origin-nb-ms="905.31">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10333&apos;</y:message>
+			</y:log>
+			<y:log index="18" level="debug" nature="user-log" origin-nb-ms="907.26">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10319&apos;</y:message>
+			</y:log>
+			<y:log index="19" level="debug" nature="user-log" origin-nb-ms="908.46">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10305&apos;</y:message>
+			</y:log>
+			<y:log index="20" level="debug" nature="user-log" origin-nb-ms="909.39">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102F7&apos;</y:message>
+			</y:log>
+			<y:log index="21" level="debug" nature="user-log" origin-nb-ms="911.64">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102D5&apos;</y:message>
+			</y:log>
+			<y:log index="22" level="debug" nature="user-log" origin-nb-ms="911.92">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102D3&apos;</y:message>
+			</y:log>
+			<y:log index="23" level="debug" nature="user-log" origin-nb-ms="914.91">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102B5&apos;</y:message>
+			</y:log>
+			<y:log index="24" level="debug" nature="user-log" origin-nb-ms="915.77">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102AD&apos;</y:message>
+			</y:log>
+			<y:log index="25" level="debug" nature="user-log" origin-nb-ms="916.31">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102A9&apos;</y:message>
+			</y:log>
+			<y:log index="26" level="debug" nature="user-log" origin-nb-ms="917.19">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x102A1&apos;</y:message>
+			</y:log>
+			<y:log index="27" level="debug" nature="user-log" origin-nb-ms="918.26">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10297&apos;</y:message>
+			</y:log>
+			<y:log index="28" level="debug" nature="user-log" origin-nb-ms="919.45">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10289&apos;</y:message>
+			</y:log>
+			<y:log index="29" level="debug" nature="user-log" origin-nb-ms="920.39">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x1027F&apos;</y:message>
+			</y:log>
+			<y:log index="30" level="debug" nature="user-log" origin-nb-ms="922.28">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10267&apos;</y:message>
+			</y:log>
+			<y:log index="31" level="debug" nature="user-log" origin-nb-ms="922.74">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10265&apos;</y:message>
+			</y:log>
+			<y:log index="32" level="debug" nature="user-log" origin-nb-ms="923.54">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x1025F&apos;</y:message>
+			</y:log>
+			<y:log index="33" level="debug" nature="user-log" origin-nb-ms="925.17">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10249&apos;</y:message>
+			</y:log>
+			<y:log index="34" level="debug" nature="user-log" origin-nb-ms="926.29">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x10237&apos;</y:message>
+			</y:log>
+			<y:log index="35" level="debug" nature="user-log" origin-nb-ms="932.71">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x101E9&apos;</y:message>
+			</y:log>
+			<y:log index="36" level="debug" nature="user-log" origin-nb-ms="933.10">
+				<y:message>missing dimension: DIMENSION_TIME for fact :&apos;0x101E5&apos;</y:message>
+			</y:log>
+			<y:log index="37" level="warning" nature="user-log" origin-nb-ms="1538.62">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="38" level="warning" nature="user-log" origin-nb-ms="1540.78">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="39" level="warning" nature="user-log" origin-nb-ms="1542.82">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="40" level="warning" nature="user-log" origin-nb-ms="1544.69">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="41" level="warning" nature="user-log" origin-nb-ms="1547.25">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="42" level="warning" nature="user-log" origin-nb-ms="1549.21">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="43" level="warning" nature="user-log" origin-nb-ms="1555.16">
+				<y:message>More than one computed value matched the filter null</y:message>
+			</y:log>
+			<y:log index="44" level="warning" nature="user-log" origin-nb-ms="1581.61">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="45" level="warning" nature="user-log" origin-nb-ms="1583.90">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+			<y:log index="46" level="warning" nature="user-log" origin-nb-ms="1586.11">
+				<y:message>No trend nature calculation found, could not calculate sentiment config</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="318306511" peak="0"/>
+			<y:process id="19BE" start-runtime="2020-04-30T11:05:54.226" runtime="erunbc" engine-version="7.4.3" os="UNIX 0.0" computer-name="mfioravanti-linux"/>
+			<y:key-user name="For Yseop internal use - By AK" email="akaeser@yseop.com" creation-date="2020-01-02" expiration-date="2020-12-31"/>
+			<y:request-exec-time begin="2020-04-30T11:05:54.299" end="2020-04-30T11:06:07.869"/>
+			<y:stat errors="0" warnings="0" success-rule-fire="0" text-write="676" cloning-operations="5637" cloning-items="11971" main-words="108" main-chars="700"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

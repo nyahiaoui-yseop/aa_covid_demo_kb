@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yseop-manager>
+    <application>
+        <transfos>
+            <!-- Consumes a compatible JSON input and output some XML. -->
+            <transfo name="xml">
+                <in>$home$/dialog/inputGeneric.xsl</in>
+            </transfo>
+            <!-- Consumes a compatible JSON input and output some JSON. -->
+            <transfo name="json">
+                <in>$home$/dialog/inputGeneric.xsl</in>
+                <out mime="application/json">$home$/dialog/outputJson.xsl</out>
+            </transfo>
+            <!-- Consumes a compatible JSON input and output some HTML. -->
+            <transfo name="html">
+                <in>$home$/dialog/inputGeneric.xsl</in>
+                <out mime="text/html">$home$/dialog/outputHtml.xsl</out>
+            </transfo>
+            <!-- Consumes a compatible XML input and output some HTML. -->
+            <transfo name="xml_html">
+                <out mime="text/html">$home$/dialog/outputHtml.xsl</out>
+            </transfo>
+        </transfos>
+        <process-arguments>--PROFILING.active=false</process-arguments>
+    </application>
+</yseop-manager>

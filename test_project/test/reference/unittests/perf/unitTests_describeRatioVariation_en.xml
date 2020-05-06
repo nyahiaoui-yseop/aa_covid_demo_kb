@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:paragraph level="1"><intention yid="&apos;0xEDAB&apos;">In 2018, the EBITDA / revenue ratio declined (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / revenue ratio declined by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / revenue ratio decreased (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / revenue ratio decreased by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / revenue ratio dropped (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / revenue ratio dropped by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / revenue ratio fell (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / revenue ratio fell by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / revenue ratio went down (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / revenue ratio went down by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / sales ratio declined (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / sales ratio declined by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / sales ratio decreased (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / sales ratio decreased by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / sales ratio dropped (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / sales ratio dropped by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / sales ratio fell (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / sales ratio fell by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA / sales ratio went down (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA / sales ratio went down by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA to sales ratio declined (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA to sales ratio declined by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA to sales ratio decreased (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA to sales ratio decreased by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA to sales ratio dropped (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA to sales ratio dropped by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA to sales ratio fell (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA to sales ratio fell by 100.7<yt:no-break-space/>bps.<yt:par/>In 2018, the EBITDA to sales ratio went down (100.7<yt:no-break-space/>bps).<yt:par/>In 2018, the EBITDA to sales ratio went down by 100.7<yt:no-break-space/>bps.<yt:par/>The EBITDA / revenue ratio declined (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / revenue ratio declined by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / revenue ratio decreased (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / revenue ratio decreased by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / revenue ratio dropped (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / revenue ratio dropped by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / revenue ratio fell (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / revenue ratio fell by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / revenue ratio went down (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / revenue ratio went down by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / sales ratio declined (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / sales ratio declined by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / sales ratio decreased (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / sales ratio decreased by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / sales ratio dropped (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / sales ratio dropped by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / sales ratio fell (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / sales ratio fell by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA / sales ratio went down (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA / sales ratio went down by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA to sales ratio declined (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA to sales ratio declined by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA to sales ratio decreased (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA to sales ratio decreased by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA to sales ratio dropped (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA to sales ratio dropped by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA to sales ratio fell (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA to sales ratio fell by 100.7<yt:no-break-space/>bps in 2018.<yt:par/>The EBITDA to sales ratio went down (100.7<yt:no-break-space/>bps) in 2018.<yt:par/>The EBITDA to sales ratio went down by 100.7<yt:no-break-space/>bps in 2018.<yt:par/></intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2020-03-04T13:40:33.639</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings log-level="debug" freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="info" nature="user-log">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="2" level="warning" nature="user-log">
+				<y:message>Nothing matched the filter null</y:message>
+			</y:log>
+			<y:log index="3" level="warning" nature="user-log">
+				<y:message>Nothing matched the filter null</y:message>
+			</y:log>
+			<y:log index="4" level="debug" nature="user-log">
+				<y:message>Start Size=60</y:message>
+			</y:log>
+			<y:log index="5" level="debug" nature="user-log">
+				<y:message>End size=60</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="398117108" peak="0"/>
+			<y:process id="5949" start-runtime="2020-03-04T13:40:33.583" runtime="erunbc" engine-version="7.4.0" os="UNIX 0.0" computer-name="LFRPARDAV001"/>
+			<y:key-user name="For Yseop internal use - By AK" email="akaeser@yseop.com" creation-date="2020-01-02" expiration-date="2020-12-31"/>
+			<y:request-exec-time begin="2020-03-04T13:40:33.639" end="2020-03-04T13:40:33.880"/>
+			<y:stat errors="0" warnings="0" success-rule-fire="0" text-write="2075" cloning-operations="494" cloning-items="1055" main-words="582" main-chars="4526"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

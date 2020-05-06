@@ -1,0 +1,20 @@
+interface DescribeRatioVariation_to_EBITDA extends DescribeRatioVariation
+
+    classProperties
+    --> documentation """A subclass of DescribeRatioVariation whose denominator KPI is EBITDA_KPI.
+
+@see `setDenominatorKPI_DescribeRatioVariation_to_EBITDA`
+"""
+    --> apiLabel "Describe a ratio variation of a chosen KPI to EBITDA"
+    --> apiDescription "Describe a ratio variation of a chosen KPI to EBITDA."
+
+; // DescribeRatioVariation_to_EBITDA
+
+implementation DescribeRatioVariation_to_EBITDA
+    override {
+        denominatorKPI
+        --> defaultValue EBITDA_KPI
+        requestTemplate
+        --> defaultValue REQUEST_TEMPLATE_DESCRIBE_RATIO_VARIATION_to_DENOMINATOR
+    }
+;

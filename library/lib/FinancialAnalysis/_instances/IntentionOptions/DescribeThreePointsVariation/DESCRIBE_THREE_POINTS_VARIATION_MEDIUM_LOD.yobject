@@ -1,0 +1,5 @@
+DescribeThreePointsVariationOptions DESCRIBE_THREE_POINTS_VARIATION_MEDIUM_LOD
+--> showValueChange false
+--> levelOfDetails LibDocument:LevelOfDetails::MEDIUM
+--> isLevelOfDetailsModelInstance true
+;

@@ -1,0 +1,21 @@
+LibDocument:DynamicCustomTexts sIndicatorOwnerCompany
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "entreprise"
+                --> gender FEMININE
+                --> determiner DEFINITE_ARTICLE
+            ;
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "Groupe"
+                --> gender MASCULINE
+                --> determiner DEFINITE_ARTICLE
+            ;
+        ;
+    }
+    --> ranges LibKPI:defaultValueRanges
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CURRENT_VALUE
+        // --> computedValuesNames LibDocument:DescribeVariationContributorsComputedValues::currentValue
+    ;
+;

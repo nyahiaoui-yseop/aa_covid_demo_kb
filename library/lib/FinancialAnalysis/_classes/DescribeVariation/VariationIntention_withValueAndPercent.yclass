@@ -1,0 +1,19 @@
+interface VariationIntention_withValueAndPercent extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_WITH_VALUE_AND_PERCENT` as default options.
+
+@see `DESCRVAR_OPTIONS_WITH_VALUE_AND_PERCENT`
+"""
+    --> apiLabel "Describe the variation − Medium verbosity − With value and percent"
+    --> apiDescription ""
+    --> hideFromApi true
+
+; // VariationIntention_withValueAndPercent
+
+implementation VariationIntention_withValueAndPercent
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_WITH_VALUE_AND_PERCENT
+    }
+;

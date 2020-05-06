@@ -1,0 +1,181 @@
+LibDocument:MemberMetaData NET_CASH_FLOW_FROM_FINANCING_ACTIVITIES_METADATA
+--> members NET_CASH_FLOW_FROM_FINANCING_ACTIVITIES
+--> documentation """Metadata for the member `NET_CASH_FLOW_FROM_FINANCING_ACTIVITIES`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeValue
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:GENERATE
+								--> synonyms VP:EN:REALIZE
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:GENERATE
+								--> synonyms VP:EN:REALIZE
+								--> synonyms VP:EN:PRODUCE
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:DISPOSER
+								--> synonyms VP:FR:GÉNÉRER
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:DISPOSER
+								--> synonyms VP:FR:GÉNÉRER
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:DÉGAGER
+								--> synonyms VP:FR:EXTÉRIORISER
+								--> synonyms VP:FR:PRODUIRE
+								--> synonyms VP:FR:S_ÉLEVER
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> en_GB	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN_GB:REALISE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN_GB:REALISE
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeVariation
+		--> intentions LibDocument:DescribeVariationContributors
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UNE_CONTRACTION_DE
+								--> synonyms VN:FR:UNE_DÉGRADATION_DE
+								--> synonyms VN:FR:UNE_RÉDUCTION_DE
+								--> synonyms VP:FR:RÉDUIRE
+								--> synonyms VP:FR:SECONTRACTER
+								--> synonyms VP:FR:SEDÉGRADER
+								--> synonyms VP:FR:SERÉDUIRE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges LibKPI:defaultPredicateRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "CFF"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "cash flow from financing activities"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net cash flow from financing activities"
+											--> number SINGULAR
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net cash used in financing activities"
+											--> number SINGULAR
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "flux total financement"
+											--> gender MASCULINE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

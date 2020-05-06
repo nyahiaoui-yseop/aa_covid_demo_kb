@@ -1,0 +1,8 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_WITH_VALUE_AND_PERCENT extends DESCRVAR_BASE_OPTIONS
+	--> documentation """Les charges de personnel de 48,87K$ enregistrent une hausse de 53,87%."""
+    --> showStartValue false
+    --> showStartDate false
+    --> showEndDate false
+    --> showPeriod false
+    --> useValueInReferentialExpression true
+;

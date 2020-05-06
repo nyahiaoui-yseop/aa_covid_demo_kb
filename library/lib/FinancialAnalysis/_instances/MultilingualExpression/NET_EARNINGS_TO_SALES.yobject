@@ -1,0 +1,13 @@
+MultilingualExpression DescribeRatioVariation:NET_EARNINGS_TO_SALES
+--> en -> LibOntology:NounPhrase
+    --> head "profit margin ratio"
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head "marge nette"
+    --> gender FEMININE
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

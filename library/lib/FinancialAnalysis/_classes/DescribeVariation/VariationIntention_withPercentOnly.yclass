@@ -1,0 +1,19 @@
+interface VariationIntention_withPercentOnly extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_WITH_PERCENT_ONLY` as default options.
+
+@see `DESCRVAR_OPTIONS_WITH_PERCENT_ONLY`
+"""
+    --> apiLabel "Describe the variation − Low verbosity − With percent only"
+    --> apiDescription ""
+    --> hideFromApi true
+
+; // VariationIntention_withPercentOnly
+
+implementation VariationIntention_withPercentOnly
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_WITH_PERCENT_ONLY
+    }
+;

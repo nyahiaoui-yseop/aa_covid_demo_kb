@@ -1,0 +1,10 @@
+LibDocument:DynamicStylingConfiguration usdKAmount
+    --> configValues {
+        LibDocument:Numerical:unit: CURRENCY_KILO_USD
+    }
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> calculationTypes RAW_VALUE_CALCULATION
+        --> calculationTypes DIFFERENCE_CALCULATION
+        --> calculationTypes ABS_DIFFERENCE_CALCULATION
+    ;
+;

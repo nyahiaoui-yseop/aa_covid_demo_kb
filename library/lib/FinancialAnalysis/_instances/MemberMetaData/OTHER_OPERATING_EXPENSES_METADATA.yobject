@@ -1,0 +1,178 @@
+LibDocument:MemberMetaData OTHER_OPERATING_EXPENSES_METADATA
+--> members OTHER_OPERATING_EXPENSES
+--> documentation """Metadata for the member `OTHER_OPERATING_EXPENSES`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeValue
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:BURDEN
+								--> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:EN:RECORD
+								--> synonyms VP:EN:REPORT
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+						;
+						--> ranges PredicateReversedRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:RESSORTIR
+								--> synonyms VP:FR:AFFICHER
+								--> synonyms VP:FR:ENREGISTRER
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:PESER
+								--> synonyms VP:FR:SOUMETTRE
+								--> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+							;
+						;
+						--> ranges PredicateReversedRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CURRENT_VALUE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:DescribeVariation
+		--> intentions LibDocument:DescribeVariationContributors
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:EN:A_PAY_OFF_OF
+								--> synonyms VP:EN:PAYOFF
+								--> synonyms LibOntology:EN:Decrease:decrease
+								--> synonyms LibOntology:EN:Decrease:a_decrease_in
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges PredicateReversedRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::MainPredicate :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms VP:FR:DIMINUER
+								--> synonyms VN:FR:UNE_DIMINUTION_DE
+								--> synonyms VN:FR:UNE_RÉDUCTION_DE
+								--> synonyms VP:FR:RÉDUIRE
+								--> synonyms VP:FR:RÉGRESSER
+								--> synonyms VN:FR:UNE_RÉGRESSION_DE
+								--> synonyms VP:FR:SERÉDUIRE
+								--> thresholdConditions LibKPI:NEGATIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UN_ALOURDISSEMENT_DE
+								--> synonyms VP:FR:PROGRESSER
+								--> synonyms VN:FR:UNE_PROGRESSION_DE
+								--> synonyms VP:FR:S_ALOURDIR
+								--> thresholdConditions LibKPI:POSITIVE
+							;
+							--> values -> LibDocument:CustomText
+								--> synonyms VN:FR:UN_ALOURDISSEMENT_DE
+								--> synonyms VP:FR:S_ALOURDIR
+								--> synonyms LibOntology:FR:Augmenter:augmenter
+								--> synonyms LibOntology:FR:Augmenter:une_augmentation_de
+								--> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+							;
+						;
+						--> ranges PredicateReversedRanges
+						--> filter -> LibDocument:ComputedValuesFilter
+							--> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+						;
+					;
+				}
+				;
+		;
+	;
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "other operating expenses"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "autres charges d'exploitation"
+											--> gender FEMININE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

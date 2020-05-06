@@ -1,0 +1,12 @@
+LibDocument:DynamicStylingConfiguration ratioPercent
+    --> configValues {
+        LibDocument:Numerical:unit : UNIT_PERCENT,
+        LibDocument:Numerical:decimalsCount : 2,
+        LibDocument:Numerical:style : strictOneDecimalStyle
+    }
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> calculationTypes PERCENTAGE_CALCULATION
+        --> calculationTypes ABS_PERCENTAGE_CALCULATION
+        --> calculationTypes RAW_VALUE_CALCULATION
+    ;
+;

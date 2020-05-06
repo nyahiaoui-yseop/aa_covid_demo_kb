@@ -1,0 +1,11 @@
+{
+    "folders": [{
+        "path": "."
+    }],
+    "extensions": {
+        "recommendations": ["Yseop.vscode-yseopml", "editorconfig.editorconfig"]
+    },
+    "settings": {
+        "yseopml.pathToPredefinedObjectsXml": "library/lib/com.yseop-aa_reporting-framework-branch-develop-SNAPSHOT-predefinedObjects.xml"
+    }
+}

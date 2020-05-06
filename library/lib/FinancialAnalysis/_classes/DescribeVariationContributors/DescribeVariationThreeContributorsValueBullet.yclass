@@ -1,0 +1,18 @@
+interface DescribeVariationThreeContributorsValueBullet extends LibDocument:DescribeVariationContributors
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariationContributors with `DESCRVARCONTR_OPTIONS_BULLET_THREE_VALUE` as default options.
+
+@see `DESCRVARCONTR_OPTIONS_BULLET_THREE_VALUE`
+"""
+    --> apiLabel "Describe the variation with three contributors with value using bullet points"
+    --> apiDescription """Describe the variation of your indicator over a given period of time and analyze the causes or drivers of that variation by listing, using bullet points and their value change, the top three sub-indicators that contributed to your indicator variation."""
+
+; // DescribeVariationThreeContributorsValueBullet
+
+implementation DescribeVariationThreeContributorsValueBullet
+    override {
+        options
+        --> defaultValue DESCRVARCONTR_OPTIONS_BULLET_THREE_VALUE
+    }
+;

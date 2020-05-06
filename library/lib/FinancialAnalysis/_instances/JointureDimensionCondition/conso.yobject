@@ -1,0 +1,4 @@
+LibCube:JointureDimensionCondition conso
+    --> dimension DIMENSION_ENTITY
+    --> members CONSO
+;

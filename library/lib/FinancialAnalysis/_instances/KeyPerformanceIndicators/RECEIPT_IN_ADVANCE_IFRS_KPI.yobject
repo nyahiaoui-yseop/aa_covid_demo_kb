@@ -1,0 +1,51 @@
+AmountKPI RECEIPT_IN_ADVANCE_IFRS_KPI
+--> indicator RECEIPT_IN_ADVANCE_IFRS
+--> documentation """KPI for the indicator `RECEIPT_IN_ADVANCE_IFRS`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "receipt in advance"
+											--> number SINGULAR
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "avances et acomptes clients"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "avances et acomptes reçus"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

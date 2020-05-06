@@ -1,0 +1,18 @@
+interface VariationIntention_simpleNoPercentOptions extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_SIMPLE_NO_PERCENT` as default options.
+
+@see `DESCRVAR_OPTIONS_SIMPLE_NO_PERCENT`
+"""
+    --> apiLabel "Describe the variation − Show end value only"
+    --> apiDescription ""
+
+; // VariationIntention_simpleNoPercentOptions
+
+implementation VariationIntention_simpleNoPercentOptions
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_SIMPLE_NO_PERCENT
+    }
+;

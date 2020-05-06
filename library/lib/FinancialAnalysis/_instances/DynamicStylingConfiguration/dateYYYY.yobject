@@ -1,0 +1,8 @@
+LibDocument:DynamicStylingConfiguration dateYYYY
+    --> configValues {
+        LibDocument:Date:format : dateYYYYNoTimeZone
+    }
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> calculationTypes DATE_CALCULATION
+    ;
+;

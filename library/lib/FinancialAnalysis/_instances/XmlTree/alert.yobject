@@ -1,0 +1,5 @@
+XmlTree alert
+    --> documentation """When used as a style transform a text “my text” in a XmlElement `<yt:span class="message--alert">my text</yt:span>"""
+    --> elementName "yt:span"
+    --> xmlAttributes ["class","message--alert"]
+;

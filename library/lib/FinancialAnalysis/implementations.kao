@@ -1,0 +1,17 @@
+_FILE_TYPE_ M
+
+_domainObjects/accessors.dcl
+_domainObjects/computedValueKeys.dcl
+_domainObjects/financial_accounting_framework.dcl
+_domainObjects/financial_categories.dcl
+_domainObjects/completions.dcl
+_domainObjects/frameworkCandidates.dcl
+_domainObjects/styles.dcl
+_domainObjects/helpers.dcl
+_domainObjects/functions.dcl
+_domainObjects/financial_indicators.dcl
+_domainObjects/financial_relations.dcl
+_domainObjects/verb_predicates.dcl
+_domainObjects/verb_nominalizations.dcl
+_domainObjects/_businessRules/businessRulesIncomeStatement.yml
+_domainObjects/_businessRules/businessRulesBeforeIntentionStep.yml

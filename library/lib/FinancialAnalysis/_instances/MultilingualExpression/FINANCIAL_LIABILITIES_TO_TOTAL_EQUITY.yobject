@@ -1,0 +1,13 @@
+MultilingualExpression DescribeRatioVariation:FINANCIAL_LIABILITIES_TO_TOTAL_EQUITY
+--> en -> LibOntology:NounPhrase
+    --> head "gearing ratio"
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head "taux d'endettement net"
+    --> gender MASCULINE
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

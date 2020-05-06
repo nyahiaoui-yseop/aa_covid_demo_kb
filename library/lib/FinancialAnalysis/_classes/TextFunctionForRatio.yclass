@@ -1,0 +1,68 @@
+interface TextFunctionForRatio extends Text
+
+    field numerator
+    --> domains Text
+    --> documentation """Numerator of a ratio."""
+
+    field denominator
+    --> domains Text
+    --> documentation """Denominator of a ratio."""
+
+    classProperties
+    --> documentation """Class to generate the text for a ratio."""
+    --> hideFromApi true
+;
+
+implementation TextFunctionForRatio
+    override {
+        getNativeGender function
+        getNativeNumber function
+        write function
+    }
+;
+
+function TextFunctionForRatio::getNativeGender()
+--> action {
+    return MASCULINE;
+};
+
+function TextFunctionForRatio::getNativeNumber()
+--> action {
+    return SINGULAR;
+};
+
+function TextFunctionForRatio::write({} args)
+--> action {
+    \(
+        \switch(TEXT_PARAM_CONTEXT.kBLanguage.base)
+            \case(LANG_en)
+                the
+            \case(LANG_fr)
+                le ratio
+        \endSwitch
+
+        \if(numerator.isInstanceOf(NlgNounPhrase) == true)
+            \nounPhrase(
+                LibOntology:NounPhrase(numerator).head,
+                _ADJECTIVE: numerator.adjective
+            )
+        \else
+            \value(numerator)
+        \endIf
+
+        /
+
+        \if(denominator.isInstanceOf(NlgNounPhrase) == true)
+            \nounPhrase(
+                LibOntology:NounPhrase(denominator).head,
+                _ADJECTIVE: denominator.adjective
+            )
+        \else
+            \value(denominator)
+        \endIf
+
+        \if(TEXT_PARAM_CONTEXT.kBLanguage.base == LANG_en)
+            ratio
+        \endIf
+    \).write();
+};

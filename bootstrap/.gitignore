@@ -1,0 +1,14 @@
+/.generated-yml
+/.vscode/settings.json
+/bin
+/log
+/test/reports/*
+/test/**/output/*
+/xmlBatch/output-*
+/xmlBatch/outputTest.xml
+/xmlBatch/result.html
+*.yma
+*.ini
+*~
+
+/.gradle/

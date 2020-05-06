@@ -1,0 +1,19 @@
+interface AmountKPI extends LibDocument:KeyPerformanceIndicator
+
+    // @alacambre Amount de compte de résultat ? de bilan ? de flux ?
+    classProperties
+	--> documentation """KPI which Indicator represents a simple number. It has a default styling configuration set.
+
+@see `euroKAmount`
+"""
+
+;
+
+implementation AmountKPI
+    override {
+        // stylingConfigurations
+        // --> defaultValue EURO_K_AMOUNT_STYLING_CONFIGURATION
+        measure
+        --> defaultValue MEASURE_VALUE
+    }
+;

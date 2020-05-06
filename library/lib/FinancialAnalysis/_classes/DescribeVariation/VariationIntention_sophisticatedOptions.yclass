@@ -1,0 +1,18 @@
+interface VariationIntention_sophisticatedOptions extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_SOPHISTICATED` as default options.
+
+@see `DESCRVAR_OPTIONS_SOPHISTICATED`
+"""
+    --> apiLabel "Describe the variation − High verbosity"
+    --> apiDescription ""
+
+; // VariationIntention_sophisticatedOptions
+
+implementation VariationIntention_sophisticatedOptions
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_SOPHISTICATED
+    }
+;

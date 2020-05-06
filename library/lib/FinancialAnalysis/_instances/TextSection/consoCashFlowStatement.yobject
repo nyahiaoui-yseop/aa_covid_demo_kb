@@ -1,0 +1,175 @@
+LibDocument:TextSection consoCashFlowStatement
+    --> title \( Tableau de flux de trésorerie \)
+    --> stylingConfigurations dateYYYY
+    --> components	{
+		// newLine,
+        // consoCashFlowTable,
+		// newLine,
+        // -> StructuredTextParagraph
+        //     // On décrit la val. Et var. si le BFR est positif et si augmente plus vite que le CA
+        //     --> text	-> LibDocument:DescribeVariation dVariation_BFR_Conso_N
+        //         --> kpi BFR_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+		// -> StructuredTextParagraph cAlerte_BFR_Conso_N
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+		// 	--> text tAlerteBFR
+		// ;,
+		// newLine,
+        // -> StructuredTextParagraph
+        //     // TOTFLUX
+        //     --> text	-> LibDocument:DescribeVariation dVariation_TOTFLUX_Conso_N
+        //         --> kpi TOTFLUX_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+		// newLine,
+        // -> StructuredTextParagraph cCapexDota
+        //     // describe value ratio CAPEX / Dotations aux amortissements si capex > 120% amortissements
+		//     --> condition  theGeneralData.consolidatedCAPEXvsDOTA == true
+		// 	--> text \(
+        //         L'entreprise a investi \amount(getJointureOneFactValue(jointureACQ)) face à une dépréciation de \amount(getJointureOneFactValue(jointureDOTA))
+        //         \beginStyle(alert) Est-ce que le niveau des investissements paraît suffisant pour la pérennité de la société et son développement ? Quelle est la politique d'investissement du Groupe ? Doit-il faire face à une saturation de ses capacités de production ou prévoit-il une hausse de son activité à court ou moyen terme \endStyle
+		// 	\)
+		// ;,
+        // -> StructuredTextParagraph cVariation_ACQ_Conso
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+        //     --> text tThreeYearACQ
+        //     // si ACQ +/- 10% deux années de suite
+        //     // ACQ
+        // ;,
+        // -> StructuredTextParagraph
+        //     // si CES > 15% Tot flux investissements
+        //     // CES
+        //     --> text	-> LibDocument:DescribeValue dValue_CES_Conso_N
+        //         --> kpi CES_KPI
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeValueOptions;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                     LibDocument:SemanticSlot::Elaboration : sElaborationCES
+        //             }
+        //         ;
+        //     ;
+        // ;,
+		// -> StructuredTextParagraph cValue_TOTFLUXFI_Conso_N
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+		// 	--> active false
+		// 	--> text \(
+        //         Nous constatons sur le tableau de flux de trésorerie que le groupe s'est
+        //         \if(getJointureOneFactValue(jointureTOTFLUXFI) > 0)
+        //             endetté
+        //         \else
+        //             desendetté
+        //         \endIf
+        //         sur la période
+        //         (\value(getJointureOneFactValue(jointureTOTFLUXFI), currencyKEURO, separateThousands))
+        //         .
+		// 	\)
+		// ;,
+        // -> StructuredTextParagraph
+        //     // si significatif
+        //     // VARCAP
+        //     --> text	-> LibDocument:DescribeVariation dVariation_VARCAP_Conso_N
+        //         --> kpi VARCAP_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // si significatif
+        //     // SUBVINV
+        //     --> text	-> LibDocument:DescribeVariation dVariation_SUBVINV_Conso_N
+        //         --> kpi SUBVINV_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph
+        //     // si significatif
+        //     // REMBEMPR
+        //     --> text	-> LibDocument:DescribeVariation dVariation_REMBEMPR_Conso_N
+        //         --> kpi REMBEMPR_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //         --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+        //             --> configValues {
+        //                     LibDocument:SemanticSlot::MainPredicate : sMainPredicateREMBEMPR
+        //             }
+        //         ;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_REMBEMPR_Positif
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text tAlerteREMBEMPR
+        // ;,
+        // -> StructuredTextParagraph
+        //     // si significatif
+        //     // ENCAISEMPR
+        //     --> text	-> LibDocument:DescribeVariation dVariation_ENCAISEMPR_Conso_N
+        //         --> kpi ENCAISEMPR_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;,
+        // -> StructuredTextParagraph cAlerte_ENCAISEMPR_GreaterThan_REMBEMPR
+        //     --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+        //     --> active false
+        //     --> text tAlerteENCAISEMPR
+        // ;,
+        // -> StructuredTextParagraph
+        //     // si significatif
+        //     // VARDETFI
+        //     --> text	-> LibDocument:DescribeVariation dVariation_VARDETFI_Conso_N
+        //         --> kpi VARDETFI_KPI
+        //         --> timeMembers yearN_1
+        //         --> timeMembers yearN
+        //         --> active false
+        //         --> dimensionConditions -> List
+        //             --> values conso
+        //         ;
+        //         --> options	-> LibDocument:DescribeVariationOptions;
+        //     ;
+        // ;
+    }
+;

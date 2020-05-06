@@ -1,0 +1,14 @@
+LibDocument:DynamicStylingConfiguration euroKAmount
+    --> configValues {
+        LibDocument:Numerical:unit: CURRENCY_KILO_EUR,
+        LibDocument:Numerical:style : -> Style
+            --> separateThousands true
+            --> thousandSeparator " "
+        ;
+    }
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> calculationTypes RAW_VALUE_CALCULATION
+        --> calculationTypes DIFFERENCE_CALCULATION
+        --> calculationTypes ABS_DIFFERENCE_CALCULATION
+    ;
+;

@@ -1,0 +1,63 @@
+AmountKPI TOTAL_EQUITY_AND_LIABILITIES_KPI
+--> indicator TOTAL_EQUITY_AND_LIABILITIES
+--> documentation """KPI for the indicator `TOTAL_EQUITY_AND_LIABILITIES`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "equity and liabilities"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "liabilities and equity"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "total equity & liabilities"
+											--> number PLURAL
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "total liabilities and equity"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "passif"
+											--> gender MASCULINE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "total passif"
+											--> gender MASCULINE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

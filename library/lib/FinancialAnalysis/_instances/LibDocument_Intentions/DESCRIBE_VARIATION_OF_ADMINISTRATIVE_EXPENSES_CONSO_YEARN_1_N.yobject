@@ -1,0 +1,14 @@
+VariationIntention_withValueAndPercent DESCRIBE_VARIATION_OF_ADMINISTRATIVE_EXPENSES__CONSO_YEARN_1_N
+    --> kpi ADMINISTRATIVE_EXPENSES_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    // --> active false
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::MainPredicate : sMainPredicateContributors
+    //     }
+    // ;
+;

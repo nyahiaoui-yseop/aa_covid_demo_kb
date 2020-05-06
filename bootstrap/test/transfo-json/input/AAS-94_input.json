@@ -1,0 +1,952 @@
+{
+    "language": "LANG_en",
+    "forceGenerateAllVariants": true,
+    "cube": {
+        "id": "58da901d-7be4-49d7-b8f7-a1d91ce2c2c2",
+        "dimensions": [
+            {
+                "label": "Indicator",
+                "hierarchies": [
+                    {
+                        "value": {
+                            "label": "Root",
+                            "_yid": "ROOT",
+                            "_yclass": "LibCube:IndicatorMember"
+                        },
+                        "child": [
+                            {
+                                "value": {
+                                    "label": "Net earnings",
+                                    "_yid": "NET_EARNINGS",
+                                    "_yclass": "LibCube:IndicatorMember"
+                                },
+                                "child": [
+                                    {
+                                        "value": {
+                                            "label": "Earnings before income tax",
+                                            "_yid": "EBIT",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Operating profit",
+                                                    "_yid": "OPERATING_PROFIT",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [
+                                                    {
+                                                        "value": {
+                                                            "label": "EBITDA",
+                                                            "_yid": "EBITDA",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [
+                                                            {
+                                                                "value": {
+                                                                    "label": "Sales",
+                                                                    "_yid": "SALES",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            },
+                                                            {
+                                                                "value": {
+                                                                    "label": "Cost of sales",
+                                                                    "_yid": "COST_OF_SALES",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            },
+                                                            {
+                                                                "value": {
+                                                                    "label": "Administrative expenses",
+                                                                    "_yid": "ADMINISTRATIVE_EXPENSES",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            },
+                                                            {
+                                                                "value": {
+                                                                    "label": "Personnel expenses",
+                                                                    "_yid": "PERSONNEL_EXPENSES",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            },
+                                                            {
+                                                                "value": {
+                                                                    "label": "Other operating income and expenses",
+                                                                    "_yid": "OTHER_OPERATING_INCOME_AND_EXPENSES",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            }
+                                                        ],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    },
+                                                    {
+                                                        "value": {
+                                                            "label": "Net depreciation and amortisation",
+                                                            "_yid": "NET_DEPRECIATION_AND_AMORTISATION",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    },
+                                                    {
+                                                        "value": {
+                                                            "label": "Net increase in provision",
+                                                            "_yid": "NET_INCREASE_IN_PROVISION",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    }
+                                                ],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Financial result",
+                                                    "_yid": "FINANCIAL_RESULT",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [
+                                                    {
+                                                        "value": {
+                                                            "label": "Financial income",
+                                                            "_yid": "FINANCIAL_INCOME",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [
+                                                            {
+                                                                "value": {
+                                                                    "label": "Financial income from bonds",
+                                                                    "_yid": "FINANCIAL_INCOME_BONDS",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            },
+                                                            {
+                                                                "value": {
+                                                                    "label": "Financial income from equity",
+                                                                    "_yid": "FINANCIAL_INCOME_EQUITY",
+                                                                    "_yclass": "LibCube:IndicatorMember"
+                                                                },
+                                                                "child": [],
+                                                                "_yclass": "LibCube:Hierarchy"
+                                                            }
+                                                        ],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    },
+                                                    {
+                                                        "value": {
+                                                            "label": "Financial costs",
+                                                            "_yid": "FINANCIAL_COSTS",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    }
+                                                ],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Non-recurring result",
+                                                    "_yid": "NON_RECURRING_RESULT",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [
+                                                    {
+                                                        "value": {
+                                                            "label": "Non-recurring income",
+                                                            "_yid": "NON_RECURRING_INCOME",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    },
+                                                    {
+                                                        "value": {
+                                                            "label": "Non-recurring expenses",
+                                                            "_yid": "NON_RECURRING_EXPENSES",
+                                                            "_yclass": "LibCube:IndicatorMember"
+                                                        },
+                                                        "child": [],
+                                                        "_yclass": "LibCube:Hierarchy"
+                                                    }
+                                                ],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Income tax expense",
+                                            "_yid": "INCOME_TAX_EXPENSE",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Share in net income of associates and JV",
+                                            "_yid": "SHARE_IN_NET_INCOME_OF_ASSOCIATES_AND_JV",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Goodwill impairment",
+                                            "_yid": "GOODWILL_IMPAIRMENT",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    }
+                                ],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "label": "Total assets",
+                                    "_yid": "TOTAL_ASSETS",
+                                    "_yclass": "LibCube:IndicatorMember"
+                                },
+                                "child": [
+                                    {
+                                        "value": {
+                                            "label": "Non-current assets",
+                                            "_yid": "NON_CURRENT_ASSETS",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Goodwill",
+                                                    "_yid": "GOODWILL",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Property, plant and equipment",
+                                                    "_yid": "PROPERTY_PLANT_AND_EQUIPMENT",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Intangible assets",
+                                                    "_yid": "INTANGIBLE_ASSETS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Non-current financial assets",
+                                                    "_yid": "NON_CURRENT_FINANCIAL_ASSETS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Investments in associates and JV",
+                                                    "_yid": "INVESTMENTS_IN_ASSOCIATES_AND_JV",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Deferred tax assets",
+                                                    "_yid": "DEFERRED_TAX_ASSETS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Other non-current receivables",
+                                                    "_yid": "OTHER_NON_CURRENT_RECEIVABLES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Current assets",
+                                            "_yid": "CURRENT_ASSETS",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Current financial assets",
+                                                    "_yid": "CURRENT_FINANCIAL_ASSETS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Inventories",
+                                                    "_yid": "INVENTORIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Trade and other receivables",
+                                                    "_yid": "TRADE_AND_OTHER_RECEIVABLES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Current tax assets",
+                                                    "_yid": "CURRENT_TAX_ASSETS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Other current receivables",
+                                                    "_yid": "OTHER_CURRENT_RECEIVABLES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Cash and cash equivalents",
+                                                    "_yid": "CASH_AND_CASH_EQUIVALENTS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Assets classified as held for sale",
+                                            "_yid": "ASSETS_CLASSIFIED_AS_HELD_FOR_SALE",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    }
+                                ],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "label": "Total equity and liabilities",
+                                    "_yid": "TOTAL_EQUITY_AND_LIABILITIES",
+                                    "_yclass": "LibCube:IndicatorMember"
+                                },
+                                "child": [
+                                    {
+                                        "value": {
+                                            "label": "Total equity",
+                                            "_yid": "TOTAL_EQUITY",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Share capital",
+                                                    "_yid": "SHARE_CAPITAL",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Net income and consolidated reserves",
+                                                    "_yid": "NET_INCOME_AND_CONSOLIDATED_RESERVES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Equity (Group share)",
+                                                    "_yid": "EQUITY_GROUP_SHARE",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Equity (non-controlling interests)",
+                                                    "_yid": "EQUITY_NON_CONTROLLING_INTERESTS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Current liabilities",
+                                            "_yid": "CURRENT_LIABILITIES",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Current provisions",
+                                                    "_yid": "CURRENT_PROVISIONS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Current financial liabilities",
+                                                    "_yid": "CURRENT_FINANCIAL_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Receipt in advance",
+                                                    "_yid": "RECEIPT_IN_ADVANCE",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Trade and other payables",
+                                                    "_yid": "TRADE_AND_OTHER_PAYABLES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Current tax liabilities",
+                                                    "_yid": "CURRENT_TAX_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Other current liabilities",
+                                                    "_yid": "OTHER_CURRENT_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    },
+                                    {
+                                        "value": {
+                                            "label": "Non-current liabilities",
+                                            "_yid": "NON_CURRENT_LIABILITIES",
+                                            "_yclass": "LibCube:IndicatorMember"
+                                        },
+                                        "child": [
+                                            {
+                                                "value": {
+                                                    "label": "Non-current provisions",
+                                                    "_yid": "NON_CURRENT_PROVISIONS",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Non-current financial liabilities",
+                                                    "_yid": "NON_CURRENT_FINANCIAL_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Deferred tax liabilities",
+                                                    "_yid": "DEFERRED_TAX_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            },
+                                            {
+                                                "value": {
+                                                    "label": "Other non-current liabilities",
+                                                    "_yid": "OTHER_NON_CURRENT_LIABILITIES",
+                                                    "_yclass": "LibCube:IndicatorMember"
+                                                },
+                                                "child": [],
+                                                "_yclass": "LibCube:Hierarchy"
+                                            }
+                                        ],
+                                        "_yclass": "LibCube:Hierarchy"
+                                    }
+                                ],
+                                "_yclass": "LibCube:Hierarchy"
+                            }
+                        ],
+                        "_yclass": "LibCube:Hierarchy"
+                    }
+                ],
+                "_yid": "DIMENSION_INDICATOR",
+                "_yclass": "LibCube:Dimension"
+            },
+            {
+                "label": "Time",
+                "hierarchies": [
+                    {
+                        "value": {
+                            "_yid": "ALL_DIMENSION_TIME",
+                            "_yclass": "LibCube:TimeMember"
+                        },
+                        "child": [
+                            {
+                                "value": {
+                                    "date": "2018-12-31",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN",
+                                    "_yclass": "LibCube:TimeMember"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "date": "2017-12-31",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN_1",
+                                    "_yclass": "LibCube:TimeMember"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "date": "2016-12-31",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN_2",
+                                    "_yclass": "LibCube:TimeMember"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "date": "2015-12-31",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN_3",
+                                    "_yclass": "LibCube:TimeMember"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            }
+                        ],
+                        "_yclass": "LibCube:Hierarchy"
+                    }
+                ],
+                "_yid": "DIMENSION_TIME",
+                "_yclass": "LibCube:Dimension"
+            },
+            {
+                "label": "Entity",
+                "hierarchies": [
+                    {
+                        "value": {
+                            "label": "ALL Entity",
+                            "_yid": "ALL_DIMENSION_ENTITY",
+                            "_yclass": "LibCube:Member"
+                        },
+                        "child": [
+                            {
+                                "value": {
+                                    "label": "Consolidated",
+                                    "_yid": "CONSO",
+                                    "_yclass": "LibCube:Member"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "label": "Legal entity A",
+                                    "_yid": "LE_A",
+                                    "_yclass": "LibCube:Member"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            },
+                            {
+                                "value": {
+                                    "label": "Legal entity B",
+                                    "_yid": "LE_B",
+                                    "_yclass": "LibCube:Member"
+                                },
+                                "child": [],
+                                "_yclass": "LibCube:Hierarchy"
+                            }
+                        ],
+                        "_yclass": "LibCube:Hierarchy"
+                    }
+                ],
+                "_yid": "DIMENSION_ENTITY",
+                "_yclass": "LibCube:Dimension"
+            }
+        ],
+        "measures": [{ "_yid": "MEASURE_VALUE", "_yclass": "LibCube:Measure" }],
+        "facts": [
+            {
+                "members": [
+                    { "_yid": "COST_OF_SALES" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -42047500,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "EBITDA" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": 23823000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "PERSONNEL_EXPENSES" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -46598000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "ADMINISTRATIVE_EXPENSES" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -13374000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "SALES" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": 113845500,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "PERSONNEL_EXPENSES" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -31950000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "OTHER_OPERATING_INCOME_AND_EXPENSES" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -10791000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "SALES" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": 168725200,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "OTHER_OPERATING_INCOME_AND_EXPENSES" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -17163000,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "EBITDA" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": 44633200,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "COST_OF_SALES" },
+                    { "_yid": "YEARN_3" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -33907500,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            },
+            {
+                "members": [
+                    { "_yid": "ADMINISTRATIVE_EXPENSES" },
+                    { "_yid": "YEARN" },
+                    { "_yid": "ALL_DIMENSION_ENTITY" }
+                ],
+                "factMeasures": [
+                    {
+                        "measure": { "_yid": "MEASURE_VALUE" },
+                        "value": -18283500,
+                        "_yclass": "LibCube:FactMeasure"
+                    }
+                ],
+                "_yclass": "LibCube:Fact"
+            }
+        ],
+        "_yclass": "LibCube:Cube"
+    },
+    "keyPerformanceIndicators": [
+        {
+            "measure": { "_yid": "MEASURE_VALUE" },
+            "indicator": { "label": "EBITDA", "_yid": "EBITDA" },
+            "priority": 0,
+            "_yid": "EBITDA_KPI",
+            "_yclass": "LibDocument:KeyPerformanceIndicator"
+        }
+    ],
+    "rootSection": {
+        "dataSelectionFilters": {
+            "configValues": [
+                {
+                    "key": { "_yid": "LibDocument:KPIIntention::timeMembers" },
+                    "val": [
+                        {
+                            "date": "2015-12-31T00:00:00.000Z",
+                            "period": "PERIOD_YEAR",
+                            "_yid": "YEARN_3"
+                        },
+                        {
+                            "date": "2018-12-31T00:00:00.000Z",
+                            "period": "PERIOD_YEAR",
+                            "_yid": "YEARN"
+                        }
+                    ]
+                },
+                {
+                    "key": {
+                        "_yid": "LibDocument:KPIIntention::dimensionConditions"
+                    },
+                    "val": [
+                        {
+                            "dimension": {
+                                "label": "Entity",
+                                "_yid": "DIMENSION_ENTITY"
+                            },
+                            "members": [
+                                {
+                                    "label": "ALL Entity",
+                                    "_yid": "ALL_DIMENSION_ENTITY"
+                                }
+                            ],
+                            "_yclass": "LibCube:JointureDimensionCondition"
+                        }
+                    ]
+                }
+            ],
+            "_yclass": "LibDocument:DataSelectionFilters"
+        },
+        "title": "New model report",
+        "components": [
+            {
+                "dataSelectionFilters": {
+                    "configValues": [
+                        {
+                            "key": { "_yid": "LibDocument:KPIIntention::kpi" },
+                            "val": {
+                                "measure": { "_yid": "MEASURE_VALUE" },
+                                "indicator": {
+                                    "label": "EBITDA",
+                                    "_yid": "EBITDA"
+                                },
+                                "priority": 0,
+                                "_yid": "EBITDA_KPI",
+                                "_yclass": "LibDocument:KeyPerformanceIndicator"
+                            }
+                        },
+                        {
+                            "key": {
+                                "_yid": "LibDocument:KPIIntention::timeMembers"
+                            },
+                            "val": [
+                                {
+                                    "date": "2015-12-31T00:00:00.000Z",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN_3"
+                                },
+                                {
+                                    "date": "2018-12-31T00:00:00.000Z",
+                                    "period": "PERIOD_YEAR",
+                                    "_yid": "YEARN"
+                                }
+                            ]
+                        },
+                        {
+                            "key": {
+                                "_yid": "LibDocument:KPIIntention::dimensionConditions"
+                            },
+                            "val": [
+                                {
+                                    "dimension": {
+                                        "label": "Entity",
+                                        "_yid": "DIMENSION_ENTITY"
+                                    },
+                                    "members": [
+                                        {
+                                            "label": "ALL Entity",
+                                            "_yid": "ALL_DIMENSION_ENTITY"
+                                        }
+                                    ],
+                                    "_yclass": "LibCube:JointureDimensionCondition"
+                                }
+                            ]
+                        }
+                    ],
+                    "_yclass": "LibDocument:DataSelectionFilters"
+                },
+                "_yid": "INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7",
+                "_yclass": "DescribeVariationThreeContributorsValueBullet"
+            }
+        ],
+        "_yid": "TEXTSECTION_6b752cb6-0e1f-4be4-95dd-bbb2bf186287",
+        "_yclass": "LibDocument:TextSection"
+    }
+}

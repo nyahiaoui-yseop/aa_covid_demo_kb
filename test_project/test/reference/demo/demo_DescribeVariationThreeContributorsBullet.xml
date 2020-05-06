@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:paragraph level="1"><intention yid="INTENTION_9d28997c-d0d9-442f-b58a-dbcb1291308c">EBITDA rose (4.4% since last year), finishing at $47K in 2018 due to an increase of revenue (27.3%) in spite of an increase of cost of sales (90.5%) and an increase of administrative expenses (100%).</intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2020-04-07T18:35:10.672</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings log-level="debug" freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="info" nature="user-log" origin-nb-ms="206.00">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="2" level="debug" nature="user-log" origin-nb-ms="208.47">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="3" level="debug" nature="user-log" origin-nb-ms="208.58">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="4" level="warning" nature="user-log" origin-nb-ms="227.42">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="5" level="warning" nature="user-log" origin-nb-ms="227.73">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="6" level="warning" nature="user-log" origin-nb-ms="228.00">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="7" level="warning" nature="user-log" origin-nb-ms="228.27">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="8" level="warning" nature="user-log" origin-nb-ms="228.65">
+				<y:message>Attempting to create subIntentions to an intention with stage: LibDocument:IntentionStage::SubIntentionsCreated</y:message>
+			</y:log>
+			<y:log index="9" level="warning" nature="alert" origin-nb-ms="246.34">
+				<y:message>In the expression texts{0x11145}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="10" level="warning" nature="alert" origin-nb-ms="246.87">
+				<y:message>In the expression texts{0x1119C}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="11" level="warning" nature="alert" origin-nb-ms="247.65">
+				<y:message>In the expression texts{0x11201}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="12" level="warning" nature="alert" origin-nb-ms="248.23">
+				<y:message>In the expression texts{0x11263}.filter&gt;&gt;computedValuesNames, the object is, once evaluated, null</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W263" owner="yseop" source="yseop-engine"/>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="1588966710" peak="0"/>
+			<y:process id="690E" start-runtime="2020-04-07T18:35:10.616" runtime="erunbc" engine-version="7.4.3" os="UNIX 0.0" computer-name="LFRLYOALA001"/>
+			<y:key-user name="R and D Yseop-internal-DEV-cchahbazian@yseop.com-2020/03/18" email="cchahbazian@yseop.com" creation-date="2020-03-18" expiration-date="2021-03-31"/>
+			<y:request-exec-time begin="2020-04-07T18:35:10.672" end="2020-04-07T18:35:11.623"/>
+			<y:stat errors="0" warnings="4" success-rule-fire="0" text-write="170" cloning-operations="1196" cloning-items="2456" main-words="0" main-chars="0"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

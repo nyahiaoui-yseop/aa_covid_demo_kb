@@ -1,0 +1,36 @@
+MultilingualExpression DescribeThreePointsVariation:HIGHER
+--> en -> ConstList DescribeThreePointsVariation:EN:HIGHER {
+    -> LibOntology:Adjective
+        --> root "higher"
+        --> gerund false
+    ;
+    }
+    ;
+--> fr -> ConstList DescribeThreePointsVariation:FR:HIGHER {
+    -> LibOntology:Adjective
+        --> root "supérieur"
+        --> masculineSingular "supérieur"
+        --> masculinePlural "supérieurs"
+        --> feminineSingular "supérieure"
+        --> femininePlural "supérieures"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus rapide"
+        --> masculineSingular "plus rapide"
+        --> masculinePlural "plus rapides"
+        --> feminineSingular "plus rapide"
+        --> femininePlural "plus rapides"
+        --> gerund false
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus fort"
+        --> masculineSingular "plus fort"
+        --> masculinePlural "plus forts"
+        --> feminineSingular "plus forte"
+        --> femininePlural "plus fortes"
+        --> gerund false
+    ;
+    }
+    ;
+;

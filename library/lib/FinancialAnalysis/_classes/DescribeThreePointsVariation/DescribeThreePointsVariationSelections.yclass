@@ -1,0 +1,31 @@
+interface DescribeThreePointsVariationSelections extends LibDocument:DescribeVariationSelections
+
+    classProperties
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "three year analysis selections"
+        --> number SINGULAR
+    ;
+;
+
+implementation DescribeThreePointsVariationSelections
+    override {
+        validate
+    }
+
+;
+
+function DescribeThreePointsVariationSelections::validate
+args{}
+--> domains Void
+--> action {
+    if (valuesSelection>>selectedFacts.size() != 3) {
+        errorState = LibDocument:InsufficientDataError.clone(_ALL_RECURSIVE)
+        errorState.errorMessage = concat(
+            "ERROR : Cannot write DescribeThreePointsVariation intention. Three facts were expected and only ",
+            valuesSelection>>selectedFacts.size(),
+            " fact(s) were received. Check you filters selection or your data.");
+        logWarning(errorState.errorMessage);
+    }
+}
+;

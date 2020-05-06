@@ -1,0 +1,13 @@
+MultilingualExpression DescribeRatioVariation:FINANCIAL_LIABILITIES_TO_EBITDA
+--> en -> LibOntology:NounPhrase
+    --> head "leverage"
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head "levier"
+    --> gender MASCULINE
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

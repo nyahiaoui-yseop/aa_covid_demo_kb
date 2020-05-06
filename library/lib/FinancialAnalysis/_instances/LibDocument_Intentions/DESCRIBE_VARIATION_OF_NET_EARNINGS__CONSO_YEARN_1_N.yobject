@@ -1,0 +1,15 @@
+VariationIntention_valuePercentPeriod DESCRIBE_VARIATION_OF_NET_EARNINGS__CONSO_YEARN_1_N
+    --> kpi NET_EARNINGS_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::MainPredicate : sMainPredicateRN,
+    //         LibDocument:SemanticSlot::PredicateProperty : sPredicatePropertyRN,
+    //         LibDocument:SemanticSlot::PredicateElaboration : sElaborationRN
+    //     }
+    // ;
+;

@@ -1,0 +1,4 @@
+Register CURRENT_KPI_REF_INTENTION
+--> documentation """The current reference intention when applying the activation rules."""
+--> domains LibDocument:KPIIntention
+;

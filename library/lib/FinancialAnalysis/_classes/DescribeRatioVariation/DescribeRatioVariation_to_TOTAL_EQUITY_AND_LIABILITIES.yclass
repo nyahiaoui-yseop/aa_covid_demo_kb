@@ -1,0 +1,20 @@
+interface DescribeRatioVariation_to_TOTAL_EQUITY_AND_LIABILITIES extends DescribeRatioVariation
+
+    classProperties
+    --> documentation """A subclass of DescribeRatioVariation whose denominator KPI is TOTAL_EQUITY_AND_LIABILITIES_KPI.
+
+@see `setDenominatorKPI_DescribeRatioVariation_to_TOTAL_EQUITY_AND_LIABILITIES`
+"""
+    --> apiLabel "Describe a ratio variation of a chosen KPI to total equity and liabilities"
+    --> apiDescription "Describe a ratio variation of a chosen KPI to total equity and liabilities."
+
+; // DescribeRatioVariation_to_TOTAL_EQUITY_AND_LIABILITIES
+
+implementation DescribeRatioVariation_to_TOTAL_EQUITY_AND_LIABILITIES
+    override {
+        denominatorKPI
+        --> defaultValue TOTAL_EQUITY_AND_LIABILITIES_KPI
+        requestTemplate
+        --> defaultValue REQUEST_TEMPLATE_DESCRIBE_RATIO_VARIATION_to_DENOMINATOR
+    }
+;

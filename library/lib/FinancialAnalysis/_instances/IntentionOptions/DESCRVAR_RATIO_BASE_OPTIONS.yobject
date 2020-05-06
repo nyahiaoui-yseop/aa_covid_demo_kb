@@ -1,0 +1,3 @@
+DescribeRatioVariationOptions DESCRVAR_RATIO_BASE_OPTIONS extends INTENTION_OPTIONS_BASE_OPTIONS
+--> maxVariants 0
+;

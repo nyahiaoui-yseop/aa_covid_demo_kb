@@ -1,0 +1,20 @@
+interface DescribeRatioVariation_to_SALES extends DescribeRatioVariation
+
+    classProperties
+    --> documentation """A subclass of DescribeRatioVariation whose denominator KPI is SALES_KPI.
+
+@see `setDenominatorKPI_DescribeRatioVariation_to_SALES`
+"""
+    --> apiLabel "Describe a ratio variation of a chosen KPI to SALES"
+    --> apiDescription "Describe a ratio variation of a chosen KPI to SALES."
+
+; // DescribeRatioVariation_to_SALES
+
+implementation DescribeRatioVariation_to_SALES
+    override {
+        denominatorKPI
+        --> defaultValue SALES_KPI
+        requestTemplate
+        --> defaultValue REQUEST_TEMPLATE_DESCRIBE_RATIO_VARIATION_to_DENOMINATOR
+    }
+;

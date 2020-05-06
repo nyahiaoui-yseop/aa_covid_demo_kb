@@ -1,0 +1,9 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_SIMPLE_NO_PERCENT extends DESCRVAR_BASE_OPTIONS
+	--> documentation """Le ratio RN/CA a chuté à 9,12%"""
+    --> showStartValue false
+    --> showStartDate false
+    --> showEndDate false
+    --> showPeriod false
+    --> showPercentChange false
+    --> useValueInReferentialExpression true
+;

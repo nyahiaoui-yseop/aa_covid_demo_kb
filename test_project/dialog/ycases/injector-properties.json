@@ -1,0 +1,39 @@
+{
+    "": {
+        "displayLanguages": true,
+        "languages": [
+            "en",
+            "fr"
+        ],
+        "project": {
+            "title": "Financial Analysis Bootstrap",
+            "modeDirect": true,
+            "hideXSLTransformationChoice": true,
+            "transformations": [
+                "xml_html"
+            ],
+            "defaultTransformation": "xml_html",
+            "resultTarget": "area"
+        },
+        "usePictureForTitle": false,
+        "displayLaunchYseopButton": true,
+        "cssOverride": false,
+        "caseGroups": [
+            {
+                "folded": false,
+                "cases": [
+                    {
+                        "file": "testCase.xml",
+                        "label": "Test Case",
+                        "defaultValue": true
+                    }
+                ]
+            }
+        ],
+        "submitOnCaseChange": true,
+        "includeLogsInDialogMode": false,
+        "submitOnSliderChange": true,
+        "displayRewriteMeButton": true,
+        "submitOnSelectChange": false
+    }
+}

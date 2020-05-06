@@ -1,0 +1,3 @@
+LibDocument:ComputedValuesFilter ALL_CURRENT_VALUES__NAMES
+    --> computedValuesNames ComputedValueKey:CURRENT_VALUE
+;

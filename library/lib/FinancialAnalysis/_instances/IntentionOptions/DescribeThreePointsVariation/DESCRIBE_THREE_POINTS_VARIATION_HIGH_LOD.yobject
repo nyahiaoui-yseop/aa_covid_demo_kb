@@ -1,0 +1,5 @@
+DescribeThreePointsVariationOptions DESCRIBE_THREE_POINTS_VARIATION_HIGH_LOD
+--> showValueChange true
+--> levelOfDetails LibDocument:LevelOfDetails::HIGH
+--> isLevelOfDetailsModelInstance true
+;

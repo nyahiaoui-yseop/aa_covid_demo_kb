@@ -1,0 +1,26 @@
+_FILE_TYPE_ F
+
+@defineValue XmlElement XmlTree
+
+// This is mandatory to have the bootstrap working with the dialog mode
+@newFeature transitionTaskV3
+
+src/_domainObjects/beforeExternReferences.dcl
+
+.generated-yml/extern_references_objects.yml
+@if(exists_file(".generated-yml/verb.lib.yml") == true)
+    .generated-yml/verb.lib.yml
+@endif
+
+src/_technical/interfaces.kao
+
+.generated-yml/headers.yml
+.generated-yml/extern_references_functions.yml
+
+src/_technical/implementations.kao
+
+@if(exists_file("unittests/unittests.kao") == true)
+    unittests/unittests.kao
+@endif
+
+.generated-yml/generated_text_elements.yml

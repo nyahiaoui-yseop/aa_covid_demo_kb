@@ -1,0 +1,14 @@
+LibDocument:DynamicStylingConfiguration PERCENT_ONE_DECIMAL
+    --> configValues  {
+        LibDocument:Numerical:unit : UNIT_PERCENT,
+        LibDocument:Numerical:style : -> Style
+            --> decimalsCount 1
+            --> stripZero true
+            --> writeIntegerAsDecimal true
+        ;
+    }
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> calculationTypes PERCENTAGE_CALCULATION
+        --> calculationTypes ABS_PERCENTAGE_CALCULATION
+    ;
+;

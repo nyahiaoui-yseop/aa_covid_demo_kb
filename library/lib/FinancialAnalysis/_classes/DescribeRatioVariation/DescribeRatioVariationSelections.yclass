@@ -1,0 +1,50 @@
+interface DescribeRatioVariationSelections extends LibDocument:KPIIntentionSelections
+
+    field numeratorSelection
+    --> documentation """Selections for the numerator KPI"""
+    --> domains LibCube:JointureFactsSelection
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    field denominatorSelection
+    --> documentation """Selections for the denominator KPI"""
+    --> domains LibCube:JointureFactsSelection
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+
+    classProperties
+    --> documentation """DescribeRatioVariation selections"""
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "describe ratio variation selections"
+        --> number SINGULAR
+    ;
+;
+
+implementation DescribeRatioVariationSelections
+    override {
+        validate
+    }
+
+;
+
+function DescribeRatioVariationSelections::validate
+args{}
+--> domains Void
+--> action {
+    if (numeratorSelection>>selectedFacts.size() < 2) {
+        errorState = LibDocument:InsufficientDataError.clone(_ALL_RECURSIVE)
+        errorState.errorMessage = concat(
+            "ERROR: Cannot write DescribeRatioVariation intention. At least 2 facts were expected for the numerator and only ",
+            numeratorSelection>>selectedFacts.size(),
+            " fact(s) were received. Check your filters selection or your data.");
+        logWarning(errorState.errorMessage);
+    }
+    if (denominatorSelection>>selectedFacts.size() < 2) {
+        errorState = LibDocument:InsufficientDataError.clone(_ALL_RECURSIVE)
+        errorState.errorMessage = concat(
+            "ERROR: Cannot write DescribeRatioVariation intention. At least 2 facts were expected for the denominator and only ",
+            denominatorSelection>>selectedFacts.size(),
+            " fact(s) were received. Check your filters selection or your data.");
+        logWarning(errorState.errorMessage);
+    }
+}
+;

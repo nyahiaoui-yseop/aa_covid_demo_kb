@@ -1,0 +1,8 @@
+interface GeneralData extends LibReportingFramework:GeneralData
+    field forceGenerateAllVariants
+    --> domains Boolean
+    --> documentation "Set this attribute to `true` to force the option `debug_generateAllVariants` to `true`. Useful for unit tests."
+;
+
+implementation GeneralData
+;

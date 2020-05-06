@@ -1,0 +1,18 @@
+interface VariationIntention_valuePercentPeriod extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_VALUE_PERCENT_PERIOD` as default options.
+
+@see `DESCRVAR_OPTIONS_VALUE_PERCENT_PERIOD`
+"""
+    --> apiLabel "Describe the variation − Beginning by During"
+    --> apiDescription ""
+
+; // VariationIntention_valuePercentPeriod
+
+implementation VariationIntention_valuePercentPeriod
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_VALUE_PERCENT_PERIOD
+    }
+;

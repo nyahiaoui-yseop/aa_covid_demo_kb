@@ -1,0 +1,11 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_VALUE_PERCENT_PERIOD extends DESCRVAR_BASE_OPTIONS
+    	--> documentation """
+- Au cours du dernier exercice, le résultat net de 100 K$ a augmenté fortement de 11,11 %.
+- Pendant le dernier exercice, le résultat net de 100 K$ a augmenté fortement de 11,11 %.
+- Le résultat net de 100 K$ a augmenté fortement de 11,11 % au cours du dernier exercice.
+- Le résultat net de 100 K$ a augmenté fortement de 11,11 % pendant le dernier exercice."""
+    --> disregardConsistency true
+    --> showPeriod true
+    --> showStartValue false
+    --> useValueInReferentialExpression true
+;

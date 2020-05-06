@@ -1,0 +1,20 @@
+LibOntology:ModifierConcept DescribeThreePointsVariation:Overall
+    --> lexicalization -> MultilingualExpression
+        --> en {
+            -> LibOntology:Adverb DescribeThreePointsVariation:EN:Overall:overall
+                --> term "overall"
+            ;,
+            -> LibOntology:Adjective DescribeThreePointsVariation:EN:Overall:global
+                --> root "global"
+            ;
+        }
+        --> fr {
+            -> LibOntology:Adverb DescribeThreePointsVariation:FR:Overall:globalement
+                --> term "globalement"
+            ;,
+            -> LibOntology:Adjective DescribeThreePointsVariation:FR:Overall:global
+                --> root "global"
+            ;
+        }
+    ;
+;

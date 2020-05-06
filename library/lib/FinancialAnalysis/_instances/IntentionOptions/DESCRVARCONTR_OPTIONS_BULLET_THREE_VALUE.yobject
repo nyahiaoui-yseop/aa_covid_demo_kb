@@ -1,0 +1,4 @@
+LibDocument:DescribeVariationContributorsOptions DESCRVARCONTR_OPTIONS_BULLET_THREE_VALUE extends DESCRVARCONTR_OPTIONS_BULLET_THREE
+    --> showContributorsValueChange true
+    --> showContributorsPercentChange false
+;

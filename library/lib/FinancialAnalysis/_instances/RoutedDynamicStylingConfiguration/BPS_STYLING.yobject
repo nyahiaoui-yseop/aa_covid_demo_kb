@@ -1,0 +1,7 @@
+LibDocument:RoutedDynamicStylingConfiguration BPS_STYLING
+--> documentation """Styling configuration to display BPS values with one decimal and in absolute for every intention"""
+    --> dynamicStylingConfiguration ONE_DECIMAL_BPS
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

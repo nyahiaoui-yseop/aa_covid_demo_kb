@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:input xmlns:y="http://www.yseop.com/engine/3">
+    <y:data>
+        <y:instance yid="theGeneralData">
+            <asIntentionApi>true</asIntentionApi>
+        </y:instance>
+    </y:data>
+</y:input>

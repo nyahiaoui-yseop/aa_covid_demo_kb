@@ -1,0 +1,5 @@
+LibDocument:DescribeVariationContributorsOptions DESCRVARCONTR_OPTIONS_BULLET_THREE extends INTENTION_OPTIONS_BASE_OPTIONS
+    --> useAbsoluteVariation true
+    --> useBulletPoints true
+    --> numberOfContributors 3
+;

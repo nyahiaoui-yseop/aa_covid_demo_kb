@@ -1,0 +1,6 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_ONLY_VALUE extends DESCRVAR_BASE_OPTIONS
+    --> showStartValue false
+    --> showStartDate false
+    --> showPercentChange false
+    --> showEndDate false
+;

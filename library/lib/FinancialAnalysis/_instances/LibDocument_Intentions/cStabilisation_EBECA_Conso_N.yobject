@@ -1,0 +1,32 @@
+LibDocument:StaticTextIntention cStabilisation_EBECA_Conso_N
+    // --> emptyStringPredict _NOT_EMPTY_IF_CONDITION_TRUE
+    // --> active false
+    --> text \( cStabilisation_EBECA_Conso_N \)
+    // --> text \(
+    //     // \value(tEBECA)
+    //     \beginSynonym
+    //         \choice
+    //             Le ratio EBE / CA
+    //         \choice
+    //             Le ratio excédent brut d'exploitation sur chiffre d'affaires
+    //         \choice
+    //             L'EBE / CA
+    //     \endSynonym
+    //     \switch(theGeneralData.consolidatedEBECAVariationN_1_N_2.level)
+    //         \case(TrendNature::increase)
+    //             se stabilise
+    //         \case(TrendNature::neutral)
+    //             reste stable
+    //         \case(TrendNature::decrease)
+    //             se maintient
+    //     \endSwitch
+    //     à \value(theGeneralData.consolidatedEBECAVariationN_N_1.endValue, UNIT_PERCENT) en \value(yearN.date.year)
+    //     \switch(theGeneralData.consolidatedEBECAVariationN_1_N_2.level)
+    //         \case(TrendNature::increase)
+    //             , après une hausse en \value(yearN_1.date.year)
+    //         \case(TrendNature::decrease)
+    //             , après une baisse en \value(yearN_1.date.year)
+    //     \endSwitch
+    //     .
+    // \)
+;

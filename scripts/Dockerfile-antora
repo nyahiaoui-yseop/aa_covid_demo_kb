@@ -1,0 +1,7 @@
+FROM antora/antora as builder
+WORKDIR /antora
+COPY . /antora
+RUN antora site.yml
+
+FROM nginx
+COPY --from=builder --chown=nginx:nginx /antora/build/site /usr/share/nginx/html

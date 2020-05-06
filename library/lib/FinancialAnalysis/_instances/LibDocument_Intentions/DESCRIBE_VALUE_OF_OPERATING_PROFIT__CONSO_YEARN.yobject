@@ -1,0 +1,14 @@
+LibDocument:DescribeValue DESCRIBE_VALUE_OF_OPERATING_PROFIT__CONSO_YEARN
+    --> kpi OPERATING_PROFIT_KPI
+    --> timeMembers yearN
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration	-> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany/*,
+    //         LibDocument:SemanticSlot::EntityProperty : sIndicatorPropertyPosNeg*/
+    //     }
+    // ;
+    --> options	DESCRVAL_BASE_OPTIONS
+;

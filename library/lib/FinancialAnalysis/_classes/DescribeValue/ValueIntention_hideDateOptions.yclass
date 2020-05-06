@@ -1,0 +1,18 @@
+interface ValueIntention_hideDateOptions extends LibDocument:DescribeValue
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeValue with `DESCRVAL_OPTIONS_HIDE_DATE` as default options.
+
+@see `DESCRVAL_OPTIONS_HIDE_DATE`
+"""
+    --> apiLabel "Describe the value − Without date"
+    --> apiDescription ""
+
+; // ValueIntention_hideDateOptions
+
+implementation ValueIntention_hideDateOptions
+    override {
+        options
+        --> defaultValue DESCRVAL_OPTIONS_HIDE_DATE
+    }
+;

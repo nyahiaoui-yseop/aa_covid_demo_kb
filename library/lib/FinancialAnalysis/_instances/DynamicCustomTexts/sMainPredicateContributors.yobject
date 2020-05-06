@@ -1,0 +1,62 @@
+LibDocument:DynamicCustomTexts sMainPredicateContributors
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_AUGMENTER
+                --> tense PRESENT_PARTICIPLE_FR
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_ENREGISTRER
+                --> tense PRESENT_PARTICIPLE_FR
+                --> verbPhraseObject "une hausse"
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_ENREGISTRER
+                --> tense PRESENT_PARTICIPLE_FR
+                --> verbPhraseObject "une croissance"
+            ;
+            --> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+            --> thresholdConditions LibKPI:POSITIVE
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_RESTER_AUX_ÊTRE
+                --> tense PRESENT_PARTICIPLE_FR
+                --> attributiveAdj -> NlgAdjective
+                    --> masculineSingular "stable"
+                    --> feminineSingular "stable"
+                    --> masculinePlural "stables"
+                    --> femininePlural "stables"
+                ;
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_SE_STABILISER
+                --> tense PRESENT_PARTICIPLE_FR
+            ;
+            --> thresholdConditions LibKPI:INSIGNIFICANT
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_DIMINUER
+                --> tense PRESENT_PARTICIPLE_FR
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_ENREGISTRER
+                --> tense PRESENT_PARTICIPLE_FR
+                --> verbPhraseObject "une baisse"
+            ;
+            --> thresholdConditions LibKPI:NEGATIVE
+            --> thresholdConditions LibKPI:SIGNIFICANT_NEGATIVE
+        ;
+    }
+    --> ranges defaultVariationRanges
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+    ;
+;
+
+// x < -0.1             LibKPI:SIGNIFICANT_NEGATIVE
+// -0.1 < x < -0.03     LibKPI:NEGATIVE
+// -0.03 < x < 0.03     LibKPI:INSIGNIFICANT
+// 0.03 < x < 0.1       LibKPI:POSITIVE
+// 0.1 < 0              LibKPI:SIGNIFICANT_POSITIVE

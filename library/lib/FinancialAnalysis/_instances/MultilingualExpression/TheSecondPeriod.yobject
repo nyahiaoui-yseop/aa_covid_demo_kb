@@ -1,0 +1,15 @@
+MultilingualExpression DescribeThreePointsVariation:TheSecondPeriod
+--> en -> LibOntology:NounPhrase
+    --> head "period"
+    --> adjective "second"
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head -> NlgSubstantive
+        --> root "période"
+        --> gender FEMININE
+    ;
+    --> adjective "second"
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

@@ -1,0 +1,89 @@
+
+= Compiling and deploying your Knowledge Base
+
+== What are your options
+
+To test your developments and visualize your project while working on your Knowledge Base:
+
+* You may use Yseop CLI to <<compile, *compile and perform quick checks*>> on your Knowledge Base.
+* You may use the Yseop CLI `serve` command to <<visualize, *quickly visualize your outputs via a Web browser*>>.
+* You may <<ym, *deploy your Knowledge Base on Yseop Manager*>> and then <<studio, *visualize and test your project directly on the Augmented Financial Analyst Studio*>>.
+
+[#compile]
+== Compiling and performing quick checks with Yseop CLI
+
+. Compile your Knowledge Base to produce executable files with the command `yseop compile` on Yseop CLI.
+. Process your input files with the command `yseop batch` on Yseop CLI.
++
+This generates the output file `xmlBatch/inputTest_output.xml`.
+. Open this file to visualize your outputs.
+
+[NOTE]
+--
+By default, Yseop CLI uses the input file `xmlBatch/inputTest.xml`. To use another input file, use the command:
+----
+$ yseop batch `path_to_file`
+----
+--
+
+[#visualize]
+== Visualizing your outputs via a Web browser
+
+. Serve your Knowledge Base with the command `yseop serve` on Yseop CLI.
++
+This opens the Financial Analyst bootstrap launching page:
++
+image::ym_afa_launch_page.png[Yseop Manager launch page, 600, 600]
+. Click btn:[LAUNCH YSEOP]. A text should be generated on the right part of the page.
+. To generate more output versions, click btn:[LAUNCH YSEOP] as many times as needed.
+. To change the output language, click btn:[EN] or btn:[FR].
+
+[#ym]
+== Deploying your Knowledge Base on Yseop Manager
+
+To deploy your Knowledge Base on Yseop Manager:
+
+. Generate the bootstrap archive file (`.yma`) with the command `yseop package` on Yseop CLI.
+. Log in as an administrator to Yseop Manager.
+. Click btn:[Upload a Knowledge Base] to open the _Upload_ page.
++
+image::ym_upload_page.png[Yseop Manager upload page, 600, 600]
+
+. Click btn:[Choose File].
+. Navigate to the bootstrap directory and select the archive file (`.yma`).
+. Click btn:[Upload]. The archive file is uploaded to Yseop Manager and a confirmation message is displayed.
+
+To visualize your output text on Yseop Manager:
+
+. Click the link `Test Financial Analysis Bootstrap` to open the launching page:
++
+image::ym_afa_launch_page.png[Yseop Manager launch page, 600, 600]
+
+. Click btn:[LAUNCH YSEOP]. A text should be generated on the right part of the page.
+. To generate more output versions, click btn:[LAUNCH YSEOP] as many times as needed.
+. To change the output language, click btn:[EN] or btn:[FR].
+
+For more information on how to use Yseop Manager, see the xref:{yseop-manager}:index.adoc[Yseop Manager documentation].
+
+[#studio]
+== Visualizing your project on the Augmented Financial Analyst Studio
+
+=== Building a custom NLG Docker image
+
+By using Yseop{nbsp}CLI’s `yseop docker build` command, you can build, directly from your Knowledge Base, an Yseop Manager-based Docker image fit to be used as the “NLG{nbsp}service” component of an AA{nbsp}stack.
+
+For more on Docker-themed Yseop{nbsp}CLI commands, see xref:{yseop-cli}:usage.adoc#build-docker[the dedicated section in Yseop{nbsp}CLI’s documentation].
+
+NOTE: The Docker-themed Yseop{nbsp}CLI commands are available from Yseop{nbsp}CLI version{nbsp}7.28.0 onwards.
+
+
+=== Using an already-running AA{nbsp}stack
+
+IMPORTANT: To visualize your project on your Augmented Financial Analyst Studio, *you must deploy your Knowledge Base on the Yseop Manager used by your Studio*. This Yseop Manager URL was defined when installing Augmented Analyst , see the xref:{page-version}@augmented_analyst::docker/config_variables.adoc[configuration variables].
+
+To visualize your project on your Augmented Financial Analyst Studio:
+
+. <<ym, Deploy>> your Knowledege Base *on the Yseop Manager used by your Augmented Financial Analyst Studio*.
+. Open your Augmented Financial Analyst Studio. To learn how to get around see the xref:{page-version}@aa_studio::index.adoc[Augmented Financial Analyst Studio] documentation.
+
+NOTE: Any changes you make to your model reports from the Augmented Financial Analyst Studio can be exported to a json file and then be used when calling your Knowledge Base, see xref:{page-version}@aa_studio::exporting.adoc[Exporting your data and model report].

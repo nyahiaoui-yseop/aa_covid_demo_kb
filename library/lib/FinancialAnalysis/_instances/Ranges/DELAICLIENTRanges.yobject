@@ -1,0 +1,4 @@
+LibKPI:Ranges DELAICLIENTRanges
+    --> thresholds {0, 0.2}
+    --> rangeValues {LibKPI:NEGATIVE, LibKPI:POSITIVE, LibKPI:SIGNIFICANT_POSITIVE}
+;

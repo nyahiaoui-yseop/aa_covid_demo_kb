@@ -1,0 +1,18 @@
+interface NumberKPI extends LibDocument:KeyPerformanceIndicator
+
+    classProperties
+	--> documentation """KPI which Indicator represents a simple number. It has a default styling configuration set.
+
+@see `ratioNoScale`
+"""
+
+;
+
+implementation NumberKPI
+    override {
+        // stylingConfigurations
+        // --> defaultValue RATIO_NO_SCALE_STYLING_CONFIGURATION
+        measure
+        --> defaultValue MEASURE_VALUE
+    }
+;

@@ -1,0 +1,18 @@
+LibDocument:DynamicCustomTexts sIndicatorPropertyCHGINT
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "fort"
+                --> masculinePlural "forts"
+                --> feminineSingular "forte"
+                --> femininePlural "fortes"
+                --> position _BEFORE_NOUN
+            ;
+            --> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+        ;
+    }
+    --> ranges FPCHGINTRanges
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+    ;
+;

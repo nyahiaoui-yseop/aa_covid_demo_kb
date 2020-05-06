@@ -1,0 +1,15 @@
+VariationIntention_compareToLastYear DESCRIBE_VARIATION_OF_FINANCIAL_COSTS__CONSO_YEARN_1_N
+    --> kpi FINANCIAL_COSTS_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    // --> active false
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::IndicatorProperty : sIndicatorPropertyCHGINT,
+    //         LibDocument:SemanticSlot::PredicateElaboration : sElaborationCHGINT
+    //     }
+    // ;
+;

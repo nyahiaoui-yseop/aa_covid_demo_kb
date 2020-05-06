@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration RATIO_NO_SCALE_STYLING_CONFIGURATION
+    --> dynamicStylingConfiguration ratioNoScale
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

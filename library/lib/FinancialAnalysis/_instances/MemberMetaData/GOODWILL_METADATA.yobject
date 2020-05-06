@@ -1,0 +1,75 @@
+LibDocument:MemberMetaData GOODWILL_METADATA
+--> members GOODWILL
+--> documentation """Metadata for the member `GOODWILL`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "goodwill"
+											--> number SINGULAR
+											;
+							--> thresholdConditions LibKPI:INSIGNIFICANT
+							--> thresholdConditions LibKPI:POSITIVE
+							;,
+							-> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "badwill"
+											--> number SINGULAR
+											;
+						--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges ThreeLevelValue
+						--> filter ALL_CURRENT_VALUES__NAMES
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "survaleur"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "écarts d'acquisitions"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							--> thresholdConditions LibKPI:INSIGNIFICANT
+							--> thresholdConditions LibKPI:POSITIVE
+							;,
+							-> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "sous-valeur"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+						--> thresholdConditions LibKPI:NEGATIVE
+							;
+						;
+						--> ranges ThreeLevelValue
+						--> filter ALL_CURRENT_VALUES__NAMES
+					;
+				}
+				;
+		;
+	;
+;

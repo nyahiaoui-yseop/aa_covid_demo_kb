@@ -1,0 +1,68 @@
+interface DescribeThreePointsVariationComputedValues extends LibDocument:CommonVariationComputedValues
+    classProperties
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "Describe three points variation computed values"
+        --> number SINGULAR
+    ;
+;
+
+implementation DescribeThreePointsVariationComputedValues
+    override {
+        validateValues function
+        getMandatoryKeys function
+    }
+;
+
+
+function DescribeThreePointsVariationComputedValues::validateValues
+args {}
+local {
+    LibCommons:ErrorState errorState
+}
+--> action {
+    errorState = sendMessage(this, LibDocument:CommonVariationComputedValues, validateValues);
+    if(errorState != LibCommons:NoErrorState) {
+        return errorState;
+    }
+    errorState = getChildComputedValues(1).validateValues();
+    if(errorState != LibCommons:NoErrorState) {
+        return errorState;
+    }
+    errorState = getChildComputedValues(2).validateValues();
+    if(errorState != LibCommons:NoErrorState) {
+        return errorState;
+    }
+    return LibCommons:NoErrorState;
+};
+
+function DescribeThreePointsVariationComputedValues::getMandatoryKeys
+args {}
+--> action {
+    return {
+        ComputedValueKey:CURRENT_VALUE,
+        ComputedValueKey:CURRENT_DATE,
+        ComputedValueKey:PREVIOUS_VALUE,
+        ComputedValueKey:PREVIOUS_DATE,
+        ComputedValueKey:PERIOD,
+        ComputedValueKey:NUMBER_OF_PERIODS,
+        ComputedValueKey:CALCULATED_CHANGE,
+        ComputedValueKey:CALCULATED_BASIS_POINT,
+        ComputedValueKey:CALCULATED_RELATIVE_CHANGE,
+        ComputedValueKey:CALCULATED_ABSOLUTE_CHANGE,
+        ComputedValueKey:CALCULATED_ABSOLUTE_DIFFERENCE,
+        ComputedValueKey:ANNUAL_CALCULATED_CHANGE,
+        ComputedValueKey:ANNUAL_CALCULATED_BASIS_POINT,
+        ComputedValueKey:ANNUAL_CALCULATED_RELATIVE_CHANGE,
+        ComputedValueKey:ANNUAL_CALCULATED_ABSOLUTE_CHANGE,
+        ComputedValueKey:ANNUAL_CALCULATED_ABSOLUTE_DIFFERENCE,
+        ComputedValueKey:TREND_NATURE,
+        ComputedValueKey:CHANGE_MAGNITUDE,
+        ComputedValueKey:IS_FIRST_VARIATION_IMPORTANT,
+        ComputedValueKey:IS_LAST_VARIATION_IMPORTANT,
+        ComputedValueKey:IS_VARIATION_IMPORTANT,
+        ComputedValueKey:VARIATION_PARTICULARITY,
+        ComputedValueKey:CONSISTENT_VARIATION,
+        ComputedValueKey:VOLATILE_VARIATION
+    };
+};

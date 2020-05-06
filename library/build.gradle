@@ -1,0 +1,19 @@
+plugins {
+    id "com.yseop.yseopml.gradle" version "0.1.7"
+}
+
+buildDir = "${rootDir}/bin"
+group = 'com.yseop'
+if (version == 'unspecified') {
+    version = 'branch-develop-SNAPSHOT'
+}
+
+repositories {
+    nexusYseopAa(mavenUser, mavenPassword)
+}
+
+publishing {
+    repositories {
+        nexusYseopAfa(mavenUser, mavenPassword, version)
+    }
+}

@@ -1,0 +1,667 @@
+interface DescribeThreePointsVariation extends LibDocument:CustomKPIIntention
+
+    method describeWholePeriodVariation
+    args {}
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Describe the whole period when the progression is continuous."""
+
+    method describePeriodVariation
+    args {
+        Boolean isLastVariation
+    }
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Creates the concept representing the variation."""
+
+    method describeStabilisation
+    args {}
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Creates the concept representing a stabilisation."""
+
+    method describeChangeAfterStable
+    args {}
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Creates the concept representing a change after a stable period."""
+
+    method describeTrendChange
+    args {}
+    --> domains NlgLambdaTerm, NlgApplication
+    --> documentation """Creates the concept representing a trend change between the two periods."""
+
+
+    method isVariationSignificative
+    args {
+        LibDocument:ComputedValues variationFact
+        Number threshold
+    }
+    --> domains Boolean
+    --> documentation """Calculates if a variation is significative or not regarding a threshold."""
+
+    classProperties
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "Three Years Analysis intention"
+        --> number SINGULAR
+    ;
+    --> apiLabel "Describe three points variation"
+    --> apiDescription "Describe the variation between three time points."
+;
+
+implementation DescribeThreePointsVariation
+    override {
+        computeValues function
+        computeValuesAfterConfiguration function
+        getDocumentStructure function
+        initFactsSelections function
+        setRoles function
+        setSemanticSlots  function
+        optionsClass
+        --> defaultValue DescribeThreePointsVariationOptions
+        expectedNumberOfTimeMembers
+        --> defaultValue 2
+        intentionCategory
+        --> defaultValue DESCRIBE_VARIATION_CATEGORY
+        requestTemplate
+        --> defaultValue REQUEST_TEMPLATE_DESCRIBE_THREE_POINTS_VARIATION
+    }
+;
+
+function DescribeThreePointsVariation::setRoles
+args {}
+--> domains Void
+--> action {
+    if(this.roles == null ){
+        this.roles = new(HashSet)
+    }
+    this.roles.add(LibDocument:IntentionRole::Root);
+}
+;
+
+function DescribeThreePointsVariation::setSemanticSlots
+args {}
+--> domains Void
+--> action {
+    this.semanticSlots = DESCRIBE_THREE_POINTS_VARIATION_SEMANTIC_SLOTS;
+}
+;
+
+function DescribeThreePointsVariation::initFactsSelections
+args {}
+local {
+    LibCube:JointureDimensionCondition conditionIndicator
+    LibCube:JointureDimensionCondition conditionTime
+    Collection conditions
+    Collection timeList
+    Collection intermediateMembers
+}
+--> action {
+    this.selections = new(DescribeThreePointsVariationSelections);
+
+    conditions = new(List);
+    if(dimensionConditions != null && dimensionConditions.isEmpty() == false){
+        conditions.addAll(dimensionConditions);
+    }
+
+    // constraint with the KPI indicator
+    conditionIndicator = new(LibCube:JointureDimensionCondition);
+    conditionIndicator.dimension = DIMENSION_INDICATOR;
+    conditionIndicator.members.add(this.kpi.indicator);
+    conditions.add(conditionIndicator);
+
+    // constraint with the start and end periods
+    conditionTime = new(LibCube:JointureDimensionCondition);
+    conditionTime.dimension = DIMENSION_TIME;
+    foreach(_timeMember, this>>timeMembers){
+        conditionTime.members.add(_timeMember);
+    }
+
+    if(this>>timeMembers.size() == 2) {
+
+        timeList = applyCollection(this>>timeMembers, __where currentElement.date != null).toList()
+        timeList.sort(_ASCENDANT, _RELATIVE_ORDER_OF: LibCube:TimeMember::date)
+
+        intermediateMembers = DIMENSION_TIME.getIntermediateTimeMembers(
+            timeList.get(_FIRST),
+            timeList.get(_LAST)
+        );
+
+        foreach(_timeMember, intermediateMembers){
+            conditionTime.members.add(_timeMember);
+        }
+    }
+    conditions.add(conditionTime);
+
+    DescribeThreePointsVariationSelections(selections).valuesSelection = buildFactSelection(conditions)
+}
+;
+
+function DescribeThreePointsVariation::isVariationSignificative
+args {
+    LibDocument:ComputedValues values
+    Number threshold
+}
+--> domains Boolean
+--> action {
+    if(values.getValue(ComputedValueKey:CALCULATED_ABSOLUTE_CHANGE) > threshold) {
+        return true;
+    }
+    return false;
+}
+;
+
+function DescribeThreePointsVariation::computeValues
+args {}
+local {
+    DescribeThreePointsVariationOptions localOptions
+    LibDocument:Entity indicatorEntity
+
+    Boolean isFirstVariationImportant
+    Boolean isLastVariationImportant
+    Boolean isWholeVariationImportant
+
+    LibDocument:ComputedValues firstComputedValues
+    LibDocument:ComputedValues lastComputedValues
+}
+--> action {
+
+    computedValues = new(DescribeThreePointsVariationComputedValues);
+    LibDocument:setBasicVariationComputedValues(this, computedValues);
+
+    firstComputedValues = new(LibDocument:DescribeVariationComputedValues);
+    LibDocument:setBasicVariationComputedValues(this, firstComputedValues, _FIRST: 1, _LAST: 2);
+    computedValues.addChildComputedValues(firstComputedValues);
+
+    lastComputedValues = new(LibDocument:DescribeVariationComputedValues);
+    LibDocument:setBasicVariationComputedValues(this, lastComputedValues, _FIRST: 2, _LAST: 3);
+    computedValues.addChildComputedValues(lastComputedValues);
+
+    localOptions = DescribeThreePointsVariationOptions(this.options);
+    indicatorEntity = memberToEntity(getMainKpiIndicator(), {LibDocument:IntentionRole::Root});
+
+    // @patch: those ones will be useless when using the ranges; that's why they are not in each variation's computed values
+
+    isFirstVariationImportant = isVariationSignificative(firstComputedValues, localOptions.thresholdFastVariation);
+    computedValues.put(ComputedValueKey:IS_FIRST_VARIATION_IMPORTANT, buildComputedValue(
+        isFirstVariationImportant,
+        LibDocument:IntentionRole::Root,
+        BOOLEAN_CALCULATION,
+        indicatorEntity
+    ));
+
+    isLastVariationImportant = isVariationSignificative(lastComputedValues, localOptions.thresholdFastVariation)
+    computedValues.put(ComputedValueKey:IS_LAST_VARIATION_IMPORTANT, buildComputedValue(
+        isLastVariationImportant,
+        LibDocument:IntentionRole::Root,
+        BOOLEAN_CALCULATION,
+        indicatorEntity
+    ));
+
+    isWholeVariationImportant = isVariationSignificative(computedValues, localOptions.thresholdFastVariation)
+    computedValues.put(ComputedValueKey:IS_VARIATION_IMPORTANT, buildComputedValue(
+        isWholeVariationImportant,
+        LibDocument:IntentionRole::Root,
+        BOOLEAN_CALCULATION,
+        indicatorEntity
+    ));
+}
+;
+
+function DescribeThreePointsVariation::computeValuesAfterConfiguration()
+local {
+    LibDocument:Entity indicatorEntity
+    DescribeThreePointsVariationOptions localOptions
+
+    Number acceleration
+    LibAnalysis:TrendNature accelerationTrendNature
+
+    LibDocument:ComputedValues firstComputedValues
+    LibDocument:ComputedValues lastComputedValues
+}
+--> action {
+
+    localOptions = DescribeThreePointsVariationOptions(this.options);
+
+    firstComputedValues = computedValues.getChildComputedValues(1);
+    lastComputedValues = computedValues.getChildComputedValues(2);
+
+    LibDocument:calculateTrendNature(this, computedValues);
+    LibDocument:calculateConsistency(this, computedValues);
+    LibDocument:calculateTrendNature(this, firstComputedValues);
+    LibDocument:calculateConsistency(this, firstComputedValues);
+    LibDocument:calculateTrendNature(this, lastComputedValues);
+    LibDocument:calculateConsistency(this, lastComputedValues);
+
+    // Curve's analysis: if the variation is not significative, it is considered a stagnation
+    // @patch: those ones will be useless when using the ranges; that's why they are not in each variation's computed values
+    if(isVariationSignificative(computedValues, localOptions.thresholdStableVariation) == false) {
+        computedValues.get(ComputedValueKey:TREND_NATURE).setValue(TrendNature::neutral);
+    }
+    if(isVariationSignificative(firstComputedValues, localOptions.thresholdStableVariation) == false) {
+        firstComputedValues.get(ComputedValueKey:TREND_NATURE).setValue(TrendNature::neutral);
+    }
+    if(isVariationSignificative(lastComputedValues, localOptions.thresholdStableVariation) == false) {
+        lastComputedValues.get(ComputedValueKey:TREND_NATURE).setValue(TrendNature::neutral);
+    }
+
+    // For same nature variations (two increases or two decreases), we calculate the acceleration/deceleration/stagnation
+    if(firstComputedValues.getValue(ComputedValueKey:TREND_NATURE) == lastComputedValues.getValue(ComputedValueKey:TREND_NATURE)) {
+
+        acceleration = lastComputedValues.getValue(ComputedValueKey:CALCULATED_ABSOLUTE_DIFFERENCE) - firstComputedValues.getValue(ComputedValueKey:CALCULATED_ABSOLUTE_DIFFERENCE);
+
+        if(acceleration > 0 && abs(acceleration) > firstComputedValues.getValue(ComputedValueKey:CALCULATED_ABSOLUTE_DIFFERENCE) * localOptions.thresholdFastAcceleration) {
+            accelerationTrendNature = TrendNature::increase;
+        } else if (acceleration < 0 && abs(acceleration) > firstComputedValues.getValue(ComputedValueKey:CALCULATED_ABSOLUTE_DIFFERENCE) * localOptions.thresholdFastAcceleration) {
+            accelerationTrendNature = TrendNature::decrease;
+        } else {
+            accelerationTrendNature = TrendNature::neutral;
+        }
+    } else {
+        accelerationTrendNature = TrendNature::neutral;
+    }
+
+    indicatorEntity = memberToEntity(getMainKpiIndicator(), {LibDocument:IntentionRole::Root});
+
+    computedValues.put(ComputedValueKey:ACCELERATION_TREND_NATURE, buildComputedValue(
+        accelerationTrendNature,
+        LibDocument:IntentionRole::Root,
+        TREND_NATURE_CALCULATION,
+        indicatorEntity
+    ));
+}
+;
+
+function DescribeThreePointsVariation::getDocumentStructure
+args {
+    NamedArgumentsTable constraints
+    --> additionalVarArgs true
+}
+local {
+    LibDocument:ComputedValues firstComputedValues
+    LibDocument:ComputedValues lastComputedValues
+}
+--> action {
+
+    firstComputedValues = computedValues.getChildComputedValues(1);
+    lastComputedValues = computedValues.getChildComputedValues(2);
+
+    switch(firstComputedValues.getValue(ComputedValueKey:TREND_NATURE)) {
+        case(TrendNature::increase): {
+            switch(lastComputedValues.getValue(ComputedValueKey:TREND_NATURE)) {
+                case(TrendNature::increase):
+                    return describeWholePeriodVariation();
+
+                case(TrendNature::decrease):
+                    return describeTrendChange();
+
+                case(TrendNature::neutral):
+                    return describeStabilisation();
+            }
+        }
+        case(TrendNature::decrease): {
+            switch(lastComputedValues.getValue(ComputedValueKey:TREND_NATURE)) {
+                case(TrendNature::increase):
+                    return describeTrendChange();
+
+                case(TrendNature::decrease):
+                    return describeWholePeriodVariation();
+
+                case(TrendNature::neutral):
+                    return describeStabilisation();
+            }
+        }
+        case(TrendNature::neutral): {
+            switch(lastComputedValues.getValue(ComputedValueKey:TREND_NATURE)) {
+                case(TrendNature::increase):
+                    return describeChangeAfterStable();
+                case(TrendNature::decrease):
+                    return describeChangeAfterStable();
+                case(TrendNature::neutral):
+                    return describeWholePeriodVariation();
+            }
+        }
+    }
+}
+;
+
+function DescribeThreePointsVariation::describeWholePeriodVariation
+args {
+}
+local {
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication mainPredicateConcept
+    NlgLambdaTerm || NlgApplication predicateElaboration
+    NlgLambdaTerm || NlgApplication joinConcept
+    NlgLambdaTerm || NlgApplication entity
+
+    LibDocument:ComputedValue byComputedValue
+    NlgLambdaTerm || NlgApplication by
+    NlgLambdaTerm || NlgApplication to
+    NlgLambdaTerm || NlgApplication period
+
+    LibOntology:DateType periodType
+    NlgLambdaTerm || NlgApplication secondPeriod
+    NlgLambdaTerm || NlgApplication acceleration
+    NlgLambdaTerm || NlgApplication globally
+
+    DescribeThreePointsVariationOptions localOptions
+}
+--> domains NlgLambdaTerm, NlgApplication
+--> action
+{
+    entity = computedValueToReferentialExpression(
+        memberToEntity(getMainKpiIndicator()),
+        computedValues.get(ComputedValueKey:CALCULATED_ABSOLUTE_CHANGE),
+        false,
+        false
+    );
+
+    localOptions = DescribeThreePointsVariationOptions(this.options);
+
+    if(computedValues.getValue(ComputedValueKey:TREND_NATURE) == TrendNature::neutral) {
+        mainPredicate = buildConcept(LibOntology:Stagnate);
+        globally = LibOntology:conceptIdentity;
+
+        by = LibOntology:conceptIdentity;
+        to = LibDocument:getAtConcept(
+            this,
+            computedValues,
+            ifExpr(localOptions.showValueChange == true || localOptions.showPercentChange == true)
+                then true
+                else false
+        );
+
+    } else {
+        globally = buildConcept(DescribeThreePointsVariation:Overall);
+
+        if (computedValues.getValue(ComputedValueKey:TREND_NATURE) == TrendNature::increase) {
+            mainPredicate = buildConcept(LibOntology:Increase);
+        } else {
+            mainPredicate = buildConcept(LibOntology:Decrease);
+        }
+
+        byComputedValue = LibDocument:getByComputedValue(
+            this,
+            computedValues,
+            localOptions.showValueChange,
+            localOptions.showPercentChange,
+            true // useAbsoluteVariation
+        );
+
+        by = LibDocument:getByConcept(
+            this,
+            byComputedValue,
+            false, // showStartValueParenthesis
+            LibOntology:conceptIdentity // since
+    );
+
+        to = LibOntology:conceptIdentity;
+    }
+
+    // TODO: "nettement / fortement / de manière significative"
+    //if(computedValues.getValue(ComputedValueKey:IS_VARIATION_IMPORTANT) == true) {
+        //qualifier = LibOntology:createModifierConcept(DescribeThreePointsVariation:Significant);
+    //}
+
+    period = buildConcept(LibOntology:Period).applyOn(
+        LibOntology:createTimeConcept(
+            LibOntology:textCustomPeriod(
+                computedValues.get(ComputedValueKey:PREVIOUS_DATE).toText(),
+                computedValues.get(ComputedValueKey:CURRENT_DATE).toText(),
+                LibDocument:periodBetweenTwoDatesToText(
+                    computedValues.get(ComputedValueKey:PREVIOUS_DATE).getDateType(),
+                    3
+                )
+            ),
+            LibOntology:DateType::Year
+        )
+    );
+
+    mainPredicateConcept = LibOntology:cascadingApplyOn(period, to, by, globally, mainPredicate, entity);
+
+    if(computedValues.getValue(ComputedValueKey:TREND_NATURE) != TrendNature::neutral) {
+
+        if(computedValues.getValue(ComputedValueKey:VARIATION_PARTICULARITY) == VariationParticularity::ChangeToPositive) {
+            predicateElaboration = buildConcept(LibOntology:BecomingPositive);
+            joinConcept = buildConcept(LibOntology:Elaboration);
+        } else if (computedValues.getValue(ComputedValueKey:VARIATION_PARTICULARITY) == VariationParticularity::ChangeToNegative) {
+            predicateElaboration = buildConcept(LibOntology:BecomingNegative);
+            joinConcept = buildConcept(LibOntology:Elaboration);
+        }
+        else if (computedValues.getValue(ComputedValueKey:ACCELERATION_TREND_NATURE) != TrendNature::neutral) {
+
+            periodType = LibDocument:cubePeriodToOntologyPeriod(LibDocument:ComputedValue(computedValues.get(ComputedValueKey:PERIOD)).getValue());
+            secondPeriod = buildConcept(DescribeThreePointsVariation:TimeFocus).applyOn(
+                LibOntology:createTimeConcept(DescribeThreePointsVariation:TheSecondPeriod, periodType)
+            );
+
+            switch(computedValues.getValue(ComputedValueKey:ACCELERATION_TREND_NATURE)) {
+                case(TrendNature::increase): {
+                    acceleration = buildConcept(DescribeThreePointsVariation:Sharper);
+                    joinConcept = buildConcept(DescribeThreePointsVariation:ElaborationWith);
+                }
+                case(TrendNature::decrease): {
+                    acceleration = buildConcept(DescribeThreePointsVariation:Lower);
+                    joinConcept = buildConcept(DescribeThreePointsVariation:Despite);
+                }
+            }
+
+            predicateElaboration = LibOntology:cascadingApplyOn(
+                secondPeriod,
+                acceleration,
+                mainPredicate,
+                LibDocument:createEmptyEntityConcept()
+            );
+        }
+    }
+
+    if(predicateElaboration != null) {
+        return joinConcept.applyOn({
+            mainPredicateConcept,
+            predicateElaboration
+        });
+    }
+
+    return mainPredicateConcept;
+}
+; // DescribeThreePointsVariation::describeWholePeriodVariation
+
+
+function DescribeThreePointsVariation::describePeriodVariation
+args {
+    Boolean isLastVariation
+}
+local {
+    LibDocument:ComputedValues periodComputedValues
+
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication entity
+    NlgLambdaTerm || NlgApplication by
+    NlgLambdaTerm || NlgApplication to
+    NlgLambdaTerm || NlgApplication period
+    NlgLambdaTerm || NlgApplication predicateElaboration
+
+    LibDocument:ComputedValue byComputedValue
+    Boolean isVariationImportant
+    Boolean showPeriod
+    DescribeThreePointsVariationOptions localOptions
+}
+--> domains NlgLambdaTerm, NlgApplication
+
+--> action
+{
+    localOptions = DescribeThreePointsVariationOptions(this.options);
+
+    if(isLastVariation == true) {
+
+        periodComputedValues = computedValues.getChildComputedValues(2);
+        entity = computedValueToReferentialExpression(
+            memberToEntity(getMainKpiIndicator()),
+            periodComputedValues.get(ComputedValueKey:CALCULATED_ABSOLUTE_CHANGE),
+            false,
+            false
+        );
+        showPeriod = localOptions.showLastPeriod;
+        isVariationImportant = computedValues.getValue(ComputedValueKey:IS_LAST_VARIATION_IMPORTANT);
+    } else {
+        periodComputedValues = computedValues.getChildComputedValues(1);
+        entity = LibDocument:createEmptyEntityConcept();
+        showPeriod = localOptions.showFirstPeriod;
+        isVariationImportant = computedValues.getValue(ComputedValueKey:IS_FIRST_VARIATION_IMPORTANT);
+    }
+
+    mainPredicate = LibDocument:getMainPredicateConcept(this, periodComputedValues, null);
+
+    to = LibOntology:conceptIdentity;
+    if(periodComputedValues.getValue(ComputedValueKey:TREND_NATURE) == TrendNature::neutral) {
+
+        by = LibOntology:conceptIdentity;
+        to = LibDocument:getAtConcept(
+            this,
+            periodComputedValues,
+            ifExpr(localOptions.showValueChange == true || localOptions.showPercentChange == true)
+                then true
+                else false
+        );
+    } else {
+        byComputedValue = LibDocument:getByComputedValue(
+            this,
+            periodComputedValues,
+            localOptions.showValueChange,
+            localOptions.showPercentChange,
+            true // useAbsoluteVariation
+        );
+
+        by = LibDocument:getByConcept(
+            this,
+            byComputedValue,
+            false, // showStartValueParenthesis
+            LibOntology:conceptIdentity // since
+        );
+
+        to = LibOntology:conceptIdentity;
+    }
+
+    period = ifExpr(showPeriod == true)
+        then LibDocument:getDateConcept(this, periodComputedValues.get(ComputedValueKey:CURRENT_DATE))
+        else LibOntology:conceptIdentity;
+
+    /*
+    if(isVariationImportant == true) {
+        // TODO: "nettement / fortement / de manière significative"
+        qualifier = LibOntology:createModifierConcept(LibOntology:Significant);
+    } else {
+        qualifier = LibOntology:conceptIdentity;
+    }*/
+
+    if(periodComputedValues.getValue(ComputedValueKey:VARIATION_PARTICULARITY) == VariationParticularity::ChangeToPositive) {
+        predicateElaboration = buildConcept(LibOntology:BecomingPositive);
+    } else if (periodComputedValues.getValue(ComputedValueKey:VARIATION_PARTICULARITY) == VariationParticularity::ChangeToNegative) {
+        predicateElaboration = buildConcept(LibOntology:BecomingNegative);
+    } else {
+        predicateElaboration = LibOntology:conceptIdentity;
+    }
+
+
+    return period.applyOn(
+                to.applyOn(
+                    by.applyOn(
+                        predicateElaboration.applyOn(
+                            mainPredicate.applyOn(entity)
+    ))));
+}
+; // DescribeThreePointsVariation::describePeriodVariation
+
+
+function DescribeThreePointsVariation::describeStabilisation
+args {
+}
+local {
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication entity
+    NlgLambdaTerm || NlgApplication to
+    NlgLambdaTerm || NlgApplication period
+
+    LibDocument:ComputedValues lastComputedValues
+    DescribeThreePointsVariationOptions localOptions
+}
+--> domains NlgLambdaTerm, NlgApplication
+--> action
+{
+    lastComputedValues = computedValues.getChildComputedValues(2);
+    localOptions = DescribeThreePointsVariationOptions(this.options);
+
+    entity = computedValueToReferentialExpression(
+        memberToEntity(getMainKpiIndicator()),
+        lastComputedValues.get(ComputedValueKey:CALCULATED_ABSOLUTE_CHANGE),
+        false,
+        false
+    );
+
+    to = LibDocument:getAtConcept(
+            this,
+            lastComputedValues,
+            ifExpr(localOptions.showValueChange == true || localOptions.showPercentChange == true)
+                then true
+                else false
+        );
+
+    period = ifExpr(localOptions.showLastPeriod == true)
+        then LibDocument:getDateConcept(this, lastComputedValues.get(ComputedValueKey:CURRENT_DATE))
+        else LibOntology:conceptIdentity
+    ;
+
+    mainPredicate = period.applyOn(
+        to.applyOn(
+            buildConcept(LibOntology:Stabilize).applyOn(entity)
+    ));
+
+    // TODO: "se sont stabilisées après une [forte] croissance / décroissance"
+    return buildConcept(LibOntology:After).applyOn({
+        mainPredicate,
+        describePeriodVariation(false)
+    });
+}
+; // DescribeThreePointsVariation::describeStabilisation
+
+
+function DescribeThreePointsVariation::describeChangeAfterStable
+args {
+}
+local {
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication entity
+    NlgLambdaTerm || NlgApplication by
+    NlgLambdaTerm || NlgApplication period
+    NlgLambdaTerm || NlgApplication qualifier
+}
+--> domains NlgLambdaTerm, NlgApplication
+--> action
+{
+    // TODO : "ont (fortement) augmenté / diminué après une période stable."
+    return buildConcept(LibOntology:Follow).applyOn({
+            describePeriodVariation(true),
+            describePeriodVariation(false)
+        }
+    );
+};
+
+function DescribeThreePointsVariation::describeTrendChange
+args {
+}
+local {
+    NlgLambdaTerm || NlgApplication mainPredicate
+    NlgLambdaTerm || NlgApplication entity
+    NlgLambdaTerm || NlgApplication by
+    NlgLambdaTerm || NlgApplication period
+    NlgLambdaTerm || NlgApplication qualifier
+}
+--> domains NlgLambdaTerm, NlgApplication
+--> action
+{
+    // TODO : "une croissance/décroissance faisant suite à une décroissance/croissance"
+    return buildConcept(LibOntology:Follow).applyOn(
+        {
+            describePeriodVariation(true),
+            describePeriodVariation(false)
+        }
+    );
+};

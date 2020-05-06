@@ -1,0 +1,45 @@
+AmountKPI NET_INCREASE_DECREASE_IN_CASH_AND_CASH_EQUIVALENTS_KPI
+--> indicator NET_INCREASE_DECREASE_IN_CASH_AND_CASH_EQUIVALENTS
+--> documentation """KPI for the indicator `NET_INCREASE_DECREASE_IN_CASH_AND_CASH_EQUIVALENTS`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "variation nette de la trésorerie et des équivalents de trésorerie"
+											--> gender FEMININE
+											--> number SINGULAR
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "net increase (decrease) in cash and cash equivalents"
+											--> number SINGULAR
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+;

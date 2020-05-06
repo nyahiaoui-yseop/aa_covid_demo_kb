@@ -1,0 +1,18 @@
+interface VariationIntention_onlyValueOptions extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_ONLY_VALUE` as default options.
+
+@see `DESCRVAR_OPTIONS_ONLY_VALUE`
+"""
+    --> apiLabel "Describe the variation − With value only"
+    --> apiDescription ""
+
+; // VariationIntention_onlyValueOptions
+
+implementation VariationIntention_onlyValueOptions
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_ONLY_VALUE
+    }
+;

@@ -1,0 +1,21 @@
+LibDocument:RoutedCustomConceptsConfiguration INVERSED_PREDICATE_VARIATION
+    --> documentation """A custom concepts configuration that set as MainPredicate the values of `DEFAULT_ROOT_CONFIG_LibDocument:SemanticSlot::MainPredicate_customTexts` for most variations but reverse the usual range using the filter `LibDocument:DescribeVariationComputedValues::calculatedRelativeChange`.
+
+    It should be used by KPIs that describes a cost for example.
+    """
+    --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+        --> configValues  {
+            LibDocument:SemanticSlot::MainPredicate : -> LibDocument:DynamicCustomTexts
+                --> customTexts DEFAULT_ROOT_CONFIG_LibDocument:SemanticSlot::MainPredicate_customTexts
+                // Here we use a reverse range.
+                --> ranges PredicateReversedRanges
+                --> filter -> LibDocument:ComputedValuesFilter
+                    --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+                ;
+            ;
+        }
+    ;
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

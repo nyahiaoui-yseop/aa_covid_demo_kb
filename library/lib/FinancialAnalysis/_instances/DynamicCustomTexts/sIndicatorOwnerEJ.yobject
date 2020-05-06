@@ -1,0 +1,31 @@
+LibDocument:DynamicCustomTexts sIndicatorOwnerEJ
+    // @alacambre I believe that this can be useful to keep for the vocabulary.
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "entreprise sociale"
+                --> gender FEMININE
+                --> determiner DEFINITE_ARTICLE
+            ;
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "entité juridique"
+                --> gender FEMININE
+                --> determiner DEFINITE_ARTICLE
+            ;
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "EJ"
+                --> gender FEMININE
+                --> determiner DEFINITE_ARTICLE
+            ;
+            --> synonyms -> LibOntology:NounPhrase
+                --> head "filiale"
+                --> gender FEMININE
+                --> determiner DEFINITE_ARTICLE
+            ;
+        ;
+    }
+    --> ranges LibKPI:defaultValueRanges
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CURRENT_VALUE
+    ;
+;

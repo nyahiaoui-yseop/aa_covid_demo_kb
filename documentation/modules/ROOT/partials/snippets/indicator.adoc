@@ -1,0 +1,10 @@
+.Indicator code
+[source,YML]
+----
+LibCube:IndicatorMember INDICATOR_NAME
+// Can be Finance:Category::INCOME_STATEMENT, Finance:Category::BALANCE_SHEET, Finance:Category::CASH_FLOW_STATEMENT, Finance:Category::OTHER or Finance:Category::RATIO
+--> category Finance:Category::INCOME_STATEMENT
+// multivalued attribute can contain AccountingFramework::FRENCH_GAAP and/or AccountingFramework::IFRS
+--> accountingFramework
+;
+----

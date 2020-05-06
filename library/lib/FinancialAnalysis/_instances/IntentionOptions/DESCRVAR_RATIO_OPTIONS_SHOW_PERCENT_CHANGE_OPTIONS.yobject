@@ -1,0 +1,4 @@
+DescribeRatioVariationOptions DESCRVAR_RATIO_OPTIONS_SHOW_PERCENT_CHANGE_OPTIONS extends INTENTION_OPTIONS_BASE_OPTIONS
+--> showRelativeChange true
+--> maxVariants 0
+;

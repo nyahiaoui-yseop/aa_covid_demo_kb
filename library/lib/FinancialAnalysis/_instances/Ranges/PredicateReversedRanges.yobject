@@ -1,0 +1,12 @@
+LibKPI:Ranges PredicateReversedRanges
+    --> thresholds {-0.3, MINUS_EPSILON, EPSILON, 0.3}
+    --> rangeValues  {
+                        LibKPI:SIGNIFICANT_POSITIVE,
+                        LibKPI:POSITIVE,
+                        LibKPI:INSIGNIFICANT,
+                        LibKPI:NEGATIVE,
+                        LibKPI:SIGNIFICANT_NEGATIVE
+                    }
+;
+
+

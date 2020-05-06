@@ -1,0 +1,2 @@
+L'accès aux computed values déjà existantes semble vraiment vital dans les textes.
+Dans certains cas on veut pouvoir définir des elaborations en fonction de seuils qui ne correspondent pas aux seuils de l'intention courante.

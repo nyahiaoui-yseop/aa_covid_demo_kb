@@ -1,0 +1,49 @@
+LibDocument:DynamicCustomTexts sMainPredicateRN
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_CROÎTRE
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_AUGMENTER
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+            ;
+            --> thresholdConditions LibKPI:POSITIVE
+            --> thresholdConditions LibKPI:SIGNIFICANT_POSITIVE
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_RESTER_AUX_ÊTRE
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+                --> attributiveAdj -> NlgAdjective
+                    --> masculineSingular "stable"
+                    --> feminineSingular "stable"
+                    --> masculinePlural "stables"
+                    --> femininePlural "stables"
+                ;
+            ;
+            --> thresholdConditions LibKPI:INSIGNIFICANT
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_CHUTER
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_DIMINUER
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+            ;
+            --> synonyms  -> LibOntology:VerbPhrase
+                --> head VERB_FR_BAISSER
+                --> tense PRESENT_PERFECT_INDICATIVE_FR
+            ;
+            --> thresholdConditions LibKPI:NEGATIVE
+            --> thresholdConditions LibKPI:SIGNIFICANT_NEGATIVE
+        ;
+    }
+    --> ranges defaultVariationRanges
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+    ;
+;

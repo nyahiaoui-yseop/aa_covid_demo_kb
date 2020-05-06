@@ -1,0 +1,14 @@
+ValueIntention_hideDateOptions DESCRIBE_VALUE_OF_INCOME_TAX_EXPENSE__CONSO_YEARN
+    --> kpi INCOME_TAX_EXPENSE_KPI
+    --> timeMembers yearN
+    // --> active false
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+    // --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+    //     --> configValues {
+    //         LibDocument:SemanticSlot::IndicatorOwner : sIndicatorOwnerCompany,
+    //         LibDocument:SemanticSlot::Elaboration : sElaborationIMPB
+    //     }
+    // ;
+;

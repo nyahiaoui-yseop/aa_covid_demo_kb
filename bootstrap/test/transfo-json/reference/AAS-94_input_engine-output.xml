@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section yid="theGeneralData_rootSection">
+					<yt:title>New model report</yt:title> 
+					<yt:paragraph level="1"><intention yid="INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7">An 87.4% increase of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is caused by:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>An 87.4% increase of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is originated from:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>An 87.4% rise of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is caused by:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>An 87.4% rise of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is originated from:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>An increase of 87.4% of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is caused by:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>An increase of 87.4% of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is originated from:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>A rise of 87.4% of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is caused by:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>A rise of 87.4% of EBITDA to $44,633.2K in 2018 from $23,823K in 2015 is originated from:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA climbed by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 as a result of:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA climbed by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 due to:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA climbed by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 on:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA grew by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 as a result of:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA grew by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 due to:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA grew by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 on:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA increased by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 as a result of:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA increased by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 due to:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA increased by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 on:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA rose by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 as a result of:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA rose by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 due to:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA rose by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 on:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA see consistent growth by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 as a result of:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA see consistent growth by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 due to:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>EBITDA see consistent growth by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 on:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>Increasing EBITDA by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 are caused by:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/>Increasing EBITDA by 87.4% to $44,633.2K in 2018 from $23,823K in 2015 are originated from:<yt:line/>
+<yt:enum numbering="bullet"><yt:item>an increase of $54,879.70K of revenue;</yt:item> <yt:item>increasing personnel expenses by $14,648K;</yt:item> <yt:item>an increasing cost of sales by $8,140K.</yt:item>
+</yt:enum>.<yt:par/></intention>
+					</yt:paragraph>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:session-status>
+				<y:status>_CLOSED</y:status>
+			</y:session-status>
+			<y:start-timestamp>2019-12-30T13:29:52.615</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log index="1" level="warning" nature="alert">
+				<y:message>The element id is not recognized as an attribute for the class LibCube:Cube. It is ignored (current line = 8, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="2" level="warning" nature="alert">
+				<y:message>The element label is not recognized as an attribute for the class LibCube:Dimension. It is ignored (current line = 10, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="3" level="warning" nature="alert">
+				<y:message>The element label is not recognized as an attribute for the class LibCube:TimeDimension. It is ignored (current line = 303, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="4" level="warning" nature="alert">
+				<y:message>The element label is not recognized as an attribute for the class LibCube:Dimension. It is ignored (current line = 333, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="5" level="warning" nature="alert">
+				<y:message>The element label is not recognized as an attribute for the class LibCube:Dimension. It is ignored (current line = 494, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="6" level="warning" nature="alert">
+				<y:message>The element label is not recognized as an attribute for the class LibCube:Dimension. It is ignored (current line = 538, file = /home/alacambre/workspace/aa_afa-library/bootstrap/test/transfo-json/reference/AAS-94_input_engine-input.xml)</y:message>
+				<y:alert-type type="external-alert" sub-type-code="35" sub-type-name="xml-read" code="W79" owner="external" source="yseop-engine"/>
+			</y:log>
+			<y:log index="7" level="info" nature="user-log">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log index="8" level="trace" nature="user-log">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="9" level="trace" nature="user-log">
+				<y:message>_CUBE_INIT : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log index="10" level="trace" nature="user-log">
+				<y:message>the function defineExternalCube must be defined to call a external webservice.</y:message>
+			</y:log>
+			<y:log index="11" level="trace" nature="user-log">
+				<y:message>initialize cube</y:message>
+			</y:log>
+			<y:log index="12" level="trace" nature="user-log">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="13" level="trace" nature="user-log">
+				<y:message>Cube initizialized</y:message>
+			</y:log>
+			<y:log index="14" level="trace" nature="user-log">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="15" level="warning" nature="alert">
+				<y:message>It is more efficient to exploit symbolic objects as a key (here 1)</y:message>
+				<y:alert-type type="kb-alert" sub-type-code="30" sub-type-name="implicit-check" code="W82" owner="yseop" source="yseop-engine"/>
+			</y:log>
+			<y:log index="16" level="trace" nature="user-log">
+				<y:message>Set DIMENSION_TIME_CURRENT_MEMBER to default.</y:message>
+			</y:log>
+			<y:log index="17" level="trace" nature="user-log">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log index="18" level="trace" nature="user-log">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="19" level="trace" nature="user-log">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="20" level="trace" nature="user-log">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="21" level="trace" nature="user-log">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log index="22" level="trace" nature="user-log">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="23" level="trace" nature="user-log">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="24" level="trace" nature="user-log">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log index="25" level="trace" nature="user-log">
+				<y:message>Injected default configs</y:message>
+			</y:log>
+			<y:log index="26" level="trace" nature="user-log">
+				<y:message>Injected root configs</y:message>
+			</y:log>
+			<y:log index="27" level="debug" nature="user-log">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsValueBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::timeMembers</y:message>
+			</y:log>
+			<y:log index="28" level="debug" nature="user-log">
+				<y:message>Adding corresponding config to DescribeVariationThreeContributorsValueBullet for fields class LibDocument:KPIIntentionfor field LibDocument:KPIIntention::dimensionConditions</y:message>
+			</y:log>
+			<y:log index="29" level="trace" nature="user-log">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xE9FC&apos;</y:message>
+			</y:log>
+			<y:log index="30" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log index="31" level="trace" nature="user-log">
+				<y:message>LibDocument:KPIIntentionContributors::setRoles</y:message>
+			</y:log>
+			<y:log index="32" level="trace" nature="user-log">
+				<y:message>LibDocument:DescribeVariation::setSemanticSlots</y:message>
+			</y:log>
+			<y:log index="33" level="trace" nature="user-log">
+				<y:message>Merging data selection filters DEFAULT_INTENTION_CONTEXT over &apos;0xEA8A&apos;</y:message>
+			</y:log>
+			<y:log index="34" level="trace" nature="user-log">
+				<y:message>Setting LibDocument:KPIIntention::timeMembers with YEARN_3 to intention : INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7</y:message>
+			</y:log>
+			<y:log index="35" level="trace" nature="user-log">
+				<y:message>Setting LibDocument:KPIIntention::timeMembers with YEARN to intention : INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7</y:message>
+			</y:log>
+			<y:log index="36" level="trace" nature="user-log">
+				<y:message>Setting LibDocument:KPIIntention::dimensionConditions with &apos;0xEA9E&apos;{&apos;0xEA0C&apos;} to intention : INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7</y:message>
+			</y:log>
+			<y:log index="37" level="trace" nature="user-log">
+				<y:message>Setting LibDocument:KPIIntention::kpi with EBITDA_KPI to intention : INTENTION_a01f8998-cb0f-4870-b9bf-242c1ac597e7</y:message>
+			</y:log>
+			<y:log index="38" level="trace" nature="user-log">
+				<y:message>JUMPING to _CALCULATE_JOINTURE from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="39" level="trace" nature="user-log">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="40" level="trace" nature="user-log">
+				<y:message>_CALCULATE_JOINTURE : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log index="41" level="trace" nature="user-log">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="42" level="trace" nature="user-log">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log index="43" level="trace" nature="user-log">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="44" level="trace" nature="user-log">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="45" level="trace" nature="user-log">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="46" level="trace" nature="user-log">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log index="47" level="trace" nature="user-log">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="48" level="trace" nature="user-log">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="49" level="trace" nature="user-log">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log index="50" level="trace" nature="user-log">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::BeforeDataCollection intention: DescribeVariationThreeContributorsValueBullet</y:message>
+			</y:log>
+			<y:log index="51" level="trace" nature="user-log">
+				<y:message>_PREPARE_INTENTIONS : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log index="52" level="trace" nature="user-log">
+				<y:message>LibReportingFramework:calculateIntentions</y:message>
+			</y:log>
+			<y:log index="53" level="info" nature="user-log">
+				<y:message>options.numberOfContributors 3</y:message>
+			</y:log>
+			<y:log index="54" level="trace" nature="user-log">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="55" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log index="56" level="warning" nature="user-log">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="57" level="trace" nature="user-log">
+				<y:message>LibDocument:KPIIntention::setRoles</y:message>
+			</y:log>
+			<y:log index="58" level="info" nature="user-log">
+				<y:message>Selections have been already initialized, not running initFactsSelections()</y:message>
+			</y:log>
+			<y:log index="59" level="trace" nature="user-log">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="60" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log index="61" level="warning" nature="user-log">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="62" level="trace" nature="user-log">
+				<y:message>LibDocument:KPIIntention::setRoles</y:message>
+			</y:log>
+			<y:log index="63" level="info" nature="user-log">
+				<y:message>Selections have been already initialized, not running initFactsSelections()</y:message>
+			</y:log>
+			<y:log index="64" level="trace" nature="user-log">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="65" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log index="66" level="warning" nature="user-log">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="67" level="trace" nature="user-log">
+				<y:message>LibDocument:KPIIntention::setRoles</y:message>
+			</y:log>
+			<y:log index="68" level="info" nature="user-log">
+				<y:message>Selections have been already initialized, not running initFactsSelections()</y:message>
+			</y:log>
+			<y:log index="69" level="trace" nature="user-log">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="70" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log index="71" level="warning" nature="user-log">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log index="72" level="trace" nature="user-log">
+				<y:message>LibDocument:KPIIntention::setRoles</y:message>
+			</y:log>
+			<y:log index="73" level="info" nature="user-log">
+				<y:message>Selections have been already initialized, not running initFactsSelections()</y:message>
+			</y:log>
+			<y:log index="74" level="trace" nature="user-log">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log index="75" level="trace" nature="user-log">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log index="76" level="trace" nature="user-log">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log index="77" level="trace" nature="user-log">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log index="78" level="trace" nature="user-log">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log index="79" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::afterDataCollection</y:message>
+			</y:log>
+			<y:log index="80" level="trace" nature="user-log">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log index="81" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_ROOT_CONFIG_CONTEXT over DEFAULT_DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="82" level="trace" nature="user-log">
+				<y:message>Setting DEFAULT_ROOT_CONFIG_CONTEXT config as merged </y:message>
+			</y:log>
+			<y:log index="83" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_KPI_CONTEXT over DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="84" level="trace" nature="user-log">
+				<y:message>LibDocument:DescribeVariationContributors::mapSubIntentionsComputedValues</y:message>
+			</y:log>
+			<y:log index="85" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::afterDataCollection</y:message>
+			</y:log>
+			<y:log index="86" level="trace" nature="user-log">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log index="87" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_ROOT_CONFIG_CONTEXT over DEFAULT_DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="88" level="trace" nature="user-log">
+				<y:message>Setting DEFAULT_ROOT_CONFIG_CONTEXT config as merged </y:message>
+			</y:log>
+			<y:log index="89" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_KPI_CONTEXT over DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="90" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFA6C{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="91" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA6D{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="92" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA6E{0, 0}</y:message>
+			</y:log>
+			<y:log index="93" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA6F{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="94" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFA70{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="95" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFA7A{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="96" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA7B{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="97" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA7C{0, 0}</y:message>
+			</y:log>
+			<y:log index="98" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA7D{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="99" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFA7E{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="100" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFA8E{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="101" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA8F{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="102" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA90{0, 0}</y:message>
+			</y:log>
+			<y:log index="103" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFA91{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="104" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFA92{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="105" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::afterDataCollection</y:message>
+			</y:log>
+			<y:log index="106" level="trace" nature="user-log">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log index="107" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_KPI_CONTEXT over DEFAULT_DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="108" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFBB9{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="109" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBBA{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="110" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBBB{0, 0}</y:message>
+			</y:log>
+			<y:log index="111" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBBC{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="112" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFBBD{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="113" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFBC7{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="114" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBC8{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="115" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBC9{0, 0}</y:message>
+			</y:log>
+			<y:log index="116" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBCA{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="117" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFBCB{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="118" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFBDB{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="119" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBDC{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="120" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBDD{0, 0}</y:message>
+			</y:log>
+			<y:log index="121" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFBDE{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="122" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFBDF{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="123" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::afterDataCollection</y:message>
+			</y:log>
+			<y:log index="124" level="trace" nature="user-log">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log index="125" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_KPI_CONTEXT over DEFAULT_DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="126" level="trace" nature="user-log">
+				<y:message>Setting DEFAULT_KPI_CONTEXT config as merged </y:message>
+			</y:log>
+			<y:log index="127" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFD28{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="128" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD29{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="129" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD2A{0, 0}</y:message>
+			</y:log>
+			<y:log index="130" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD2B{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="131" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFD2C{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="132" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFD36{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="133" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD37{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="134" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD38{0, 0}</y:message>
+			</y:log>
+			<y:log index="135" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD39{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="136" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFD3A{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="137" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFD4A{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="138" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD4B{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="139" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD4C{0, 0}</y:message>
+			</y:log>
+			<y:log index="140" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFD4D{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="141" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFD4E{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="142" level="trace" nature="user-log">
+				<y:message>LibDocument:Intention::afterDataCollection</y:message>
+			</y:log>
+			<y:log index="143" level="trace" nature="user-log">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log index="144" level="trace" nature="user-log">
+				<y:message>Merging custom concept config DEFAULT_KPI_CONTEXT over DEFAULT_DEFAULT_ROOT_CONFIG_CONTEXT</y:message>
+			</y:log>
+			<y:log index="145" level="trace" nature="user-log">
+				<y:message>Setting DEFAULT_KPI_CONTEXT config as merged </y:message>
+			</y:log>
+			<y:log index="146" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFE97{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="147" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFE98{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="148" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFE99{0, 0}</y:message>
+			</y:log>
+			<y:log index="149" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFE9A{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="150" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFE9B{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="151" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFEA5{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="152" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEA6{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="153" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEA7{0, 0}</y:message>
+			</y:log>
+			<y:log index="154" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEA8{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="155" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFEA9{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="156" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xFEB9{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="157" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEBA{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="158" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEBB{0, 0}</y:message>
+			</y:log>
+			<y:log index="159" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xFEBC{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="160" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xFEBD{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="161" level="trace" nature="user-log">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="162" level="trace" nature="user-log">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log index="163" level="trace" nature="user-log">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::AfterDataCollection intention: DescribeVariationThreeContributorsValueBullet</y:message>
+			</y:log>
+			<y:log index="164" level="trace" nature="user-log">
+				<y:message>JUMPING to _DYNAMIC_DOCUMENT_PLANNING  from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log index="165" level="trace" nature="user-log">
+				<y:message>_DYNAMIC_DOCUMENT_PLANNING  : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="166" level="trace" nature="user-log">
+				<y:message>the function dynamicDocumentPlanningProcessing is not defined.</y:message>
+			</y:log>
+			<y:log index="167" level="trace" nature="user-log">
+				<y:message>JUMPING to _PREPARE_TABLES from _DYNAMIC_DOCUMENT_PLANNING </y:message>
+			</y:log>
+			<y:log index="168" level="trace" nature="user-log">
+				<y:message>_PREPARE_TABLES : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="169" level="trace" nature="user-log">
+				<y:message>unhandled class type in LibDocument:TextSection::getAllTables() DescribeVariationThreeContributorsValueBullet</y:message>
+			</y:log>
+			<y:log index="170" level="trace" nature="user-log">
+				<y:message>JUMPING to _KB_BUSINESS_RULE_AFTER_INTENTIONS from _PREPARE_TABLES</y:message>
+			</y:log>
+			<y:log index="171" level="trace" nature="user-log">
+				<y:message>_KB_BUSINESS_RULE_AFTER_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="172" level="trace" nature="user-log">
+				<y:message>onDialogTransitionTaskAfterIntentionStep called</y:message>
+			</y:log>
+			<y:log index="173" level="trace" nature="user-log">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="174" level="trace" nature="user-log">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log index="175" level="trace" nature="misc">
+				<y:message>The object 0xA5A7{&quot;yid&quot;, this{theGeneralData_rootSection}.extendedIdentifier} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_classes/text/TextSection.yclass, 466) has been cloned, new object created: 0xFF03{&quot;yid&quot;, &quot;theGeneralData_rootSection&quot;}</y:message>
+			</y:log>
+			<y:log index="176" level="trace" nature="misc">
+				<y:message>The object {byComputedValue{0xECE4}.toConcept(), since} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 526) has been cloned, new object created: 0xFF62{0xFF65, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="177" level="trace" nature="misc">
+				<y:message>The object {(localComputedValues{0xEC49}.get(ComputedValueKey:PREVIOUS_VALUE)).toConcept(), LibOntology:Ic} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 363) has been cloned, new object created: 0xFF79{0xFF7C, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="178" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0xFFA9{LibOntology:NP_fiscalYear, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="179" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0xFFAA{LibOntology:NP_fiscalYear, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="180" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0xFFAB{LibOntology:NP_fiscalYear, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="181" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0xFFAC{LibOntology:NP_fiscalYear, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="182" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0xFFAD{LibOntology:NP_fiscalYear, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="183" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0xFFC1{LibOntology:NP_fiscalYear, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="184" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0xFFD1{LibOntology:NP_year, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="185" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0xFFD2{LibOntology:NP_year, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="186" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0xFFD3{LibOntology:NP_year, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="187" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0xFFD4{LibOntology:NP_year, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="188" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0xFFD5{LibOntology:NP_year, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="189" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0xFFE9{LibOntology:NP_year, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="190" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0xFFF9{LibOntology:NP_quarter, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="191" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0xFFFA{LibOntology:NP_quarter, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="192" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0xFFFB{LibOntology:NP_quarter, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="193" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0xFFFC{LibOntology:NP_quarter, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="194" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0xFFFD{LibOntology:NP_quarter, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="195" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10011{LibOntology:NP_quarter, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="196" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x10021{LibOntology:NP_month, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="197" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x10022{LibOntology:NP_month, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="198" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x10023{LibOntology:NP_month, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="199" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x10024{LibOntology:NP_month, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="200" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x10025{LibOntology:NP_month, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="201" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10039{LibOntology:NP_month, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="202" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x10049{LibOntology:NP_week, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="203" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x1004A{LibOntology:NP_week, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="204" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x1004B{LibOntology:NP_week, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="205" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x1004C{LibOntology:NP_week, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="206" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x1004D{LibOntology:NP_week, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="207" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10061{LibOntology:NP_week, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="208" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x10071{LibOntology:NP_day, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="209" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x10072{LibOntology:NP_day, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="210" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x10073{LibOntology:NP_day, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="211" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x10074{LibOntology:NP_day, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="212" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x10075{LibOntology:NP_day, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="213" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10089{LibOntology:NP_day, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="214" level="trace" nature="misc">
+				<y:message>The object {(localComputedValues{0xEC49}.get(ComputedValueKey:PREVIOUS_DATE)).toConcept(), LibOntology:Ic} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 392) has been cloned, new object created: 0x1008B{0x1008D, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="215" level="trace" nature="misc">
+				<y:message>The object {(localComputedValues{0xEC49}.get(ComputedValueKey:PREVIOUS_VALUE)).toConcept(), LibOntology:apply(LibOntology:createModifierConcept(intention{0xEB59}.specializeConcept(LibOntology:Time)), cloning({(localComputedValues{0xEC49}.get(ComputedValueKey:PREVIOUS_DATE)).toConcept(), LibOntology:Ic}))} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 394) has been cloned, new object created: 0xFF90{0xFF93, LibOntology:cApply2(0xFF98, 0x1008D, LibOntology:Ic)}</y:message>
+			</y:log>
+			<y:log index="216" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x100BB{LibOntology:NP_fiscalYear, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="217" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x100BC{LibOntology:NP_fiscalYear, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="218" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x100BD{LibOntology:NP_fiscalYear, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="219" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x100BE{LibOntology:NP_fiscalYear, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="220" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x100BF{LibOntology:NP_fiscalYear, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="221" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x100D3{LibOntology:NP_fiscalYear, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="222" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x100E3{LibOntology:NP_year, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="223" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x100E4{LibOntology:NP_year, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="224" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x100E5{LibOntology:NP_year, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="225" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x100E6{LibOntology:NP_year, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="226" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x100E7{LibOntology:NP_year, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="227" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x100FB{LibOntology:NP_year, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="228" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x1010B{LibOntology:NP_quarter, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="229" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x1010C{LibOntology:NP_quarter, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="230" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x1010D{LibOntology:NP_quarter, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="231" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x1010E{LibOntology:NP_quarter, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="232" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x1010F{LibOntology:NP_quarter, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="233" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10123{LibOntology:NP_quarter, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="234" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x10133{LibOntology:NP_month, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="235" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x10134{LibOntology:NP_month, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="236" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x10135{LibOntology:NP_month, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="237" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x10136{LibOntology:NP_month, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="238" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x10137{LibOntology:NP_month, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="239" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x1014B{LibOntology:NP_month, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="240" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x1015B{LibOntology:NP_week, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="241" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x1015C{LibOntology:NP_week, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="242" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x1015D{LibOntology:NP_week, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="243" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x1015E{LibOntology:NP_week, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="244" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x1015F{LibOntology:NP_week, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="245" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x10173{LibOntology:NP_week, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="246" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:Sa, LibOntology:Sa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2002) has been cloned, new object created: 0x10183{LibOntology:NP_day, LibOntology:Sa, LibOntology:Sa}</y:message>
+			</y:log>
+			<y:log index="247" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2004) has been cloned, new object created: 0x10184{LibOntology:NP_day, LibOntology:SeP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="248" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SeP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2005) has been cloned, new object created: 0x10185{LibOntology:NP_day, LibOntology:SeP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="249" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2006) has been cloned, new object created: 0x10186{LibOntology:NP_day, LibOntology:SowP, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="250" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:SowP_pl, LibOntology:S} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2007) has been cloned, new object created: 0x10187{LibOntology:NP_day, LibOntology:SowP_pl, LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="251" level="trace" nature="misc">
+				<y:message>The object {typeNP, LibOntology:VPa, LibOntology:VPa} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1995) has been cloned, new object created: 0x1019B{LibOntology:NP_day, LibOntology:VPa, LibOntology:VPa}</y:message>
+			</y:log>
+			<y:log index="252" level="trace" nature="misc">
+				<y:message>The object {(localComputedValues{0xEC49}.get(ComputedValueKey:CURRENT_DATE)).toConcept(), LibOntology:Ic} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 614) has been cloned, new object created: 0x1019D{0x1019F, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="253" level="trace" nature="misc">
+				<y:message>The object {(localComputedValues{0xEC49}.get(ComputedValueKey:CURRENT_VALUE)).toConcept(), LibDocument:getDateConcept(intention, localComputedValues, showEndDate)} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 658) has been cloned, new object created: 0x100A2{0x100A5, LibOntology:cApply2(0x100AA, 0x1019F, LibOntology:Ic)}</y:message>
+			</y:log>
+			<y:log index="254" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorProperty for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="255" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::RatioOwner for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="256" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x101B8{LibOntology:TAG:EN:npaNX(0x101B7)}</y:message>
+			</y:log>
+			<y:log index="257" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x101BC{LibOntology:NP_pl, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="258" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x101BB{{LibOntology:NPa}, {LibOntology:NPa}, 0x101BC{LibOntology:NP_pl, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="259" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::ValueProperty for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="260" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::EntityProperty for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="261" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="262" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="263" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::Elaboration for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="264" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateProperty for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="265" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0x101DC{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="266" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x101DD{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="267" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x101DE{0, 0}</y:message>
+			</y:log>
+			<y:log index="268" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x101DF{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="269" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0x101E0{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="270" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x101FA{LibOntology:TAG:EN:nx0Vsa(0x101F1), LibOntology:TAG:EN:nx0Vsa(0x101F3), LibOntology:TAG:EN:nx0VPUger1sa(0x101F5, 0x101F6), LibOntology:TAG:EN:nx0VPUger1sa(0x101F8, 0x101F9)}</y:message>
+			</y:log>
+			<y:log index="271" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x1022A{LibOntology:TAG:EN:nx0Vnpa(0x10221), LibOntology:TAG:EN:nx0Vnpa(0x10223), LibOntology:TAG:EN:nx0VPUger1npa(0x10225, 0x10226), LibOntology:TAG:EN:nx0VPUger1npa(0x10228, 0x10229)}</y:message>
+			</y:log>
+			<y:log index="272" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x1025C{LibOntology:TAG:EN:nx0Vsa(0x10253), LibOntology:TAG:EN:nx0Vsa(0x10255), LibOntology:TAG:EN:nx0VPUger1sa(0x10257, 0x10258), LibOntology:TAG:EN:nx0VPUger1sa(0x1025A, 0x1025B)}</y:message>
+			</y:log>
+			<y:log index="273" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x1028C{LibOntology:TAG:EN:nx0Vnpa(0x10283), LibOntology:TAG:EN:nx0Vnpa(0x10285), LibOntology:TAG:EN:nx0VPUger1npa(0x10287, 0x10288), LibOntology:TAG:EN:nx0VPUger1npa(0x1028A, 0x1028B)}</y:message>
+			</y:log>
+			<y:log index="274" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x102BE{LibOntology:TAG:EN:nx0Vsa(0x102B5), LibOntology:TAG:EN:nx0Vsa(0x102B7), LibOntology:TAG:EN:nx0VPUger1sa(0x102B9, 0x102BA), LibOntology:TAG:EN:nx0VPUger1sa(0x102BC, 0x102BD)}</y:message>
+			</y:log>
+			<y:log index="275" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x102EE{LibOntology:TAG:EN:nx0Vnpa(0x102E5), LibOntology:TAG:EN:nx0Vnpa(0x102E7), LibOntology:TAG:EN:nx0VPUger1npa(0x102E9, 0x102EA), LibOntology:TAG:EN:nx0VPUger1npa(0x102EC, 0x102ED)}</y:message>
+			</y:log>
+			<y:log index="276" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10320{LibOntology:TAG:EN:nx0Vsa(0x10317), LibOntology:TAG:EN:nx0Vsa(0x10319), LibOntology:TAG:EN:nx0VPUger1sa(0x1031B, 0x1031C), LibOntology:TAG:EN:nx0VPUger1sa(0x1031E, 0x1031F)}</y:message>
+			</y:log>
+			<y:log index="277" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10350{LibOntology:TAG:EN:nx0Vnpa(0x10347), LibOntology:TAG:EN:nx0Vnpa(0x10349), LibOntology:TAG:EN:nx0VPUger1npa(0x1034B, 0x1034C), LibOntology:TAG:EN:nx0VPUger1npa(0x1034E, 0x1034F)}</y:message>
+			</y:log>
+			<y:log index="278" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10386{LibOntology:TAG:EN:nx0Vn1sa(0x10379, 0x1037A), LibOntology:TAG:EN:nx0Vn1sa(0x1037C, 0x1037D), LibOntology:TAG:EN:nx0VNpuGer1sa(0x1037F, 0x10380, 0x10381), LibOntology:TAG:EN:nx0VNpuGer1sa(0x10383, 0x10384, 0x10385)}</y:message>
+			</y:log>
+			<y:log index="279" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x103BA{LibOntology:TAG:EN:nx0Vn1npa(0x103AD, 0x103AE), LibOntology:TAG:EN:nx0Vn1npa(0x103B0, 0x103B1), LibOntology:TAG:EN:nx0VNpuGer1npa(0x103B3, 0x103B4, 0x103B5), LibOntology:TAG:EN:nx0VNpuGer1npa(0x103B7, 0x103B8, 0x103B9)}</y:message>
+			</y:log>
+			<y:log index="280" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x103EA{LibOntology:TAG:EN:DnxPnx0(0x103E0, 0x103E1, 0x103E2), LibOntology:TAG:EN:DNanxPnx0(0x103E4, 0x103E5, 0x103E6), LibOntology:TAG:EN:Dnx(0x103E8, 0x103E9)}</y:message>
+			</y:log>
+			<y:log index="281" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x103F0{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="282" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x103EF{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x103F0{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="283" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x103F8{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="284" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x103F7{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x103F8{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="285" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x10419{LibOntology:TAG:EN:DnxPnx0(0x1040F, 0x10410, 0x10411), LibOntology:TAG:EN:DNanxPnx0(0x10413, 0x10414, 0x10415), LibOntology:TAG:EN:Dnx(0x10417, 0x10418)}</y:message>
+			</y:log>
+			<y:log index="286" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x1041F{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="287" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x1041E{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x1041F{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="288" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10427{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="289" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x10426{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10427{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="290" level="trace" nature="misc">
+				<y:message>The object 0x50BE{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1030) has been cloned, new object created: 0x10442{LibOntology:TAG:EN:DGnx0npa(0x1043E, 0x1043F), LibOntology:TAG:EN:Gnx0npa(0x10441)}</y:message>
+			</y:log>
+			<y:log index="291" level="trace" nature="misc">
+				<y:message>The object 0x50D8{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1079) has been cloned, new object created: 0x10458{LibOntology:TAG:EN:DGnx0swo(0x10454, 0x10455), LibOntology:TAG:EN:Gnx0swo(0x10457)}</y:message>
+			</y:log>
+			<y:log index="292" level="trace" nature="misc">
+				<y:message>The object {entity, predicateQualitativeDescription, by, to, from, period, geography} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/conceptFunctions.dcl, 947) has been cloned, new object created: 0x10475{LibOntology:ENTITY(0x101B1, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0xFF42, 0xFF65, LibOntology:Ic), LibOntology:cApply2(0x10094, 0x100A5, LibOntology:cApply2(0x100AA, 0x1019F, LibOntology:Ic)), LibOntology:cApply2(0xFF82, 0xFF93, LibOntology:cApply2(0xFF98, 0x1008D, LibOntology:Ic)), LibOntology:Ic, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="293" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateElaboration for intention LibDocument:DescribeVariation &apos;0xEB59&apos;</y:message>
+			</y:log>
+			<y:log index="294" level="trace" nature="misc">
+				<y:message>The object {byComputedValue{0xED96}.toConcept(), since} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 526) has been cloned, new object created: 0x1049E{0x104A1, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="295" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorProperty for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="296" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::RatioOwner for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="297" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x104B9{LibOntology:TAG:EN:npaNX(0x104B8)}</y:message>
+			</y:log>
+			<y:log index="298" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x104BD{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="299" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x104BC{{LibOntology:NPa}, {LibOntology:NPa}, 0x104BD{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="300" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x104C9{LibOntology:TAG:EN:npaNX(0x104C8)}</y:message>
+			</y:log>
+			<y:log index="301" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x104CD{LibOntology:NP_pl, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="302" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x104CC{{LibOntology:NPa}, {LibOntology:NPa}, 0x104CD{LibOntology:NP_pl, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="303" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::ValueProperty for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="304" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::EntityProperty for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="305" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="306" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="307" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::Elaboration for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="308" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateProperty for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="309" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0x104ED{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="310" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x104EE{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="311" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x104EF{0, 0}</y:message>
+			</y:log>
+			<y:log index="312" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x104F0{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="313" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0x104F1{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="314" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x10509{LibOntology:TAG:EN:DnxPnx0(0x104FF, 0x10500, 0x10501), LibOntology:TAG:EN:DNanxPnx0(0x10503, 0x10504, 0x10505), LibOntology:TAG:EN:Dnx(0x10507, 0x10508)}</y:message>
+			</y:log>
+			<y:log index="315" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x1050F{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="316" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x1050E{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x1050F{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="317" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10517{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="318" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x10516{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10517{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="319" level="trace" nature="misc">
+				<y:message>The object {entity, predicateQualitativeDescription, by, to, from, period, geography} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/conceptFunctions.dcl, 947) has been cloned, new object created: 0x1052B{LibOntology:ENTITY(0x104B2, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0x1047E, 0x104A1, LibOntology:Ic), LibOntology:Ic, LibOntology:Ic, LibOntology:Ic, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="320" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateElaboration for intention LibDocument:DescribeVariation &apos;0xEB78&apos;</y:message>
+			</y:log>
+			<y:log index="321" level="trace" nature="misc">
+				<y:message>The object {byComputedValue{0xEE43}.toConcept(), since} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 526) has been cloned, new object created: 0x10554{0x10557, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="322" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorProperty for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="323" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::RatioOwner for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="324" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x1056F{LibOntology:TAG:EN:npaNX(0x1056E)}</y:message>
+			</y:log>
+			<y:log index="325" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x10573{LibOntology:NP_pl, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="326" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x10572{{LibOntology:NPa}, {LibOntology:NPa}, 0x10573{LibOntology:NP_pl, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="327" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x10580{LibOntology:TAG:EN:npaNX(0x1057F)}</y:message>
+			</y:log>
+			<y:log index="328" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x10584{LibOntology:NP_pl, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="329" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x10583{{LibOntology:NPa}, {LibOntology:NPa}, 0x10584{LibOntology:NP_pl, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="330" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::ValueProperty for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="331" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::EntityProperty for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="332" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="333" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="334" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::Elaboration for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="335" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateProperty for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="336" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0x105A4{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="337" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x105A5{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="338" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x105A6{0, 0}</y:message>
+			</y:log>
+			<y:log index="339" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x105A7{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="340" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0x105A8{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="341" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x105C2{LibOntology:TAG:EN:nx0Vsa(0x105B9), LibOntology:TAG:EN:nx0Vsa(0x105BB), LibOntology:TAG:EN:nx0VPUger1sa(0x105BD, 0x105BE), LibOntology:TAG:EN:nx0VPUger1sa(0x105C0, 0x105C1)}</y:message>
+			</y:log>
+			<y:log index="342" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x105F2{LibOntology:TAG:EN:nx0Vnpa(0x105E9), LibOntology:TAG:EN:nx0Vnpa(0x105EB), LibOntology:TAG:EN:nx0VPUger1npa(0x105ED, 0x105EE), LibOntology:TAG:EN:nx0VPUger1npa(0x105F0, 0x105F1)}</y:message>
+			</y:log>
+			<y:log index="343" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10624{LibOntology:TAG:EN:nx0Vsa(0x1061B), LibOntology:TAG:EN:nx0Vsa(0x1061D), LibOntology:TAG:EN:nx0VPUger1sa(0x1061F, 0x10620), LibOntology:TAG:EN:nx0VPUger1sa(0x10622, 0x10623)}</y:message>
+			</y:log>
+			<y:log index="344" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10654{LibOntology:TAG:EN:nx0Vnpa(0x1064B), LibOntology:TAG:EN:nx0Vnpa(0x1064D), LibOntology:TAG:EN:nx0VPUger1npa(0x1064F, 0x10650), LibOntology:TAG:EN:nx0VPUger1npa(0x10652, 0x10653)}</y:message>
+			</y:log>
+			<y:log index="345" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10686{LibOntology:TAG:EN:nx0Vsa(0x1067D), LibOntology:TAG:EN:nx0Vsa(0x1067F), LibOntology:TAG:EN:nx0VPUger1sa(0x10681, 0x10682), LibOntology:TAG:EN:nx0VPUger1sa(0x10684, 0x10685)}</y:message>
+			</y:log>
+			<y:log index="346" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x106B6{LibOntology:TAG:EN:nx0Vnpa(0x106AD), LibOntology:TAG:EN:nx0Vnpa(0x106AF), LibOntology:TAG:EN:nx0VPUger1npa(0x106B1, 0x106B2), LibOntology:TAG:EN:nx0VPUger1npa(0x106B4, 0x106B5)}</y:message>
+			</y:log>
+			<y:log index="347" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x106E8{LibOntology:TAG:EN:nx0Vsa(0x106DF), LibOntology:TAG:EN:nx0Vsa(0x106E1), LibOntology:TAG:EN:nx0VPUger1sa(0x106E3, 0x106E4), LibOntology:TAG:EN:nx0VPUger1sa(0x106E6, 0x106E7)}</y:message>
+			</y:log>
+			<y:log index="348" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10718{LibOntology:TAG:EN:nx0Vnpa(0x1070F), LibOntology:TAG:EN:nx0Vnpa(0x10711), LibOntology:TAG:EN:nx0VPUger1npa(0x10713, 0x10714), LibOntology:TAG:EN:nx0VPUger1npa(0x10716, 0x10717)}</y:message>
+			</y:log>
+			<y:log index="349" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x1074E{LibOntology:TAG:EN:nx0Vn1sa(0x10741, 0x10742), LibOntology:TAG:EN:nx0Vn1sa(0x10744, 0x10745), LibOntology:TAG:EN:nx0VNpuGer1sa(0x10747, 0x10748, 0x10749), LibOntology:TAG:EN:nx0VNpuGer1sa(0x1074B, 0x1074C, 0x1074D)}</y:message>
+			</y:log>
+			<y:log index="350" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10782{LibOntology:TAG:EN:nx0Vn1npa(0x10775, 0x10776), LibOntology:TAG:EN:nx0Vn1npa(0x10778, 0x10779), LibOntology:TAG:EN:nx0VNpuGer1npa(0x1077B, 0x1077C, 0x1077D), LibOntology:TAG:EN:nx0VNpuGer1npa(0x1077F, 0x10780, 0x10781)}</y:message>
+			</y:log>
+			<y:log index="351" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x107B2{LibOntology:TAG:EN:DnxPnx0(0x107A8, 0x107A9, 0x107AA), LibOntology:TAG:EN:DNanxPnx0(0x107AC, 0x107AD, 0x107AE), LibOntology:TAG:EN:Dnx(0x107B0, 0x107B1)}</y:message>
+			</y:log>
+			<y:log index="352" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x107B8{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="353" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x107B7{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x107B8{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="354" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x107C0{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="355" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x107BF{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x107C0{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="356" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x107E1{LibOntology:TAG:EN:DnxPnx0(0x107D7, 0x107D8, 0x107D9), LibOntology:TAG:EN:DNanxPnx0(0x107DB, 0x107DC, 0x107DD), LibOntology:TAG:EN:Dnx(0x107DF, 0x107E0)}</y:message>
+			</y:log>
+			<y:log index="357" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x107E7{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="358" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x107E6{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x107E7{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="359" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x107EF{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="360" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x107EE{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x107EF{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="361" level="trace" nature="misc">
+				<y:message>The object 0x50BE{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1030) has been cloned, new object created: 0x1080A{LibOntology:TAG:EN:DGnx0npa(0x10806, 0x10807), LibOntology:TAG:EN:Gnx0npa(0x10809)}</y:message>
+			</y:log>
+			<y:log index="362" level="trace" nature="misc">
+				<y:message>The object 0x50D8{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1079) has been cloned, new object created: 0x10820{LibOntology:TAG:EN:DGnx0swo(0x1081C, 0x1081D), LibOntology:TAG:EN:Gnx0swo(0x1081F)}</y:message>
+			</y:log>
+			<y:log index="363" level="trace" nature="misc">
+				<y:message>The object {entity, predicateQualitativeDescription, by, to, from, period, geography} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/conceptFunctions.dcl, 947) has been cloned, new object created: 0x1083D{LibOntology:ENTITY(0x10568, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0x10534, 0x10557, LibOntology:Ic), LibOntology:Ic, LibOntology:Ic, LibOntology:Ic, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="364" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateElaboration for intention LibDocument:DescribeVariation &apos;0xEB8B&apos;</y:message>
+			</y:log>
+			<y:log index="365" level="trace" nature="misc">
+				<y:message>The object {byComputedValue{0xEEF0}.toConcept(), since} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libDocument/_domainObjects/variationFunctions.dcl, 526) has been cloned, new object created: 0x10866{0x10869, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="366" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorProperty for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="367" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::RatioOwner for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="368" level="trace" nature="misc">
+				<y:message>The object 0x512E{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1249) has been cloned, new object created: 0x10881{LibOntology:TAG:EN:npaNX(0x10880)}</y:message>
+			</y:log>
+			<y:log index="369" level="trace" nature="misc">
+				<y:message>The object {simple_np, LibOntology:NP_forAssembly} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1276) has been cloned, new object created: 0x10885{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="370" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NPa}, {LibOntology:NPa}, cloning({simple_np, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1277) has been cloned, new object created: 0x10884{{LibOntology:NPa}, {LibOntology:NPa}, 0x10885{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="371" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::ValueProperty for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="372" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::EntityProperty for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="373" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="374" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::IndicatorOwner for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="375" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::Elaboration for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="376" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateProperty for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="377" level="trace" nature="misc">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0x108A5{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log index="378" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x108A6{-0.3, 0}</y:message>
+			</y:log>
+			<y:log index="379" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x108A7{0, 0}</y:message>
+			</y:log>
+			<y:log index="380" level="trace" nature="misc">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0x108A8{0, 0.3}</y:message>
+			</y:log>
+			<y:log index="381" level="trace" nature="misc">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0x108A9{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log index="382" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x108C3{LibOntology:TAG:EN:nx0Vsa(0x108BA), LibOntology:TAG:EN:nx0Vsa(0x108BC), LibOntology:TAG:EN:nx0VPUger1sa(0x108BE, 0x108BF), LibOntology:TAG:EN:nx0VPUger1sa(0x108C1, 0x108C2)}</y:message>
+			</y:log>
+			<y:log index="383" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x108F3{LibOntology:TAG:EN:nx0Vnpa(0x108EA), LibOntology:TAG:EN:nx0Vnpa(0x108EC), LibOntology:TAG:EN:nx0VPUger1npa(0x108EE, 0x108EF), LibOntology:TAG:EN:nx0VPUger1npa(0x108F1, 0x108F2)}</y:message>
+			</y:log>
+			<y:log index="384" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10925{LibOntology:TAG:EN:nx0Vsa(0x1091C), LibOntology:TAG:EN:nx0Vsa(0x1091E), LibOntology:TAG:EN:nx0VPUger1sa(0x10920, 0x10921), LibOntology:TAG:EN:nx0VPUger1sa(0x10923, 0x10924)}</y:message>
+			</y:log>
+			<y:log index="385" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10955{LibOntology:TAG:EN:nx0Vnpa(0x1094C), LibOntology:TAG:EN:nx0Vnpa(0x1094E), LibOntology:TAG:EN:nx0VPUger1npa(0x10950, 0x10951), LibOntology:TAG:EN:nx0VPUger1npa(0x10953, 0x10954)}</y:message>
+			</y:log>
+			<y:log index="386" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10987{LibOntology:TAG:EN:nx0Vsa(0x1097E), LibOntology:TAG:EN:nx0Vsa(0x10980), LibOntology:TAG:EN:nx0VPUger1sa(0x10982, 0x10983), LibOntology:TAG:EN:nx0VPUger1sa(0x10985, 0x10986)}</y:message>
+			</y:log>
+			<y:log index="387" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x109B7{LibOntology:TAG:EN:nx0Vnpa(0x109AE), LibOntology:TAG:EN:nx0Vnpa(0x109B0), LibOntology:TAG:EN:nx0VPUger1npa(0x109B2, 0x109B3), LibOntology:TAG:EN:nx0VPUger1npa(0x109B5, 0x109B6)}</y:message>
+			</y:log>
+			<y:log index="388" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x109E9{LibOntology:TAG:EN:nx0Vsa(0x109E0), LibOntology:TAG:EN:nx0Vsa(0x109E2), LibOntology:TAG:EN:nx0VPUger1sa(0x109E4, 0x109E5), LibOntology:TAG:EN:nx0VPUger1sa(0x109E7, 0x109E8)}</y:message>
+			</y:log>
+			<y:log index="389" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10A19{LibOntology:TAG:EN:nx0Vnpa(0x10A10), LibOntology:TAG:EN:nx0Vnpa(0x10A12), LibOntology:TAG:EN:nx0VPUger1npa(0x10A14, 0x10A15), LibOntology:TAG:EN:nx0VPUger1npa(0x10A17, 0x10A18)}</y:message>
+			</y:log>
+			<y:log index="390" level="trace" nature="misc">
+				<y:message>The object 0x4EEF{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 203) has been cloned, new object created: 0x10A4F{LibOntology:TAG:EN:nx0Vn1sa(0x10A42, 0x10A43), LibOntology:TAG:EN:nx0Vn1sa(0x10A45, 0x10A46), LibOntology:TAG:EN:nx0VNpuGer1sa(0x10A48, 0x10A49, 0x10A4A), LibOntology:TAG:EN:nx0VNpuGer1sa(0x10A4C, 0x10A4D, 0x10A4E)}</y:message>
+			</y:log>
+			<y:log index="391" level="trace" nature="misc">
+				<y:message>The object 0x4F55{derivedTree, derivedTreePL, derivedTreeGer, derivedTreeGerPL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 342) has been cloned, new object created: 0x10A83{LibOntology:TAG:EN:nx0Vn1npa(0x10A76, 0x10A77), LibOntology:TAG:EN:nx0Vn1npa(0x10A79, 0x10A7A), LibOntology:TAG:EN:nx0VNpuGer1npa(0x10A7C, 0x10A7D, 0x10A7E), LibOntology:TAG:EN:nx0VNpuGer1npa(0x10A80, 0x10A81, 0x10A82)}</y:message>
+			</y:log>
+			<y:log index="392" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x10AB3{LibOntology:TAG:EN:DnxPnx0(0x10AA9, 0x10AAA, 0x10AAB), LibOntology:TAG:EN:DNanxPnx0(0x10AAD, 0x10AAE, 0x10AAF), LibOntology:TAG:EN:Dnx(0x10AB1, 0x10AB2)}</y:message>
+			</y:log>
+			<y:log index="393" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10AB9{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="394" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x10AB8{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10AB9{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="395" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10AC1{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="396" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x10AC0{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10AC1{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="397" level="trace" nature="misc">
+				<y:message>The object 0x509C{derivedTree, derivedTreeValAsAdj, derivedTree_noIndicator} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 970) has been cloned, new object created: 0x10AE2{LibOntology:TAG:EN:DnxPnx0(0x10AD8, 0x10AD9, 0x10ADA), LibOntology:TAG:EN:DNanxPnx0(0x10ADC, 0x10ADD, 0x10ADE), LibOntology:TAG:EN:Dnx(0x10AE0, 0x10AE1)}</y:message>
+			</y:log>
+			<y:log index="398" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10AE8{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="399" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 982) has been cloned, new object created: 0x10AE7{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:NPa}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10AE8{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="400" level="trace" nature="misc">
+				<y:message>The object {returnType, LibOntology:NP_forAssembly} of class ConstList ((null), -1) has been cloned, new object created: 0x10AF0{LibOntology:NP, LibOntology:NP_forAssembly}</y:message>
+			</y:log>
+			<y:log index="401" level="trace" nature="misc">
+				<y:message>The object {{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, cloning({returnType, LibOntology:NP_forAssembly})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 992) has been cloned, new object created: 0x10AEF{{LibOntology:NP, LibOntology:NP_pl}, {LibOntology:NPa}, {LibOntology:Na}, {LibOntology:VPa}, {LibOntology:VPa}, {LibOntology:Sa}, {LibOntology:NPa}, 0x10AF0{LibOntology:NP, LibOntology:NP_forAssembly}}</y:message>
+			</y:log>
+			<y:log index="402" level="trace" nature="misc">
+				<y:message>The object 0x50BE{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1030) has been cloned, new object created: 0x10B0B{LibOntology:TAG:EN:DGnx0npa(0x10B07, 0x10B08), LibOntology:TAG:EN:Gnx0npa(0x10B0A)}</y:message>
+			</y:log>
+			<y:log index="403" level="trace" nature="misc">
+				<y:message>The object 0x50D8{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1079) has been cloned, new object created: 0x10B21{LibOntology:TAG:EN:DGnx0swo(0x10B1D, 0x10B1E), LibOntology:TAG:EN:Gnx0swo(0x10B20)}</y:message>
+			</y:log>
+			<y:log index="404" level="trace" nature="misc">
+				<y:message>The object {entity, predicateQualitativeDescription, by, to, from, period, geography} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/conceptFunctions.dcl, 947) has been cloned, new object created: 0x10B3E{LibOntology:ENTITY(0x1087A, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0x10846, 0x10869, LibOntology:Ic), LibOntology:Ic, LibOntology:Ic, LibOntology:Ic, LibOntology:Ic}</y:message>
+			</y:log>
+			<y:log index="405" level="trace" nature="user-log">
+				<y:message>No synonym found for slot LibDocument:SemanticSlot::PredicateElaboration for intention LibDocument:DescribeVariation &apos;0xEB9E&apos;</y:message>
+			</y:log>
+			<y:log index="406" level="trace" nature="misc">
+				<y:message>The object 0x536A{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2060) has been cloned, new object created: 0x10B51{LibOntology:TAG:EN:ARG0PARG1(0x10B50)}</y:message>
+			</y:log>
+			<y:log index="407" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B55{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="408" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B56{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="409" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B54{0x10B55{LibOntology:S}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B56{LibOntology:S}}</y:message>
+			</y:log>
+			<y:log index="410" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B5C{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="411" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B5D{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="412" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B5B{0x10B5C{LibOntology:S_sg}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B5D{LibOntology:S_sg}}</y:message>
+			</y:log>
+			<y:log index="413" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B63{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="414" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B64{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="415" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B62{0x10B63{LibOntology:S_pl}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B64{LibOntology:S_pl}}</y:message>
+			</y:log>
+			<y:log index="416" level="trace" nature="misc">
+				<y:message>The object 0x536A{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2060) has been cloned, new object created: 0x10B74{LibOntology:TAG:EN:ARG0PARG1(0x10B73)}</y:message>
+			</y:log>
+			<y:log index="417" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B78{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="418" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B79{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="419" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B77{0x10B78{LibOntology:S}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B79{LibOntology:S}}</y:message>
+			</y:log>
+			<y:log index="420" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B7F{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="421" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B80{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="422" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B7E{0x10B7F{LibOntology:S_sg}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B80{LibOntology:S_sg}}</y:message>
+			</y:log>
+			<y:log index="423" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B86{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="424" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B87{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="425" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B85{0x10B86{LibOntology:S_pl}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B87{LibOntology:S_pl}}</y:message>
+			</y:log>
+			<y:log index="426" level="trace" nature="misc">
+				<y:message>The object 0x536A{derivedTree} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2060) has been cloned, new object created: 0x10B97{LibOntology:TAG:EN:ARG0PARG1(0x10B96)}</y:message>
+			</y:log>
+			<y:log index="427" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B9B{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="428" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10B9C{LibOntology:S}</y:message>
+			</y:log>
+			<y:log index="429" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10B9A{0x10B9B{LibOntology:S}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10B9C{LibOntology:S}}</y:message>
+			</y:log>
+			<y:log index="430" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10BA2{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="431" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10BA3{LibOntology:S_sg}</y:message>
+			</y:log>
+			<y:log index="432" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10BA1{0x10BA2{LibOntology:S_sg}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10BA3{LibOntology:S_sg}}</y:message>
+			</y:log>
+			<y:log index="433" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10BA9{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="434" level="trace" nature="misc">
+				<y:message>The object {symbol} of class ConstList ((null), -1) has been cloned, new object created: 0x10BAA{LibOntology:S_pl}</y:message>
+			</y:log>
+			<y:log index="435" level="trace" nature="misc">
+				<y:message>The object {cloning({symbol}), {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, cloning({symbol})} of class ConstList (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 2070) has been cloned, new object created: 0x10BA8{0x10BA9{LibOntology:S_pl}, {LibOntology:NP, LibOntology:NP_pl}, {LibOntology:Sa}, 0x10BAA{LibOntology:S_pl}}</y:message>
+			</y:log>
+			<y:log index="436" level="trace" nature="misc">
+				<y:message>The object 0x51AE{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1408) has been cloned, new object created: 0x10BC1{LibOntology:TAG:EN:nx0AuxVPnx1_1modifier(0x10BBA, 0x10BBB, 0x10BBC), LibOntology:TAG:EN:nx0AuxVPnx1_1modifier(0x10BBE, 0x10BBF, 0x10BC0)}</y:message>
+			</y:log>
+			<y:log index="437" level="trace" nature="misc">
+				<y:message>The object 0x51AE{derivedTree, derivedTreePL} of class Array (/home/alacambre/workspace/aa_afa-library/bootstrap/lib/libOntology/_domainObjects/derivationFunctionsEN.dcl, 1408) has been cloned, new object created: 0x10BE5{LibOntology:TAG:EN:nx0AuxVPnx1_1modifier(0x10BDE, 0x10BDF, 0x10BE0), LibOntology:TAG:EN:nx0AuxVPnx1_1modifier(0x10BE2, 0x10BE3, 0x10BE4)}</y:message>
+			</y:log>
+			<y:log index="438" level="trace" nature="misc">
+				<y:message>The object {variation, joinedContributors, LibOntology:Ic} of class ConstList ((null), -1) has been cloned, new object created: 0x10BFE{LibOntology:cApply7(0x101E8, LibOntology:ENTITY(0x101B1, LibOntology:Ic, LibOntology:Ic), LibOntology:Ic, LibOntology:cApply2(0xFF42, 0xFF65, LibOntology:Ic), LibOntology:cApply2(0x10094, 0x100A5, LibOntology:cApply2(0x100AA, 0x1019F, LibOntology:Ic)), LibOntology:cApply2(0xFF82, 0xFF93, LibOntology:cApply2(0xFF98, 0x1008D, LibOntology:Ic)), LibOntology:Ic, LibOntology:Ic), 0x10B45, LibOntology:Ic}</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language id="en"/>
+			<y:random seed="528310697" peak="0"/>
+			<y:process id="5E0D" start-runtime="2019-12-30T13:29:52.459" runtime="erunbc" engine-version="7.4.0" os="UNIX 0.0" computer-name="LFRLYOALA001"/>
+			<y:key-user name="R&amp;D V8 - le 25/03/2018" email="cvierge@yseop.com" creation-date="2019-03-25" expiration-date="2020-03-24"/>
+			<y:request-exec-time begin="2019-12-30T13:29:52.615" end="2019-12-30T13:29:52.931"/>
+			<y:stat errors="0" warnings="7" success-rule-fire="0" text-write="2583" cloning-operations="288" cloning-items="817" main-words="886" main-chars="7816"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

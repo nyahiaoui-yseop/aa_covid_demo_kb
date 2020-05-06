@@ -1,0 +1,46 @@
+interface Variation
+
+    field relativeChange
+        --> domains Number
+
+    field absoluteChange
+        --> domains Number
+
+    // field level
+    //     --> domains ThreeLevelVariation
+
+    field startValue
+        --> domains Number
+
+    field endValue
+        --> domains Number
+
+    method compute
+    args {
+        Number endValue
+        Number startValue
+    }
+    --> domains Void
+
+    classProperties
+	--> documentation """Class build to handle the lack of computed values accessors."""
+    --> deprecated "Deprecated, will be removed soon."
+
+;
+
+implementation Variation
+;
+
+Function Variation::compute
+args {
+    Number endValue
+    Number startValue
+}
+--> action {
+    this.startValue = startValue;
+    this.endValue = endValue;
+    this.absoluteChange = endValue - startValue;
+    this.relativeChange = getVariation(endValue, startValue);
+    // this.level = getVariationLevel(this.relativeChange);
+}
+;

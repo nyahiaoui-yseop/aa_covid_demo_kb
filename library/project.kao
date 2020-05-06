@@ -1,0 +1,18 @@
+_FILE_TYPE_ F
+
+@defineValue XmlElement XmlTree
+
+// This is mandatory to have the bootstrap working with the dialog mode
+@newFeature transitionTaskV3
+
+lib/FinancialAnalysis/beforeExternReferences.dcl
+
+.generated-yml/extern_references_objects.yml
+.generated-yml/verb.lib.yml
+
+.generated-yml/headers.yml
+.generated-yml/extern_references_functions.yml
+
+lib/FinancialAnalysis/implementations.kao
+
+.generated-yml/generated_text_elements.yml

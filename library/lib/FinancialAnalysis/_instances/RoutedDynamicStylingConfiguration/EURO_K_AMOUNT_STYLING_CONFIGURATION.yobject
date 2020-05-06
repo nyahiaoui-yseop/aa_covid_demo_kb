@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration EURO_K_AMOUNT_STYLING_CONFIGURATION
+    --> dynamicStylingConfiguration euroKAmount
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

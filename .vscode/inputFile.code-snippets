@@ -1,0 +1,246 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+	// Placeholders with the same ids are connected.
+	// Example:
+	"New fact": {
+		"scope": "xml",
+		"prefix": "fact",
+		"body": [
+			"<facts yclass=\"LibCube:Fact\">",
+			"\t<members yid=\"${1:time member ID}\"/>",
+			"\t<members yid=\"${2:member ID}\"/>",
+			"\t<factMeasures yclass=\"LibCube:FactMeasure\">",
+			"\t\t<measure yid=\"MEASURE_VALUE\" />",
+			"\t\t<value>${3:measure numerical value}</value>",
+			"\t</factMeasures>",
+			"</facts>",
+			"$0"
+		],
+		"description": "Insert a new fact."
+	},
+	"Dynamic Styling Configuration": {
+		"scope": "xml",
+		"prefix": "dynsty",
+		"body": [
+			"<stylingConfigurations yclass=\"LibDocument:DynamicStylingConfiguration\">",
+			"\t<configValues yclass=\"HashMap\">",
+			"\t\t<values>",
+			"\t\t\t<key yid=\"${1:Style key}\"/>",
+			"\t\t\t<val yid=\"${2:Style value}\" />",
+			"\t\t</values>",
+			"\t</configValues>",
+			"\t<filter yclass=\"LibDocument:ComputedValuesFilter\">",
+			"\t\t<calculationTypes yid=\"${3:Calculation type}\" />",
+			"\t</filter>",
+			"</stylingConfigurations>"
+		]
+	},
+	"Describe Value": {
+		"scope": "xml",
+		"prefix": "value",
+		"body": [
+			"<values yclass=\"LibDocument:DescribeValue\">",
+			"<kpi yid=\"${1:kpi identifier}\" />",
+			"<timeMember yid=\"${2:Time member identifier}\" />",
+			"\t<options yclass=\"LibDocument:DescribeValueOptions\">",
+			"\t\t<!-- Intention generic options -->",
+			"\t\t<useValueAnaphora>true</useValueAnaphora>",
+			"\t\t<useValueInReferentialExpression>false</useValueInReferentialExpression>",
+			"\t\t<usePronoun>false</usePronoun>",
+			"\t\t<useAnaphoricExpression>false</useAnaphoricExpression>",
+			"\t\t<debug_generateAllVariants>true</debug_generateAllVariants>",
+			"\t\t<debug_renderConcepts>true</debug_renderConcepts>",
+			"\t\t<debug_useFirstSynonymOnly>true</debug_useFirstSynonymOnly>",
+			"\t\t<debug_showOtherSynonyms>true</debug_showOtherSynonyms>",
+			"\t\t",
+			"\t\t<!-- Intention Describe Value specific options -->",
+			"\t\t<useValueAnaphora>true</useValueAnaphora>",
+			"\t\t<useValueInReferentialExpression>true</useValueInReferentialExpression>",
+			"\t\t<usePronoun>true</usePronoun>",
+			"\t\t<useAnaphoricExpression>true</useAnaphoricExpression>",
+			"\t</options>",
+			"</values>"
+		]
+	},
+	"Describe Variation": {
+		"scope": "xml",
+		"prefix": "variation",
+		"body": [
+			"<values yclass=\"LibDocument:DescribeVariation\">",
+			"<kpi yid=\"${1:kpi identifier}\" />",
+			"<start yid=\"${2:Time member identifier}\" />",
+			"<end yid=\"${3:Time member identifier}\" />",
+			"\t<options yclass=\"LibDocument:DescribeVariationOptions\">",
+			"\t\t<!-- Intention generic options -->",
+			"\t\t<useValueAnaphora>true</useValueAnaphora>",
+			"\t\t<useValueInReferentialExpression>false</useValueInReferentialExpression>",
+			"\t\t<usePronoun>false</usePronoun>",
+			"\t\t<useAnaphoricExpression>false</useAnaphoricExpression>",
+			"\t\t<debug_generateAllVariants>true</debug_generateAllVariants>",
+			"\t\t<debug_renderConcepts>true</debug_renderConcepts>",
+			"\t\t<debug_useFirstSynonymOnly>true</debug_useFirstSynonymOnly>",
+			"\t\t<debug_showOtherSynonyms>true</debug_showOtherSynonyms>",
+			"\t\t",
+			"\t\t<!-- Intention Describe Variation specific options -->",
+			"\t\t<showStartValue>true</showStartValue>",
+			"\t\t<showEndValue>true</showEndValue>",
+			"\t\t<showValuesWithDates>true</showValuesWithDates>",
+			"\t\t<showPeriod>true</showPeriod>",
+			"\t\t<useVariationAsAdjective>true</useVariationAsAdjective>",
+			"\t\t<showPercentChange>true</showPercentChange>",
+			"\t\t<writeOwner>true</writeOwner>",
+			"\t\t<useReferentialExpressionAsClause>true</useReferentialExpressionAsClause>",
+			"\t\t<disregardVolatility>true</disregardVolatility>",
+			"\t\t<disregardConsistency>false</disregardConsistency>",
+			"\t</options>",
+			"</values>"
+		]
+	},
+	"New test case input (for *.ycase files)": {
+		"scope": "xml",
+		"prefix": "augmented test case",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<cs:case xmlns:cs=\"http://www.yseop.com/case/1\" xmlns:w=\"http://www.yseop.com/widget/1\" xmlns:y=\"http://www.yseop.com/engine/3\" id=\"${1:Test Case ID}\">",
+			"\t<cs:name>${2:Test Case name}</cs:name>",
+			"\t<cs:data>",
+			"\t\t<y:instance yid=\"theGeneralData\">",
+			"\t\t\t<cube yclass=\"LibCube:Cube\">",
+			"\t\t\t\t<!-- dimensions -->",
+			"\t\t\t\t$0",
+			"\t\t\t\t<!-- facts -->",
+			"\t\t\t</cube>",
+			"\t\t\t<!-- KPIs -->",
+			"\t\t\t<rootSection yclass=\"LibDocument:TextSection\">",
+			"\t\t\t<!-- intentions or section -->",
+			"\t\t\t</rootSection>",
+			"\t\t</y:instance>",
+			"\t</cs:data>",
+			"</cs:case>",
+		],
+		"description": "New Augmented Financial Analyst test case file."
+	},
+	"New XML input": {
+		"scope": "xml",
+		"prefix": "augmented",
+		"body": [
+			"<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+			"<y:input xmlns:y=\"http://www.yseop.com/engine/3\">",
+			"\t<y:data>",
+			"\t\t<y:instance yid=\"theGeneralData\">",
+			"\t\t\t<cube yclass=\"LibCube:Cube\">",
+			"\t\t\t\t<!-- dimensions -->",
+			"\t\t\t\t$0",
+			"\t\t\t\t<!-- facts -->",
+			"\t\t\t</cube>",
+			"\t\t\t<!-- KPIs -->",
+			"\t\t\t<rootSection yclass=\"LibDocument:TextSection\">",
+			"\t\t\t\t<components yclass=\"List\">",
+			"\t\t\t\t\t<!-- intentions or section -->",
+			"\t\t\t\t</components>",
+			"\t\t\t</rootSection>",
+			"\t\t</y:instance>",
+			"\t</y:data>",
+			"</y:input>",
+		],
+		"description": "New Augmented Analyser input file."
+	},
+	"Hierarchical dimension": {
+		"scope": "xml",
+		"prefix": "hierarchical dimension",
+		"body": [
+			"<dimensions yid=\"${1:dimension ID}\">",
+			"\t<hierarchies yclass=\"LibCube:Hierarchy\">",
+			"\t\t<value yclass=\"LibCube:IndicatorMember\" yid=\"${2:Member ID}\">",
+			"\t\t\t<label>${3:Member label}</label>",
+			"\t\t</value>",
+			"\t\t<!-- child -->",
+			"\t\t$0",
+			"\t</hierarchies>",
+			"</dimensions>"
+		],
+		"description": "Insert a hierarchical dimension."
+	},
+	"Dimension child": {
+		"scope": "xml",
+		"prefix": "dimension child",
+		"body": [
+			"<child yclass=\"LibCube:Hierarchy\">",
+			"\t<value yclass=\"LibCube:IndicatorMember\" yid=\"${1:Member ID}\">",
+			"\t\t<label>${2:Member label}</label>",
+			"\t</value>",
+			"\t<!-- child (optional)-->",
+			"\t$0",
+			"</child>"
+		],
+		"description": "Insert a dimension child."
+	},
+	"Flat dimension": {
+		"scope": "xml",
+		"prefix": "flat dimension",
+		"body": [
+			"<dimensions yid=\"${1:dimension ID}\">",
+			"\t<!-- members -->",
+			"\t$0",
+			"</dimensions>",
+		],
+		"description": "Insert a flat dimension."
+	},
+	"Time member": {
+		"scope": "xml",
+		"prefix": "time member",
+		"body": [
+			"<members yclass=\"LibCube:TimeMember\" yid=\"${1:dimension ID}\">",
+			"\t<period yid=\"${2:Time period ID}\">",
+			"\t<date>${3:Date following format YYYY-MM-DD}</date>",
+			"</members>",
+			"$0",
+		],
+		"description": "Insert a time member."
+	},
+	"Indicator member": {
+		"scope": "xml",
+		"prefix": "indicator member",
+		"body": [
+			"<members yclass=\"LibCube:IndicatorMember\" yid=\"${1:dimension ID}\">",
+			"\t<label>${2:Member label}</label>",
+			"</members>",
+			"$0",
+		],
+		"description": "Insert an indicator member."
+	},
+	"Text Section": {
+		"scope": "xml",
+		"prefix": "section",
+		"body": [
+			"<values yclass=\"LibDocument:TextSection\">",
+			"\t<components yclass=\"List\">",
+			"\t\t<!-- intentions or section -->",
+			"\t\t$0",
+			"\t</components>",
+			"</values>"
+		],
+		"description": "insert a TextSection component."
+	},
+	"documentation attribute": {
+		"scope": "yml",
+		"prefix": "doc",
+		"body": [
+			"\t--> documentation \"\"\"$0\"\"\""
+		],
+		"description": "insert a documentation attribute"
+	},
+	"indicateur documentation attribute": {
+		"scope": "yml",
+		"prefix": "doc",
+		"body": [
+			"\t--> documentation \"\"\"CustomText pour l'indicateur `$0`\"\"\""
+		],
+		"description": "insert a documentation attribute for an indicator custom text"
+	}
+
+}

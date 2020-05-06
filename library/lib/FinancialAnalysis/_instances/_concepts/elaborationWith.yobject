@@ -1,0 +1,20 @@
+LibOntology:RelationConcept DescribeThreePointsVariation:ElaborationWith
+    --> lexicalization -> MultilingualExpression
+        --> en {
+            -> LibOntology:Punctuation DescribeThreePointsVariation:EN:ElaborationWith:with
+                --> type LibOntology:PunctuationType::Comma
+                --> linkword "with"
+                --> first LibOntology:RelationArguments::Sentence
+                --> second LibOntology:RelationArguments::NounPhrase
+            ;
+        }
+        --> fr {
+            -> LibOntology:Punctuation DescribeThreePointsVariation:FR:ElaborationWith:avec_notamment
+                --> type LibOntology:PunctuationType::Comma
+                --> linkword "avec notamment"
+                --> first LibOntology:RelationArguments::Sentence
+                --> second LibOntology:RelationArguments::NounPhrase
+            ;
+        }
+    ;
+;

@@ -1,0 +1,14 @@
+= Augmented Financial Analyst Bootstrap 2.0
+
+== Augmented Financial Analyst Bootstrap 2.0.0
+
+*Delivery date*: April 13, 2020
+
+
+=== What's new
+
+* Implementation of the refactored Reporting Framework libOntology (see xref:RNs/release_note_reporting_framework_2_0.adoc[Reporting Framework 2.0]).
+
+////
+=== Fixed issues
+////

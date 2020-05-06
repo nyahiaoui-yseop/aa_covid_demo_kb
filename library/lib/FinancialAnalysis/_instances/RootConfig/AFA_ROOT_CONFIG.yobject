@@ -1,0 +1,92 @@
+LibDocument:DefaultConfiguration AFA_ROOT_CONFIG
+    --> customConceptsConfigurations -> LibDocument:RoutedCustomConceptsConfiguration
+        --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration DEMO_CUSTOM_CONCEPT_CONFIG
+            --> configValues  -> HashMap --> values
+                LibDocument:SemanticSlot::MainPredicate : -> LibDocument:DynamicCustomTexts
+                    --> customTexts DEFAULT_ROOT_CONFIG_LibDocument:SemanticSlot::MainPredicate_customTexts
+                    --> ranges LibKPI:defaultPredicateRanges
+                    --> filter -> LibDocument:ComputedValuesFilter
+                        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+                    ;
+                ;
+            ;
+        ;
+        --> route -> LibDocument:Route
+            --> intentions LibDocument:Intention
+        ;
+    ;
+    --> customConceptsConfigurations -> LibDocument:RoutedCustomConceptsConfiguration
+        --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+            --> configValues {
+                LibDocument:SemanticSlot::MainPredicate : -> LibDocument:DynamicCustomTexts
+                    --> customTexts     DEFAULT_ROOT_CONFIG_customConceptsConfigurations_LibDocument:SemanticSlot::MainPredicate_customTexts
+                    --> ranges LibKPI:defaultPredicateRanges
+                    --> filter -> LibDocument:ComputedValuesFilter
+                        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+                    ;
+                ;,
+                LibDocument:SemanticSlot::DriverMainPredicate : -> LibDocument:DynamicCustomTexts
+                    --> customTexts DEFAULT_ROOT_CONFIG_customConceptsConfigurations_LibDocument:SemanticSlot::DriverMainPredicate_customTexts
+                    --> ranges LibKPI:defaultPredicateRanges
+                    --> filter -> LibDocument:ComputedValuesFilter
+                        --> computedValuesNames ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+                    ;
+                ;
+            }
+        ;
+        --> route -> LibDocument:Route
+            --> intentions LibDocument:DescribeVariationContributors
+        ;
+    ;
+    --> customConceptsConfigurations -> LibDocument:RoutedCustomConceptsConfiguration
+        --> customConceptsConfiguration -> LibDocument:CustomConceptsConfiguration
+            --> configValues {
+                LibDocument:SemanticSlot::MainPredicate : defaultCompareValueWithReferenceMainPredicate
+            }
+        ;
+        --> route -> LibDocument:Route
+            --> intentions LibDocument:CompareValueWithReference
+        ;
+    ;
+    --> stylingConfigurations ONE_DECIMAL_NUMBERS_STYLING
+    --> stylingConfigurations PERCENT_ONE_DECIMAL_STYLING
+    --> stylingConfigurations USD_K_AMOUNT_STYLING_CONFIGURATION
+    --> stylingConfigurations BPS_STYLING
+
+    --> derivedComputedValuesConfigurations -> LibDocument:RoutedDerivedComputedValuesConfiguration
+        --> derivedComputedValuesConfiguration -> LibDocument:DerivedComputedValuesConfiguration
+            --> configValues {
+                ComputedValueKey:CHANGE_MAGNITUDE : -> LibDocument:RangedCalculation
+                                                        --> ranges -> LibAnalysis:NumericRanges
+                                                                        --> thresholds {-0.3, MINUS_EPSILON, EPSILON, 0.3}
+                                                                        --> rangeValues {
+                                                                            LibAnalysis:SIGNIFICANT_NEGATIVE,
+                                                                            LibAnalysis:NEGATIVE,
+                                                                            LibAnalysis:INSIGNIFICANT,
+                                                                            LibAnalysis:POSITIVE,
+                                                                            LibAnalysis:SIGNIFICANT_POSITIVE
+                                                                        }
+                                                                    ;
+                                                        --> sourceComputedValue ComputedValueKey:CALCULATED_RELATIVE_CHANGE
+                                                    ;,
+                ComputedValueKey:TREND_NATURE : -> LibDocument:RangedCalculation
+                                                        --> ranges -> LibAnalysis:AssociatedRanges
+                                                                        --> associatedRangeValues {
+                                                                            LibAnalysis:SIGNIFICANT_NEGATIVE : TrendNature::decrease,
+                                                                            LibAnalysis:NEGATIVE : TrendNature::decrease,
+                                                                            LibAnalysis:INSIGNIFICANT : TrendNature::neutral,
+                                                                            LibAnalysis:POSITIVE : TrendNature::increase,
+                                                                            LibAnalysis:SIGNIFICANT_POSITIVE : TrendNature::increase
+                                                                        }
+                                                                    ;
+                                                        --> sourceComputedValue ComputedValueKey:CHANGE_MAGNITUDE
+                                                    ;
+
+            }
+        ;
+        --> route -> LibDocument:Route
+                --> intentions LibDocument:DescribeVariation
+                --> intentions DescribeThreePointsVariation
+            ;
+    ;
+;

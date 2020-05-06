@@ -1,0 +1,15 @@
+interface DescribeVariation_N_N_1 extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation whoses timeMembers are set to yearN and yearN_1.
+
+@see `setTimeMembers_DescribeVariation_N_N_1`
+"""
+    --> hideFromApi true
+    --> apiLabel ""
+    --> apiDescription ""
+
+; // DescribeVariation_N_N_1
+
+implementation DescribeVariation_N_N_1
+;

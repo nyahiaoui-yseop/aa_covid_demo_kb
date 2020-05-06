@@ -1,0 +1,8 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_WITH_PERCENT_ONLY extends DESCRVAR_BASE_OPTIONS
+	--> documentation """Les charges de personnel enregistrent une hausse de 53,87%."""
+    --> showStartValue false
+    --> showStartDate false
+    --> showEndDate false
+    --> showEndValue false
+    --> showPeriod false
+;

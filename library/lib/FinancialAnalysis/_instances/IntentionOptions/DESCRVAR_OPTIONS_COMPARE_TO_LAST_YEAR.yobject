@@ -1,0 +1,9 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR extends DESCRVAR_BASE_OPTIONS
+    --> documentation """
+- Le CA a augmenté de 53,6% par rapport à l'exercice précédent, finissant à 124,64 K$ en 2018.
+- Le RN consolidé du Groupe a augmenté de 32,66 % par rapport à l'exercice précédent, terminant à 11,38 K$ en 2018.
+
+@warning: cannot change the MainPredicate if the showStartValueParenthesis is used
+    """
+    --> showStartValue false
+;

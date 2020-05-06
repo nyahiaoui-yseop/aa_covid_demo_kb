@@ -1,0 +1,46 @@
+AmountKPI PURCHASES_OF_EQUITY_INSTRUMENTS_AT_FVTOCI_KPI
+--> indicator PURCHASES_OF_EQUITY_INSTRUMENTS_AT_FVTOCI
+--> documentation """KPI for the indicator `PURCHASES_OF_EQUITY_INSTRUMENTS_AT_FVTOCI`"""
+--> customConceptsConfigurations
+	-> LibDocument:RoutedCustomConceptsConfiguration
+	--> route	-> LibDocument:Route
+		--> intentions LibDocument:Intention
+	;
+	--> customConceptsConfiguration
+		-> MultilingualExpression
+		--> en	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "purchases of equity instruments at FVTOCI"
+											--> number PLURAL
+											;
+							;
+						;
+					;
+				}
+				;
+		--> fr	-> LibDocument:CustomConceptsConfiguration
+				--> configValues {
+					LibDocument:SemanticSlot::Indicator :
+						-> LibDocument:DynamicCustomTexts
+						--> customTexts -> List
+							--> values -> LibDocument:CustomText
+								--> synonyms 	-> LibOntology:NounPhrase
+											--> head "achats d'instruments de capitaux propres (JVAERG)"
+											--> gender MASCULINE
+											--> number PLURAL
+											--> determiner DEFINITE_ARTICLE
+											;
+							;
+						;
+					;
+				}
+				;
+		;
+	;
+--> stylingConfigurations FORCE_ABSOLUTE_VALUE
+;

@@ -1,0 +1,8 @@
+_FILE_TYPE_ M
+
+testsuites.dcl
+alerts.dcl
+predicatesInversion.dcl
+specializedIntentions/specializedIntentions_tests.kao
+describeThreePointsVariation/describeThreePointsVariation_tests.kao
+describeRatioVariation/describeRatioVariation_tests.kao

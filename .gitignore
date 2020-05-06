@@ -1,0 +1,11 @@
+/build/
+# Remove everything in /library/lib/
+/library/lib/*
+# Keep /library/lib/FinancialAnalysis
+!/library/lib/FinancialAnalysis
+# Keep the files in FinancialAnalysis directory and its children
+!/library/lib/FinancialAnalysis/*
+
+/bootstrap/lib/*
+
+/test_project/lib/*

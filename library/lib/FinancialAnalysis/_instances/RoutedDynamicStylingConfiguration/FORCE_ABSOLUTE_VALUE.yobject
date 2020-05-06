@@ -1,0 +1,14 @@
+LibDocument:RoutedDynamicStylingConfiguration FORCE_ABSOLUTE_VALUE
+    --> documentation """A styling configuration that forces the text describing numbers to display them as absolute value.
+
+    This works for any Intention.
+    """
+    --> dynamicStylingConfiguration -> LibDocument:DynamicStylingConfiguration
+        --> configValues   {
+            LibDocument:Numerical:forceAbsoluteValue: true
+        }
+    ;
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

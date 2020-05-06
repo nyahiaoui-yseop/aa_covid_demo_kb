@@ -1,0 +1,5 @@
+LibDocument:DescribeVariationOptions DESCRVAR_OPTIONS_SOPHISTICATED extends DESCRVAR_BASE_OPTIONS
+	--> documentation """Le CA consolidé de l'entreprise a augmenté de 4,59 % par rapport à l'exercice précédent (523,30 K$), finissant à 547,31 K$ en 2018."""
+    --> showStartValue false
+    --> showStartValueParenthesis true
+;

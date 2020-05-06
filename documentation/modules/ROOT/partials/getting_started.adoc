@@ -1,0 +1,39 @@
+
+= Getting started with the AFA bootstrap
+
+== Prerequisites
+
+In order to use this bootstrap, you *must have* installed:
+
+* link:https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html[JAVA SE 8]
+* xref:{yseop-cli}:index.adoc[Yseop CLI] version `7.26`
+* xref:{yseop-engine}::index.adoc[Yseop Engine] version `7.4.3`
+
+We *recommend* you use:
+
+* https://marketplace.visualstudio.com/items?itemName=Yseop.vscode-yseopml[Visual Studio Code with the YML extension] as code editor. It provides great tools to facilitate the customization of this bootstrap.
+* xref:{yseop-manager}:index.adoc[Yseop Manager] to deploy the bootstrap and test its functionalities.
+
+[#testing_installation]
+== Installing the bootstrap and testing your installation
+
+. Save the `bootstrap` folder to some directory (`path/to/projects/`).
++
+NOTE: The *bootstrap* is provided along with your Yseop Dev tools package.
+. `cd` to the `bootstrap` directory and run the following commands:
++
+[source,bash]
+----
+yseop compile
+yseop test
+yseop batch
+yseop package
+----
+
+These commands should run successfully. To get more information on each command use `yseop help` or go to the xref:{yseop-cli}:usage.adoc[Yseop CLI documentation].
+
+////
+If you get error messages, your dev tools or bootstrap may not be installed properly, see the Troubleshooting section for help.
+
+I believe we should lead them with some help with error messages they could eventually get?
+////

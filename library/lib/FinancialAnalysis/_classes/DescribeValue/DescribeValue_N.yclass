@@ -1,0 +1,15 @@
+interface DescribeValue_N extends LibDocument:DescribeValue
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeValue whoses timeMember is set to yearN.
+
+@see `setTimeMembers_DescribeValue_N`
+"""
+    --> hideFromApi true
+    --> apiLabel ""
+    --> apiDescription ""
+
+; // DescribeValue_N
+
+implementation DescribeValue_N
+;

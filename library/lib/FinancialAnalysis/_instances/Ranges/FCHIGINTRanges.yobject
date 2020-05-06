@@ -1,0 +1,9 @@
+LibKPI:Ranges FPCHGINTRanges
+    --> thresholds {MINUS_EPSILON, EPSILON, 0.2}
+    --> rangeValues {LibKPI:NEGATIVE, LibKPI:INSIGNIFICANT, LibKPI:POSITIVE, LibKPI:SIGNIFICANT_POSITIVE}
+;
+// x < 0.1            LibKPI:SIGNIFICANT_NEGATIVE
+// 0.1 < x < 0.15     LibKPI:NEGATIVE
+// 0.15 < x < 0.25    LibKPI:INSIGNIFICANT
+// 0.23 < x < 0.33    LibKPI:POSITIVE
+// 0.33 < x           LibKPI:SIGNIFICANT_POSITIVE

@@ -1,0 +1,13 @@
+MultilingualExpression DescribeRatioVariation:TOTAL_EQUITY_TO_TOTAL_EQUITY_AND_LIABILITIES
+--> en -> LibOntology:NounPhrase
+    --> head "equity ratio"
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head "ratio d'indépendance financière"
+    --> gender MASCULINE
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

@@ -1,0 +1,4 @@
+LibDocument:IntentionOptions INTENTION_OPTIONS_BASE_OPTIONS
+    --> debug_generateAllVariants false
+    --> debug_mode LibDocument:DebugMode::DefaultErrorMessage
+;

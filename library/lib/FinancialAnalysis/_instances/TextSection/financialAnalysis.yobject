@@ -1,0 +1,26 @@
+LibDocument:TextSection financialAnalysis
+	--> title \( Analyse financière \)
+    --> sectionStyle -> TextSectionStyle
+        --> titleNumbering "1.1.1.1.1"
+        --> numberingInitialLevel 2
+    ;
+	--> components	{
+        // -> LibDocument:TextSection consoAnalysis
+        //     --> title \( Comptes \value(CONSO.label) \)
+        //     --> introduction dataCoherenceIntroduction(CONSO)
+        //     --> condition CONSO.dimension == DIMENSION_ENTITY
+        //     --> components {
+        //         consoIncomeStatement,
+        //         newLine,
+        //         consoBalanceSheet,
+        //         newLine,
+        //         consoCashFlowStatement,
+        //         newLine
+        //     }
+        // ;,
+        // -> LibDocument:TextSection socialAnalysis
+        //     --> title \( Comptes Sociaux \)
+        //     --> introduction \( temporary introduction \)
+        // ;
+    }
+;

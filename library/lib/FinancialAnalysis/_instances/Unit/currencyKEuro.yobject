@@ -1,0 +1,4 @@
+Unit currencyKEURO
+  --> decimalsCount 0
+  --> symbol "K€"
+;

@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:input xmlns:y="http://www.yseop.com/engine/3">
+   <y:data>
+      <y:instance yid="theGeneralData">
+         <language>LANG_en</language>
+         <cube yclass="LibCube:Cube">
+            <dimensions yid="DIMENSION_INDICATOR" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_INDICATOR" yclass="LibCube:IndicatorMember">
+                     <label>ALL Indicator</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PROD_NOUV" yclass="LibCube:IndicatorMember">
+                        <label>Production nouvelle</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="PROD_PP" yclass="LibCube:IndicatorMember">
+                           <label>Prêts principaux</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="PROD_RELAIS" yclass="LibCube:IndicatorMember">
+                           <label>Prêts relais</label>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PROD_RACHAT" yclass="LibCube:IndicatorMember">
+                        <label>Rachats</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PART_RACHAT" yclass="LibCube:IndicatorMember">
+                        <label>Part des rachats</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PART_RELAIS" yclass="LibCube:IndicatorMember">
+                        <label>Part des prêts relais</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NB_DOSSIERS" yclass="LibCube:IndicatorMember">
+                        <label>Nombres de dossiers</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="MONT_MOY_PRET" yclass="LibCube:IndicatorMember">
+                        <label>Montant moyen des prêts</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NUM_DUR" yclass="LibCube:IndicatorMember">
+                        <label>?</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DENO_DUR" yclass="LibCube:IndicatorMember">
+                        <label>?</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DURE_MOY_POND" yclass="LibCube:IndicatorMember">
+                        <label>Durée moyenne pondérée</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NUM_LTVO" yclass="LibCube:IndicatorMember">
+                        <label>Montant initiale du dossier</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DENO_LTVO" yclass="LibCube:IndicatorMember">
+                        <label>Valeur du bien à l'octroi</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="LTVO" yclass="LibCube:IndicatorMember">
+                        <label>LTVO</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NUM_TE" yclass="LibCube:IndicatorMember">
+                        <label>Charges d'emprunt annuels</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DENO_TE" yclass="LibCube:IndicatorMember">
+                        <label>Revenus annuels</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TAUX_ENDET" yclass="LibCube:IndicatorMember">
+                        <label>Taux d'endettement</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NUM_T_APPORT" yclass="LibCube:IndicatorMember">
+                        <label>Montant de l'apport</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DENO_T_APPOR" yclass="LibCube:IndicatorMember">
+                        <label>Montant du prêt</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TAUX_APPORT" yclass="LibCube:IndicatorMember">
+                        <label>Taux d'apport</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NUM_TI_MP" yclass="LibCube:IndicatorMember">
+                        <label>?</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="DENO_TI_MP" yclass="LibCube:IndicatorMember">
+                        <label>?</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TAUX_INT_MOY" yclass="LibCube:IndicatorMember">
+                        <label>Taux d'intérêt moyen</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PROD_IL" yclass="LibCube:IndicatorMember">
+                        <label>Investissement locatif</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="PART_IL" yclass="LibCube:IndicatorMember">
+                        <label>Part des investissements locatifs</label>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_TIME" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_TIME" yclass="LibCube:TimeMember"/>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN" yclass="LibCube:TimeMember">
+                        <date>2019-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH1_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-01-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH2_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-01-28</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH3_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-03-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH4_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-04-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH5_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-05-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH6_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-06-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH7_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-07-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH8_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-08-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH9_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-09-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH10_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-10-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH11_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-11-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH12_YEARN" yclass="LibCube:TimeMember">
+                           <date>2019-12-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN_1" yclass="LibCube:TimeMember">
+                        <date>2018-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH1_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-01-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH2_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-02-28</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH3_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-03-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH4_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-04-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH5_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-05-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH6_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-06-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH7_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-07-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH8_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-08-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH9_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-09-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH10_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-10-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH11_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-11-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH12_YEARN_1" yclass="LibCube:TimeMember">
+                           <date>2018-12-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN_2" yclass="LibCube:TimeMember">
+                        <date>2017-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH1_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-01-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH2_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-02-28</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH3_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-03-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH4_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-04-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH5_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-05-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH6_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-06-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH7_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-07-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH8_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-08-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH9_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-09-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH10_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-10-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH11_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-11-30</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MONTH12_YEARN_2" yclass="LibCube:TimeMember">
+                           <date>2017-12-31</date>
+                           <period>PERIOD_MONTH</period>
+                        </value>
+                     </child>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_ENTITY" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="GROUPE" yclass="LibCube:Member">
+                     <label>Groupe</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="CFF" yclass="LibCube:Member">
+                        <label>CREDIT FONCIER DE FRANCE</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="RBP" yclass="LibCube:Member">
+                        <label>Réseau Banques Populaires</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPACA" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE AQUITAINE CENTRE ATLANTIQUE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPALC" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE ALSACE LORRAINE CHAMPAGNE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPAURA" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE AUVERGNE RHONE ALPES</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPBFC" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE BOURGOGNE FRANCHE-COMTE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPGO" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE GRAND OUEST</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPMED" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE MEDITERRANEE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPN" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE DU NORD</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPOCC" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE OCCITANE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPRI" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE RIVES DE PARIS</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPS" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE DU SUD</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BPVF" yclass="LibCube:Member">
+                           <label>BANQUE POPULAIRE VAL DE FRANCE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BRED_BP" yclass="LibCube:Member">
+                           <label>BRED BANQUE POPULAIRE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BS" yclass="LibCube:Member">
+                           <label>BANQUE DE SAVOIE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CASDEN_BP" yclass="LibCube:Member">
+                           <label>CASDEN BANQUE POPULAIRE</label>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="RCE" yclass="LibCube:Member">
+                        <label>Réseau Caisses d'Épargne</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="BCP" yclass="LibCube:Member">
+                           <label>BANQUE BCP</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEAPC" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE AQUITAINE POITOU-CHARENTES</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEBFC" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE DE BOURGOGNE FRANCHE-COMTE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEBPL" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE BRETAGNE-PAYS DE LOIRE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CECAZ" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE COTE D'AZUR</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEGEE" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE GRAND EST EUROPE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEHDF" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE HAUTS DE FRANCE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEIDF" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE ILE-DE-FRANCE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CELC" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE LOIRE-CENTRE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CELDA" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE LOIRE DROME ARDECHE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CELR" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE DU LANGUEDOC ROUSSILLON</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEMP" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE DE MIDI-PYRENEES</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEN" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE NORMANDIE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEPAC" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE PROVENCE-ALPES-CORSE</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CEPAL" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE D'AUVERGNE ET DU LIMOUSIN</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CERA" yclass="LibCube:Member">
+                           <label>CAISSE D'EPARGNE RHONE ALPES</label>
+                        </value>
+                     </child>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_OPERATION" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="COD_OBJ_OPE_IMMO" yclass="LibCube:Member">
+                     <label>Objet du prêt</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="RES_PRINC" yclass="LibCube:Member">
+                        <label>Résidence principale</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="INV_LOC" yclass="LibCube:Member">
+                        <label>Investissement locatif</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="RACHAT" yclass="LibCube:Member">
+                        <label>Rachat</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="AUTRE" yclass="LibCube:Member">
+                        <label>Autre</label>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <measures yid="MEASURE_VALUE" yclass="LibCube:Measure"/>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH1_YEARN_2"/>
+               <members yid="DENO_TE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="RBP"/>
+               <members yid="INV_LOC"/>
+               <members yid="YEARN"/>
+               <members yid="NB_DOSSIERS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>9619</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH6_YEARN_1"/>
+               <members yid="PROD_PP"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="RBP"/>
+               <members yid="INV_LOC"/>
+               <members yid="YEARN_2"/>
+               <members yid="NB_DOSSIERS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8074</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH1_YEARN_1"/>
+               <members yid="PROD_NOUV"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>135252151</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH12_YEARN"/>
+               <members yid="DENO_TE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH12_YEARN"/>
+               <members yid="PROD_NOUV"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>211789172</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH6_YEARN_1"/>
+               <members yid="PROD_RELAIS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>211789172</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH1_YEARN_1"/>
+               <members yid="PROD_PP"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="GROUPE"/>
+               <members yid="COD_OBJ_OPE_IMMO"/>
+               <members yid="MONTH1_YEARN_1"/>
+               <members yid="PROD_RELAIS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>135252151</value>
+               </factMeasures>
+            </facts>
+         </cube>
+         <keyPerformanceIndicators yid="PROD_NOUV_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="PROD_NOUV">
+               <label>Production nouvelle</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="DENO_TE_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="DENO_TE">
+               <label>Revenus annuels</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <rootSection yid="TEXTSECTION_25642011-9d80-4bcc-ae5c-e1730b4c1aa7"
+                      yclass="LibDocument:TextSection">
+            <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+               <configValues yclass="HashMap">
+                  <values>
+                     <key yid="LibDocument:KPIIntention::dimensionConditions"/>
+                     <val yclass="List">
+                        <values yclass="LibCube:JointureDimensionCondition">
+                           <dimension yid="DIMENSION_ENTITY"/>
+                           <members yid="GROUPE">
+                              <label>Groupe</label>
+                           </members>
+                        </values>
+                        <values yclass="LibCube:JointureDimensionCondition">
+                           <dimension yid="DIMENSION_OPERATION"/>
+                           <members yid="COD_OBJ_OPE_IMMO">
+                              <label>Objet du prêt</label>
+                           </members>
+                        </values>
+                     </val>
+                  </values>
+               </configValues>
+            </dataSelectionFilters>
+            <title>BPCE-3D (1)</title>
+            <components yclass="List">
+               <values yid="INTENTION_ac8c55f6-3d7d-412a-8029-a47943c9ffe0"
+                       yclass="LibDocument:DescribeVariation">
+                  <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                     <configValues yclass="HashMap">
+                        <values>
+                           <key yid="LibDocument:KPIIntention::kpi"/>
+                           <val yid="DENO_TE_KPI">
+                              <measure yid="MEASURE_VALUE"/>
+                              <indicator yid="DENO_TE">
+                                 <label>Revenus annuels</label>
+                              </indicator>
+                           </val>
+                        </values>
+                        <values>
+                           <key yid="LibDocument:KPIIntention::timeMembers"/>
+                           <val yclass="List">
+                              <values yid="MONTH1_YEARN_2">
+                                 <date>2017-01-31</date>
+                                 <period>PERIOD_MONTH</period>
+                              </values>
+                              <values yid="MONTH12_YEARN">
+                                 <date>2019-12-31</date>
+                                 <period>PERIOD_MONTH</period>
+                              </values>
+                           </val>
+                        </values>
+                     </configValues>
+                  </dataSelectionFilters>
+                  <options yclass="LibDocument:DescribeVariationOptions"/>
+               </values>
+               <values yid="INTENTION_f2ddeddc-3bb4-40ac-913f-b46b70d8bff0"
+                       yclass="LibDocument:DescribeVariation">
+                  <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                     <configValues yclass="HashMap">
+                        <values>
+                           <key yid="LibDocument:KPIIntention::kpi"/>
+                           <val yid="PROD_NOUV_KPI">
+                              <measure yid="MEASURE_VALUE"/>
+                              <indicator yid="PROD_NOUV">
+                                 <label>Production nouvelle</label>
+                              </indicator>
+                           </val>
+                        </values>
+                        <values>
+                           <key yid="LibDocument:KPIIntention::timeMembers"/>
+                           <val yclass="List">
+                              <values yid="MONTH1_YEARN_1">
+                                 <date>2018-01-31</date>
+                                 <period>PERIOD_MONTH</period>
+                              </values>
+                              <values yid="MONTH12_YEARN">
+                                 <date>2019-12-31</date>
+                                 <period>PERIOD_MONTH</period>
+                              </values>
+                           </val>
+                        </values>
+                     </configValues>
+                  </dataSelectionFilters>
+                  <options yclass="LibDocument:DescribeVariationOptions">
+                    <showPeriod>true</showPeriod>
+                    <useApproximatePeriod>true</useApproximatePeriod>
+                  </options>
+               </values>
+            </components>
+         </rootSection>
+      </y:instance>
+   </y:data>
+</y:input>

@@ -1,0 +1,12 @@
+LibDocument:DynamicCustomTexts sIndicatorPropertyConsolidated
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "consolidé"
+                --> masculinePlural "consolidés"
+                --> feminineSingular "consolidée"
+                --> femininePlural "consolidées"
+            ;
+        ;
+    }
+;

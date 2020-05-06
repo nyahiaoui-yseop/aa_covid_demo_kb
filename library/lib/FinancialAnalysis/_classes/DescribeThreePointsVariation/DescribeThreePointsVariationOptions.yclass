@@ -1,0 +1,43 @@
+interface DescribeThreePointsVariationOptions extends LibDocument:IntentionOptions
+
+    field showFirstPeriod
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show first period's dates"
+
+    field showLastPeriod
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show last period's dates"
+
+    field showPercentChange
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Shows the variation as a percentage"
+
+    field showValueChange
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Shows the variation as a value"
+
+    field thresholdStableVariation
+    --> domains Number
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Threshold to indicate a variation is stable"
+
+    field thresholdFastVariation
+    --> domains Number
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Threshold to indicate a variation is a quick increase or decrease"
+
+    field thresholdFastAcceleration
+    --> domains Number
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Threshold to indicate an acceleration is important"
+
+    classProperties
+    --> documentation "Options for DescribeThreePointsVariation intention"
+;
+
+implementation DescribeThreePointsVariationOptions
+;

@@ -1,0 +1,460 @@
+
+// tag::short_description[]
+
+The *DescribeRatioVariation* intention describes the variation of the ratio of an indicator to another, over a given period of time.
+
+NOTE: This intention is not available on the AFA Studio.
+
+// end::short_description[]
+
+// tag::fields[]
+
+.DescribeRatioVariation attributes
+[cols=5*,options="header"]
+|===
+|Attribute
+|Description
+|Type
+|Multivalued
+|Mandatory
+
+|`options`
+|Specific options of the `DescribeRatioVariation` intention to be applied.
+|`LibDocument:DescribeThreePointsVariationOptions`
+|No
+|Yes
+
+|`stylingConfigurations`
+|Styling configuration to be applied at the intention level.
+|`LibDocument:DynamicStylingConfiguration`
+|Yes
+|No
+
+|`customConceptsConfiguration`
+|Custom concept configuration to be applied at the intention level.
+|`LibDocument:CustomConceptsConfiguration`
+|No
+|No
+
+|`conceptsSpecializationsConfiguration`
+|Concept specialization configuration to be applied at the intention level.
+|`LibDocument:ConceptsSpecializationConfiguration`
+|No
+|No
+
+
+|===
+
+// end::fields[]
+
+
+// tag::metadata[]
+[cols=5*,options="header"]
+|===
+|Tag
+|Name
+|Description
+|Dimension
+|Mandatory
+
+|start
+|Start Date
+|Start of the period of analysis
+|`DIMENSION_TIME`
+|Yes
+
+|end
+|End Date
+|End of the period of analysis
+|`DIMENSION_TIME`
+|Yes
+
+|kpi
+|KPI
+|The key performance indicator used as numerator in the ratio.
+|`DIMENSION_INDICATOR`
+|Yes
+
+|denominatorKpi
+|Denominator KPI
+|The key performance indicator used as denominator in the ratio.
+|`DIMENSION_INDICATOR`
+|Yes
+
+|===
+
+// end::metadata[]
+
+// tag::examples[]
+
+.DescribeRatioVariation examples
+[cols="25,75",options="header"]
+|===
+|Output
+|YML code
+
+|In 2018, the EBITDA / revenue ratio declined by 100.7 bps.
+a|[source,YML]
+----
+DescribeRatioVariation DESCRIBE_RATIO_VARIATION_DECREASE
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members EBITDA
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "denominatorKpi"
+            --> members SALES
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_1
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members EBITDA
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 1201450
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members SALES
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 1605770
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members EBITDA
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 1044578
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN
+            --> members SALES
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 1455965
+            ;
+        ;
+    ;
+    --> options DESCRVAR_RATIO_BASE_OPTIONS
+    --> dimensionConditions -> List
+        --> values conso
+        ;
+    ;
+;
+----
+
+|In 2017, the equity ratio remained stable at 52.9%.
+a|[source,YML]
+----
+DescribeRatioVariation DESCRIBE_RATIO_VARIATION_STABLE
+    --> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members TOTAL_EQUITY
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "denominatorKpi"
+            --> members TOTAL_EQUITY_AND_LIABILITIES
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members yearN_2
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members yearN_1
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members TOTAL_EQUITY
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 15980
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_2
+            --> members TOTAL_EQUITY_AND_LIABILITIES
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 30475
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members TOTAL_EQUITY
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 16407
+            ;
+        ;
+        --> selectedFacts -> LibCube:Fact
+            --> members yearN_1
+            --> members TOTAL_EQUITY_AND_LIABILITIES
+            --> factMeasures -> LibCube:FactMeasure
+                --> measure MEASURE_VALUE
+                --> value 31552
+            ;
+        ;
+    ;
+    --> options DESCRVAR_RATIO_BASE_OPTIONS
+    --> dimensionConditions -> List
+        --> values conso
+        ;
+    ;
+;
+----
+
+|===
+
+// end::examples[]
+
+// tag::specific_keys[]
+
+.DescribeRatioVariation specific options
+[cols="15,55,15,15",options="header"]
+|===
+|Name
+|Description
+|Type
+|Default value
+
+|showRelativeChange
+|If true, displays the change as a percentage relative to the start value, instead of change in BPS.
+|Boolean
+|`false`
+
+|thresholdStableVariation
+|Ratio under which a variation change is considered stable. Eg: if the ratio is 0.1 (10%), and the initial value is 0.5, an end value at 0.6 is an increase whereas 0.52 is considered stable. Likewise, a final value at 0.35 is a decrease but 0.49 is stable.
+|Number
+|0.05
+|===
+
+// end::specific_keys[]
+
+// tag::roles[]
+
+.DescribeRatioVariation roles
+[cols="2",options="header"]
+|===
+|Name
+|Description
+
+|LibDocument:IntentionRole::Root
+|Role assigned to the description of the main indicator's variation.
+
+|===
+
+// end::roles[]
+
+// tag::concepts[]
+
+// end::concepts[]
+
+// tag::filters_names[]
+
+.DescribeRatioVariation computed values names
+[cols="15,55,15,15",options="header"]
+|===
+|Name
+|Description
+|Calculation Type
+|Owner Entities
+//|Associated Role
+
+|currentValue
+|Ratio's value at the end date, or final value.
+|ABS_PERCENTAGE_CALCULATION
+|End time member, both indicators, and all additional members
+//|LibDocument:IntentionRole::Root
+
+|previousValue
+|Indicator's value at the start date, or initial value.
+|ABS_PERCENTAGE_CALCULATION
+|Start time member, both indicators, and all additional members
+//|LibDocument:IntentionRole::Root
+
+|endDate
+|Ending time of the variation's interval.
+|DATE_CALCULATION
+|End time member
+//|LibDocument:IntentionRole::Root
+
+|startDate
+|Starting time of the variation's interval.
+|DATE_CALCULATION
+|Start time member
+//|LibDocument:IntentionRole::Root
+
+|calculatedChange
+|Absolute difference between the start value and the end value in BPS.
+|BASIS_POINT_CALCULATION
+|Both indicators and all additional members
+//|LibDocument:IntentionRole::Root
+
+|calculatedRelativeChange
+|Change between the start and the end value expressed as a percentage of the initial value.
+|ABS_PERCENTAGE_CALCULATION
+|Both indicators and all additional members
+//|LibDocument:IntentionRole::Root
+
+|trendNature
+|Determines the "direction" of the ratio's variation. Possible values: `TrendNature::none`, `TrendNature::neutral`, `TrendNature::increase`, `TrendNature::decrease`.
+|TREND_NATURE_CALCULATION
+|Both indicators and all additional members
+//|LibDocument:IntentionRole::Root
+
+|===
+
+// end::filters_names[]
+
+// tag::filters_names_example[]
+TODO
+// end::filters_names_example[]
+
+// tag::xml_example[]
+
+====
+[source,xml]
+----
+<values yclass="DescribeRatioVariation">
+    <data yclass="LibDocument:KPIIntentionData">
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>kpi</tags>
+            <members yid="EBITDA" />
+        </metadata>
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>denominatorKpi</tags>
+            <members yid="SALES" />
+        </metadata>
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>start</tags>
+            <members yid="TIME_YEAR_2016" />
+        </metadata>
+        <metadata yclass="LibDocument:KPIIntentionMetaData">
+            <tags>end</tags>
+            <members yid="TIME_YEAR_2017" />
+        </metadata>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2016"/>
+            <members yid="EBITDA"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>1452336</value>
+            </factMeasures>
+        </selectedFacts>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2016"/>
+            <members yid="SALES"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>3652211</value>
+            </factMeasures>
+        </selectedFacts>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2017"/>
+            <members yid="EBITDA"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>1752208</value>
+            </factMeasures>
+        </selectedFacts>
+        <selectedFacts yclass="LibCube:Fact">
+            <members yid="TIME_YEAR_2018"/>
+            <members yid="SALES"/>
+            <factMeasures yclass="LibCube:FactMeasure">
+                <measure yid="MEASURE_VALUE" />
+                <value>4577898</value>
+            </factMeasures>
+        </selectedFacts>
+    </data>
+</values>
+----
+====
+
+// end::xml_example[]
+
+// tag::yml_example[]
+
+====
+[source,YML]
+----
+DescribeRatioVariation DESCRIBE_RATIO_VARIATION_INCREASE
+--> data -> LibDocument:KPIIntentionData
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "kpi"
+            --> members EBITDA
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "denominatorKpi"
+            --> members SALES
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "start"
+            --> members TIME_YEAR_2016
+        ;
+        --> metadata -> LibDocument:KPIIntentionMetaData
+            --> tags "end"
+            --> members TIME_YEAR_2017
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2016
+        --> members EBITDA
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 1452336
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2016
+        --> members TOTAL_EXPENSES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 3652211
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2017
+        --> members EBITDA
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 1752208
+        ;
+    ;
+    --> selectedFacts -> LibCube:Fact
+        --> members TIME_YEAR_2017
+        --> members TOTAL_EXPENSES
+        --> factMeasures -> LibCube:FactMeasure
+            --> measure MEASURE_VALUE
+            --> value 4577898
+        ;
+    ;
+;
+----
+====
+
+// end::yml_example[]
+
+// tag::semantic_slots[]
+TODO
+
+// end::semantic_slots[]
+
+// tag::semantic_slots_examples[]
+
+TODO
+
+// end::semantic_slots_examples[]

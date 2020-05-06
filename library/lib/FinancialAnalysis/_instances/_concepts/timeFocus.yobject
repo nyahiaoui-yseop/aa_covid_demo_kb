@@ -1,0 +1,80 @@
+LibOntology:ComplementConcept DescribeThreePointsVariation:TimeFocus
+    --> lexicalization -> MultilingualExpression
+        --> en {
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_fiscalYear
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::FiscalYear
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_year
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Year
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_quarter
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Quarter
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_month
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Month
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_week
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Week
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:EN:TimeFocus:on_day
+                --> root "on"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Day
+            ;
+        }
+        --> fr {
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_fiscalYear
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::FiscalYear
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_year
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Year
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_quarter
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Quarter
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_month
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Month
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_week
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Week
+            ;,
+            -> LibOntology:TimeModifier DescribeThreePointsVariation:FR:TimeFocus:sur_day
+                --> root "sur"
+                --> target LibOntology:ModifierTarget::NounPhrase
+                --> position LibOntology:ModifierPosition::RIGHT
+                --> dateType LibOntology:DateType::Day
+            ;
+        }
+    ;
+;

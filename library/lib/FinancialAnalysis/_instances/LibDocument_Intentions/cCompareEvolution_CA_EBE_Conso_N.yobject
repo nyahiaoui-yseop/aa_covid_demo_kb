@@ -1,0 +1,126 @@
+LibDocument:StaticTextIntention cCompareEvolution_CA_EBE_Conso_N
+    // --> condition cStabilisation_EBECA_Conso_N.isStringEmpty() == true
+    // TODO create new Intention CompareVariationWithContributors
+    --> text \(
+        tCompareCAEBE
+        // \switch
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::INCREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::INCREASE)
+
+        //     \if(theGeneralData.consolidatedCAGrowsFasterThanEBE == true)
+        //         La rentabilité opérationnelle ne progresse pas aussi rapidement que le CA : EBE de
+        //         \noContraction \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //         (
+        //         \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //         du CA vs
+        //         \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //         du CA de l'année précédente)
+        //         est en croissance de \value(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)), UNIT_PERCENT) \tSignificantCAEBE(true).
+        //     \else
+        //         \value(tEBE) suit une croissance parallèle à \value(tCA) (
+        //         \value(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)), UNIT_PERCENT)
+        //         ) et atteint
+        //         \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //         (
+        //         \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //         du CA vs
+        //         \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //         du CA \value(tEnYearN_1))
+        //         en \value(yearN.date.year) \tSignificantCAEBE(false).
+        //     \endIf
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::INCREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::STABLE)
+        //     Malgré la hausse de \value(tCA), \value(tEBE) reste à un niveau stable par rapport à \value(yearN_1.date.year), soit
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1)) \tSignificantCAEBE(false).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::INCREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::DECREASE)
+
+        //     Malgré la hausse de \value(tCA), la rentabilité du Groupe se détériore, \value(tEBE) est à
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA  \value(tEnYearN_1))
+        //     en \value(yearN.date.year)) \tSignificantCAEBE(true).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::STABLE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::INCREASE)
+
+        //     Cette stabilité de \value(tCA) n'empêche pas \value(tEBE) de croître de
+        //     \value(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)), UNIT_PERCENT)
+        //     pour atteindre
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     en \value(yearN.date.year).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::STABLE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::STABLE)
+
+        //     Cette stabilité de \value(tCA) est ressentie au niveau de \value(tEBE) qui reste également stable à
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     en \value(yearN.date.year).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::STABLE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::DECREASE)
+
+        //     \value(tEBE) décroît de
+        //     \value(abs(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1))), UNIT_PERCENT)
+        //     malgré cette stabilité de \value(tCA) à
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     \tSignificantCAEBE(true).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::DECREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::INCREASE)
+
+        //     Malgré la chute de \value(tCA), \value(tEBE) croît de
+        //     \value(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1)), UNIT_PERCENT)
+        //     pour atteindre
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     en \value(yearN_1.date.year) \tSignificantCAEBE(false).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::DECREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::STABLE)
+
+        //     Malgré la chute de \value(tCA), \value(tEBE) reste stable à
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     en \value(yearN.date.year) \tSignificantCAEBE(false).
+
+        //     \case(theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::DECREASE && theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::DECREASE)
+
+        //     \value(tEBE) décroît parallèlement au \value(tCA)
+        //     (\value(abs(getVariation(getJointureOneFactValue(jointureEBE_Conso_N), getJointureOneFactValue(jointureEBE_Conso_N_1))), UNIT_PERCENT)) à
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N), currencyKEURO, separateThousands)
+        //     (
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N)/getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA vs
+        //     \value(getJointureOneFactValue(jointureEBE_Conso_N_1)/getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), UNIT_PERCENT)
+        //     du CA \value(tEnYearN_1))
+        //     \tSignificantCAEBE(false).
+
+        // \endSwitch
+    \)
+;

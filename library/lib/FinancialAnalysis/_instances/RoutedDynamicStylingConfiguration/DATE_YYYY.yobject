@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration DATE_YYYY
+    --> dynamicStylingConfiguration dateYYYY
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

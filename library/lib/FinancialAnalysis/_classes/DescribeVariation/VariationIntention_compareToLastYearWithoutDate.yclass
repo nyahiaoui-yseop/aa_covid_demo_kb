@@ -1,0 +1,19 @@
+interface VariationIntention_compareToLastYearWithoutDate extends LibDocument:DescribeVariation
+
+    classProperties
+    --> documentation """A subclass of LibDocument:DescribeVariation with `DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR_WITHOUT_DATE` as default options.
+
+@see `DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR_WITHOUT_DATE`
+"""
+    --> apiLabel "Describe the variation − Medium verbosity − Compare to last year without date"
+    --> apiDescription ""
+    --> hideFromApi true
+
+; // VariationIntention_compareToLastYearWithoutDate
+
+implementation VariationIntention_compareToLastYearWithoutDate
+    override {
+        options
+        --> defaultValue DESCRVAR_OPTIONS_COMPARE_TO_LAST_YEAR_WITHOUT_DATE
+    }
+;

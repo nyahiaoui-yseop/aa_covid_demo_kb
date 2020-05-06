@@ -1,0 +1,18 @@
+interface RatioKPI extends LibDocument:KeyPerformanceIndicator
+
+    classProperties
+	--> documentation """KPI which Indicator represents a ratio. It has a default styling configuration set.
+
+@see `ratioPercent`
+"""
+
+;
+
+implementation RatioKPI
+    override {
+        // stylingConfigurations
+        // --> defaultValue RATIO_PERCENT_STYLING_CONFIGURATION
+        measure
+        --> defaultValue MEASURE_VALUE
+    }
+;

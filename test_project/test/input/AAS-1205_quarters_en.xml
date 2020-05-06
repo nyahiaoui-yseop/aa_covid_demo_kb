@@ -1,0 +1,3383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:input xmlns:y="http://www.yseop.com/engine/3">
+   <y:data>
+      <y:instance yid="theGeneralData">
+         <language>LANG_en</language>
+         <cube yclass="LibCube:Cube">
+            <dimensions yid="DIMENSION_INDICATOR" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_INDICATOR" yclass="LibCube:IndicatorMember">
+                     <label>ALL Indicator</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TOTAL_ASSETS" yclass="LibCube:IndicatorMember">
+                        <label>Assets</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="INDIRECT_ASSETS" yclass="LibCube:IndicatorMember">
+                           <label>Indirect Assets</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="DIRECT_ASSETS" yclass="LibCube:IndicatorMember">
+                           <label>Direct Assets</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CASH_AND_DUE_FROM_BANKS" yclass="LibCube:IndicatorMember">
+                              <label>Cash and Due from Banks</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="DEPOSITS_WITH_BANKS" yclass="LibCube:IndicatorMember">
+                              <label>Deposits with Banks</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="FEDERAL_FUNDS_SOLD_AND_RESALES" yclass="LibCube:IndicatorMember">
+                              <label>Federal Funds Sold and Resales</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="BROKERAGE_RECEIVABLES" yclass="LibCube:IndicatorMember">
+                              <label>Brokerage Receivables</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="TRADING_ACCOUNT_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Trading Account Assets</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS" yclass="LibCube:IndicatorMember">
+                                 <label>Trading Account Non-Derivative Assets</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="TRADING_DERIVATIVE_ASSETS" yclass="LibCube:IndicatorMember">
+                                 <label>Trading Derivative Assets</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="INVESTMENTS" yclass="LibCube:IndicatorMember">
+                              <label>Investments</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"
+                                     yclass="LibCube:IndicatorMember">
+                                 <label>Investments - Available-for-Sale Debt Securities (AFS)</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="INVESTMENTS_EQUITY_SECURITIES" yclass="LibCube:IndicatorMember">
+                                 <label>Investments - Equity Securities</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"
+                                     yclass="LibCube:IndicatorMember">
+                                 <label>Investments - Held-to-Maturity Debt Securities (HTM)</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED" yclass="LibCube:IndicatorMember">
+                              <label>Total Loans &amp; Leases Net of Unearned</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED" yclass="LibCube:IndicatorMember">
+                                 <label>Consumer Loans &amp; Leases Net of Unearned</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED" yclass="LibCube:IndicatorMember">
+                                 <label>Commercial Loans &amp; Leases Net of Unearned</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="ALLOWANCE_FOR_LOAN_LOSSES" yclass="LibCube:IndicatorMember">
+                              <label>Allowance for Loan Losses</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="GOODWILL" yclass="LibCube:IndicatorMember">
+                              <label>Goodwill</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="INTANGIBLE_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Intangible Assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="MORTGAGE_SERVICING_RIGHTS" yclass="LibCube:IndicatorMember">
+                              <label>Mortgage Servicing Rights</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Other Assets</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS" yclass="LibCube:IndicatorMember">
+                                 <label>Business for Sale (BFS) - Other Assets</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="PROPERTY_PLANT_AND_EQUIPMENT" yclass="LibCube:IndicatorMember">
+                                 <label>Property Plant and Equipment Net</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET" yclass="LibCube:IndicatorMember">
+                                 <label>Operating and Finance Lease Assets - Net</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS" yclass="LibCube:IndicatorMember">
+                                 <label>Interest &amp; Fees Receivable from Loans</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="MISCELLANEOUS_OTHER_ASSETS" yclass="LibCube:IndicatorMember">
+                                 <label>Miscellaneous Other Assets</label>
+                              </value>
+                           </child>
+                        </child>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TOTAL_EQUITY_AND_LIABILITIES" yclass="LibCube:IndicatorMember">
+                        <label>Total Liabilities &amp; Equity</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="LIABILITIES" yclass="LibCube:IndicatorMember">
+                           <label>Liabilities</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="DEPOSITS" yclass="LibCube:IndicatorMember">
+                              <label>Deposits</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="BROKERAGE_PAYABLES" yclass="LibCube:IndicatorMember">
+                              <label>Brokerage Payables</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="TRADING_ACCOUNT_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Trading Account Liabilities</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"
+                                     yclass="LibCube:IndicatorMember">
+                                 <label>Trading Account Non-Derivative Liabilities</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="TRADING_DERIVATIVE_LIABILITIES" yclass="LibCube:IndicatorMember">
+                                 <label>Trading Derivative Liabilities</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"
+                                  yclass="LibCube:IndicatorMember">
+                              <label>Federal Funds Purch and Sec Loaned or Sold Under Repurchase Agreements</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="LONGTERM_DEBT" yclass="LibCube:IndicatorMember">
+                              <label>Long-Term Debt</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Other Liabilities</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="MISCELLANEOUS_OTHER_LIABILITIES" yclass="LibCube:IndicatorMember">
+                                 <label>Miscellaneous Other Liabilities</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="ACCRUED_TAXES_OTHER_EXPENSES" yclass="LibCube:IndicatorMember">
+                                 <label>Accrued Taxes &amp; Other Expenses</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES" yclass="LibCube:IndicatorMember">
+                                 <label>Business for Sale (BFS) - Other Liabilities</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"
+                                  yclass="LibCube:IndicatorMember">
+                              <label>Net Intersegment Funding - Items in Transit (IIT)</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="SHORTTERM_BORROWINGS" yclass="LibCube:IndicatorMember">
+                              <label>Short-Term Borrowings</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="TOTAL_EQUITY" yclass="LibCube:IndicatorMember">
+                           <label>Total Equity</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="EQUITY_GROUP_SHARE" yclass="LibCube:IndicatorMember">
+                              <label>Stockholders Equity</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="PREFERRED_STOCK" yclass="LibCube:IndicatorMember">
+                                 <label>Preferred Stock</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="COMMON_STOCK" yclass="LibCube:IndicatorMember">
+                                 <label>Common Stock</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="ADDITIONAL_PAIDIN_CAPITAL_APIC" yclass="LibCube:IndicatorMember">
+                                 <label>Additional Paid-In Capital (APIC)</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="RETAINED_EARNINGS" yclass="LibCube:IndicatorMember">
+                                 <label>Retained Earnings</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="TREASURY_STOCK" yclass="LibCube:IndicatorMember">
+                                 <label>Treasury Stock</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"
+                                     yclass="LibCube:IndicatorMember">
+                                 <label>Accumulated Other Comprehensive Income/Loss</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="EQUITY_NON_CONTROLLING_INTERESTS" yclass="LibCube:IndicatorMember">
+                              <label>Non-Controlling Interest</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="MANAGEMENT_CAPITAL" yclass="LibCube:IndicatorMember">
+                           <label>Management Capital</label>
+                        </value>
+                     </child>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_TIME" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_TIME" yclass="LibCube:TimeMember"/>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N_QUARTER_1" yclass="LibCube:TimeMember">
+                        <date>2020-03-31</date>
+                        <period>PERIOD_QUARTER</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N_QUARTER_2" yclass="LibCube:TimeMember">
+                        <date>2020-06-30</date>
+                        <period>PERIOD_QUARTER</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N_QUARTER_3" yclass="LibCube:TimeMember">
+                        <date>2020-09-30</date>
+                        <period>PERIOD_QUARTER</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N_QUARTER_4" yclass="LibCube:TimeMember">
+                        <date>2020-12-31</date>
+                        <period>PERIOD_QUARTER</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N" yclass="LibCube:TimeMember">
+                        <date>2020-12-31</date>
+                        <period>PERIOD_FISCAL_YEAR</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEAR_N_1" yclass="LibCube:TimeMember">
+                        <date>2019-12-31</date>
+                        <period>PERIOD_FISCAL_YEAR</period>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_GEOGRAPHY" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_GEOGRAPHY" yclass="LibGeography:Area">
+                     <label>ALL Geography</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="CONT_EUROPE" yclass="LibGeography:Area">
+                        <label>Europe</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="C_FRA" yclass="LibGeography:Area">
+                        <label>France</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="C_GBR" yclass="LibGeography:Area">
+                        <label>United Kingdom</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="C_DEU" yclass="LibGeography:Area">
+                        <label>Germany</label>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_ENTITY" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_ENTITIES" yclass="LibCube:Member">
+                     <label>All entities</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="ENTITY_A" yclass="LibCube:Member">
+                        <label>Global Investment Entity</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="ENTITY_B" yclass="LibCube:Member">
+                        <label>Private Investment Entity</label>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <measures yid="MEASURE_VALUE" yclass="LibCube:Measure"/>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PREFERRED_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PREFERRED_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>782865408</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_NON_CONTROLLING_INTERESTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_NON_CONTROLLING_INTERESTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2290891324</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_NON_CONTROLLING_INTERESTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>11831196920</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>76142249732</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_EQUITY"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.95308405698E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15229367424</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_EQUITY"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19820946887</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TREASURY_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCRUED_TAXES_OTHER_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>503567920</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TREASURY_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.348431099960369E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.235829989964247E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.201339119964E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TREASURY_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.5564156536464005E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_EQUITY"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>18926605521</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_GROUP_SHARE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.95308405698E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_GROUP_SHARE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>18926605521</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_GROUP_SHARE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19820946887</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>47597939400</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>32397891</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4039257080</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4069860860</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>29859784</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4554718720</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>32281669</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4.37884305E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMON_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3485705220</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8201339120</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-414217706</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8348431100</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMON_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3334140160</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8235829990</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.036</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.03575292</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMON_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3785467650</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.039631262</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PREFERRED_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>867259816</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.407051655E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>50269491460</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1.612948535E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>542138072</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>583964869</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>530322453</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.311220995E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2492584394</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2590439684</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2712875310</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4.89731513997835E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.033188973</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>51996517</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12258525264</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13020592936</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13544616568</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7679260120</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>591037572</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>542664188</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>533122280</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>18834767880</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8861887690</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5759750100</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.216505695</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>6164337200</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>6144000000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>766484128</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_NON_CONTROLLING_INTERESTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PREFERRED_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.40577151E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="SHORTTERM_BORROWINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>14043896</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>487831424</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>51462411600</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.9023891960260376E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>126411741192</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.7281243046664246E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.8726922876464005E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7.679260119966811E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-932622555</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.479636955E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>60991380</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>548822804</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.467216855E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.716438305E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.503451875E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12878651550</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>54997750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.417331475E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.459941205E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.0141285601896996E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2350715874</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2712875310</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>512627766</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3290960832</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3.262610087605835E11</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>457630016</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.5745321347822E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3767934082</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8008.981</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7517.5435</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7503.1016</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2295347944</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>823083804</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.353249806E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2231650948</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>782865408</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_NON_CONTROLLING_INTERESTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2070258608</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>726988352</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.1817056283E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2.895457123E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>11831196920</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2290891324</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8240099330</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>14289834590</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>10531484020</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.201339119964E9</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TREASURY_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.4472035236664246E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.5564156536464005E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_EQUITY"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19820946887</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.5560271610260376E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_GROUP_SHARE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19820946887</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>351110870</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3.4509577664058344E11</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>32397891</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4567344000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="SHORTTERM_BORROWINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12120438</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8201339120</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>867259816</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4704929306</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMON_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3785467650</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.969620388E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.139369812E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PREFERRED_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_EQUITY_SECURITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-0.036</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>11636419080</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="RETAINED_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15615338048</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1045655676</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>62365073</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>73686910140</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>64086900</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>187602016</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1120572724</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.716438305E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>61457409</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1107447212</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.467216855E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="RETAINED_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>14732165056</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>158430339</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1073505176</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ADDITIONAL_PAIDIN_CAPITAL_APIC"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>9.652605148E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-141319952</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ADDITIONAL_PAIDIN_CAPITAL_APIC"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>886878947</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LONGTERM_DEBT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4660668290</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-475059646</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>34230038100</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LONGTERM_DEBT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7426077180</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LONGTERM_DEBT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5152593540</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>30432607</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMON_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3040924670</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>21991175268</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>21882480626</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ADDITIONAL_PAIDIN_CAPITAL_APIC"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>895200835</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>421983986</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.657521031074351E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>358788736</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.38511321750016E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>422325786</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3981658242</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>20357590884</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3767934082</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3555184160</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3263629602</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.3520953330581E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8140.722</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3178671620</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3162766340</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2809207810</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3463620350</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_EQUITY"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.81736492198E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_SOLD_AND_RESALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>9.907785055E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>6144000000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TREASURY_STOCK"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MORTGAGE_SERVICING_RIGHTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7203.837</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.8726922876464005E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.49297906E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="SHORTTERM_BORROWINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13038875</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>478051172</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="NET_INTERSEGMENT_FUNDING_ITEMS_IN_TRANSIT_IIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-3737043970</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.33961074E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="SHORTTERM_BORROWINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13518272</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>468865044</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="SHORTTERM_BORROWINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.37770248E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>521599796</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="FEDERAL_FUNDS_PURCH_AND_SEC_LOANED_OR_SOLD_UNDER_REPURCHASE_AGREEMENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.30605609E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_ACCOUNT_NONDERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1944237074</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>48958907400</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OPERATING_AND_FINANCE_LEASE_ASSETS_NET"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>51599307000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ADDITIONAL_PAIDIN_CAPITAL_APIC"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8.147771998E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BUSINESS_FOR_SALE_BFS_OTHER_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>53773884900</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LONGTERM_DEBT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4696446590</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CASH_AND_DUE_FROM_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>21627301000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.126727589446681E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCRUED_TAXES_OTHER_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>574459584</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCRUED_TAXES_OTHER_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>564783024</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCRUED_TAXES_OTHER_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>529535152</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="BROKERAGE_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>862637926</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8099065620</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCRUED_TAXES_OTHER_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>540382896</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8446558700</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="CONSUMER_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8861887690</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="RETAINED_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15615338048</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-152935558</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="RETAINED_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15560758488</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="RETAINED_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15207872592</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1.612948535E8</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ALLOWANCE_FOR_LOAN_LOSSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-166161312</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3057735420</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1139021032</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_HELDTOMATURITY_DEBT_SECURITIES_HTM"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ADDITIONAL_PAIDIN_CAPITAL_APIC"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>895200835</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTANGIBLE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="LONGTERM_DEBT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7134300160</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="COMMERCIAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13020592936</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_3"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.46669602E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4.40184508E7</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="PROPERTY_PLANT_AND_EQUIPMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>51996517</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19876518410</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>542087756</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INVESTMENTS_AVAILABLEFORSALE_DEBT_SECURITIES_AFS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>48973151400</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-502286178</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_2"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-480883653</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_QUARTER_4"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="ACCUMULATED_OTHER_COMPREHENSIVE_INCOME_LOSS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-475059646</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="MISCELLANEOUS_OTHER_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>564561448</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INTEREST_FEES_RECEIVABLE_FROM_LOANS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>187230610</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TRADING_DERIVATIVE_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>421983986</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="EQUITY_GROUP_SHARE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1.81736492198E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>21882480626</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="DEPOSITS_WITH_BANKS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12273042280</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="TOTAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5.432501131446681E10</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N_1"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="GOODWILL"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4873675300</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEAR_N"/>
+               <members yid="CONT_EUROPE"/>
+               <members yid="ALL_ENTITIES"/>
+               <members yid="INDIRECT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3162766340</value>
+               </factMeasures>
+            </facts>
+         </cube>
+         <keyPerformanceIndicators yid="OTHER_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="OTHER_ASSETS">
+               <label>Other Assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="INDIRECT_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="INDIRECT_ASSETS">
+               <label>Indirect Assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="ALLOWANCE_FOR_LOAN_LOSSES_KPI"
+                                   yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="ALLOWANCE_FOR_LOAN_LOSSES">
+               <label>Allowance for Loan Losses</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="LIABILITIES_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="LIABILITIES">
+               <label>Liabilities</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="CASH_AND_DUE_FROM_BANKS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="CASH_AND_DUE_FROM_BANKS">
+               <label>Cash and Due from Banks</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="INVESTMENTS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="INVESTMENTS">
+               <label>Investments</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="BROKERAGE_RECEIVABLES_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="BROKERAGE_RECEIVABLES">
+               <label>Brokerage Receivables</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="TRADING_ACCOUNT_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="TRADING_ACCOUNT_ASSETS">
+               <label>Trading Account Assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="DIRECT_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="DIRECT_ASSETS">
+               <label>Direct Assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED_KPI"
+                                   yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="TOTAL_LOANS_LEASES_NET_OF_UNEARNED">
+               <label>Total Loans &amp; Leases Net of Unearned</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="TOTAL_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="TOTAL_ASSETS">
+               <label>Assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="TOTAL_EQUITY_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="TOTAL_EQUITY">
+               <label>Total Equity</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <rootSection yid="TEXTSECTION_8955ed15-3b93-4f7e-a93f-e6545fbf447c"
+                      yclass="LibDocument:TextSection">
+            <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+               <configValues yclass="HashMap">
+                  <values>
+                     <key yid="LibDocument:KPIIntention::timeMembers"/>
+                     <val yclass="List">
+                        <values yid="YEAR_N_1">
+                           <date>2019-12-31</date>
+                           <period>PERIOD_FISCAL_YEAR</period>
+                        </values>
+                        <values yid="YEAR_N">
+                           <date>2020-12-31</date>
+                           <period>PERIOD_FISCAL_YEAR</period>
+                        </values>
+                     </val>
+                  </values>
+                  <values>
+                     <key yid="LibDocument:KPIIntention::dimensionConditions"/>
+                     <val yclass="List">
+                        <values yclass="LibCube:JointureDimensionCondition">
+                           <dimension yid="DIMENSION_GEOGRAPHY"/>
+                           <members yid="CONT_EUROPE">
+                              <label>Europe</label>
+                           </members>
+                        </values>
+                        <values yclass="LibCube:JointureDimensionCondition">
+                           <dimension yid="DIMENSION_ENTITY"/>
+                           <members yid="ALL_ENTITIES">
+                              <label>All entities</label>
+                           </members>
+                        </values>
+                     </val>
+                  </values>
+               </configValues>
+            </dataSelectionFilters>
+            <title>Test_ALL INTENTIONS_Data 2.0_BalanceSheet</title>
+            <components yclass="List">
+                <values yid="INTENTION_0762241c-878f-4a21-9206-a8c7b3ea5e0c"
+                             yclass="LibDocument:DescribeValue">
+                    <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                        <configValues yclass="HashMap">
+                            <values>
+                                <key yid="LibDocument:KPIIntention::kpi"/>
+                                <val yid="DIRECT_ASSETS_KPI">
+                                <measure yid="MEASURE_VALUE"/>
+                                <indicator yid="DIRECT_ASSETS">
+                                    <label>Direct Assets</label>
+                                </indicator>
+                                </val>
+                            </values>
+                            <values>
+                            <key yid="LibDocument:KPIIntention::timeMembers"/>
+                            <val yclass="List">
+                                <values yid="YEAR_N_QUARTER_4">
+                                    <date>2020-12-31</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                            </val>
+                            </values>
+                        </configValues>
+                    </dataSelectionFilters>
+                    <options yclass="LibDocument:DescribeValueOptions">
+                        <levelOfDetails yid="HIGH"/>
+                    </options>
+                </values>
+                <values yid="INTENTION_c509aaac-fade-4bde-ac35-af9f188331e0"
+                             yclass="LibDocument:DescribeVariation">
+                    <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                        <configValues yclass="HashMap">
+                            <values>
+                                <key yid="LibDocument:KPIIntention::kpi"/>
+                                <val yid="TOTAL_EQUITY_KPI">
+                                <measure yid="MEASURE_VALUE"/>
+                                <indicator yid="TOTAL_EQUITY">
+                                    <label>Total Equity</label>
+                                </indicator>
+                                </val>
+                            </values>
+                            <values>
+                                <key yid="LibDocument:KPIIntention::timeMembers"/>
+                                <val yclass="List">
+                                <values yid="YEAR_N_QUARTER_2">
+                                    <date>2020-06-30</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                                <values yid="YEAR_N_QUARTER_4">
+                                    <date>2020-12-31</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                                </val>
+                            </values>
+                        </configValues>
+                    </dataSelectionFilters>
+                    <options yclass="LibDocument:DescribeVariationOptions">
+                        <showEndDate>true</showEndDate>
+                        <showEndValue>true</showEndValue>
+                        <showStartDate>true</showStartDate>
+                        <showStartValue>true</showStartValue>
+                    </options>
+                </values>
+                <values yid="INTENTION_71072390-cd4f-46d3-a87a-fa6a7b366037"
+                             yclass="LibDocument:DescribeVariationContributors">
+                    <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                        <configValues yclass="HashMap">
+                            <values>
+                                <key yid="LibDocument:KPIIntention::kpi"/>
+                                <val yid="DIRECT_ASSETS_KPI">
+                                <measure yid="MEASURE_VALUE"/>
+                                <indicator yid="DIRECT_ASSETS">
+                                    <label>Direct Assets</label>
+                                </indicator>
+                                </val>
+                            </values>
+                            <values>
+                                <key yid="LibDocument:KPIIntention::timeMembers"/>
+                                <val yclass="List">
+                                <values yid="YEAR_N_QUARTER_2">
+                                    <date>2020-06-30</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                                <values yid="YEAR_N_QUARTER_4">
+                                    <date>2020-12-31</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                                </val>
+                            </values>
+                        </configValues>
+                    </dataSelectionFilters>
+                    <options yclass="LibDocument:DescribeVariationContributorsOptions">
+                        <levelOfDetails yid="HIGH"/>
+                    </options>
+                </values>
+                <values yid="INTENTION_4444a69d-b926-4318-9cce-78d764f516d7"
+                                   yclass="DescribeThreePointsVariation">
+                    <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                        <configValues yclass="HashMap">
+                        <values>
+                            <key yid="LibDocument:KPIIntention::timeMembers"/>
+                            <val yclass="List">
+                                <values yid="YEAR_N_QUARTER_2">
+                                    <date>2020-06-30</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                                <values yid="YEAR_N_QUARTER_4">
+                                    <date>2020-12-31</date>
+                                    <period>PERIOD_QUARTER</period>
+                                </values>
+                            </val>
+                        </values>
+                        <values>
+                            <key yid="LibDocument:KPIIntention::kpi"/>
+                            <val yid="TOTAL_ASSETS_KPI">
+                                <measure yid="MEASURE_VALUE"/>
+                                <indicator yid="TOTAL_ASSETS">
+                                    <label>Assets</label>
+                                </indicator>
+                            </val>
+                        </values>
+                        </configValues>
+                    </dataSelectionFilters>
+                    <options yclass="DescribeThreePointsVariationOptions">
+                        <levelOfDetails yid="HIGH"/>
+                    </options>
+                </values>
+            </components>
+         </rootSection>
+      </y:instance>
+   </y:data>
+</y:input>

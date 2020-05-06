@@ -1,0 +1,8 @@
+LibKPI:Ranges ThreeLevelValue
+    --> thresholds {MINUS_EPSILON, EPSILON}
+    --> rangeValues {LibKPI:NEGATIVE, LibKPI:INSIGNIFICANT, LibKPI:POSITIVE}
+;
+
+// x < MINUS_EPSILON            LibKPI:NEGATIVE
+// MINUS_EPSILON < x < EPSILON  LibKPI:INSIGNIFICANT
+// EPSILON < x                  LibKPI:POSITIVE

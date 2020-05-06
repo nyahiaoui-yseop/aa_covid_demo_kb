@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:output xmlns:y="http://www.yseop.com/engine/3" xmlns:yt="http://www.yseop.com/text/2" xmlns:yd="http://www.yseop.com/dialog/1" xmlns:yd-b="http://www.yseop.com/dialog/binding/1" xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns:fd="http://apache.org/cocoon/forms/1.0#definition" xmlns:ft="http://apache.org/cocoon/forms/1.0#template" xmlns:fi="http://apache.org/cocoon/forms/1.0#instance" xmlns:fb="http://apache.org/cocoon/forms/1.0#binding">
+	<y:results>
+		<y:texts>
+			<y:txt id="finalDocument" format="xml-dialect">				<yt:section>
+					<yt:title>Describe variation de production financière et résultat net</yt:title>
+				</yt:section>
+			</y:txt>
+		</y:texts>
+	</y:results>
+	<y:dataset>
+		<y:action command="next-request"></y:action>
+		<y:dialog-session>
+			<y:dialog-id>3CCC-16CDD87B7B</y:dialog-id>
+			<y:request-count>1</y:request-count>
+			<y:session-status>
+				<y:status>_ONGOING</y:status>
+			</y:session-status>
+			<y:start-timestamp>2019-08-29T15:19:14.867</y:start-timestamp>
+			<y:step>_TEXT_GENERATION</y:step>
+		</y:dialog-session>
+		<y:data>
+			<y:instance yid="theGeneralData">
+				<language yid="LANG_fr"/>
+				<cube yid="0xADB5" yclass="LibCube:Cube">
+					<dimensions ypos="1" yid="DIMENSION_ENTITY">
+						<members ypos="1" yid="CONSO">
+							<dimension yid="DIMENSION_ENTITY"/>
+							<label>Consolidé</label>
+						</members>
+						<isOptional>false</isOptional>
+						<hierarchies ypos="1" yid="0xADB7" yclass="LibCube:Hierarchy">
+							<dimension yid="DIMENSION_ENTITY"/>
+							<value yid="CONSO"/>
+						</hierarchies>
+						<membersClass yid="LibCube:IndicatorMember"/>
+					</dimensions>
+					<dimensions ypos="2" yid="DIMENSION_TIME">
+						<members ypos="1" yid="yearN">
+							<date>2018-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<members ypos="2" yid="yearN_1">
+							<date>2017-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<members ypos="3" yid="yearN_2">
+							<date>2016-12-31</date>
+							<period yid="PERIOD_FISCAL_YEAR"/>
+							<dimension yid="DIMENSION_TIME"/>
+						</members>
+						<isOptional>false</isOptional>
+						<membersClass yid="LibCube:TimeMember"/>
+					</dimensions>
+					<dimensions ypos="3" yid="DIMENSION_INDICATOR">
+						<isOptional>true</isOptional>
+						<membersClass yid="LibCube:IndicatorMember"/>
+					</dimensions>
+					<facts ypos="1" yid="0xADC0" yclass="LibCube:Fact">
+						<members ypos="1" yid="PRODFI">
+							<dimension yid="DIMENSION_INDICATOR"/>
+						</members>
+						<members ypos="2" yid="yearN"/>
+						<factMeasures ypos="1" yid="0xADC1" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE">
+								<includeInJointureConditions>false</includeInJointureConditions>
+							</measure>
+							<value>10</value>
+						</factMeasures>
+						<timeMember yid="yearN"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="2" yid="0xADBE" yclass="LibCube:Fact">
+						<members ypos="1" yid="PRODFI"/>
+						<members ypos="2" yid="yearN_1"/>
+						<factMeasures ypos="1" yid="0xADBF" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>8</value>
+						</factMeasures>
+						<timeMember yid="yearN_1"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="3" yid="0xADBC" yclass="LibCube:Fact">
+						<members ypos="1" yid="RN">
+							<dimension yid="DIMENSION_INDICATOR"/>
+						</members>
+						<members ypos="2" yid="yearN"/>
+						<factMeasures ypos="1" yid="0xADBD" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>120</value>
+						</factMeasures>
+						<timeMember yid="yearN"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<facts ypos="4" yid="0xADBA" yclass="LibCube:Fact">
+						<members ypos="1" yid="RN"/>
+						<members ypos="2" yid="yearN_1"/>
+						<factMeasures ypos="1" yid="0xADBB" yclass="LibCube:FactMeasure">
+							<measure yid="MEASURE_VALUE"/>
+							<value>100</value>
+						</factMeasures>
+						<timeMember yid="yearN_1"/>
+						<generatesDrillDown>false</generatesDrillDown>
+					</facts>
+					<factsSelections ypos="1" yid="0xB0B4" yclass="LibCube:JointureOneFactSelection">
+						<selectedFact yid="0xADBC" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='3']"/>
+						<jointure yid="0xB0B3" yclass="LibCube:Jointure">
+							<attribute yid="0xB0B6" yclass="PredicateAttribute"/>
+							<dimensionConditions yid="0xB0B0" yclass="List">
+								<values ypos="1" yid="0xB0B1" yclass="LibCube:JointureDimensionCondition">0xB0B1</values>
+								<values ypos="2" yid="0xB0B2" yclass="LibCube:JointureDimensionCondition">0xB0B2</values>
+							</dimensionConditions>
+						</jointure>
+						<selectedFacts ypos="1" yid="0xADBC" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='3']"/>
+						<processingRule yid="SATISFY_BY_INPUT_OR_QUERY"/>
+						<processingStatus yid="SATISFIED_BY_CURRENT_FACTS"/>
+					</factsSelections>
+					<factsSelections ypos="2" yid="0xAE09" yclass="LibCube:JointureFactsSelection">
+						<jointure yid="0xAE08" yclass="LibCube:Jointure">
+							<attribute yid="0xAE3F" yclass="PredicateAttribute"/>
+							<dimensionConditions yid="0xAE05" yclass="List">
+								<values ypos="1" yid="0xAE06" yclass="LibCube:JointureDimensionCondition">0xAE06</values>
+								<values ypos="2" yid="0xAE07" yclass="LibCube:JointureDimensionCondition">0xAE07</values>
+							</dimensionConditions>
+						</jointure>
+						<selectedFacts ypos="1" yid="0xADBE" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='2']"/>
+						<selectedFacts ypos="2" yid="0xADC0" ypath="y:data/y:instance[@yid='theGeneralData']/cube/facts[@ypos='1']"/>
+						<processingRule yid="SATISFY_BY_INPUT_OR_QUERY"/>
+						<processingStatus yid="SATISFIED_BY_CURRENT_FACTS"/>
+					</factsSelections>
+					<options yid="0xADB6" yclass="LibCube:CubeOptions">
+						<generateMdxQueries>false</generateMdxQueries>
+						<generateNonIndicatorMembersJointure>false</generateNonIndicatorMembersJointure>
+						<initializedCube>true</initializedCube>
+					</options>
+				</cube>
+				<rootSection yid="theGeneralData_rootSection"/>
+				<runUnitTests>false</runUnitTests>
+				<finalDialogStep yid="_TEXT_GENERATION"/>
+				<intentionIDCounter>0</intentionIDCounter>
+			</y:instance>
+		</y:data>
+		<y:gathering-store></y:gathering-store>
+	</y:dataset>
+	<y:settings
+		freeze-random="true"></y:settings>
+	<y:data-end>
+		<y:logging>
+			<y:log
+				index="1"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="1.75">
+				<y:message>actionAfterXmlReading</y:message>
+			</y:log>
+			<y:log
+				index="2"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="1.93">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="3"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.01">
+				<y:message>_CUBE_INIT : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="4"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.10">
+				<y:message>the function defineExternalCube must be defined to call a external webservice.</y:message>
+			</y:log>
+			<y:log
+				index="5"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.17">
+				<y:message>initialize cube</y:message>
+			</y:log>
+			<y:log
+				index="6"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.27">
+				<y:message>_CUBE_INIT : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="7"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.35">
+				<y:message>Cube initizialized</y:message>
+			</y:log>
+			<y:log
+				index="8"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.42">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="9"
+				level="warning"
+				nature="alert"
+				origin-nb-ms="2.57">
+				<y:message>It is more efficient to exploit symbolic objects as a key (here 1)</y:message>
+				<y:alert-type
+					type="kb-alert"
+					sub-type-code="30"
+					sub-type-name="implicit-check"
+					code="W82"
+					owner="yseop"
+					source="yseop-engine"/>
+			</y:log>
+			<y:log
+				index="10"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="2.67">
+				<y:message>Set DIMENSION_TIME_CURRENT_MEMBER to default</y:message>
+			</y:log>
+			<y:log
+				index="11"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.86">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="12"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="2.94">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="13"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.03">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="14"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.10">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="15"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.17">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="16"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.26">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="17"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.33">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="18"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.40">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="19"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="3.59">
+				<y:message>Injected default configs</y:message>
+			</y:log>
+			<y:log
+				index="20"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="3.76">
+				<y:message>currentAttributeValue PRODFI_KPI</y:message>
+			</y:log>
+			<y:log
+				index="21"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="3.95">
+				<y:message>KPIIntention::beforeDataCollection &apos;0xADC3&apos;</y:message>
+			</y:log>
+			<y:log
+				index="22"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.02">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="23"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.10">
+				<y:message>sent message beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="24"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.43">
+				<y:message>JUMPING to _CALCULATE_JOINTURE from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="25"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.50">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="26"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="4.63">
+				<y:message>missing dimension :DIMENSION_ENTITY for jointure :&apos;0xAE08&apos;</y:message>
+			</y:log>
+			<y:log
+				index="27"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="4.74">
+				<y:message>it could not be calculated the probability of success in: &apos;0xAE06&apos; its dimension members should be more than 0</y:message>
+			</y:log>
+			<y:log
+				index="28"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="4.83">
+				<y:message>_CALCULATE_JOINTURE : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="29"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="4.97">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADC0&apos;</y:message>
+			</y:log>
+			<y:log
+				index="30"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.15">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBE&apos;</y:message>
+			</y:log>
+			<y:log
+				index="31"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.28">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBC&apos;</y:message>
+			</y:log>
+			<y:log
+				index="32"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="5.40">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBA&apos;</y:message>
+			</y:log>
+			<y:log
+				index="33"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.51">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="34"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.60">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="35"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.68">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="36"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="5.78">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="37"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="5.85">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="38"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="5.93">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="39"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.02">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="40"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.10">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="41"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="6.17">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="42"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="6.29">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::BeforeDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="43"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="6.39">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::BeforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="44"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="6.72">
+				<y:message>_PREPARE_INTENTIONS : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="45"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="6.79">
+				<y:message>LibReportingFramework:calculateIntentions</y:message>
+			</y:log>
+			<y:log
+				index="46"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="7.56">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log
+				index="47"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="8.52">
+				<y:message>LibDocument:ComputedValue::setValue: trying to set a value of type: LibCube:TimePeriod into the computedValue.value of type: Text for the computedValue: &apos;0xAF1A&apos;</y:message>
+			</y:log>
+			<y:log
+				index="48"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="8.68">
+				<y:message>computed values are valid</y:message>
+			</y:log>
+			<y:log
+				index="49"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="9.22">
+				<y:message>Merging custom concept config LibDocument:ConfigurationContext::Kpi over LibDocument:ConfigurationContext::DefaultConfig</y:message>
+			</y:log>
+			<y:log
+				index="50"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.55">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB047{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="51"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.63">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB048{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="52"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.71">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB049{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="53"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.78">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB04A{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="54"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="10.86">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB04B{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="55"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.01">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB055{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="56"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.09">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB056{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="57"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.17">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB057{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="58"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.25">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB058{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="59"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.33">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB059{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="60"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.52">
+				<y:message>The object {-999999999999999999, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 224) has been cloned, new object created: 0xB06B{-999999999999999999, -0.3}</y:message>
+			</y:log>
+			<y:log
+				index="61"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.60">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06C{-0.3, 0}</y:message>
+			</y:log>
+			<y:log
+				index="62"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.68">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06D{0, 0}</y:message>
+			</y:log>
+			<y:log
+				index="63"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.75">
+				<y:message>The object {lastThreshold, currentThreshold} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 228) has been cloned, new object created: 0xB06E{0, 0.3}</y:message>
+			</y:log>
+			<y:log
+				index="64"
+				level="trace"
+				nature="misc"
+				origin-nb-ms="11.83">
+				<y:message>The object {currentThreshold, 999999999999999999} of class ConstList (C:/yseop/projects/anna_financial-bootstrap-kb/bootstrap/lib/libKPI/_classes/Ranges.yclass, 233) has been cloned, new object created: 0xB06F{0.3, 999999999999999999}</y:message>
+			</y:log>
+			<y:log
+				index="65"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="11.96">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="66"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="12.02">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="67"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="12.15">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::AfterDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="68"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="12.24">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::AfterDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="69"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.55">
+				<y:message>JUMPING to _DYNAMIC_DOCUMENT_PLANNING  from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="70"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.63">
+				<y:message>_DYNAMIC_DOCUMENT_PLANNING  : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="71"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.70">
+				<y:message>the function dynamicDocumentPlanningTransition is not defined.</y:message>
+			</y:log>
+			<y:log
+				index="72"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.78">
+				<y:message>JUMPING to _PREPARE_TABLES from _DYNAMIC_DOCUMENT_PLANNING </y:message>
+			</y:log>
+			<y:log
+				index="73"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.85">
+				<y:message>_PREPARE_TABLES : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="74"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="12.94">
+				<y:message>unhandled class type in LibDocument:TextSection::getAllTables() LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="75"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.02">
+				<y:message>JUMPING to _KB_BUSINESS_RULE_AFTER_INTENTIONS from _PREPARE_TABLES</y:message>
+			</y:log>
+			<y:log
+				index="76"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.09">
+				<y:message>_KB_BUSINESS_RULE_AFTER_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="77"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="13.16">
+				<y:message>onDialogTransitionTaskAfterIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="78"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.24">
+				<y:message>KPIIntention::beforeDataCollection &apos;0x2DC1&apos;</y:message>
+			</y:log>
+			<y:log
+				index="79"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.31">
+				<y:message>LibDocument:Intention::beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="80"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="13.39">
+				<y:message>Configurations have not been injected!</y:message>
+			</y:log>
+			<y:log
+				index="81"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.48">
+				<y:message>sent message beforeDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="82"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.59">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="83"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="13.72">
+				<y:message>missing dimension :DIMENSION_ENTITY for jointure :&apos;0xB0B3&apos;</y:message>
+			</y:log>
+			<y:log
+				index="84"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="13.83">
+				<y:message>it could not be calculated the probability of success in: &apos;0xB0B1&apos; its dimension members should be more than 0</y:message>
+			</y:log>
+			<y:log
+				index="85"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="13.92">
+				<y:message>_CALCULATE_JOINTURE : DialogProcessingTask</y:message>
+			</y:log>
+			<y:log
+				index="86"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.04">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADC0&apos;</y:message>
+			</y:log>
+			<y:log
+				index="87"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.16">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBE&apos;</y:message>
+			</y:log>
+			<y:log
+				index="88"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.27">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBC&apos;</y:message>
+			</y:log>
+			<y:log
+				index="89"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="14.39">
+				<y:message>missing dimension :DIMENSION_ENTITY for fact :&apos;0xADBA&apos;</y:message>
+			</y:log>
+			<y:log
+				index="90"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.49">
+				<y:message>_CALCULATE_JOINTURE : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="91"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.57">
+				<y:message>JUMPING to _CUBE_API from _CALCULATE_JOINTURE</y:message>
+			</y:log>
+			<y:log
+				index="92"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.64">
+				<y:message>_CUBE_API : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="93"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="14.73">
+				<y:message>factsRequestsManager is not set, jumping to the next step _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="94"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.80">
+				<y:message>_KB_BUSINESS_RULE_BEFORE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="95"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="14.87">
+				<y:message>onDialogTransitionTaskBeforeIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="96"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="14.96">
+				<y:message>JUMPING to _PREPARE_INTENTIONS from _KB_BUSINESS_RULE_BEFORE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="97"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.03">
+				<y:message>_PREPARE_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="98"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="15.09">
+				<y:message>LibReportingFramework:prepareIntentions</y:message>
+			</y:log>
+			<y:log
+				index="99"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="15.21">
+				<y:message>Attempted to inject configurations to an intention in LibDocument:IntentionStage::AfterDataCollection intention: LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="100"
+				level="warning"
+				nature="user-log"
+				origin-nb-ms="15.30">
+				<y:message>Attempting to do beforeDataCollection to an intention with stage: LibDocument:IntentionStage::AfterDataCollection</y:message>
+			</y:log>
+			<y:log
+				index="101"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.60">
+				<y:message>JUMPING to _DYNAMIC_DOCUMENT_PLANNING  from _PREPARE_INTENTIONS</y:message>
+			</y:log>
+			<y:log
+				index="102"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.69">
+				<y:message>_DYNAMIC_DOCUMENT_PLANNING  : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="103"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.76">
+				<y:message>the function dynamicDocumentPlanningTransition is not defined.</y:message>
+			</y:log>
+			<y:log
+				index="104"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.83">
+				<y:message>JUMPING to _PREPARE_TABLES from _DYNAMIC_DOCUMENT_PLANNING </y:message>
+			</y:log>
+			<y:log
+				index="105"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.90">
+				<y:message>_PREPARE_TABLES : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="106"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="15.99">
+				<y:message>unhandled class type in LibDocument:TextSection::getAllTables() LibDocument:DescribeVariation</y:message>
+			</y:log>
+			<y:log
+				index="107"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.07">
+				<y:message>JUMPING to _KB_BUSINESS_RULE_AFTER_INTENTIONS from _PREPARE_TABLES</y:message>
+			</y:log>
+			<y:log
+				index="108"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.14">
+				<y:message>_KB_BUSINESS_RULE_AFTER_INTENTIONS : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="109"
+				level="info"
+				nature="user-log"
+				origin-nb-ms="16.20">
+				<y:message>onDialogTransitionTaskAfterIntentionStep called</y:message>
+			</y:log>
+			<y:log
+				index="110"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.33">
+				<y:message>KPIIntention::collectData</y:message>
+			</y:log>
+			<y:log
+				index="111"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.87">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+			<y:log
+				index="112"
+				level="trace"
+				nature="user-log"
+				origin-nb-ms="16.94">
+				<y:message>_TEXT_GENERATION : DialogTransitionTask</y:message>
+			</y:log>
+		</y:logging>
+		<y:synthesis>
+			<y:language
+				id="fr"/>
+			<y:random
+				seed="313416951"
+				peak="0"/>
+			<y:process
+				id="3CCC"
+				start-runtime="2019-08-29T15:19:14.836"
+				runtime="erunbc_"
+				engine-version="7.3.0.BETA04"
+				os="WINDOWS 6.2"
+				computer-name="LFRPARACA001"/>
+			<y:key-user
+				name="For Yseop internal use - By AK"
+				email="akaeser@yseop.com"
+				creation-date="2019-03-07"
+				expiration-date="2019-12-30"/>
+			<y:request-exec-time
+				begin="2019-08-29T15:19:14.867"
+				end="2019-08-29T15:19:14.885"/>
+			<y:stat
+				errors="0"
+				warnings="1"
+				success-rule-fire="1"
+				text-write="163"
+				cloning-operations="15"
+				cloning-items="30"
+				main-words="0"
+				main-chars="0"/>
+		</y:synthesis>
+	</y:data-end>
+</y:output>

@@ -1,0 +1,9 @@
+{
+    "displayName_en": "Augmented Financial Analyst bootstrap",
+    "displayName_fr": "Augmented Financial Analyst bootstrap",
+    "version": "1.0.0",
+    "name": "augmentedFinancialAnalyst",
+    "creator": "Yseop",
+    "date": "2019-07-24",
+    "engineVersionCompatible": "7.3.0"
+}

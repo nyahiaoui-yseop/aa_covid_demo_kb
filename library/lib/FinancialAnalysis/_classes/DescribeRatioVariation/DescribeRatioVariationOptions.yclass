@@ -1,0 +1,38 @@
+interface DescribeRatioVariationOptions extends LibDocument:IntentionOptions
+
+    field showStartValue
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show the start value"
+
+    field showEndValue
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show the end value"
+
+    field showEndDate
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show the end date"
+
+    field showStartDate
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Show the start date"
+
+    field showRelativeChange
+    --> domains Boolean
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Shows the variation as percent"
+
+    field thresholdStableVariation
+    --> domains Number
+    --> xmlMapping XmlMappingProperty_KB_DEFAULT
+    --> documentation "Threshold to indicate a variation is stable"
+
+    classProperties
+    --> documentation "Options for DescribeRatioVariation intention"
+;
+
+implementation DescribeRatioVariationOptions
+;

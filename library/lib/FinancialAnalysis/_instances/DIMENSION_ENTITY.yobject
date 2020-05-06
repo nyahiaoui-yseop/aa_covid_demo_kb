@@ -1,0 +1,9 @@
+LibCube:Dimension DIMENSION_ENTITY
+    --> documentation "@alacambre A specific instance of LibCube:Dimension. Should be in the framework."
+    --> membersClass LibCube:IndicatorMember
+    --> dsl -> Textualization
+        --> language LANG_en
+        --> root "dimension entity"
+        --> number SINGULAR
+    ;
+;

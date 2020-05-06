@@ -1,0 +1,3 @@
+LibDocument:DescribeVariationOptions DESCRVAR_BASE_OPTIONS extends INTENTION_OPTIONS_BASE_OPTIONS
+    --> useAbsoluteVariation true
+;

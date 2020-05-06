@@ -1,0 +1,9 @@
+VariationIntention_withValueAndPercent DESCRIBE_VARIATION_OF_FINANCIAL_INCOME__CONSO_YEARN_1_N
+    --> kpi FINANCIAL_INCOME_KPI
+    --> timeMembers yearN_1
+    --> timeMembers yearN
+    // --> active false
+    --> dimensionConditions -> List
+        --> values conso
+    ;
+;

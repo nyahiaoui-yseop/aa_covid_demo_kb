@@ -1,0 +1,8 @@
+DescribeRatioVariationOptions DESCRIBE_RATIO_VARIATION_DEFAULT_OPTIONS extends INTENTION_DEFAULT_OPTIONS
+--> showStartValue true
+--> showEndValue true
+--> showEndDate true
+--> showStartDate true
+--> showRelativeChange false
+--> thresholdStableVariation 0.05
+;

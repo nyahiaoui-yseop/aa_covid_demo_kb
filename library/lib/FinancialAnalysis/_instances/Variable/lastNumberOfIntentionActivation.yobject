@@ -1,0 +1,4 @@
+Variable lastNumberOfIntentionActivation
+--> documentation """Number of intention activation/deactivation done the last round of activation rule run. When this number is greater or equal to numberOfIntentionActivation, we stop the activation of rules."""
+--> domains Integer
+;

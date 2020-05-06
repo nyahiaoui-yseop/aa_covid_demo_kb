@@ -1,0 +1,36 @@
+MultilingualExpression DescribeThreePointsVariation:LOWER
+--> en -> ConstList DescribeThreePointsVariation:EN:LOWER {
+    -> LibOntology:Adjective
+        --> root "lower"
+        --> gerund false
+    ;
+    }
+    ;
+--> fr -> ConstList DescribeThreePointsVariation:FR:LOWER {
+    -> LibOntology:Adjective
+        --> root "inférieur"
+        --> masculineSingular "inférieur"
+        --> masculinePlural "inférieurs"
+        --> feminineSingular "inférieure"
+        --> femininePlural "inférieures"
+        --> gerund true
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus lent"
+        --> masculineSingular "plus lent"
+        --> masculinePlural "plus lents"
+        --> feminineSingular "plus lente"
+        --> femininePlural "plus lentes"
+        --> gerund false
+    ;,
+    -> LibOntology:Adjective
+        --> root "plus faible"
+        --> masculineSingular "plus faible"
+        --> masculinePlural "plus faibles"
+        --> feminineSingular "plus faible"
+        --> femininePlural "plus faibles"
+        --> gerund false
+    ;
+    }
+    ;
+;

@@ -1,0 +1,12 @@
+LibDocument:DynamicStylingConfiguration ONE_DECIMAL_NUMBERS
+    --> configValues {
+        LibDocument:Numerical:style :  -> Style
+            --> decimalsCount 1
+            --> stripZero true
+            --> writeIntegerAsDecimal true
+        ;
+    }
+    --> filter -> LibDocument:ComputedValuesFilter
+        --> calculationTypes RAW_VALUE_CALCULATION
+    ;
+;

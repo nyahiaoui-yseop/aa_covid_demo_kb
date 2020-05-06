@@ -1,0 +1,8 @@
+DescribeThreePointsVariationOptions DESCRIBE_THREE_POINTS_VARIATION_DEFAULT_OPTIONS extends INTENTION_DEFAULT_OPTIONS
+--> showFirstPeriod true
+--> showLastPeriod true
+--> showPercentChange true
+--> thresholdStableVariation 0.05
+--> thresholdFastVariation 0.25
+--> thresholdFastAcceleration 0.2
+;

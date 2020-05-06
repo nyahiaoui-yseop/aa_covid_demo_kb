@@ -1,0 +1,30 @@
+LibDocument:DynamicCustomTexts sIndicatorPropertyPosNeg
+    --> customTexts {
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "positif"
+                --> masculinePlural "positifs"
+                --> feminineSingular "positive"
+                --> femininePlural "positives"
+            ;
+            --> thresholdConditions LibKPI:POSITIVE
+        ;,
+        -> LibDocument:CustomText
+            --> synonyms -> LibOntology:Adjective
+                --> masculineSingular "négatif"
+                --> masculinePlural "négatifs"
+                --> feminineSingular "négative"
+                --> femininePlural "négatives"
+            ;
+            --> thresholdConditions LibKPI:NEGATIVE
+        ;
+    }
+    --> ranges ThreeLevelValue
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> computedValuesNames ComputedValueKey:CURRENT_VALUE
+    ;
+;
+
+// x < MINUS_EPSILON            LibKPI:NEGATIVE
+// MINUS_EPSILON < x < EPSILON  LibKPI:INSIGNIFICANT
+// EPSILON < x                  LibKPI:POSITIVE

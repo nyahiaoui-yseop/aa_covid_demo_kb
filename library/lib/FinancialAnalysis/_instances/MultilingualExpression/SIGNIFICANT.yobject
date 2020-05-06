@@ -1,0 +1,29 @@
+MultilingualExpression DescribeThreePointsVariation:SIGNIFICANT
+--> en -> ConstList DescribeThreePointsVariation:EN:SIGNIFICANT {
+    -> LibOntology:Adverb
+        --> term "strongly"
+    ;,
+    -> LibOntology:Adverb
+        --> term "significantly"
+    ;,
+    -> LibOntology:Adverb
+        --> term "considerably"
+    ;,
+    -> LibOntology:Adverb
+        --> term "substantially"
+    ;
+    }
+    ;
+--> fr -> ConstList DescribeThreePointsVariation:FR:SIGNIFICANT {
+    -> LibOntology:Adverb
+        --> term "fortement"
+    ;,
+    -> LibOntology:Adverb
+        --> term "nettement"
+    ;,
+    -> LibOntology:Adverb
+        --> term "sensiblement"
+    ;
+    }
+    ;
+;

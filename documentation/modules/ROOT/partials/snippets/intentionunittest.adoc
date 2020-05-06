@@ -1,0 +1,18 @@
+.Intention unit test code
+[source,YML]
+----
+function TestName()
+--> domains Void
+--> description "Description of the test."
+--> isIntentionTest true
+--> testSuiteId TestSuite:TestSuiteSymbol
+--> action {
+    // Language can be LANG_fr or LANG_en or a variant of English
+    TEXT_PARAM_CONTEXT.kBLanguage = LANG_fr;
+    LibDocument:Test:buildIntentionForExecution(
+        IntentionToTestId,
+        _EXPECTED_OUTPUTS: {
+        }
+    );
+}; // TestName
+----

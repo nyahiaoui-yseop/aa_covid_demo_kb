@@ -1,0 +1,192 @@
+////////////////////////////////////////////////////////////////////////////////////
+//
+// File Name    : exec.ct
+//
+// Version      : Yseop Engine 6.2
+//
+// Description  : Parameters for internal tables sizing.
+//                These tables are loaded during runtime initialization.
+//
+////////////////////////////////////////////////////////////////////////////////////
+
+// -------------------  External stack
+
+EXTERNAL_STACK                  100000000 //25000000
+
+// -------------------   Classes and assocated components limits. Do NOT include predefined classes
+
+CLASSES                         10
+
+INHERIT_VALUES                  1100
+
+SYMBOLIC_OBJECTS                300000
+
+IDENTIFIERS_CHARACTERS          15000
+
+SYMBOLIC_OBJECTS_HEAP           8000000
+
+OAV                             300000
+
+GARBAGEABLE_NUMBERS             2500
+
+GARBAGEABLE_NUMBERS_STACK       2500
+
+STRINGS                         10000
+
+STRINGS_CHARACTERS              4000000
+
+STRINGS_STACK                   11000
+
+STRINGS_STACK_CHARACTERS        4000000
+
+// ------------------- Adjacent tables and chained lists
+
+DYN_TABLE_VALUES                5000000
+
+STAT_TABLE_VALUES               1000
+
+LINKED_LIST_VALUES              700000
+
+DOUBLE_CHAINED_ELEMENTS         1000
+
+HASHMAP_VALUES                  40000
+
+DICTIONARY_NODES                1000
+
+// -------------------  Triggers
+
+TRIGGERS                            100
+
+TRIGGERS_STACK                      50
+
+// -------------------  Yseop Rules
+
+FILTERS_STACK                   20
+
+FILTER_REPROCESS_ACTIONS        10
+
+INSTANCIATION_TYP_5_OBJECTS     1024
+
+RULESETS_STACK                  5
+
+INFERENCES_STACK                256
+
+RULESET_INFERENCES_STACK        512
+
+RULE_INFERENCES_STACK           256
+
+RULE_BACKWARD_CHAINING_STACK    10
+
+RULE_BACKWARD_CHAINING_CANDIDATE_STACK  100
+
+// -------------------  Yseop Text
+
+TEXT_STRING_TABLE_BUFFERS_SIZE  10
+
+TEXT_EVALUATION_BUFFERS_STACK   10
+
+STYLES_STACK                    50
+
+TEXT_WRITE_STACK                128
+
+LIST_AND_SYNONYM_STACK1         16
+
+LIST_AND_SYNONYM_STACK2         4
+
+TEXT_EVAL_LOG_STACK             128
+
+TEXT_EVALUATION_BUFFER_CALLBACK 32
+
+XML_ELEMENTS_STACK_LENGTH       2048
+
+XML_STACK                       256
+
+OPEN_STREAMS                    2
+
+STREAM_SWAP_BUFFER_SIZE         65536
+
+STREAM_SWAP_BUFFER_PROVISION    2048
+
+TEXT_OBJECT_SIZE                2000000
+
+TEXT_GRANULE_INTERPRETED_CONTENT    65536
+
+// ------------------- Synonyms
+
+TRY_ALL_SYNONYMS_NODES          16384
+
+TRY_ALL_SYNONYMS_HEADER			1024
+
+MAX_SYNONYM_VARIANTS            20000
+
+// -------------------  File Management
+
+BUFFERED_OPEN_FILES             20
+
+NOT_BUFFERED_OPEN_FILES         20
+
+TEMPORARY_FILES                 100
+
+// -------------------  Stream Save
+
+// allocated in EXTERNAL_STACK table
+SAVE_CONTEXT_SIZE               1000
+
+DATA_SERIALIZATION_BUFFER       16384
+
+// allocated in EXTERNAL_STACK table
+TOTAL_LENGTH_ID_PER_STREAM      8192
+
+// allocated in EXTERNAL_STACK table
+REF_ID_PER_STREAM               2048
+
+// allocated in EXTERNAL_STACK table
+NOT_RESOLVED_ID_PER_STREAM      1024
+
+XML_PARSE_BUFFER_SIZE           65536
+
+// -------------------  Yseop Dialog
+
+// allocated in EXTERNAL_STACK table
+DIALOG_SAVE_CONTEXT_SIZE        1024
+
+WRITE_ZONE_SIZE                 65535
+
+// allocated in EXTERNAL_STACK table. The only used elements are after allocated in the memory heap
+GATHERING_STORE                 1024
+
+// -------------------  Misceneallous
+
+FONCTION_CACHE_KEY_LENGTH       1024
+
+TEMPORARY_OBJECTS_STACK         100
+
+SAVE_POINT                      10
+
+WHEN_INSTRUCTIONS_ACTIVE        5
+
+COMMAND_LINE_OPTIONS            10
+
+TEXT_BACKWARD_CHAINING_STACK    1
+
+TEXT_BACKWARD_CHAINING_OBJECTS  100
+
+TEXT_BACKWARD_CHAINING_STEPS    100
+
+OBJECTS_ASSERT_STACK            64
+
+COMPUTED_BANK_HOLIDAY_YEARS     10
+
+LOG_ZONE_SIZE                   500000
+
+RANDOM_TABLE                    40960
+
+// -------------------  Specific parameters for erunbc and drun
+
+EVALUATION_STACK                500
+
+EVALUATION_STACK_LOG_IDENTIFIER_LENGTH      512
+
+EVALUATION_STACK_LOG            500
+
+PROFILING_ACTIONS               1000

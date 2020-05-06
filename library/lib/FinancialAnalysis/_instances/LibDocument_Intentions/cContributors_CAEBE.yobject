@@ -1,0 +1,4 @@
+LibDocument:StaticTextIntention cContributors_CAEBE
+    // @alacambre Should be a DescribeVariationWithContributors
+    --> text \( -> ContributorsCAEBEIntentionBulletAssembly ibaContributorsCAEBE; \)
+;

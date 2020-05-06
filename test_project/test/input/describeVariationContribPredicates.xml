@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<y:input xmlns:y="http://www.yseop.com/engine/3">
+   <y:data>
+      <y:instance yid="theGeneralData">
+         <language>LANG_en</language>
+         <cube yclass="LibCube:Cube">
+            <dimensions yid="DIMENSION_INDICATOR" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ROOT" yclass="LibCube:IndicatorMember">
+                     <label>Root</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="NET_EARNINGS" yclass="LibCube:IndicatorMember">
+                        <label>Net earnings</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="EBIT" yclass="LibCube:IndicatorMember">
+                           <label>Earnings before income tax</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OPERATING_PROFIT" yclass="LibCube:IndicatorMember">
+                              <label>Operating profit</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="EBITDA" yclass="LibCube:IndicatorMember">
+                                 <label>EBITDA</label>
+                              </value>
+                              <child yclass="LibCube:Hierarchy">
+                                 <value yid="SALES" yclass="LibCube:IndicatorMember">
+                                    <label>Sales</label>
+                                 </value>
+                              </child>
+                              <child yclass="LibCube:Hierarchy">
+                                 <value yid="COST_OF_SALES" yclass="LibCube:IndicatorMember">
+                                    <label>Cost of sales</label>
+                                 </value>
+                              </child>
+                              <child yclass="LibCube:Hierarchy">
+                                 <value yid="ADMINISTRATIVE_EXPENSES" yclass="LibCube:IndicatorMember">
+                                    <label>Administrative expenses</label>
+                                 </value>
+                              </child>
+                              <child yclass="LibCube:Hierarchy">
+                                 <value yid="PERSONNEL_EXPENSES" yclass="LibCube:IndicatorMember">
+                                    <label>Personnel expenses</label>
+                                 </value>
+                              </child>
+                              <child yclass="LibCube:Hierarchy">
+                                 <value yid="OTHER_OPERATING_INCOME_AND_EXPENSES" yclass="LibCube:IndicatorMember">
+                                    <label>Other operating income and expenses</label>
+                                 </value>
+                              </child>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="NET_DEPRECIATION_AND_AMORTISATION" yclass="LibCube:IndicatorMember">
+                                 <label>Net depreciation and amortisation</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="NET_INCREASE_IN_PROVISION" yclass="LibCube:IndicatorMember">
+                                 <label>Net increase in provision</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="FINANCIAL_RESULT" yclass="LibCube:IndicatorMember">
+                              <label>Financial result</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="FINANCIAL_INCOME" yclass="LibCube:IndicatorMember">
+                                 <label>Financial income</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="FINANCIAL_COSTS" yclass="LibCube:IndicatorMember">
+                                 <label>Financial costs</label>
+                              </value>
+                           </child>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NON_RECURRING_RESULT" yclass="LibCube:IndicatorMember">
+                              <label>Non-recurring result</label>
+                           </value>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="NON_RECURRING_INCOME" yclass="LibCube:IndicatorMember">
+                                 <label>Non-recurring income</label>
+                              </value>
+                           </child>
+                           <child yclass="LibCube:Hierarchy">
+                              <value yid="NON_RECURRING_EXPENSES" yclass="LibCube:IndicatorMember">
+                                 <label>Non-recurring expenses</label>
+                              </value>
+                           </child>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="INCOME_TAX_EXPENSE" yclass="LibCube:IndicatorMember">
+                           <label>Income tax expense</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="SHARE_IN_NET_INCOME_OF_ASSOCIATES_AND_JV" yclass="LibCube:IndicatorMember">
+                           <label>Share in net income of associates and JV</label>
+                        </value>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="GOODWILL_IMPAIRMENT" yclass="LibCube:IndicatorMember">
+                           <label>Goodwill impairment</label>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TOTAL_ASSETS" yclass="LibCube:IndicatorMember">
+                        <label>Total assets</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="NON_CURRENT_ASSETS" yclass="LibCube:IndicatorMember">
+                           <label>Non-current assets</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="GOODWILL" yclass="LibCube:IndicatorMember">
+                              <label>Goodwill</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="PROPERTY_PLANT_AND_EQUIPMENT" yclass="LibCube:IndicatorMember">
+                              <label>Property, plant and equipment</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="INTANGIBLE_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Intangible assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NON_CURRENT_FINANCIAL_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Non-current financial assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="INVESTMENTS_IN_ASSOCIATES_AND_JV" yclass="LibCube:IndicatorMember">
+                              <label>Investments in associates and JV</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="DEFERRED_TAX_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Deferred tax assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_NON_CURRENT_RECEIVABLES" yclass="LibCube:IndicatorMember">
+                              <label>Other non-current receivables</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CURRENT_ASSETS" yclass="LibCube:IndicatorMember">
+                           <label>Current assets</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CURRENT_FINANCIAL_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Current financial assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="INVENTORIES" yclass="LibCube:IndicatorMember">
+                              <label>Inventories</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="TRADE_AND_OTHER_RECEIVABLES" yclass="LibCube:IndicatorMember">
+                              <label>Trade and other receivables</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CURRENT_TAX_ASSETS" yclass="LibCube:IndicatorMember">
+                              <label>Current tax assets</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_CURRENT_RECEIVABLES" yclass="LibCube:IndicatorMember">
+                              <label>Other current receivables</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CASH_AND_CASH_EQUIVALENTS" yclass="LibCube:IndicatorMember">
+                              <label>Cash and cash equivalents</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="ASSETS_CLASSIFIED_AS_HELD_FOR_SALE" yclass="LibCube:IndicatorMember">
+                           <label>Assets classified as held for sale</label>
+                        </value>
+                     </child>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="TOTAL_EQUITY_AND_LIABILITIES" yclass="LibCube:IndicatorMember">
+                        <label>Total equity and liabilities</label>
+                     </value>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="TOTAL_EQUITY" yclass="LibCube:IndicatorMember">
+                           <label>Total equity</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="SHARE_CAPITAL" yclass="LibCube:IndicatorMember">
+                              <label>Share capital</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NET_INCOME_AND_CONSOLIDATED_RESERVES" yclass="LibCube:IndicatorMember">
+                              <label>Net income and consolidated reserves</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="EQUITY_GROUP_SHARE" yclass="LibCube:IndicatorMember">
+                              <label>Equity (Group share)</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="EQUITY_NON_CONTROLLING_INTERESTS" yclass="LibCube:IndicatorMember">
+                              <label>Equity (non-controlling interests)</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="CURRENT_LIABILITIES" yclass="LibCube:IndicatorMember">
+                           <label>Current liabilities</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CURRENT_PROVISIONS" yclass="LibCube:IndicatorMember">
+                              <label>Current provisions</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CURRENT_FINANCIAL_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Current financial liabilities</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="RECEIPT_IN_ADVANCE" yclass="LibCube:IndicatorMember">
+                              <label>Receipt in advance</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="TRADE_AND_OTHER_PAYABLES" yclass="LibCube:IndicatorMember">
+                              <label>Trade and other payables</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="CURRENT_TAX_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Current tax liabilities</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_CURRENT_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Other current liabilities</label>
+                           </value>
+                        </child>
+                     </child>
+                     <child yclass="LibCube:Hierarchy">
+                        <value yid="NON_CURRENT_LIABILITIES" yclass="LibCube:IndicatorMember">
+                           <label>Non-current liabilities</label>
+                        </value>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NON_CURRENT_PROVISIONS" yclass="LibCube:IndicatorMember">
+                              <label>Non-current provisions</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="NON_CURRENT_FINANCIAL_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Non-current financial liabilities</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="DEFERRED_TAX_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Deferred tax liabilities</label>
+                           </value>
+                        </child>
+                        <child yclass="LibCube:Hierarchy">
+                           <value yid="OTHER_NON_CURRENT_LIABILITIES" yclass="LibCube:IndicatorMember">
+                              <label>Other non-current liabilities</label>
+                           </value>
+                        </child>
+                     </child>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_TIME" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_TIME" yclass="LibCube:TimeMember"/>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN" yclass="LibCube:TimeMember">
+                        <date>2018-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN_1" yclass="LibCube:TimeMember">
+                        <date>2017-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="YEARN_2" yclass="LibCube:TimeMember">
+                        <date>2016-12-31</date>
+                        <period>PERIOD_YEAR</period>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <dimensions yid="DIMENSION_ENTITY" yclass="LibCube:Dimension">
+               <hierarchies yclass="LibCube:Hierarchy">
+                  <value yid="ALL_DIMENSION_ENTITY" yclass="LibCube:Member">
+                     <label>ALL Entity</label>
+                  </value>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="CONSO" yclass="LibCube:Member">
+                        <label>Consolidated</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="LE_A" yclass="LibCube:Member">
+                        <label>Legal entity A</label>
+                     </value>
+                  </child>
+                  <child yclass="LibCube:Hierarchy">
+                     <value yid="LE_B" yclass="LibCube:Member">
+                        <label>Legal entity B</label>
+                     </value>
+                  </child>
+               </hierarchies>
+            </dimensions>
+            <measures yid="MEASURE_VALUE" yclass="LibCube:Measure"/>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>24060</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-3000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-20000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>18020</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="TRADE_AND_OTHER_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-5000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>46680</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="GOODWILL_IMPAIRMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4360</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>81500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-11990</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3210</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-11535</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>66565</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NET_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>18100</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>41900</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3210</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_COSTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="OPERATING_PROFIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>20750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>126495</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>159315</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-10500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="EBIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>25220</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="INCOME_TAX_EXPENSE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-6020</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>7000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4340</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-3605</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="EBIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>35195</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NET_DEPRECIATION_AND_AMORTISATION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1400</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="GOODWILL_IMPAIRMENT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-2135</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-14360</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NET_DEPRECIATION_AND_AMORTISATION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1305</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-16000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="INCOME_TAX_EXPENSE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-8060</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-15500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-2500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_TAX_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1200</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_PROVISIONS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>22500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CASH_AND_CASH_EQUIVALENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>13100</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>31560</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19220</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="NET_DEPRECIATION_AND_AMORTISATION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>2000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_CURRENT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>22500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="NET_INCREASE_IN_PROVISION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_TAX_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="SHARE_IN_NET_INCOME_OF_ASSOCIATES_AND_JV"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1445</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5035</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-14880</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4720</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-14805</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_FINANCIAL_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>23200</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="RECEIPT_IN_ADVANCE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="CASH_AND_CASH_EQUIVALENTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1200</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="EBIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>27750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NET_INCREASE_IN_PROVISION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-215</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>8480</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_FINANCIAL_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>22500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="RECEIPT_IN_ADVANCE"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="NET_INCREASE_IN_PROVISION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4540</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="SHARE_IN_NET_INCOME_OF_ASSOCIATES_AND_JV"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1035</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_CURRENT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>26000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-9290</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-13065</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-7075</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="EBIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>27000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-41050</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>59325</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="TRADE_AND_OTHER_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4740</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>51375</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>52045</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1840</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>183245</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4120</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-5345</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>16985</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="TRADE_AND_OTHER_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="OPERATING_PROFIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>22000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NET_INCREASE_IN_PROVISION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-28730</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-37675</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>23500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>12675</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="OPERATING_PROFIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>30255</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>9360</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>21135</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>1540</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>70000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-42620</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-35500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>55000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_TAX_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="OPERATING_PROFIT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>19520</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-4000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>74280</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1440</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1175</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-2955</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="PERSONNEL_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-38355</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1140</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-6405</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-3795</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_OPERATING_INCOME_AND_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-5500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_TAX_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>0</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>69425</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="EBITDA"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>26470</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>6000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3860</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3280</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="NON_RECURRING_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>10000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="TRADE_AND_OTHER_PAYABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>4250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-19210</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-10105</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="LE_A"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-3585</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-2395</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="NET_DEPRECIATION_AND_AMORTISATION"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1500</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3400</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="NON_RECURRING_RESULT"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>5525</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_PROVISIONS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>20000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_A"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-7025</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="COST_OF_SALES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-14025</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_CURRENT_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>700</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-15200</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_FINANCIAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>15000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_COSTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1670</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="INVENTORIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>22250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_INCOME"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>3250</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="LE_B"/>
+               <members yid="NET_EARNINGS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>24220</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_FINANCIAL_ASSETS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>16750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="CURRENT_LIABILITIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>84950</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-14860</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="ALL_DIMENSION_ENTITY"/>
+               <members yid="ADMINISTRATIVE_EXPENSES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-7005</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_1"/>
+               <members yid="LE_B"/>
+               <members yid="FINANCIAL_COSTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1370</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="FINANCIAL_COSTS"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>-1750</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN_2"/>
+               <members yid="CONSO"/>
+               <members yid="INVENTORIES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>20000</value>
+               </factMeasures>
+            </facts>
+            <facts yclass="LibCube:Fact">
+               <members yid="YEARN"/>
+               <members yid="CONSO"/>
+               <members yid="OTHER_CURRENT_RECEIVABLES"/>
+               <factMeasures yclass="LibCube:FactMeasure">
+                  <measure yid="MEASURE_VALUE"/>
+                  <value>775</value>
+               </factMeasures>
+            </facts>
+         </cube>
+         <keyPerformanceIndicators yid="EBIT_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="EBIT">
+               <label>Earnings before income tax</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="NON_CURRENT_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="NON_CURRENT_ASSETS">
+               <label>Non-current assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="CURRENT_LIABILITIES_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="CURRENT_LIABILITIES">
+               <label>Current liabilities</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="NET_EARNINGS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="NET_EARNINGS">
+               <label>Net earnings</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="CURRENT_ASSETS_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="CURRENT_ASSETS">
+               <label>Current assets</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="NON_RECURRING_RESULT_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="NON_RECURRING_RESULT">
+               <label>Non-recurring result</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="EBITDA_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="EBITDA">
+               <label>EBITDA</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <keyPerformanceIndicators yid="SALES_KPI" yclass="LibDocument:KeyPerformanceIndicator">
+            <measure yid="MEASURE_VALUE"/>
+            <indicator yid="SALES">
+               <label>Sales</label>
+            </indicator>
+         </keyPerformanceIndicators>
+         <rootSection yid="TEXTSECTION_8955ed15-3b93-4f7e-a93f-e6545fbf447c"
+                      yclass="LibDocument:TextSection">
+            <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+               <configValues yclass="HashMap">
+                  <values>
+                     <key yid="LibDocument:KPIIntention::timeMembers"/>
+                     <val yclass="List">
+                        <values yid="YEARN_2">
+                           <date>2016-12-31T00:00:00.000Z</date>
+                           <period>PERIOD_YEAR</period>
+                        </values>
+                        <values yid="YEARN">
+                           <date>2018-12-31T00:00:00.000Z</date>
+                           <period>PERIOD_YEAR</period>
+                        </values>
+                     </val>
+                  </values>
+                  <values>
+                     <key yid="LibDocument:KPIIntention::dimensionConditions"/>
+                     <val yclass="List">
+                        <values yclass="LibCube:JointureDimensionCondition">
+                           <dimension yid="DIMENSION_ENTITY"/>
+                           <members yid="ALL_DIMENSION_ENTITY">
+                              <label>ALL Entity</label>
+                           </members>
+                        </values>
+                     </val>
+                  </values>
+               </configValues>
+            </dataSelectionFilters>
+            <title>Test_ALL INTENTIONS_Data 1.1</title>
+            <components yclass="List">
+               <values yid="TEXTSECTION_4331a27a-e3a2-45df-b246-0ecbb304cbec"
+                       yclass="LibDocument:TextSection">
+                  <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                     <configValues yclass="HashMap">
+                        <values>
+                           <key yid="LibDocument:KPIIntention::dimensionConditions"/>
+                           <val yclass="List">
+                              <values yclass="LibCube:JointureDimensionCondition">
+                                 <dimension yid="DIMENSION_ENTITY"/>
+                                 <members yid="CONSO">
+                                    <label>Consolidated</label>
+                                 </members>
+                              </values>
+                           </val>
+                        </values>
+                     </configValues>
+                  </dataSelectionFilters>
+                  <title>Default intention - describe variation contributors</title>
+                  <components yclass="List">
+                     <values yid="INTENTION_5ad46753-8aa3-4519-8afc-bb453a97f327"
+                             yclass="LibDocument:DescribeVariationContributors">
+                        <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                           <configValues yclass="HashMap">
+                              <values>
+                                 <key yid="LibDocument:KPIIntention::kpi"/>
+                                 <val yid="CURRENT_ASSETS_KPI">
+                                    <measure yid="MEASURE_VALUE"/>
+                                    <indicator yid="CURRENT_ASSETS">
+                                       <label>Current assets</label>
+                                    </indicator>
+                                 </val>
+                              </values>
+                           </configValues>
+                        </dataSelectionFilters>
+                        <options yclass="LibDocument:DescribeVariationContributorsOptions">
+                           <levelOfDetails yid="HIGH"/>
+                        </options>
+                     </values>
+                  </components>
+               </values>
+               <values yid="TEXTSECTION_1fced79d-b6e1-4676-97e1-8fe8bfd4ec56"
+                       yclass="LibDocument:TextSection">
+                  <dataSelectionFilters yclass="LibDocument:DataSelectionFilters"/>
+                  <title>describe Variation contributor - Other intentions</title>
+                  <components yclass="List">
+                     <values yid="INTENTION_ee0f3abf-bb11-45fb-9cd3-9c31d71f63eb"
+                             yclass="DescribeVariationOnlyLeavesContributors">
+                        <dataSelectionFilters yclass="LibDocument:DataSelectionFilters">
+                           <configValues yclass="HashMap">
+                              <values>
+                                 <key yid="LibDocument:KPIIntention::kpi"/>
+                                 <val yid="NON_RECURRING_RESULT_KPI">
+                                    <measure yid="MEASURE_VALUE"/>
+                                    <indicator yid="NON_RECURRING_RESULT">
+                                       <label>Non-recurring result</label>
+                                    </indicator>
+                                 </val>
+                              </values>
+                           </configValues>
+                        </dataSelectionFilters>
+                        <options yclass="LibDocument:DescribeVariationContributorsOptions">
+                           <levelOfDetails yid="HIGH"/>
+                        </options>
+                     </values>
+                  </components>
+               </values>
+            </components>
+         </rootSection>
+      </y:instance>
+   </y:data>
+</y:input>

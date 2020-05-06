@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+	],
+	"settings": {
+		"yseopml.pathToPredefinedObjectsXml": "lib/augmentedFinancialAnalyst.xml"
+	},
+	"extensions": {"recommendations": ["Yseop.vscode-yseopml", "editorconfig.editorconfig"]}
+}

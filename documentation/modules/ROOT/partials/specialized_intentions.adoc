@@ -1,0 +1,118 @@
+[cols=3*,options="header"]
+|===
+|Name
+|Description
+|Example
+
+//|DescribeValue_N
+//|
+//|
+
+|`ValueIntention_hideDateOptions`
+|Describes the value of the indicator without displaying the date. +
+Inherits the `DescribeValue` intention.
+|The company’s expenses were at $229 billion.
+
+//|`DescribeVariation_N_N_1`
+//|
+//|
+
+|`VariationIntention_valuePercentPeriod`
+|Describes the variation of the indicator over a given period of time, and generates a sentence begining with "During the previous year". +
+Inherits the `DescribeVariation` intention.
+|During the last year, the net earnings of $11.38K have climbed by 1508.3%.
+
+|`VariationIntention_onlyValueOptions`
+|Describes the variation of the indicator over a given period of time, and displays the final value only, no date, no percent change. +
+Inherits the `DescribeVariation` intention.
+|The net earnings have climbed to $11.38K.
+
+|`VariationIntention_compareToLastYear`
+|Describes the variation of the indicator over a given period of time, and emphasizes the comparison with the previous period using "compare to the previous period". +
+Inherits the `DescribeVariation` intention.
+|The net earnings have climbed by 1508.3% since last year, finishing at $11.38K in 2018.
+
+|`VariationIntention_compareToLastYearWithoutDate`
+|Describes the variation of the indicator over a given period of time, and emphasizes the comparison with the previous period using "compare to the previous period" without displaying the date. +
+Inherits the `DescribeVariation` intention.
+|The net earnings of $11.38K have climbed by 1508.3% since last year
+
+|`VariationIntention_simpleNoPercentOptions`
+|Describes the variation of the indicator over a given period of time, and displays only the percent change of the value. +
+Inherits the `DescribeVariation` intention.
+|The net earnings of $11.38K have climbed.
+
+|`VariationIntention_withPercentOnly`
+|Describes the variation of the indicator over a given period of time, and displays only the percent change of the variation. +
+Inherits the `DescribeVariation` intention.
+|The net earnings have climbed by 1508.3%.
+
+|`VariationIntention_withValueAndPercent`
+|Describes the variation of the indicator over a given period of time, and displays the percent change of the variation and the value. +
+Inherits the `DescribeVariation` intention.
+|The net earnings of $11.38K have climbed by 1508.3%.
+
+|`VariationIntention_sophisticatedOptions`
+|Describes the variation of the indicator over a given period of time, and giving a lot of details. +
+Inherits the `DescribeVariation` intention.
+|The net earnings have climbed by 1508.3% since last year ($0.71K), finishing at $11.38K in 2018.
+
+|`DescribeVariationOnlyLeavesContributors`
+|Describes the variation of the indicator over a given period of time, and analyses the causes or drivers of that variation by listing the three top lowest level sub-indicators that contributed to the indicator variation.
+|A 32.7% increase of net earnings to €11.4K in 2018 from €8.6K in 2017 is caused by a 65.7% increase of External expenses, a 53.9% increase of Staff costs and a 450.5% increase of non recurring result.
+
+|`DescribeVariationThreeContributorsBullet`
+|Describes the variation of the indicator over a given period of time and analyzes the causes or drivers of that variation by listing, using bullet points and their percent change, the top three sub-indicators that contributed to the indicator variation.
+1+a|A 32.7% increase of net earnings to €11.4K in 2018 from €8.6K in 2017 is caused by:
+
+* a 65.7% increase of External expenses;
+* a 53.9% increase of Staff costs;
+* and a 450.5% increase of non recurring result.
+
+|`DescribeVariationThreeContributorsValueBullet`
+|Describes the variation of the indicator over a given period of time and analyzes the causes or drivers of that variation by listing, using bullet points and their value change, the top three sub-indicators that contributed to the indicator variation.
+1+a|A 32.7% increase of net earnings to €11.4K in 2018 from €8.6K in 2017 is caused by:
+
+* a €1K increase of External expenses;
+* a €1K increase of Staff costs;
+* and a €4.8K increase of non recurring result.
+
+|`FinanceCostsAlert`
+|Alert asking for the finance costs compositions and their due dates. +
+Inherits the `StaticTextIntention` intention.
+|What are the finance costs composed of? What are their due dates? Are they fixed or variable interest debts?
+
+|`StructuralOrCyclical`
+|Alert asking if the current result is structural or cyclical. +
+Inherits the `StaticTextIntention` intention.
+|Is it structural or cyclical? Explain the major event(s) that led to this result?
+
+|`DescribeRatioVariation_to_EBITDA`
+a|Describes the ratio variation of a chosen KPI to EBITDA.
+
+NOTE: This intention is not available on the AFA Studio.
+
+|The leverage increased by 1000 bps in 2018.
+
+|`DescribeRatioVariation_to_SALES`
+a|Describes the ratio variation of a chosen KPI to SALES.
+
+NOTE: This intention is not available on the AFA Studio.
+
+|The profit margin ratio increased by 1000 bps in 2018.
+
+|`DescribeRatioVariation_to_TOTAL_EQUITY_AND_LIABILITIES`
+a|Describes the ratio variation of a chosen KPI to total equity and liabilities.
+
+NOTE: This intention is not available on the AFA Studio.
+
+|The equity ratio increased by 1000 bps in 2018.
+
+|`DescribeRatioVariation_to_TOTAL_EQUITY`
+a|Describes the ratio variation of a chosen KPI to total equity.
+
+NOTE: This intention is not available on the AFA Studio.
+
+|The gearing ratio increased by 1000 bps in 2018.
+
+|===

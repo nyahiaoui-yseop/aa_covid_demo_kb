@@ -1,0 +1,10 @@
+LibDocument:DynamicStylingConfiguration ratioNoScale
+    --> configValues {
+        LibDocument:Numerical:unit : NoSymbolUnit,
+        LibDocument:Numerical:decimalsCount : 2,
+        LibDocument:Numerical:suffix : ""
+    }
+    --> filter  -> LibDocument:ComputedValuesFilter
+        --> calculationTypes RAW_VALUE_CALCULATION
+    ;
+;

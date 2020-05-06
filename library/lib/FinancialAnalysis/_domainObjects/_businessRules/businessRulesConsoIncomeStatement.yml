@@ -1,0 +1,112 @@
+Function rulesConsoIncomeStatement
+args {}
+ruleset {
+
+    // // CA Forte Croissance
+    // Rule CA_ForteCroissance
+    // if (getDescribeVariationCalculatedRelativeChange(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) >= 0.1)
+    // then
+    //     cAlerte_ForteCroissance_CA.active = true;
+    // ;
+
+
+    // Rule CA_Conso_Stable
+    // if (getDescribeVariationCalculatedRelativeChange(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) != null
+    //     && abs(getDescribeVariationCalculatedRelativeChange(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N)) < variationConsideredStable
+    //     )
+    // then
+    //     cStabilisation_CA_Conso_N.active = true;
+    //     theGeneralData.consolidatedCAVariationN_1_N_2 = getVariationLevel(getVariation(getDescribeVariationPreviousValue(DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N), getJointureOneFactValue(jointureCA_Conso_N_2)));
+    // ;
+
+    // Rule EBECA_Conso_Stable
+    // if (theGeneralData.consolidatedEBECAVariationN_N_1 != null
+    //     && theGeneralData.consolidatedEBECAVariationN_1_N_2 != null
+    //     && theGeneralData.consolidatedEBECAVariationN_N_1.level == ThreeLevelVariation::STABLE
+    //     && (theGeneralData.consolidatedCAVariationN_N_1 == ThreeLevelVariation::STABLE || theGeneralData.consolidatedEBEVariationN_N_1 == ThreeLevelVariation::STABLE)
+    //     )
+    // then
+    //     cStabilisation_EBECA_Conso_N.active = true;
+    // ;
+
+    // // // Compare CA and EBE evolutoin
+    // // Rule CA_EBE_Compare_Evolution_Compose
+    // // if (theGeneralData.consolidatedCAVariationN_N_1 != ThreeLevelVariation::STABLE && theGeneralData.consolidatedEBEVariationN_N_1 != ThreeLevelVariation::STABLE)
+    // // then
+    // //     cCompareEvolution_CA_EBE_Conso_N.active = true;
+    // // ;
+
+    // // R3
+    // Rule ACMM_Significant
+    // if (significantIndicatorIS(DESCRIBE_VARIATION_OF_COST_OF_SALES__CONSO_YEARN_1_N, DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) == true)
+    // then
+    //     updateTable(consoIncomeStatementTable, tableKpiACMM, tableKpiEBE);
+    //     ibaContributorsCAEBE.appendToAssembly(DESCRIBE_VARIATION_OF_COST_OF_SALES__CONSO_YEARN_1_N);
+    // ;
+
+    // // R3
+    // Rule CHGEXT_Significant
+    // if (significantIndicatorIS(DESCRIBE_VARIATION_OF_ADMINISTRATIVE_EXPENSES__CONSO_YEARN_1_N, DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) == true)
+    // then
+    //     updateTable(consoIncomeStatementTable, tableKpiCHGEXT, tableKpiEBE);
+    //     ibaContributorsCAEBE.appendToAssembly(DESCRIBE_VARIATION_OF_ADMINISTRATIVE_EXPENSES__CONSO_YEARN_1_N);
+    // ;
+
+    // // R3
+    // Rule CHGPER_Significant
+    // if (significantIndicatorIS(DESCRIBE_VARIATION_OF_PERSONNEL_EXPENSES__CONSO_YEARN_1_N, DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) == true)
+    // then
+    //     updateTable(consoIncomeStatementTable, tableKpiCHGPER, tableKpiEBE);
+    //     ibaContributorsCAEBE.appendToAssembly(DESCRIBE_VARIATION_OF_PERSONNEL_EXPENSES__CONSO_YEARN_1_N);
+    // ;
+
+    // // R3
+    // Rule AUTREEXPLOIT_Significant
+    // if (significantIndicatorIS(DESCRIBE_VARIATION_OF_OTHER_OPERATING_INCOME_AND_EXPENSES__CONSO_YEARN_1_N, DESCRIBE_VARIATION_OF_SALES__CONSO_YEARN_1_N) == true)
+    // then
+    //     updateTable(consoIncomeStatementTable, tableKpiAUTREEXPLOIT, tableKpiEBE);
+    //     ibaContributorsCAEBE.appendToAssembly(DESCRIBE_VARIATION_OF_OTHER_OPERATING_INCOME_AND_EXPENSES__CONSO_YEARN_1_N);
+    // ;
+
+    // // R4
+    // Rule CHGINT_Significant
+    // if (getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_FINANCIAL_COSTS__CONSO_YEARN_1_N) > 0.2 * getDescribeValueCurrentValue(DESCRIBE_VALUE_OF_OPERATING_PROFIT__CONSO_YEARN))
+    // then
+    //     DESCRIBE_VARIATION_OF_FINANCIAL_COSTS__CONSO_YEARN_1_N.active = true;
+    // ;
+
+    // Produits financiers Significatifs
+    // Rule PRODFI_Significant
+    // if (getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_FINANCIAL_INCOME__CONSO_YEARN_1_N) >= 0.15 * getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_NET_EARNINGS__CONSO_YEARN_1_N))
+    // then
+    //     DESCRIBE_VARIATION_OF_FINANCIAL_INCOME__CONSO_YEARN_1_N.active = true;
+    // ;
+
+    // // Si on parle des produits financiers & leur variation > 10 %
+    // Rule PRODFI_Alerte
+    // if (DESCRIBE_VARIATION_OF_FINANCIAL_INCOME__CONSO_YEARN_1_N.isStringEmpty() == false && getDescribeVariationCalculatedRelativeChange(DESCRIBE_VARIATION_OF_FINANCIAL_INCOME__CONSO_YEARN_1_N) >= 0.1)
+    // then
+    //     cAlerte_Croissance_PRODFI.active = true;
+    // ;
+
+
+    // // R5
+    // Rule IMPB_Negative
+    // if (getDescribeValueCurrentValue(DESCRIBE_VALUE_OF_INCOME_TAX_EXPENSE__CONSO_YEARN) != null
+    //     && getDescribeValueCurrentValue(DESCRIBE_VALUE_OF_INCOME_TAX_EXPENSE__CONSO_YEARN) <= -100)
+    // then
+    //     DESCRIBE_VALUE_OF_INCOME_TAX_EXPENSE__CONSO_YEARN.active = true;
+    //     cAlerte_IMPB_Conso_N.active = true;
+    // ;
+
+    // // R5
+    // Rule REXCEP_Significant
+    // if (getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_NON_RECURRING_RESULT__CONSO_YEARN_1_N) != null
+    //     && abs(getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_NON_RECURRING_RESULT__CONSO_YEARN_1_N)) > 0.2 * getDescribeVariationCurrentValue(DESCRIBE_VARIATION_OF_NET_EARNINGS__CONSO_YEARN_1_N))
+    // then
+    //     DESCRIBE_VARIATION_OF_NON_RECURRING_RESULT__CONSO_YEARN_1_N.active = true;
+    //     updateTable(consoIncomeStatementTable, tableKpiREXCEP, tableKpiRN);
+    // ;
+}
+--> dsl "rules for consolidated income statement"
+;

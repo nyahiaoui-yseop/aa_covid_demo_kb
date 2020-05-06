@@ -1,0 +1,16 @@
+ConstList DESCRIBE_RATIO_VARIATION_SEMANTIC_SLOTS {
+    LibDocument:SemanticSlot::IndicatorProperty,
+    LibDocument:SemanticSlot::ReferenceProperty,
+    LibDocument:SemanticSlot::RatioOwner,
+    LibDocument:SemanticSlot::Indicator,
+    LibDocument:SemanticSlot::Reference,
+    LibDocument:SemanticSlot::IndicatorOwner,
+    LibDocument:SemanticSlot::ReferenceOwner,
+    LibDocument:SemanticSlot::ValueProperty,
+    LibDocument:SemanticSlot::EntityProperty,
+    LibDocument:SemanticSlot::Elaboration,
+    LibDocument:SemanticSlot::MainPredicate,
+    LibDocument:SemanticSlot::PredicateProperty,
+    LibDocument:SemanticSlot::PredicateElaboration
+}
+;

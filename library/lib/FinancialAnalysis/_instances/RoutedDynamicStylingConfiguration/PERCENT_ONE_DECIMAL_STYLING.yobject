@@ -1,0 +1,6 @@
+LibDocument:RoutedDynamicStylingConfiguration PERCENT_ONE_DECIMAL_STYLING
+    --> dynamicStylingConfiguration PERCENT_ONE_DECIMAL
+    --> route -> LibDocument:Route
+        --> intentions LibDocument:Intention
+    ;
+;

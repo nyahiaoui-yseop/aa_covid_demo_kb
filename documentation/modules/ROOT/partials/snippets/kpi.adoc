@@ -1,0 +1,46 @@
+.KPI code
+[source,YML]
+----
+LibDocument:KeyPerformanceIndicator INDICATOR_NAME_KPI
+    --> documentation """KPI for the indicator `INDICATOR_NAME`"""
+    --> indicator   INDICATOR_NAME
+    --> customConceptsConfigurations -> LibDocument:RoutedCustomConceptsConfiguration
+        --> route -> LibDocument:Route
+            --> intentions LibDocument:Intention
+            ;
+        --> customConceptsConfiguration -> MultilingualExpression
+            --> fr -> LibDocument:CustomConceptsConfiguration
+                --> configValues {
+                    LibDocument:SemanticSlot::Indicator : -> LibDocument:DynamicCustomTexts
+                        --> customTexts {
+                            -> LibDocument:CustomText
+                                --> synonyms -> LibOntology:NounPhrase
+                                    --> head "YOUR_FRENCH_LABEL"
+                                    --> gender MASCULINE // or FEMININE
+                                    --> number SINGULAR // or PLURAL
+                                    --> determiner DEFINITE_ARTICLE
+                                ;
+                            ;
+                        }
+                    ;
+                }
+            ;
+            --> en -> LibDocument:CustomConceptsConfiguration
+                --> configValues {
+                    LibDocument:SemanticSlot::Indicator : -> LibDocument:DynamicCustomTexts
+                        --> customTexts {
+                            -> LibDocument:CustomText
+                                --> synonyms -> LibOntology:NounPhrase
+                                    --> head "YOUR_ENGLISH_LABEL"
+                                    --> number SINGULAR // or PLURAL
+                                    --> determiner DEFINITE_ARTICLE // not mandatory, check the result
+                                ;
+                            ;
+                        }
+                    ;
+                }
+            ;
+        ;
+    ;
+;
+----

@@ -1,0 +1,13 @@
+MultilingualExpression DescribeRatioVariation:EBITDA_TO_SALES
+--> en -> LibOntology:NounPhrase
+    --> head "EBITDA to sales ratio"
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+--> fr -> LibOntology:NounPhrase
+    --> head "marge brute d'exploitation"
+    --> gender FEMININE
+    --> number SINGULAR
+    --> determiner DEFINITE_ARTICLE
+    ;
+;

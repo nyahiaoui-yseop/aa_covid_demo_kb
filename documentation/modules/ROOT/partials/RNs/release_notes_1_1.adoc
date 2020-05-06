@@ -1,0 +1,63 @@
+:page-partial:
+
+= Augmented Financial Analyst Bootstrap 1.1
+
+== Augmented Financial Analyst Bootstrap 1.1.1
+
+*Delivery date*: November 5, 2019
+
+=== What's new
+
+* [AAS-66] The default currency is now USD.
+
+=== Fixed issues
+
+* [AAC-23] When using the `DescribeThreePointsVariation` custom intention with a starting value of `zero`, the resulting sentence was showing a percentage variation that made no sense.
+
+* [AAC-59] When using the `DescribeThreePointsVariation` custom intention, the verbs used for costs indicators were the same then the ones used for income indicators. For example, a cost that goes from -200 to -100 should be described as having a 50% decrease, but the intention was actually describing it as an increase.
+
+== Augmented Financial Analyst Bootstrap 1.1.0 - First release image:tada.png[, 50, 50]
+
+*Delivery date*: October 10, 2019
+
+=== What's new
+
+This is the first version of this bootstrap. It comes with the following features on top of the ones brought by the Reporting Framework libraries.
+
+==== Financial reporting ontology
+
+The Augmented Financial Analyst bootstrap provides an ontology. This ontology gives access to the main indicators and KPIs of financial analysis used in French GAAP and IFRS. It brings its own business knowledge on how these indicators are linked and how to describe them thanks to specialized vocabulary for example.
+
+For more details, see the list of xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#indicators[predefined indicators].
+
+==== Financial analysis specific intentions
+
+Some new intentions have been added to the set of the ones provided by the Reporting Framework.
+
+* Specialized intentions of `DescribeValue` and `DescribeVariation`, using their own set of options.
+* New intention `DescribeThreePointsVariation` to describe the variation of a value over three time points.
+* New intention `DescribeRatioVariation` to describe the ratio of a KPI's indicator to another, over a given period of time.
+
+For more details, see the list of xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#specialized_intentions[predefined specialized intentions] and the list of xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_about.adoc#custom_intentions[predefined custom intentions].
+
+==== Specialized KPIs classes
+
+* `AmountKPI`: Used for a KPI that represents an amount. The styling set to describe amounts is used by default (like `$ 100k`).
+* `RatioKPI`: Used for a KPI that represents a ratio. The styling set to describe ratios is used by default (like `10.04%`).
+* `NumberKPI`: Used for a KPI that represents a number. No styling is applied.
+
+==== Miscellaneous
+
+* Some snippets have been added to ease the development. The snippets can be found in the `.vscode/inputFile.code-snippets` file.
++
+NOTE: Snippets are only available with Visual Studio Code.
+* Repeatable text sections.
+* Unit tests examples.
+
+To learn how to use those snippets, text sections, and unit tests, see xref:{page-version}@aa_reporting-framework::afa/afa_bootstrap_enriching.adoc[Enriching your Knowledge Base].
+
+=== Known issues
+
+* [AAC-23] When using the `DescribeThreePointsVariation` custom intention with a starting value of `zero`, the resulting sentence shows a percentage variation that makes no sense.
+
+* [AAC-59] When using the `DescribeThreePointsVariation` custom intention, the verbs used for costs indicators are the same then the ones used for income indicators. For example, a cost that goes from -200 to -100 should be described as having a 50% decrease, but the intention actually describes it as an increase.

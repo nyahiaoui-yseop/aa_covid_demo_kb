@@ -1,0 +1,35 @@
+interface DescribeRatioVariationComputedValues extends LibDocument:CustomIntentionComputedValues
+
+;
+
+implementation DescribeRatioVariationComputedValues
+    override {
+        validateValues function
+        getMandatoryKeys function
+    }
+;
+
+function DescribeRatioVariationComputedValues::validateValues()
+--> action {
+
+    // For this intention, all computed values as mandatory.
+    // If it changes somehow, please adapt this function.
+    foreach(_key, getMandatoryKeys()) {
+        assert(getValue(_key) != null, concat("the computed value ", _key.identifier, " isn't correct."));
+    }
+    return LibCommons:NoErrorState;
+};
+
+function DescribeRatioVariationComputedValues::getMandatoryKeys
+args {}
+--> action {
+    return {
+        ComputedValueKey:CURRENT_VALUE,
+        ComputedValueKey:PREVIOUS_VALUE,
+        ComputedValueKey:CURRENT_DATE,
+        ComputedValueKey:PREVIOUS_DATE,
+        ComputedValueKey:CALCULATED_CHANGE,
+        ComputedValueKey:CALCULATED_RELATIVE_CHANGE,
+        ComputedValueKey:TREND_NATURE
+    };
+};

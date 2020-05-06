@@ -1,0 +1,261 @@
+= About the AFA ontology
+
+This ontology was built around financial indicators, generic enough to be used by all users of AA studio. It was built with the ontology editor Protégé (https://protege.stanford.edu/). This ontology is integrated in the AFA Library (part of the AFA bootstrap).
+
+To learn how to extend the AFA ontology, see xref:{page-version}@aa_reporting-framework::demo/aa_demo_kb_ontology.adoc[Working with the AFA ontology].
+
+// You can find the ontology in the following GitHub repository: https://github.com/yseop/anna-ontology
+
+
+[#indicators]
+== Indicators
+
+The Indicators class hierarchy is built from a general financial statement model. It is divided into three main categories, the Balance sheet, the Income statement, and the Cash flow statement classes, and completed with two other classes, Ratios and Other.
+
+NOTE: More indicator categories could be added in the future.
+
+image::protege_architecture.png[Protege architecture]
+
+Those indicators hold the following information:
+
+* The <<financial_standard, financial standard>> the indicator belongs to.
+* If it is a <<negative_contribution, negative contribution>> , the contribution of the indicator to its direct superclass (or parent).
+* The <<units, unit type>> of the indicator.
+* The formula, if it is a <<ratios, ratio>>, and its constituents.
+
+NOTE: Comments and descriptions can be added in the annotation part which is not concerned by the inference property of Protégé.
+
+
+[#financial_standard]
+=== Financial standard
+
+You can see which financial reporting standard the indicator belongs to. This is represented with the annotation relation `hasStandard`
+
+image::protege_financial_standard.png[Financial standard]
+
+
+[#negative_contribution]
+=== Negative contribution to superclass
+
+If an indicator has a negative contribution to its direct superclass, it is modelised in the object property `hasNegativeContribution`. For example, the indicator "Cost of sales" has a negative contribution to EBITDA. In other words, EBITDA is the result of the deduction of "Cost of sales" (and other negative contributing indicators) to positive contributors.
+
+image::protege_negative_contribution.png[Negative contribution]
+
+
+[#units]
+=== Units
+
+The `Unit` class is composed of the type of unit corresponding to the indicator's measure (monetary, percentage, and time units). The `indicators` class is linked to a unit with the object property `hasUnit`. The parent (or superclass) is the one that is linked, and the subclasses automatically inherit the property.
+
+For example, the object property `hasUnit` of the class `CASH_AND_CASH_EQUIVALENT_END_FY` is `Monetary_unit`, then each subclass of this class will have the same object property `hasUnit`.
+
+NOTE: More unit types can be added if necessary.
+
+
+[#ratios]
+=== Ratios
+
+There is some additional information on `ratios` compared to other indicators, their formula, the indicators linked to the formula, and their position in the formula. The subclasses of `Formulas` are the symbolic representation of the ratios formulas. The ratios are linked to their formulas through the object property `hasFormula`.
+
+`Indicators > Ratio > Leverage > hasFormula some X/Y`
+
+The indicators used in the formula are linked to the ratio with the object property `hasX` and `hasY`.
+
+`Leverage > (hasX some ‘Financial liabilities’) and (hasY some ‘EBITDA’)`
+
+image::protege_ratios.png[Ratios]
+
+
+[#sectors]
+=== Sectors
+
+Content to come.
+
+// hasSector
+
+
+[#instances]
+== Instances
+
+[#indicators_instances]
+=== Indicators instances
+
+All indicators are associated to instances of both languages. These instances correspond to the possible lexicalisations of the indicator. In addition to their English and French equivalents you can also find their acronyms and their positive or negative equivalents.
+
+`Earnings before income tax > en_EarningsBeforeIncomeTax`
+
+`Earnings before income tax > en_EBIT`
+
+`Earnings before income tax > fr_RésultatAvantIS`
+
+Every instance has its own specific linguistic knowledge.
+
+[cols="20,10,10,30,30",options="header"]
+|===
+|Name
+|Type of property
+|Type of data
+|Role
+|Range
+
+|`hasGrammaticalCategory`
+|datatype
+|string
+|For the grammatical category of the lexicalisation.
+|{"determiner" , "noun" , "preposition" , "verb"}
+
+|`hasNumber`
+|datatype
+|string
+|Indicates if the indicator is singular or plural.
+|{"plural", "singular"}
+
+|`hasGender`
+|datatype
+|string
+|Marks the gender of the indicator for French language only.
+|{"feminine", "masculine"}
+
+|`isPreferredLabel`
+|datatype
+|boolean
+|Represents the concept of “preferred term” in lexicography*. Only used for presentation purposes, does not influence the choice of the lexicalisation in the generation.
+|{true, false}
+
+|`hasLanguage`
+|datatype
+|string
+|Indicates if the indicator is English or French.
+|{"en", "fr"}
+
+|`hasLocale`
+|datatype
+|string
+|Only used for local variations of a language such as "GB" for English.
+|{"GB"}
+
+|`useIfNegative`
+|datatype
+|boolean
+|True if it is a negative equivalent of an indicator.
+|{true, false}
+
+|`lexicalisation`
+|annotation 
+|string
+|Corresponds to the lexical label of the instance, the string used in a sentence.
+|
+
+|===
+
+image::protege_indicator_instance.png[Indicator instances]
+
+NOTE: As a convention, the instances IDs begin with two letters indicating their language (EN or FR).
+
+
+[#predicates_instances]
+=== Predicates instances
+
+Predicates correspond to lexical nodes linked to an indicator in a sentence (they can be verbs, adverbs, nouns, etc. linked to an indicator).
+
+They also have the following specific linguistic knowledge in addition to the `hasGrammaticalCategory`, `hasLanguage`, `hasLocale`, and `lexicalisation` properties:
+
+[cols="20,10,10,30,30",options="header"]
+|===
+|Name
+|Type of property
+|Type of data
+|Role
+|Range
+
+|`hasSubject`
+|datatype 
+|string
+|Indicates if the subject of the predicate is Owner or KPI. These two string corresponds to semantic slots to be replaced by a noun phrase (NP).
+|{"Owner", "KPI"}
+
+|`hasObject`
+|datatype 
+|string
+|Indicates the object (object in syntax) of the predicate regardless if it is direct or indirect. Same as the `hasSubject` property, the string corresponds to a semantic slot. If there is no object, then the property is not associated to the predicate.
+|{"Owner", "KPI"}
+
+|`hasPreposition`
+|datatype 
+|string
+|Used to precise the preposition when the object is indirect.
+|
+
+|`hasDeterminer`
+|datatype 
+|string
+|Relates to the determiner of the semantic slot "KPI" if there is one in the sentence (see `hasSubject` or `hasObject`).
+|{"definite", "indefinite"}
+
+|`isPassiveForm`
+|datatype 
+|boolean
+|True if the predicate is used in a passive form.
+|{true, false}
+
+|`isReflexive`
+|datatype 
+|boolean
+|Mainly used in French for predicates such as “s’élever”.
+|{true, false}
+
+|===
+
+NOTE: For now only verbal predicates were added to the ontology. To learn about the predicates structuration in the ontology, see <<predicates, Predicates>>.
+
+
+[#indicators_classes]
+== Indicator types - Classes of objects
+
+The Linguistic features class is divided into two subclasses, <<predicates, Predicates>> and <<indicators_types, Indicator types>>.
+
+
+[#indicators_types]
+=== Indicator types
+
+Indicator types are classes of indicators created according to their semantic and similar linguistic behaviour.
+
+image::protege_indicator_types.png[Indicator types]
+
+This classification is based on the work of G. Gross (1994).footnote:[Gross Gaston. Classes d'objets et description des verbes. In: Langages, 28ᵉ année, n°115, 1994. Sélection et sémantique. Classes d'objets, compléments appropriés, compléments analysables, sous la direction de Jacqueline Giry-Schneider. pp. 15-30.]
+
+These classes follow a hierarchy defined with the object property `isPartOf`. A class of indicator can belong (or be part of) another class of indicators, which implies that the children of a class inherits its instances. 
+
+In the AFA ontology, the parent/child hierarchy of these classes cannot be represented with the superclass/subclass hierarchy of the ontology because, during the inference process, parents automatically inherit the instances of the children. This is contrary to what is needed since children have specific instances compared to their parents that have more generic instances. That is why the behavior of inheritance is implied, and is not presented or encoded in the ontology, which means that additional coding is to be done in the exportation process.
+
+For example, `Income isPartOf Earnings` means that the instances of the `Earnings` class will be inherited by the `Income` class.
+
+And, the indicators belonging to these classes were defined with the annotation property `hasClass`.
+
+* Sales `hasClass` EARNINGS
+* Sales `hasClass` INCOME
+
+The annotation properties are not called by the reasoner, which means that indicators classes cannot be inferred.
+
+
+[#predicates]
+=== Predicates
+
+The predicates are instances linked to a lexicalisation or an indicator type (or indicator class as classes of objects) or both. They are divided into different groups of predicates linked to the intention they relate to. The intentions are:
+
+* DescribeValue (cf. Description)
+
+* DescribeVariation (cf. Variation)
+
+image::protege_predicates.png[Predicates]
+
+Indicator type::
+As said before, a predicate can be an instance of an indicator type (or class). This means that the predicate is compatible with all of the positive lexicalisations of all the indicators belonging to that class (with the `hasClass` property) from the same language.
++
+en_payOff is an instance of the indicator class DEBTS, which means all the instances of the indicators that belong to the class (`hasClass`) DEBTS are linked to the predicate.
+
+
+Lexicalisation::
+A predicate can be linked to a specific lexicalisation with the object property `isPredicateOf`. A predicate is directly linked to an instance of indicator.
++
+en_suffer `isPredicateOf` en_Losses.
