@@ -1,0 +1,22 @@
+interface Introduction extends LibDocument:CustomIntention
+
+    classProperties
+        --> hideFromApi true
+        --> abstract true
+;
+
+implementation RegulationComment
+    override {
+        text
+        --> defaultValue \(Introduction\)
+        writeCustomText function
+
+    }
+;
+
+textMethod Introduction::writeCustomText()
+--> text
+    \(
+        This page is meant to be a concise distillation of today’s news related to the COVID-19 pandemic that is disrupting so much of our lives. Data will be updated daily and is aggregated from the World Health Organization, the US Centers for Disease Control, Johns Hopkins University, various US state government websites.
+    \)
+;
